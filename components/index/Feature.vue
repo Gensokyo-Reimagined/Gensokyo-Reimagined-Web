@@ -16,8 +16,7 @@
           <div v-for="feature in feature" :key="feature.name" class="relative">
             <dt>
               <div class="absolute flex items-center justify-center w-12 h-12 text-white bg-red-500 rounded-md">
-                <component :is="feature.icon" class="w-6 h-6" aria-hidden="true">
-                </component>
+                <i :class="feature.icon"></i>
               </div>
               <p class="ml-16 text-lg font-medium leading-6 text-gray-900">
                 {{ $t(feature.name) }}
@@ -33,34 +32,42 @@
   </div>
 </template>
 <script>
-export
-  default {
-    data () {
-      return {
-        feature:
-          [{
-            name:
-              this.$t('index.feature.items[0].name'),
-            description: this.$t('index.feature.items[0].description'),
-            icon: 'icon-sparkles',
-          },
-          {
-            name: this.$t('index.feature.items[1].name'),
-            description: this.$t('index.feature.items[1].description'),
-            icon: 'icon-scale',
-          },
-          {
-            name: this.$t('index.feature.items[2].name'),
-            description: this.$t('index.feature.items[2].description'),
-            icon: 'icon-chip',
-          },
-          {
-            name: this.$t('index.feature.items[3].name'),
-            description: this.$t('index.feature.items[3].description'),
-            icon: 'icon-emoji-happy',
-          },
-          ],
-      }
-    },
-  }
+export default {
+  setup () {
+    const appConfig = useAppConfig()
+
+    const state = reactive({
+      appConfig: appConfig
+    })
+
+    return { state }
+  },
+  data () {
+    return {
+      feature:
+        [{
+          name:
+            this.$t('index.feature.items[0].name'),
+          description: this.$t('index.feature.items[0].description'),
+          icon: this.state.appConfig.IndexFeatureIcon[0],
+        },
+        {
+          name: this.$t('index.feature.items[1].name'),
+          description: this.$t('index.feature.items[1].description'),
+          icon: this.state.appConfig.IndexFeatureIcon[1],
+        },
+        {
+          name: this.$t('index.feature.items[2].name'),
+          description: this.$t('index.feature.items[2].description'),
+          icon: this.state.appConfig.IndexFeatureIcon[2],
+        },
+        {
+          name: this.$t('index.feature.items[3].name'),
+          description: this.$t('index.feature.items[3].description'),
+          icon: this.state.appConfig.IndexFeatureIcon[3],
+        },
+        ],
+    }
+  },
+}
 </script>

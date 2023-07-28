@@ -43,11 +43,10 @@
       </div>
     </div>
     <div class="pt-16 lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
-      <img class="object-cover w-full h-56 sm:h-72 md:h-96 lg:w-full lg:h-full" src="/img/main_min.png">
+      <nuxt-img class="object-cover w-full h-56 sm:h-72 md:h-96 lg:w-full lg:h-full" :src="appConfig.IndexHeaderImg" />
     </div>
   </div>
 </template>
-<script>
-export
-  default {}
+<script setup>
+const appConfig = useAppConfig()
 </script>

@@ -23,15 +23,14 @@
           </div>
         </div>
         <div class="-mt-6 aspect-w-5 aspect-h-3 md:aspect-w-2 md:aspect-h-1">
-          <img
+          <nuxt-img
             class="object-cover object-left-top transform translate-x-6 translate-y-6 rounded-md sm:translate-x-16 lg:translate-y-20"
-            src="/img/discord-screenshot.png" alt="App screenshot">
+            :src="appConfig.IndexCtaImg" alt="App screenshot" />
         </div>
       </div>
     </div>
   </div>
 </template>
-<script>
-export
-  default {}
+<script setup>
+const appConfig = useAppConfig()
 </script>
