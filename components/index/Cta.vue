@@ -15,7 +15,7 @@
             <p class="mt-4 text-lg leading-6 text-red-200">
               {{ $t('index.cta.description') }}
             </p>
-            <a href="https://discord.gg/U9fZSJJcte"
+            <a href="https://discord.gg/U9fZSJJcte" target="_blank"
               class="inline-flex items-center px-5 py-3 mt-8 text-base font-medium text-red-600 bg-white border border-transparent rounded-md shadow hover:bg-red-50">
               {{ $t('index.cta.button') }}
               <i class="fa-duotone fa-arrow-up-right-from-square ml-3 -mr-1"></i>

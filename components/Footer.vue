@@ -11,11 +11,11 @@
         lg:px-8
       ">
       <div class="flex justify-center space-x-6 md:order-2">
-        <a href="https://discord.gg/U9fZSJJcte" class="text-gray-400 hover:text-gray-500">
+        <a href="https://discord.gg/U9fZSJJcte" class="text-gray-400 hover:text-gray-500" target="_blank">
           <span class="sr-only">Discord</span>
           <i class="fa-brands fa-discord"></i>
         </a>
-        <a href="https://www.patreon.com/gensokyoreimagined" class="text-gray-400 hover:text-gray-500">
+        <a href="https://www.patreon.com/gensokyoreimagined" target="_blank" class="text-gray-400 hover:text-gray-500">
           <span class="sr-only">Patreon</span>
           <i class="fa-brands fa-patreon"></i>
         </a>

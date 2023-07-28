@@ -8,9 +8,15 @@
             <img class="hidden lg:block h-8 w-auto" src="/logo.svg" alt="Logo">
           </div>
           <div class="hidden sm:ml-6 sm:flex sm:space-x-8 items-center">
-            <a href="#" class="px-3 py-2 text-gray-900 font-medium">{{ $t('Navbar.home') }}</a>
-            <a href="#" class="px-3 py-2 text-gray-500 hover:text-gray-900 font-medium">{{ $t('Navbar.about') }}</a>
-            <a href="#" class="px-3 py-2 text-gray-500 hover:text-gray-900 font-medium">{{ $t('Navbar.contact') }}</a>
+            <nuxt-link to="#" class="px-3 py-2 text-gray-900 font-medium">
+              {{ $t('Navbar.home') }}
+            </nuxt-link>
+            <nuxt-link to="#" class="px-3 py-2 text-gray-500 hover:text-gray-900 font-medium">
+              {{ $t('Navbar.about') }}
+            </nuxt-link>
+            <nuxt-link to="#" class="px-3 py-2 text-gray-500 hover:text-gray-900 font-medium">
+              {{ $t('Navbar.contact') }}
+            </nuxt-link>
             <div class="relative">
               <button
                 class="text-xl leading-5 font-semibold bg-slate-400/10 rounded-full py-1 px-3 flex items-center space-x-2 hover:bg-slate-400/20 dark:highlight-white/5"
@@ -57,12 +63,18 @@
 
     <div :class="{ 'block': isMenuOpen, 'hidden': !isMenuOpen }" class="sm:hidden">
       <div class="px-2 pt-2 pb-3">
-        <a href="#"
-          class="block px-3 py-2 rounded-md text-base font-medium text-gray-900 bg-gray-100 focus:outline-none focus:text-gray-900 focus:bg-gray-200 transition duration-150 ease-in-out">Home</a>
-        <a href="#"
-          class="block px-3 py-2 rounded-md text-base font-medium text-gray-500 hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:text-gray-900 focus:bg-gray-50 transition duration-150 ease-in-out">About</a>
-        <a href="#"
-          class="block px-3 py-2 rounded-md text-base font-medium text-gray-500 hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:text-gray-900 focus:bg-gray-50 transition duration-150 ease-in-out">Contact</a>
+        <nuxt-link to="#"
+          class="block px-3 py-2 rounded-md text-base font-medium text-gray-900 bg-gray-100 focus:outline-none focus:text-gray-900 focus:bg-gray-200 transition duration-150 ease-in-out">
+          {{ $t('Navbar.home') }}
+        </nuxt-link>
+        <nuxt-link to="#"
+          class="block px-3 py-2 rounded-md text-base font-medium text-gray-500 hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:text-gray-900 focus:bg-gray-50 transition duration-150 ease-in-out">
+          {{ $t('Navbar.about') }}
+        </nuxt-link>
+        <nuxt-link to="#"
+          class="block px-3 py-2 rounded-md text-base font-medium text-gray-500 hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:text-gray-900 focus:bg-gray-50 transition duration-150 ease-in-out">
+          {{ $t('Navbar.contact') }}
+        </nuxt-link>
       </div>
       <div class="pt-4 pb-3 border-t border-gray-200">
         <div class="flex items-center px-5">

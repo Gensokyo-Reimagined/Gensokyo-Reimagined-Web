@@ -24,7 +24,7 @@
               </p>
               <div class="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
                 <div class="rounded-md shadow">
-                  <a href="https://discord.gg/U9fZSJJcte"
+                  <a href="https://discord.gg/U9fZSJJcte" target="_blank"
                     class="flex items-center justify-center w-full px-8 py-3 text-base font-medium text-white bg-red-600 border border-transparent rounded-md hover:bg-red-700 md:py-4 md:text-lg md:px-10">
                     {{ $t('index.header.group') }}
                     <i class="fa-duotone fa-arrow-up-right-from-square  ml-3 -mr-1"></i>

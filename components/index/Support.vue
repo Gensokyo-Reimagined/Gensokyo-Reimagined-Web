@@ -11,7 +11,7 @@
       </h2>
       <div class="flex mt-8 lg:mt-0 lg:flex-shrink-0">
         <div class="inline-flex rounded-md shadow">
-          <a href="https://www.patreon.com/gensokyoreimagined"
+          <a href="https://www.patreon.com/gensokyoreimagined" target="_blank"
             class="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-white bg-red-600 border border-transparent rounded-md hover:bg-red-700">
             {{ $t('index.support.button') }}
             <i class="fa-duotone fa-arrow-up-right-from-square ml-3 -mr-1"></i>
