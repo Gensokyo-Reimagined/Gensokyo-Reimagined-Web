@@ -1,7 +1,80 @@
 {
+  "servername": "",
+  "index": {
+    "header": {
+      "title": "",
+      "intro": "",
+      "group": "",
+      "continue": ""
+    },
+    "feature": {
+      "title": "",
+      "subtitle": "",
+      "items": [
+        {
+          "name": "",
+          "description": ""
+        },
+        {
+          "name": "",
+          "description": ""
+        },
+        {
+          "name": "",
+          "description": ""
+        },
+        {
+          "name": "",
+          "description": ""
+        }
+      ]
+    },
+    "cta": {
+      "title": "",
+      "subtitle": "",
+      "description": "",
+      "button": ""
+    },
+    "faq": {
+      "title": "",
+      "items": [
+        {
+          "question": "",
+          "answer": ""
+        },
+        {
+          "question": "",
+          "answer": ""
+        },
+        {
+          "question": "",
+          "answer": ""
+        },
+        {
+          "question": "",
+          "answer": ""
+        },
+        {
+          "question": "",
+          "answer": ""
+        }
+      ]
+    },
+    "rules": {
+      "title": "",
+      "subtitle": "",
+      "description": "",
+      "button": ""
+    },
+    "support": {
+      "title": "",
+      "description": "",
+      "button": ""
+    }
+  },
   "Navbar": {
-    "home": "ホーム",
-    "about": "約",
-    "contact": "お問い合わせ"
+    "home": "",
+    "about": "",
+    "contact": ""
   }
 }
