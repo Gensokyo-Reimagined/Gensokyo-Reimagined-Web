@@ -1,75 +1,76 @@
 {
-  "servername": "",
+  "servername": "Gensokyo Reimagined",
   "index": {
     "header": {
-      "title": "",
-      "intro": "",
-      "group": "",
-      "continue": ""
+      "title": "subheading",
+      "intro": "Server Introduction",
+      "group": "group url button",
+      "continue": "Learn more"
     },
     "feature": {
-      "title": "",
-      "subtitle": "",
+      "title": "feature title",
+      "subtitle": "feature subtitle",
       "items": [
         {
-          "name": "",
-          "description": ""
+          "name": "feature",
+          "description": "feature description"
         },
         {
-          "name": "",
-          "description": ""
+          "name": "feature",
+          "description": "feature description"
         },
         {
-          "name": "",
-          "description": ""
+          "name": "feature",
+          "description": "feature description"
         },
         {
-          "name": "",
-          "description": ""
+          "name": "feature",
+          "description": "feature description"
         }
       ]
     },
-    "cta": {
-      "title": "",
-      "subtitle": "",
-      "description": "",
-      "button": ""
+    "cta":{
+      "title": "cta title",
+      "subtitle": "cta subtitle",
+      "description": "cta description",
+      "button": "group button"
     },
     "faq": {
-      "title": "",
+      "title": "faq title",
       "items": [
         {
-          "question": "",
-          "answer": ""
+          "question": "question",
+          "answer": "question answer"
         },
         {
-          "question": "",
-          "answer": ""
+          "question": "question",
+          "answer": "question answer"
         },
         {
-          "question": "",
-          "answer": ""
+          "question": "question",
+          "answer": "question answer"
         },
         {
-          "question": "",
-          "answer": ""
+          "question": "question",
+          "answer": "question answer"
         },
         {
-          "question": "",
-          "answer": ""
+          "question": "question",
+          "answer": "question answer
         }
       ]
     },
     "rules": {
-      "title": "",
-      "subtitle": "",
-      "description": "",
-      "button": ""
+
+      "title": "rules title",
+      "subtitle": "rules subtitle",
+      "description": "rules description",
+      "button": "rules page button"
     },
     "support": {
-      "title": "",
-      "description": "",
-      "button": ""
+      "title": "support title",
+      "description": "support description",
+      "button": "support button"
     }
   },
   "Navbar": {
