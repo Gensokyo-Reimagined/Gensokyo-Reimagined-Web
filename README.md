@@ -62,8 +62,6 @@ If you need to change the theme color, go to `/assets/css/main.css`
 
 In the repository, all you need to do is add a new language as follows in i18n of `nuxt.config.ts`
 
-Then go to crowdin and add the appropriate language
-
 ```ts
   i18n: {
     locales: [
@@ -74,6 +72,30 @@ Then go to crowdin and add the appropriate language
     ],
   },
 ```
+
+Then you need to add the corresponding language to data() in `<script>` in `components/NavBar.vue` as follows
+
+```json
+
+languages: [
+        {
+          lang: "en",
+          name: "English",
+          flag: "twa-flag-united-states"
+        }, {
+          lang: "ja",
+          name: "日本語",
+          flag: "twa-flag-japan"
+        },{
+          lang: "[Language code, such as en/ja]",
+          name: "[Language name]",
+          flag: "[twitter national flags, such as twa-flag-united states for the flag of the United States]"
+        },
+      ]
+
+```
+
+Then go to crowdin and add the appropriate language
 
 ## Setup
 

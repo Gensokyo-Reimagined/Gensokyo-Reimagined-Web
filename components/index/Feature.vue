@@ -15,7 +15,7 @@
         <dl class="space-y-10 md:space-y-0 md:grid md:grid-cols-2 md:gap-x-8 md:gap-y-10">
           <div v-for="feature in feature" :key="feature.name" class="relative">
             <dt>
-              <div class="absolute flex items-center justify-center w-12 h-12 text-white bg-red-500 rounded-md">
+              <div class="absolute flex items-center justify-center w-12 h-12 text-white bg-red-500 rounded-md ">
                 <i :class="feature.icon"></i>
               </div>
               <p class="ml-16 text-lg font-medium leading-6 text-gray-900">
