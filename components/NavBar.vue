@@ -17,32 +17,31 @@
             <nuxt-link to="#" class="px-3 py-2 text-gray-500 hover:text-gray-900 font-medium">
               {{ $t('Navbar.contact') }}
             </nuxt-link>
-            <div class="relative">
-              <button
-                class="text-xl leading-5 font-semibold bg-slate-400/10 rounded-full py-1 px-3 flex items-center space-x-2 hover:bg-slate-400/20 dark:highlight-white/5"
-                @click="toggleDropdown()">
-                <i class="twa" :class="getFlag(selectedLang)"></i>
-                <svg :class="{ 'transform rotate-180': isDropdownOpen }" width="6" height="3"
-                  class="ml-2 overflow-visible" aria-hidden="true">
-                  <path d="M0 0L3 3L6 0" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round">
-                  </path>
-                </svg>
-              </button>
-
-              <div v-if="isDropdownOpen"
-                class="absolute top-full mt-1 py-2 w-40 rounded-lg bg-white shadow ring-1 ring-slate-900/5 text-sm leading-6 font-semibold text-slate-700 dark:bg-slate-800 dark:text-slate-300 dark:highlight-white/5"
-                id="headlessui-menu-items-:r1:" role="menu" tabindex="0">
-                <nuxt-link v-for="language in languages" :key="language.lang" :to="switchLocalePath(language.lang)"
-                  class="block px-3 py-1" :class="{ 'text-blue-500': language.lang === selectedLang }" role="menuitem"
-                  tabindex="-1">
-                  <i class="twa" :class="language.flag"></i>{{ language.name }}
-                </nuxt-link>
-              </div>
-            </div>
           </div>
         </div>
         <div class="hidden sm:flex sm:items-center sm:ml-6">
-
+          <div class="relative">
+            <button
+              class="text-xl leading-5 font-semibold bg-slate-400/10 rounded-full py-1 px-3 flex items-center space-x-2 hover:bg-slate-400/20 dark:highlight-white/5"
+              @click="toggleDropdown()">
+              <i class="twa" :class="getFlag(selectedLang)"></i>
+              <svg :class="{ 'transform rotate-180': isDropdownOpen }" width="6" height="3" class="ml-2 overflow-visible"
+                aria-hidden="true">
+                <path d="M0 0L3 3L6 0" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round">
+                </path>
+              </svg>
+            </button>
+            <div v-if="isDropdownOpen"
+              class="absolute top-full mt-1 py-2 w-40 rounded-lg bg-white shadow ring-1 ring-slate-900/5 text-sm leading-6 font-semibold text-slate-700 dark:bg-slate-800 dark:text-slate-300 dark:highlight-white/5"
+              id="headlessui-menu-items-:r1:" role="menu" tabindex="0">
+              <nuxt-link v-for="language in languages" :key="language.lang" :to="switchLocalePath(language.lang)"
+                class="block px-3 py-1" :class="{ 'text-blue-500': language.lang === selectedLang }" role="menuitem"
+                tabindex="-1">
+                <i class="twa" :class="language.flag"></i>{{ language.name }}
+              </nuxt-link>
+            </div>
+          </div>
+          <button @click="toggleColorMode">{{ currentColorMode }}</button>
         </div>
         <div class="-mr-2 flex items-center sm:hidden">
           <button @click="isMenuOpen = !isMenuOpen" type="button"
@@ -123,6 +122,7 @@ export default {
     return {
       isMenuOpen: false,
       isDropdownOpen: false,
+      currentColorMode: this.$colorMode.preference || 'light',
       //selectedLang: this.$i18n.locale,
       languages: [
         {
@@ -148,6 +148,15 @@ export default {
 
       if (selectedLanguage) {
         return selectedLanguage.flag;
+      }
+    },
+    toggleColorMode () {
+      if (this.$colorMode.preference === 'dark') {
+        this.$colorMode.preference = 'light'
+        this.currentColorMode = 'light'
+      } else {
+        this.$colorMode.preference = 'dark'
+        this.currentColorMode = 'dark'
       }
     }
   },
