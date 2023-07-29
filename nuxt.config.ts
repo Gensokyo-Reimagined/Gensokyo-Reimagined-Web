@@ -6,7 +6,11 @@ export default defineNuxtConfig({
     '@nuxtjs/i18n',
     '@nuxt/image',
     '@nuxtjs/tailwindcss',
+    '@nuxtjs/color-mode',
   ],
+  colorMode: {
+    classSuffix: '',
+  },
   i18n: {
     strategy: 'prefix_except_default',
     locales: [
@@ -21,7 +25,7 @@ export default defineNuxtConfig({
     ],
     langDir: 'lang',
     defaultLocale: 'en',
-    lazy: 'true',
+    lazy: true,
     detectBrowserLanguage: {
       useCookie: true,
       cookieKey: 'i18n_redirected',
@@ -30,6 +34,7 @@ export default defineNuxtConfig({
   },
   extends: ['nuxt-seo-kit'],
   css: ['@/assets/css/main.css'],
+
   runtimeConfig: {
     public: {
       siteUrl: process.env.NUXT_PUBLIC_SITE_URL || 'https://example.com',

@@ -1,4 +1,11 @@
-<template></template>
+<template>
+  <IndexHeader />
+  <IndexFeature />
+  <IndexCta />
+  <IndexFaq />
+  <IndexRules />
+  <IndexSupport />
+</template>
 
 <script>
 export default {
