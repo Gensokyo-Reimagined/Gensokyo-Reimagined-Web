@@ -1,4 +1,77 @@
 {
+  "servername": "Gensokyo Reimagined",
+  "index": {
+    "header": {
+      "title": "subheading",
+      "intro": "Server Introduction",
+      "group": "group url button",
+      "continue": "Learn more"
+    },
+    "feature": {
+      "title": "feature title",
+      "subtitle": "feature subtitle",
+      "items": [
+        {
+          "name": "feature",
+          "description": "feature description"
+        },
+        {
+          "name": "feature",
+          "description": "feature description"
+        },
+        {
+          "name": "feature",
+          "description": "feature description"
+        },
+        {
+          "name": "feature",
+          "description": "feature description"
+        }
+      ]
+    },
+    "cta": {
+      "title": "cta title",
+      "subtitle": "cta subtitle",
+      "description": "cta description",
+      "button": "group button"
+    },
+    "faq": {
+      "title": "faq title",
+      "items": [
+        {
+          "question": "question",
+          "answer": "question answer"
+        },
+        {
+          "question": "question",
+          "answer": "question answer"
+        },
+        {
+          "question": "question",
+          "answer": "question answer"
+        },
+        {
+          "question": "question",
+          "answer": "question answer"
+        },
+        {
+          "question": "question",
+          "answer": "question answer"
+        }
+      ]
+    },
+    "rules": {
+      "title": "rules title",
+      "subtitle": "rules subtitle",
+      "description": "rules description",
+      "button": "rules page button"
+    },
+    "support": {
+      "title": "support title",
+      "description": "support description",
+      "button": "support button"
+    }
+  },
   "Navbar": {
     "home": "ホーム",
     "about": "約",
