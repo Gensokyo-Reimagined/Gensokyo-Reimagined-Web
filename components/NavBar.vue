@@ -1,5 +1,5 @@
 <template>
-  <nav class="fixed w-full shadow-lg z-[100] bg-white">
+  <nav class="fixed w-full shadow-lg z-[100] bg-[var(--md-sys-color-background)]">
     <div class="px-10 mx-auto">
       <div class="flex justify-between h-16">
         <div class="flex">
@@ -8,13 +8,16 @@
             <img class="hidden lg:block h-8 w-auto" src="/logo.svg" alt="Logo">
           </div>
           <div class="hidden sm:ml-6 sm:flex sm:space-x-8 items-center">
-            <nuxt-link to="#" class="px-3 py-2 text-gray-900 font-medium">
+            <nuxt-link to="#"
+              class="px-3 py-2 text-[var(--md-sys-color-on-background)] hover:text-[var(--md-sys-color-on-secondary-container)] font-medium">
               {{ $t('Navbar.home') }}
             </nuxt-link>
-            <nuxt-link to="#" class="px-3 py-2 text-gray-500 hover:text-gray-900 font-medium">
+            <nuxt-link to="#"
+              class="px-3 py-2 text-[var(--md-sys-color-on-background)] hover:text-[var(--md-sys-color-on-secondary-container)] font-medium">
               {{ $t('Navbar.about') }}
             </nuxt-link>
-            <nuxt-link to="#" class="px-3 py-2 text-gray-500 hover:text-gray-900 font-medium">
+            <nuxt-link to="#"
+              class="px-3 py-2 text-[var(--md-sys-color-on-background)] hover:text-[var(--md-sys-color-on-secondary-container)] font-medium">
               {{ $t('Navbar.contact') }}
             </nuxt-link>
           </div>
@@ -22,35 +25,36 @@
         <div class="hidden sm:flex sm:items-center sm:ml-6 sm:space-x-4">
           <div class="relative">
             <button
-              class="text-xl leading-5 font-semibold bg-slate-400/10 rounded-full py-1 px-3 flex items-center space-x-2 hover:bg-slate-400/20 dark:highlight-white/5"
+              class="text-xl leading-5 font-semibold bg-[var(--md-sys-color-secondary-container)] rounded-full py-1 px-3 flex items-center space-x-2 hover:bg-[var(--md-sys-color-tertiary-container)] dark:highlight-white/5"
               @click="toggleDropdown()">
               <i class="twa" :class="getFlag(selectedLang)"></i>
-              <svg :class="{ 'transform rotate-180': isDropdownOpen }" width="6" height="3" class="ml-2 overflow-visible"
+              <svg :class="{ 'transform rotate-180': isDropdownOpen }" width="6" height="3" class="ml-2 overflow-visible "
                 aria-hidden="true">
                 <path d="M0 0L3 3L6 0" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round">
                 </path>
               </svg>
             </button>
             <div v-if="isDropdownOpen"
-              class="absolute top-full mt-1 py-2 w-40 rounded-lg bg-white shadow ring-1 ring-slate-900/5 text-sm leading-6 font-semibold text-slate-700 dark:bg-slate-800 dark:text-slate-300 dark:highlight-white/5"
+              class="absolute top-full mt-1 py-2 w-40 rounded-lg bg-[var(--md-sys-color-background)] shadow ring-1 ring-slate-900/5 text-sm leading-6 font-semibold text-[var(--md-sys-color-on-background)]"
               id="headlessui-menu-items-:r1:" role="menu" tabindex="0">
               <nuxt-link v-for="language in languages" :key="language.lang" :to="switchLocalePath(language.lang)"
-                class="block px-3 py-1" :class="{ 'text-blue-500': language.lang === selectedLang }" role="menuitem"
+                class="block px-3 py-1"
+                :class="{ 'text-[var(--md-sys-color-secondary)] ': language.lang === selectedLang }" role="menuitem"
                 tabindex="-1">
                 <i class="twa" :class="language.flag"></i>{{ language.name }}
               </nuxt-link>
             </div>
           </div>
           <button
-            class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 focus:text-gray-500 transition duration-150 ease-in-out"
+            class="inline-flex items-center justify-center p-2 rounded-md text-[var(--md-sys-color-primary)] hover:text-[var(--md-sys-color-secondary)] hover:bg-[var(--md-sys-color-secondary-container)] focus:outline-none focus:[var(--md-sys-color-secondary-container)] focus:[var(--md-sys-color-secondary)]  "
             @click="toggleColorMode">
             <i :class="ColorButtonClass"></i>
           </button>
         </div>
         <div class="-mr-2 flex items-center sm:hidden">
           <button @click="isMenuOpen = !isMenuOpen" type="button"
-            class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 focus:text-gray-500 transition duration-150 ease-in-out"
-            :aria-expanded="isMenuOpen" :class="{ 'bg-gray-100': isMenuOpen }">
+            class="inline-flex items-center justify-center p-2 rounded-md text-[var(--md-sys-color-primary)] hover:text-[var(--md-sys-color-secondary)] hover:[var(--md-sys-color-secondary-container)] focus:outline-none focus:[var(--md-sys-color-secondary-container)] focus:[var(--md-sys-color-secondary)] "
+            :aria-expanded="isMenuOpen" :class="{ 'bg-[var(--md-sys-color-secondary-container)]': isMenuOpen }">
             <svg :class="{ 'hidden': isMenuOpen, 'block': !isMenuOpen }" class="h-6 w-6" stroke="currentColor" fill="none"
               viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
@@ -67,15 +71,15 @@
     <div :class="{ 'block': isMenuOpen, 'hidden': !isMenuOpen }" class="sm:hidden ">
       <div class="px-2 pt-2 pb-3">
         <nuxt-link to="#"
-          class="block px-3 py-2 rounded-md text-base font-medium text-gray-900 bg-gray-100 focus:outline-none focus:text-gray-900 focus:bg-gray-200 transition duration-150 ease-in-out">
+          class="block px-3 py-2 rounded-md text-base font-medium text-[var(--md-sys-color-on-background)] hover:text-[var(--md-sys-color-on-secondary-container)]">
           {{ $t('Navbar.home') }}
         </nuxt-link>
         <nuxt-link to="#"
-          class="block px-3 py-2 rounded-md text-base font-medium text-gray-500 hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:text-gray-900 focus:bg-gray-50 transition duration-150 ease-in-out">
+          class="block px-3 py-2 rounded-md text-base font-medium text-[var(--md-sys-color-on-background)] hover:text-[var(--md-sys-color-on-secondary-container)]">
           {{ $t('Navbar.about') }}
         </nuxt-link>
         <nuxt-link to="#"
-          class="block px-3 py-2 rounded-md text-base font-medium text-gray-500 hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:text-gray-900 focus:bg-gray-50 transition duration-150 ease-in-out">
+          class="block px-3 py-2 rounded-md text-base font-medium text-[var(--md-sys-color-on-background)] hover:text-[var(--md-sys-color-on-secondary-container)]">
           {{ $t('Navbar.contact') }}
         </nuxt-link>
       </div>
@@ -83,27 +87,28 @@
         <div class="space-x-2 flex items-center px-5 justify-between">
           <div class="relative">
             <button
-              class="text-xl leading-5 font-semibold bg-slate-400/10 rounded-full py-1 px-3 flex items-center space-x-2 hover:bg-slate-400/20 dark:highlight-white/5"
+              class="text-xl leading-5 font-semibold bg-[var(--md-sys-color-secondary-container)] rounded-full py-1 px-3 flex items-center space-x-2 hover:bg-[var(--md-sys-color-tertiary-container)] dark:highlight-white/5"
               @click="toggleDropdown()">
               <i class="twa" :class="getFlag(selectedLang)"></i>
-              <svg :class="{ 'transform rotate-180': isDropdownOpen }" width="6" height="3" class="ml-2 overflow-visible"
+              <svg :class="{ 'transform rotate-180': isDropdownOpen }" width="6" height="3" class="ml-2 overflow-visible "
                 aria-hidden="true">
                 <path d="M0 0L3 3L6 0" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round">
                 </path>
               </svg>
             </button>
             <div v-if="isDropdownOpen"
-              class="absolute top-full mt-1 py-2 w-40 rounded-lg bg-white shadow ring-1 ring-slate-900/5 text-sm leading-6 font-semibold text-slate-700 dark:bg-slate-800 dark:text-slate-300 dark:highlight-white/5"
+              class="absolute top-full mt-1 py-2 w-40 rounded-lg bg-[var(--md-sys-color-background)] shadow ring-1 ring-slate-900/5 text-sm leading-6 font-semibold text-[var(--md-sys-color-on-background)]"
               id="headlessui-menu-items-:r1:" role="menu" tabindex="0">
               <nuxt-link v-for="language in languages" :key="language.lang" :to="switchLocalePath(language.lang)"
-                class="block px-3 py-1" :class="{ 'text-blue-500': language.lang === selectedLang }" role="menuitem"
+                class="block px-3 py-1"
+                :class="{ 'text-[var(--md-sys-color-secondary)] ': language.lang === selectedLang }" role="menuitem"
                 tabindex="-1">
                 <i class="twa" :class="language.flag"></i>{{ language.name }}
               </nuxt-link>
             </div>
           </div>
           <button
-            class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 focus:text-gray-500 transition duration-150 ease-in-out"
+            class="inline-flex items-center justify-center p-2 rounded-md text-[var(--md-sys-color-primary)] hover:text-[var(--md-sys-color-secondary)] hover:bg-[var(--md-sys-color-secondary-container)] focus:outline-none focus:[var(--md-sys-color-secondary-container)] focus:[var(--md-sys-color-secondary)]  "
             @click="toggleColorMode">
             <i :class="ColorButtonClass"></i>
           </button>

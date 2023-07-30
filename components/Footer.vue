@@ -1,6 +1,6 @@
 <template>
   <!-- This example requires Tailwind CSS v2.0+ -->
-  <footer class="bg-white">
+  <footer class=" bg-[var(--md-sys-color-background)]">
     <div class="
         px-4
         py-12

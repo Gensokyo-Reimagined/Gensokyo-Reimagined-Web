@@ -1,6 +1,6 @@
 <template>
   <div class="relative bg-gray-800">
-    <div class="h-56 bg-red-600 sm:h-72 md:absolute md:left-0 md:h-full md:w-1/2">
+    <div class="h-56 bg- bg-[var(--md-sys-color-background)] sm:h-72 md:absolute md:left-0 md:h-full md:w-1/2">
       <nuxt-img class="object-cover w-full h-full" :src="appConfig.IndexRulesImg" />
     </div>
     <div class="relative px-4 py-12 mx-auto max-w-7xl sm:px-6 lg:px-8 lg:py-16">
@@ -17,7 +17,7 @@
         <div class="mt-8">
           <div class="inline-flex rounded-md shadow">
             <nuxt-link
-              class="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-gray-900 bg-white border border-transparent rounded-md hover:bg-gray-50"
+              class="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-gray-900  bg-white border border-transparent rounded-md hover:bg-gray-50"
               :to="localePath('Rules')">
               {{ $t('index.rules.button') }}
             </nuxt-link>
