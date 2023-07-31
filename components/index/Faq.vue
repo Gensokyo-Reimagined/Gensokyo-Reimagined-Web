@@ -1,16 +1,17 @@
 <template>
-  <div class="bg-gray-50">
+  <div class="bg-[var(--md-sys-color-background)]">
     <div class="px-4 py-12 mx-auto max-w-7xl sm:py-16 sm:px-6 lg:px-8">
       <div class="max-w-3xl mx-auto divide-y-2 divide-gray-200">
-        <h2 class="text-3xl font-extrabold text-center text-gray-900 sm:text-4xl">
+        <h2 class="text-3xl font-extrabold text-center text-[var(--md-sys-color-on-background)] sm:text-4xl">
           {{ $t("index.faq.title") }}
         </h2>
         <dl class="mt-6 space-y-6 divide-y divide-gray-200">
           <div v-for="faq in faqs" :key="faq.question" class="pt-6">
             <dt class="text-lg">
-              <button type="button" class="flex items-start justify-between w-full text-left text-gray-400"
+              <button type="button"
+                class="flex items-start justify-between w-full text-left text-[var(--md-sys-color-outline)]"
                 aria-controls="faq-0" aria-expanded="false" @click="faq.open = !faq.open">
-                <span class="font-medium text-gray-900">
+                <span class="font-medium text-[var(--md-sys-color-on-background)]">
                   {{ faq.question }}
                 </span>
                 <span class="flex items-center ml-6 h-7">
@@ -25,7 +26,7 @@
             </dt>
             <transition name="fade">
               <dd v-show="faq.open" class="pr-12 mt-2">
-                <p class="text-base text-gray-500 transition-all">
+                <p class="text-base text-[var(--md-sys-color-outline)] transition-all">
                   {{ faq.answer }}
                 </p>
               </dd>

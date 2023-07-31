@@ -29,7 +29,7 @@
         }
       ]
     },
-    "cta":{
+    "cta": {
       "title": "cta title",
       "subtitle": "cta subtitle",
       "description": "cta description",
@@ -56,12 +56,11 @@
         },
         {
           "question": "question",
-          "answer": "question answer
+          "answer": "question answer"
         }
       ]
     },
     "rules": {
-
       "title": "rules title",
       "subtitle": "rules subtitle",
       "description": "rules description",
