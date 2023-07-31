@@ -3,12 +3,12 @@
     <div class="mx-auto max-w-7xl flex">
       <div
         class="relative z-10 pb-8 bg-[var(--md-sys-color-background)] sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32">
-        <svg
+        <!--<svg
           class="absolute inset-y-0 right-0 hidden w-48 h-full text-[var(--md-sys-color-background)] transform translate-x-1/2 lg:block"
           fill="currentColor" viewbox="0 0 100 100" preserveaspectratio="none" aria-hidden="true">
           <polygon points="50,0 100,0 50,100 0,100">
           </polygon>
-        </svg>
+        </svg>-->
         <navbar>
           <main class="px-4 mx-auto mt-10 max-w-7xl sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28 z-[11] relative">
             <div class="sm:text-center lg:text-left">
