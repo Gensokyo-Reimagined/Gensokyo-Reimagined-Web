@@ -2,79 +2,79 @@
   "servername": "Gensokyo Reimagined",
   "index": {
     "header": {
-      "title": "subheading",
-      "intro": "Server Introduction",
-      "group": "group url button",
+      "title": "",
+      "intro": "Creating a Touhou MMO in Minecraft",
+      "group": "Join our Community!",
       "continue": "Learn more"
     },
     "feature": {
-      "title": "feature title",
-      "subtitle": "feature subtitle",
+      "title": "",
+      "subtitle": "Server Features",
       "items": [
         {
-          "name": "feature",
-          "description": "feature description"
+          "name": "Custom Mobs",
+          "description": "We have custom Touhou themed mobs with 0 mods!"
         },
         {
-          "name": "feature",
-          "description": "feature description"
+          "name": "Touhou Themed Classes",
+          "description": "Each class has unique gameplay to encourage players to experiement!"
         },
         {
-          "name": "feature",
-          "description": "feature description"
+          "name": "Story Quests",
+          "description": "We have simple yet extensive quest lines with great rewards to players"
         },
         {
-          "name": "feature",
-          "description": "feature description"
+          "name": "Seasonal Events",
+          "description": "Every Real life season we'll be holding Events with limited prizes!"
         }
       ]
     },
     "cta": {
-      "title": "cta title",
-      "subtitle": "cta subtitle",
-      "description": "cta description",
-      "button": "group button"
+      "title": "Community",
+      "subtitle": "",
+      "description": "Consider joining our ever growing discord server!",
+      "button": "Server Link"
     },
     "faq": {
-      "title": "faq title",
+      "title": "Frequently Asked Questions ",
       "items": [
         {
-          "question": "question",
-          "answer": "question answer"
+          "question": "Is there a map download?",
+          "answer": "No, because the map relies on the server's plugins to function.The map also keeps our project alive and we do not want to segment the community! Map is only given to people who knows what they are doing and they are contributing to the project one way or another.          "
         },
         {
-          "question": "question",
-          "answer": "question answer"
+          "question": "How can I let you guys know about issues?",
+          "answer": "For quick reports on survival, use ⁠#bug-reports, or if it regards a moderation issue please contact the staff team in ⁠#staff-ticket."
         },
         {
-          "question": "question",
-          "answer": "question answer"
+          "question": "I can't join the server?",
+          "answer": "The server does not allow cracked accounts access to it, so that may be one reason. Otherwise please open a ticket in #staff-contact with a screenshot of the error-message you are getting, staff will help out as best they can."
         },
         {
-          "question": "question",
-          "answer": "question answer"
+          "question": "Does this server has chat reporting on?",
+          "answer": "No, and never will be."
         },
         {
-          "question": "question",
-          "answer": "question answer"
+          "question": "I'm experiencing some connection issues?",
+          "answer": "Yes, that might be case for wifi and server being generally far. If it's something that everyone experiences please report it to staff."
         }
       ]
     },
     "rules": {
-      "title": "rules title",
-      "subtitle": "rules subtitle",
-      "description": "rules description",
-      "button": "rules page button"
+      "title": "",
+      "subtitle": "Server Rules",
+      "description": "Important rules to keep community clean",
+      "button": "Rules"
     },
     "support": {
-      "title": "support title",
-      "description": "support description",
-      "button": "support button"
+      "title": "Support the project!",
+      "description": "This is a Non-Profit project so every donation helps us out!",
+      "button": "Patreon"
     }
   },
   "Navbar": {
-    "home": "",
-    "about": "",
-    "contact": ""
+    "home": "ホーム",
+    "about": "約",
+    "contact": "お問い合わせ"
   }
 }

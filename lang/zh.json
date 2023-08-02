@@ -1,1 +1,80 @@
-{}
+{
+  "servername": "Gensokyo Reimagined",
+  "index": {
+    "header": {
+      "title": "",
+      "intro": "在 Minecraft 中创建东方MMO服务器",
+      "group": "加入我们的社群！",
+      "continue": "了解更多"
+    },
+    "feature": {
+      "title": "",
+      "subtitle": "服务器特征",
+      "items": [
+        {
+          "name": "自定义生物",
+          "description": "我们有自定义的东方主题生物与 0 个模组！"
+        },
+        {
+          "name": "东方类职业",
+          "description": "每个职业都有独特的游戏玩法，鼓励玩家去尝试!"
+        },
+        {
+          "name": "故事任务",
+          "description": "我们有简单而广泛的任务线，给玩家带来巨大的奖励"
+        },
+        {
+          "name": "假日活动",
+          "description": "在每个季节我们都会举办活动与限时奖品！"
+        }
+      ]
+    },
+    "cta": {
+      "title": "社群",
+      "subtitle": "",
+      "description": "考虑加入我们不断扩大的Discord服务器！",
+      "button": "Discord服务器链接"
+    },
+    "faq": {
+      "title": "常见问题 ",
+      "items": [
+        {
+          "question": "是否开放地图下载？",
+          "answer": "不，因为地图依赖于服务器的插件来运行。地图也让我们的项目保持活力，我们不想分割社区!地图只给那些知道自己在做什么的人，他们以不同的方式为项目做出贡献。          "
+        },
+        {
+          "question": "我该怎么让你们知道有问题呢?",
+          "answer": "如果需要快速报告生存问题，请使用 #bug-reports 频道；如果涉及管理问题，请在 #staff-ticket 频道联系我们的管理团队。"
+        },
+        {
+          "question": "我无法加入服务器？",
+          "answer": "该服务器不允许使用盗版（离线）账户进行访问，这可能是其中一个原因。否则，请在 #staff-contact 频道中打开一个工单，并附上您收到的错误信息的截图，我们的工作人员会尽力帮助您解决问题。"
+        },
+        {
+          "question": "这个服务器上有聊天举报吗?",
+          "answer": "永远不会。"
+        },
+        {
+          "question": "我遇到了一些连接问题?",
+          "answer": "是的，这可能是您的网络地理位置和服务器相距较远的情况。如果每个人都出现的类似问题，请报告给管理团队。"
+        }
+      ]
+    },
+    "rules": {
+      "title": "",
+      "subtitle": "服务器规则",
+      "description": "保持社区环境的重要规则",
+      "button": "规则"
+    },
+    "support": {
+      "title": "支持此项目!",
+      "description": "这是一个非盈利项目，所以每次捐赠都能帮助我们！",
+      "button": "Patreon"
+    }
+  },
+  "Navbar": {
+    "home": "首页",
+    "about": "关于",
+    "contact": "联系我们"
+  }
+}
