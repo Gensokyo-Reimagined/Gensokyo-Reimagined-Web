@@ -147,6 +147,11 @@ export default {
           name: "日本語",
           flag: "twa-flag-japan"
         },
+        {
+          lang: "zh",
+          name: "简体中文",
+          flag: "twa-flag-china"
+        },
       ]
     };
   },
