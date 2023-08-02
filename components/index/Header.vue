@@ -46,10 +46,46 @@
       </div>
     </div>
     <div class="pt-16 lg:absolute lg:inset-y-0 lg:right-0 w-full lg:blur-sm">
-      <nuxt-img class="object-cover w-full h-56 sm:h-72 md:h-96 lg:w-full lg:h-full" :src="appConfig.IndexHeaderImg" />
+      <swiper class="w-full h-56 sm:h-72 md:h-96 lg:w-full lg:h-full" :slidesPerView="1" :loop="true" :autoplay="{
+        delay: changeTime,
+        disableOnInteraction: false,
+      }" :modules="modules">
+        <swiper-slide class="transition-opacity ease-in-out" v-for="currentImageUrl in imageUrls" :key="currentImageUrl">
+          <img class="w-full object-cover" :src="currentImageUrl" />
+        </swiper-slide>
+      </swiper>
+
     </div>
   </div>
 </template>
-<script setup>
-const appConfig = useAppConfig()
+<script>
+// Import Swiper Vue.js components
+import { Swiper, SwiperSlide } from 'swiper/vue';
+
+// Import Swiper styles
+import 'swiper/css';
+
+import { Autoplay } from 'swiper/modules';
+
+export default {
+  components: {
+    Swiper,
+    SwiperSlide,
+  },
+  setup () {
+    const appConfig = useAppConfig()
+
+    const state = reactive({
+      appConfig: appConfig,
+    })
+
+    return { state, modules: [Autoplay], }
+  },
+  data () {
+    return {
+      imageUrls: this.state.appConfig.IndexHeaderImg,
+      changeTime: this.state.appConfig.IndexHeaderImgChangeTime,
+    };
+  }
+}
 </script>
