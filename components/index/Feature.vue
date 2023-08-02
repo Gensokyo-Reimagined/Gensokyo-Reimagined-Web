@@ -1,5 +1,5 @@
 <template>
-  <div class="py-12  bg-[var(--md-sys-color-background)]" id="features">
+  <div class="py-12 bg-[var(--md-sys-color-background)]" id="features">
     <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
       <div class="lg:text-center">
         <h2 class="text-base font-semibold tracking-wide text-[var(--md-sys-color-primary)] uppercase">
@@ -9,24 +9,26 @@
           class="mt-2 text-3xl font-extrabold leading-8 tracking-tight text-[var(--md-sys-color-on-background)] sm:text-4xl">
           {{ $t('index.feature.subtitle') }}
         </p>
-        <p class="max-w-2xl mt-4 text-xl text-[var(--md-sys-color-outline)] lg:mx-auto">
-        </p>
+        <p class="max-w-2xl mt-4 text-xl text-[var(--md-sys-color-outline)] lg:mx-auto"></p>
       </div>
       <div class="mt-10">
         <dl class="space-y-10 md:space-y-0 md:grid md:grid-cols-2 md:gap-x-8 md:gap-y-10">
-          <div v-for="feature in feature" :key="feature.name" class="relative">
+          <div v-for="feature in feature" :key="feature.name" class="relative flex flex-col">
             <dt>
               <div
-                class="absolute flex items-center justify-center w-12 h-12 text-[var(--md-sys-color-on-tertiary-container)] bg-[var(--md-sys-color-tertiary-container)] rounded-md ">
+                class="absolute flex items-center justify-center w-12 h-12 text-[var(--md-sys-color-on-tertiary-container)] bg-[var(--md-sys-color-tertiary-container)] rounded-md">
                 <i :class="feature.icon"></i>
               </div>
-              <p class="ml-16 text-lg font-medium leading-6 text-[var(--md-sys-color-on-background)]">
-                {{ $t(feature.name) }}
-              </p>
+              <p class="ml-16 text-lg font-medium leading-6 text-[var(--md-sys-color-on-background)]"> {{ $t(feature.name)
+              }} </p>
             </dt>
             <dd class="mt-2 ml-16 text-base text-[var(--md-sys-color-outline)]">
               {{ $t(feature.description) }}
             </dd>
+            <div class="mt-auto pt-5 m-5">
+              <nuxt-img class="rounded-xl" :src="feature.img"></nuxt-img>
+            </div>
+
           </div>
         </dl>
       </div>
@@ -39,36 +41,39 @@ export default {
     const appConfig = useAppConfig()
 
     const state = reactive({
-      appConfig: appConfig
+      appConfig: appConfig,
     })
 
     return { state }
   },
   data () {
     return {
-      feature:
-        [{
-          name:
-            this.$t('index.feature.items[0].name'),
+      feature: [
+        {
+          name: this.$t('index.feature.items[0].name'),
           description: this.$t('index.feature.items[0].description'),
           icon: this.state.appConfig.IndexFeatureIcon[0],
+          img: this.state.appConfig.IndexFeatureImg[0],
         },
         {
           name: this.$t('index.feature.items[1].name'),
           description: this.$t('index.feature.items[1].description'),
           icon: this.state.appConfig.IndexFeatureIcon[1],
+          img: this.state.appConfig.IndexFeatureImg[1],
         },
         {
           name: this.$t('index.feature.items[2].name'),
           description: this.$t('index.feature.items[2].description'),
           icon: this.state.appConfig.IndexFeatureIcon[2],
+          img: this.state.appConfig.IndexFeatureImg[2],
         },
         {
           name: this.$t('index.feature.items[3].name'),
           description: this.$t('index.feature.items[3].description'),
           icon: this.state.appConfig.IndexFeatureIcon[3],
+          img: this.state.appConfig.IndexFeatureImg[3],
         },
-        ],
+      ],
     }
   },
 }

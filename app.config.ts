@@ -8,8 +8,18 @@ export default defineAppConfig({
     'fa-solid fa-circle-info',
     'fa-solid fa-circle-info',
   ],
+  //main page -> Feature Four content Img, The method used is similar to that of IndexHeaderImg
+  IndexFeatureImg: [
+    '/img/main_min.png',
+    '/img/main_min.png',
+    '/img/main_min.png',
+    '/img/main_min.png',
+  ],
   //main page -> cta Component on the right of the picture. The method used is similar to that of IndexHeaderImg
   IndexCtaImg: '/img/discord-screenshot.png',
-  //main page -> rules Component on the left of the picture. The method used is similar to that of IndexHeaderImg
   IndexRulesImg: '/img/minecraft-bookshelf.jpg',
+  //Links in Navbar support all url formats
+  NavBarLinkAbout: '/',
+  NavBarLinkWiki: '/',
+  NavBarLinkGithub: 'https://github.com/Gensokyo-Reimagined',
 })

@@ -12,14 +12,14 @@
               class="px-3 py-2 text-[var(--md-sys-color-on-background)] hover:text-[var(--md-sys-color-on-secondary-container)] font-medium">
               {{ $t('Navbar.home') }}
             </nuxt-link>
-            <nuxt-link to="#"
+            <a :href="appConfig.NavBarLinkAbout"
               class="px-3 py-2 text-[var(--md-sys-color-on-background)] hover:text-[var(--md-sys-color-on-secondary-container)] font-medium">
               {{ $t('Navbar.about') }}
-            </nuxt-link>
-            <nuxt-link to="#"
+            </a>
+            <a :href="appConfig.NavBarLinkWiki"
               class="px-3 py-2 text-[var(--md-sys-color-on-background)] hover:text-[var(--md-sys-color-on-secondary-container)] font-medium">
-              {{ $t('Navbar.contact') }}
-            </nuxt-link>
+              {{ $t('Navbar.wiki') }}
+            </a>
           </div>
         </div>
         <div class="hidden sm:flex sm:items-center sm:ml-6 sm:space-x-4">
@@ -50,6 +50,10 @@
             @click="toggleColorMode">
             <i :class="ColorButtonClass"></i>
           </button>
+          <a class="inline-flex items-center justify-center p-2 rounded-md text-[var(--md-sys-color-primary)] hover:text-[var(--md-sys-color-secondary)] hover:bg-[var(--md-sys-color-secondary-container)] focus:outline-none focus:[var(--md-sys-color-secondary-container)] focus:[var(--md-sys-color-secondary)]  "
+            :href="appConfig.NavBarLinkGithub">
+            <i class="fa-brands fa-github"></i>
+          </a>
         </div>
         <div class="-mr-2 flex items-center sm:hidden">
           <button @click="isMenuOpen = !isMenuOpen" type="button"
@@ -74,14 +78,14 @@
           class="block px-3 py-2 rounded-md text-base font-medium text-[var(--md-sys-color-on-background)] hover:text-[var(--md-sys-color-on-secondary-container)]">
           {{ $t('Navbar.home') }}
         </nuxt-link>
-        <nuxt-link to="#"
+        <a :href="appConfig.NavBarLinkAbout"
           class="block px-3 py-2 rounded-md text-base font-medium text-[var(--md-sys-color-on-background)] hover:text-[var(--md-sys-color-on-secondary-container)]">
           {{ $t('Navbar.about') }}
-        </nuxt-link>
-        <nuxt-link to="#"
+        </a>
+        <a :href="appConfig.NavBarLinkWiki"
           class="block px-3 py-2 rounded-md text-base font-medium text-[var(--md-sys-color-on-background)] hover:text-[var(--md-sys-color-on-secondary-container)]">
-          {{ $t('Navbar.contact') }}
-        </nuxt-link>
+          {{ $t('Navbar.wiki') }}
+        </a>
       </div>
       <div class="pt-4 pb-3 border-t border-gray-200">
         <div class="space-x-2 flex items-center px-5 justify-between">
@@ -112,6 +116,10 @@
             @click="toggleColorMode">
             <i :class="ColorButtonClass"></i>
           </button>
+          <a class="inline-flex items-center justify-center p-2 rounded-md text-[var(--md-sys-color-primary)] hover:text-[var(--md-sys-color-secondary)] hover:bg-[var(--md-sys-color-secondary-container)] focus:outline-none focus:[var(--md-sys-color-secondary-container)] focus:[var(--md-sys-color-secondary)]  "
+            :href="appConfig.NavBarLinkGithub">
+            <i class="fa-brands fa-github"></i>
+          </a>
         </div>
       </div>
     </div>
@@ -127,8 +135,10 @@ export default {
   },
   setup () {
     const switchLocalePath = useSwitchLocalePath()
+    const appConfig = useAppConfig()
     return {
-      switchLocalePath
+      switchLocalePath,
+      appConfig
     }
   },
   data () {

@@ -10,7 +10,8 @@
         </svg>-->
         <navbar>
           <main class="px-4 mx-auto mt-10 max-w-7xl sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28 z-[11] relative">
-            <div class="sm:text-center lg:text-left lg:bg-white/30 lg:backdrop-blur lg:p-5 lg:rounded-xl">
+            <div
+              class="sm:text-center lg:text-left lg:bg-white/30 lg:dark:bg-black/30 lg:backdrop-blur lg:p-5 lg:rounded-xl">
               <h1
                 class="text-4xl font-extrabold tracking-tight text-[var(--md-sys-color-on-background)] sm:text-5xl md:text-6xl">
                 <span class="block text-[var(--md-sys-color-primary)] xl:inline">
