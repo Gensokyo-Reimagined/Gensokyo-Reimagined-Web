@@ -16,10 +16,10 @@ export default defineAppConfig({
   ],
   //main page -> Feature Four content Img, The method used is similar to that of IndexHeaderImg
   IndexFeatureImg: [
-    '/img/main_min.png',
-    '/img/main_min.png',
-    '/img/main_min.png',
-    '/img/main_min.png',
+    '/img/mobs.jpg',
+    '/img/class.jpg',
+    '/img/quests.jpg',
+    '/img/seasons.jpg',
   ],
   //main page -> cta Component on the right of the picture. The method used is similar to that of IndexHeaderImg
   IndexCtaImg: '/img/discord-screenshot.png',
