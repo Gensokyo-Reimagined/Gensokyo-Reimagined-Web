@@ -8,9 +8,9 @@
       "continue": "了解更多"
     },
     "about": {
-      "title": "About Title",
-      "subtitle": "About Subtitle",
-      "description": "About Description,Support html tags"
+      "title": "About Us",
+      "subtitle": "Small explanation about the project!",
+      "description": "The Project started quite small initially with few people but as time went on project started to get some attraction and goals went bigger. Now we are creating playable version of Entirety of Touhou Universe with combining MMO and Survival Minecraft elements with requiring 0 mods to play on for maximum accessibility for everyone."
     },
     "feature": {
       "title": "",
@@ -29,8 +29,8 @@
           "description": "我们有简单而庞大的任务线，它们提供了丰厚的奖励"
         },
         {
-          "name": "季度活动",
-          "description": "每个季节，我们都会举办活动并颁发限时奖品！"
+          "name": "Weather Events",
+          "description": "Each day is different in some way with dynamic seasons!"
         }
       ]
     },
