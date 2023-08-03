@@ -7,6 +7,11 @@
       "group": "Join our Community!",
       "continue": "Learn more"
     },
+    "about": {
+      "title": "About Title",
+      "subtitle": "About Subtitle",
+      "description": "About Description,Support html tags"
+    },
     "feature": {
       "title": "",
       "subtitle": "Server Features",
