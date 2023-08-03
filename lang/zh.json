@@ -7,6 +7,11 @@
       "group": "加入我们的社群！",
       "continue": "了解更多"
     },
+    "about": {
+      "title": "About Title",
+      "subtitle": "About Subtitle",
+      "description": "About Description,Support html tags"
+    },
     "feature": {
       "title": "",
       "subtitle": "服务器特色",
