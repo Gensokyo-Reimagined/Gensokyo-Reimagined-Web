@@ -1,7 +1,7 @@
 <template>
   <seo-kit />
   <NuxtLayout>
-    <NuxtPage />
+    <NuxtPage class="bg-[var(--md-sys-color-background)]" />
   </NuxtLayout>
 </template>
 <script setup>

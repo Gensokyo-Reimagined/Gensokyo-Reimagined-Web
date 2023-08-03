@@ -1,5 +1,6 @@
 <template>
   <IndexHeader />
+  <IndexAbout />
   <IndexFeature />
   <IndexCta />
   <IndexFaq />
