@@ -38,7 +38,9 @@ export default defineNuxtConfig({
   },
   extends: ['nuxt-seo-kit'],
   css: ['@/assets/css/main.css'],
-
+  experimental: {
+    writeEarlyHints: false,
+  },
   runtimeConfig: {
     public: {
       siteUrl: process.env.NUXT_PUBLIC_SITE_URL || 'https://example.com',

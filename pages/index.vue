@@ -8,12 +8,9 @@
   <IndexSupport />
 </template>
 
-<script>
-export default {
-
-}
-useHead({
-  title: '',
+<script setup>
+useSeoMeta({
+  title: ''
 })
 </script>
 
