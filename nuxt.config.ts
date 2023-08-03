@@ -43,9 +43,9 @@ export default defineNuxtConfig({
   },
   runtimeConfig: {
     public: {
-      siteUrl: process.env.NUXT_PUBLIC_SITE_URL || 'https://example.com',
+      siteUrl: process.env.NUXT_PUBLIC_SITE_URL || 'https://gensokyoreimagined.net',
       siteName: 'Gensokyo Reimagined',
-      siteDescription: 'Welcome to my awesome site!',
+      siteDescription: 'Welcome to Gensokyo!',
       language: 'en', // prefer more explicit language codes like `en-AU` over `en`
     },
   },
