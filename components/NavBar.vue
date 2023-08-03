@@ -166,6 +166,7 @@ export default {
     };
   },
   methods: {
+
     toggleDropdown () {
       this.isDropdownOpen = !this.isDropdownOpen;
     },
