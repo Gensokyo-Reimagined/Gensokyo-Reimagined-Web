@@ -39,7 +39,7 @@ If you want to translate an existing language, please go to [crowdin](https://cr
 > [!NOTE]  
 > The badges data is cached and automatically updated once an hour.
 
-[![translation](https://badges.awesome-crowdin.com/translation-15098433-604479.png)](https://crowdin.com/project/gensokyo-reimagined-web)
+[![translation](https://badges.awesome-crowdin.com/translation-15098433-604479.png?v=1)](https://crowdin.com/project/gensokyo-reimagined-web)
 
 ## Config
 
@@ -73,7 +73,7 @@ In the repository, all you need to do is add a new language as follows in i18n o
   },
 ```
 
-Then you need to add the corresponding language to data() in `<script>` in `components/NavBar.vue` as follows
+Then you need to add the corresponding language to data() in `<script>` 在 `components/NavBar.vue` as follows
 
 ```json
 
