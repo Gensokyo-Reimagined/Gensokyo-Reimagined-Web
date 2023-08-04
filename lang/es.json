@@ -3,83 +3,83 @@
   "index": {
     "header": {
       "title": "",
-      "intro": "Creating a Touhou MMO in Minecraft",
-      "group": "Join our Community!",
-      "continue": "Learn more"
+      "intro": "Creando un MMO de Touhou en Minecraft",
+      "group": "¡Únete a nuestra comunidad!",
+      "continue": "Aprender más"
     },
     "about": {
-      "title": "About Us",
-      "subtitle": "Small explanation about the project!",
-      "description": "The Project started quite small initially with few people but as time went on project started to get some attraction and goals went bigger. Now we are creating playable version of Entirety of Touhou Universe with combining MMO and Survival Minecraft elements with requiring 0 mods to play on for maximum accessibility for everyone."
+      "title": "Quiénes somos",
+      "subtitle": "¡Breve explicación del proyecto!",
+      "description": "El proyecto inició siendo algo muy pequeño, con apenas un puñado de personas, pero con el tiempo fue cobrando fuerza y nuestras metas se hicieron más grandes. Ahora estamos creando una versión jugable de todo el universo de Touhou, combinando elementos de supervivencia de Minecraft y MMOs, sin mods y accesible para todos."
     },
     "feature": {
       "title": "",
-      "subtitle": "Server Features",
+      "subtitle": "Características del servidor",
       "items": [
         {
-          "name": "Custom Mobs",
-          "description": "We have custom Touhou themed mobs with 0 mods!"
+          "name": "Criaturas únicas",
+          "description": "Nuevas criaturas inspiradas en Touhou, ¡sin mods!"
         },
         {
-          "name": "Touhou Themed Classes",
-          "description": "Each class has unique gameplay to encourage players to experiement!"
+          "name": "Clases temáticas",
+          "description": "¡Todas con jugabilidad única para motivar la experimentación!"
         },
         {
-          "name": "Story Quests",
-          "description": "We have simple yet extensive quest lines with great rewards to players"
+          "name": "Misiones de historia",
+          "description": "Aventuras simples pero extensas, y con grandes recompensas"
         },
         {
-          "name": "Weather Events",
-          "description": "Each day is different in some way with dynamic seasons!"
+          "name": "Cambios de clima",
+          "description": "¡Cada día es diferente con las estaciones dinámicas!"
         }
       ]
     },
     "cta": {
-      "title": "Community",
+      "title": "Comunidad",
       "subtitle": "",
-      "description": "Consider joining our ever growing discord server!",
-      "button": "Server Link"
+      "description": "¡Anímate a unirte a nuestro servidor de Discord!",
+      "button": "Enlace al servidor"
     },
     "faq": {
-      "title": "Frequently Asked Questions ",
+      "title": "Preguntas frecuentes ",
       "items": [
         {
-          "question": "Is there a map download?",
-          "answer": "No, because the map relies on the server's plugins to function.The map also keeps our project alive and we do not want to segment the community! Map is only given to people who knows what they are doing and they are contributing to the project one way or another.          "
+          "question": "¿Puedo descargar el mapa?",
+          "answer": "No, el mapa depende de nuestros plugins para funcionar. Es también lo que mantiene nuestro proyecto vivo, ¡y no queremos dividir nuestra comunidad! Solo entregamos los archivos del mapa a quienes contribuyen al proyecto de una u otra manera.          "
         },
         {
-          "question": "How can I let you guys know about issues?",
-          "answer": "For quick reports on survival, use ⁠#bug-reports, or if it regards a moderation issue please contact the staff team in ⁠#staff-ticket."
+          "question": "¿Cómo puedo informar de un problema?",
+          "answer": "Si se relaciona a Survival, usa el canal #bug-reports. Si es un asunto de moderación, por favor contacta a nuestro equipo en #staff-ticket."
         },
         {
-          "question": "I can't join the server?",
-          "answer": "The server does not allow cracked accounts access to it, so that may be one reason. Otherwise please open a ticket in #staff-contact with a screenshot of the error-message you are getting, staff will help out as best they can."
+          "question": "¿Por qué no puedo entrar al servidor?",
+          "answer": "El servidor no permite el acceso a cuentas pirateadas, esa puede ser la razón. Si no, crea un ticket en #staff-ticket con una captura de pantalla del error que estás teniendo. Te ayudaremos lo mejor que podamos."
         },
         {
-          "question": "Does this server has chat reporting on?",
-          "answer": "No, and never will be."
+          "question": "¿Están activados los reportes de chat en este servidor?",
+          "answer": "No, y nunca lo estarán."
         },
         {
-          "question": "I'm experiencing some connection issues?",
-          "answer": "Yes, that might be case for wifi and server being generally far. If it's something that everyone experiences please report it to staff."
+          "question": "¿Por qué tengo problemas de conexión?",
+          "answer": "Puede ser por tu wifi, o porque estés geográficamente lejos del servidor. Si es algo que le está pasando a todos, avísanos."
         }
       ]
     },
     "rules": {
       "title": "",
-      "subtitle": "Server Rules",
-      "description": "Important rules to keep community clean",
-      "button": "Rules"
+      "subtitle": "Reglas del servidor",
+      "description": "Normas importantes para el bien de la comunidad",
+      "button": "Reglas"
     },
     "support": {
-      "title": "Support the project!",
-      "description": "This is a Non-Profit project so every donation helps us out!",
+      "title": "¡Apoya el proyecto!",
+      "description": "El proyecto es totalmente gratis, ¡pero apreciamos cualquier donación!",
       "button": "Patreon"
     }
   },
   "Navbar": {
-    "home": "home",
-    "about": "about",
+    "home": "inicio",
+    "about": "acerca de",
     "wiki": "wiki"
   }
 }
