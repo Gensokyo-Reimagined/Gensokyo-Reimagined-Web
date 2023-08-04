@@ -15,7 +15,7 @@
 </p>
 -->
 
-## Packages List
+## Packages List 📦
 
 The repository is using the packages in the list below
 
@@ -25,7 +25,7 @@ The repository is using the packages in the list below
 - [Seo-Kit](https://nuxt.com.cn/modules/seo-kit)
 - [Tailwind CSS](https://tailwindcss.nuxtjs.org/)
 
-## i18n
+## i18n 🌐
 
 If you want to add i18n, please go to discord or issue and we will add the corresponding language to the repository
 
@@ -34,14 +34,31 @@ If you want to translate an existing language, please go to [crowdin](https://cr
 > [!WARNING]  
 > Do not directly modify the contents of the lang folder except for en.json, as everything else is generated automatically
 
-### Translation in each language
+### Translation in each language 💬
 
 > [!NOTE]  
 > The badges data is cached and automatically updated once an hour.
 
 [![translation](https://badges.awesome-crowdin.com/translation-15098433-604479.png?v=1)](https://crowdin.com/project/gensokyo-reimagined-web)
 
-## Config
+### translator ✒️
+
+Many thanks to the following staff for their translation and proofreading
+
+- zh-CN: [@Afk-82](https://crowdin.com/profile/afk-82)
+- Ja:
+- cs:
+- de:
+- el:
+- es-ES:
+- fr:
+- pl:
+- ru:
+- tr:
+- uk:
+
+
+## Config 🔧
 
 > [!IMPORTANT]  
 > Starting here is written for developers and regular contributors can skip
