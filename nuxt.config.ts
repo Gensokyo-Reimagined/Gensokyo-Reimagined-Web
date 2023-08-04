@@ -26,6 +26,42 @@ export default defineNuxtConfig({
         code: 'zh',
         file: 'zh.json',
       },
+      {
+        code: 'es',
+        file: 'es.json',
+      },
+      {
+        code: 'fr',
+        file: 'fr.json',
+      },
+      {
+        code: 'de',
+        file: 'de.json',
+      },
+      {
+        code: 'pl',
+        file: 'pl.json',
+      },
+      {
+        code: 'el',
+        file: 'el.json',
+      },
+      {
+        code: 'ru',
+        file: 'ru.json',
+      },
+      {
+        code: 'tr',
+        file: 'tr.json',
+      },
+      {
+        code: 'uk',
+        file: 'uk.json',
+      },
+      {
+        code: 'cs',
+        file: 'cs.json',
+      },
     ],
     langDir: 'lang',
     defaultLocale: 'en',
@@ -43,7 +79,8 @@ export default defineNuxtConfig({
   },
   runtimeConfig: {
     public: {
-      siteUrl: process.env.NUXT_PUBLIC_SITE_URL || 'https://gensokyoreimagined.net',
+      siteUrl:
+        process.env.NUXT_PUBLIC_SITE_URL || 'https://gensokyoreimagined.net',
       siteName: 'Gensokyo Reimagined',
       siteDescription: 'Welcome to Gensokyo!',
       language: 'en', // prefer more explicit language codes like `en-AU` over `en`

@@ -162,6 +162,51 @@ export default {
           name: "简体中文",
           flag: "twa-flag-china"
         },
+        {
+          lang: "es",
+          name: "español",
+          flag: "twa-flag-spain"
+        },
+        {
+          lang: "fr",
+          name: "français",
+          flag: "twa-flag-france"
+        },
+        {
+          lang: "de",
+          name: "Deutsch",
+          flag: "twa-flag-germany"
+        },
+        {
+          lang: "pl",
+          name: "polski",
+          flag: "twa-flag-poland"
+        },
+        {
+          lang: "el",
+          name: "ελληνικά",
+          flag: "twa-flag-greece"
+        },
+        {
+          lang: "ru",
+          name: "русский",
+          flag: "twa-flag-russia"
+        },
+        {
+          lang: "tr",
+          name: "Türkçe",
+          flag: "twa-flag-turkey"
+        },
+        {
+          lang: "uk",
+          name: "українська",
+          flag: "twa-flag-ukraine"
+        },
+        {
+          lang: "cs",
+          name: "čeština",
+          flag: "twa-flag-czechia"
+        },
       ]
     };
   },
