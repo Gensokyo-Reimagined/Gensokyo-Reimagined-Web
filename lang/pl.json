@@ -78,8 +78,8 @@
     }
   },
   "Navbar": {
-    "home": "ホーム",
-    "about": "約",
+    "home": "home",
+    "about": "about",
     "wiki": "wiki"
   }
 }
