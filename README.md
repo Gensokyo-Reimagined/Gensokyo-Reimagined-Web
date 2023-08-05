@@ -39,7 +39,7 @@ If you want to translate an existing language, please go to [crowdin](https://cr
 > [!NOTE]  
 > The badges data is cached and automatically updated once an hour.
 
-[![translation](https://badges.awesome-crowdin.com/translation-15098433-604479.png?v=1)](https://crowdin.com/project/gensokyo-reimagined-web)
+[![translation](https://badges.awesome-crowdin.com/translation-15098433-604479.png?v=2)](https://crowdin.com/project/gensokyo-reimagined-web)
 
 ### translator ✒️
 
