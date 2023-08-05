@@ -50,7 +50,7 @@ Many thanks to the following staff for their translation and proofreading
 - cs:
 - de:
 - el:
-- es-ES:
+- es-ES: [@DanClypse](https://crowdin.com/profile/danclypse)
 - fr:
 - pl:
 - ru:
