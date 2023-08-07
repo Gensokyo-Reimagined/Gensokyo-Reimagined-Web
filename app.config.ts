@@ -15,7 +15,7 @@ export default defineAppConfig({
     'fa-solid fa-circle-info',
     'fa-solid fa-circle-info',
   ],
-  IndexAbobutImg: '/img/about_pic.jpg',
+  IndexAbobutImg: '/img/about_pic.webp',
   //main page -> Feature Four content Img, The method used is similar to that of IndexHeaderImg
   IndexFeatureImg: [
     '/img/mobs.webp',
