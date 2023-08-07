@@ -1,9 +1,9 @@
 export default defineAppConfig({
   //main page -> For the image on the right side of the page header, please put the corresponding image in public/img, and then fill in /img/1.png if the file name is 1.png
   IndexHeaderImg: [
-    '/img/main_min.png',
+    '/img/main_min.jpg',
     '/img/asura.jpg',
-    '/img/youkaimountain.png',
+    '/img/youkaimountain.jpg',
     '/img/sunflower.jpg',
   ],
   //Image switching time, in milliseconds
@@ -21,10 +21,10 @@ export default defineAppConfig({
     '/img/mobs.jpg',
     '/img/class.jpg',
     '/img/quests.jpg',
-    '/img/season.png',
+    '/img/season.jpg',
   ],
   //main page -> cta Component on the right of the picture. The method used is similar to that of IndexHeaderImg
-  IndexCtaImg: '/img/discord-screenshot.png',
+  IndexCtaImg: '/img/discord-screenshot.jpg',
   IndexRulesImg: '/img/minecraft-bookshelf.jpg',
   //Links in Navbar support all url formats
   NavBarLinkAbout: '/',
