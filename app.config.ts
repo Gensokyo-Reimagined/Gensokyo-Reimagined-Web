@@ -1,10 +1,10 @@
 export default defineAppConfig({
   //main page -> For the image on the right side of the page header, please put the corresponding image in public/img, and then fill in /img/1.png if the file name is 1.png
   IndexHeaderImg: [
-    '/img/main_min.jpg',
-    '/img/asura.jpg',
-    '/img/youkaimountain.jpg',
-    '/img/sunflower.jpg',
+    '/img/main_min.webp',
+    '/img/asura.webp',
+    '/img/youkaimountain.webp',
+    '/img/sunflower.webp',
   ],
   //Image switching time, in milliseconds
   IndexHeaderImgChangeTime: '5000',
@@ -18,14 +18,14 @@ export default defineAppConfig({
   IndexAbobutImg: '/img/about_pic.jpg',
   //main page -> Feature Four content Img, The method used is similar to that of IndexHeaderImg
   IndexFeatureImg: [
-    '/img/mobs.jpg',
-    '/img/class.jpg',
-    '/img/quests.jpg',
-    '/img/season.jpg',
+    '/img/mobs.webp',
+    '/img/class.webp',
+    '/img/quests.webp',
+    '/img/season.webp',
   ],
   //main page -> cta Component on the right of the picture. The method used is similar to that of IndexHeaderImg
-  IndexCtaImg: '/img/discord-screenshot.jpg',
-  IndexRulesImg: '/img/minecraft-bookshelf.jpg',
+  IndexCtaImg: '/img/discord-screenshot.webp',
+  IndexRulesImg: '/img/minecraft-bookshelf.webp',
   //Links in Navbar support all url formats
   NavBarLinkAbout: '/',
   NavBarLinkWiki: '/',
