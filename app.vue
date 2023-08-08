@@ -1,5 +1,7 @@
 <template>
   <seo-kit />
+  <!--<OgImageScreenshot />-->
+  <OgImageStatic />
   <NuxtLayout>
     <NuxtPage class="bg-[var(--md-sys-color-background)]" />
   </NuxtLayout>
