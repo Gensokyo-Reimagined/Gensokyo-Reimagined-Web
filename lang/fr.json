@@ -3,26 +3,26 @@
   "index": {
     "header": {
       "title": "",
-      "intro": "Creating a Touhou MMO in Minecraft",
-      "group": "Join our Community!",
-      "continue": "Learn more"
+      "intro": "Créer un MMO Touhou dans Minecraft",
+      "group": "Rejoignez notre communauté !",
+      "continue": "En savoir plus"
     },
     "about": {
-      "title": "About Us",
-      "subtitle": "Small explanation about the project!",
-      "description": "The Project started quite small initially with few people but as time went on project started to get some attraction and goals went bigger. Now we are creating playable version of Entirety of Touhou Universe with combining MMO and Survival Minecraft elements with requiring 0 mods to play on for maximum accessibility for everyone."
+      "title": "À propos",
+      "subtitle": "De petite explication sur le projet !",
+      "description": "Le projet a commencé plutôt niche dans un premier temps avec peu de personnes mais au fur et à mesure nous avons obtenu de l'attrait et les objectifs ont grandi. Maintenant nous sommes en train de créer une version avec un aspect MMO et Survie sur l'univers de Touhou jouable entierement sans aucun mods pour jouer pour une accessibilité maximale pour tout le monde."
     },
     "feature": {
       "title": "",
-      "subtitle": "Server Features",
+      "subtitle": "Caractéristiques du serveur",
       "items": [
         {
-          "name": "Custom Mobs",
+          "name": "Mobs personnalisés",
           "description": "We have custom Touhou themed mobs with 0 mods!"
         },
         {
           "name": "Touhou Themed Classes",
-          "description": "Each class has unique gameplay to encourage players to experiement!"
+          "description": "Each class has unique gameplay to encourage players to experiment!"
         },
         {
           "name": "Story Quests",
