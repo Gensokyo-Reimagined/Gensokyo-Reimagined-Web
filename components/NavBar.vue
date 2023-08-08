@@ -4,8 +4,10 @@
       <div class="flex justify-between h-16">
         <div class="flex">
           <div class="flex-shrink-0 flex items-center">
-            <img class="block lg:hidden h-8 w-auto" src="/logo.svg" alt="Logo">
-            <img class="hidden lg:block h-8 w-auto" src="/logo.svg" alt="Logo">
+            <nuxt-img class="block lg:hidden h-8 w-auto" src="/logo.svg" alt="Logo" quality="80" loading="lazy"
+              sizes="sm:100vw md:50vw lg:400px" />
+            <nuxt-img class="hidden lg:block h-8 w-auto" src="/logo.svg" alt="Logo" quality="80" loading="lazy"
+              sizes="sm:100vw md:50vw lg:400px" />
           </div>
           <div class="hidden sm:ml-6 sm:flex sm:space-x-8 items-center">
             <nuxt-link to="#"

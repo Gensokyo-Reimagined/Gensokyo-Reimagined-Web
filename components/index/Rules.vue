@@ -1,7 +1,8 @@
 <template>
   <div class="relative bg-[var(--md-sys-color-on-secondary-container)]">
     <div class="h-56 bg- bg-[var(--md-sys-color-background)] sm:h-72 md:absolute md:left-0 md:h-full md:w-1/2">
-      <nuxt-img class="object-cover w-full h-full" :src="appConfig.IndexRulesImg" />
+      <nuxt-img class="object-cover w-full h-full" :src="appConfig.IndexRulesImg" quality="80" loading="lazy"
+        sizes="sm:100vw md:50vw lg:400px" />
     </div>
     <div class="relative px-4 py-12 mx-auto max-w-7xl sm:px-6 lg:px-8 lg:py-16">
       <div class="md:ml-auto md:w-1/2 md:pl-10">

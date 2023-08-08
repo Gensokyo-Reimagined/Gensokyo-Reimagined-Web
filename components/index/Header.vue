@@ -51,7 +51,8 @@
         disableOnInteraction: false,
       }" :modules="modules">
         <swiper-slide class="transition-opacity ease-in-out" v-for="currentImageUrl in imageUrls" :key="currentImageUrl">
-          <img class="w-full object-cover" :src="currentImageUrl" />
+          <nuxt-img class="w-full object-cover" :src="currentImageUrl" quality="80" loading="lazy"
+            sizes="sm:100vw md:50vw lg:400px" />
         </swiper-slide>
       </swiper>
 
