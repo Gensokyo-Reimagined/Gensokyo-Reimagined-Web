@@ -13,11 +13,15 @@ useHead({
       href: '/favicon.ico'
     },
     {
-      rel: 'stylesheet',
+      rel: 'preload',
+      as: 'style',
+      onload: 'this.onload=null;this.rel="stylesheet"',
       href: 'https://cdn.staticaly.com/gh/HoubunSOP/font-awesome-6/main/css/all.min.css'
     },
     {
-      rel: 'stylesheet',
+      rel: 'preload',
+      as: 'style',
+      onload: 'this.onload=null;this.rel="stylesheet"',
       href: 'https://fastly.jsdelivr.net/gh/SebastianAigner/twemoji-amazing/twemoji-amazing.css'
     }
   ]
