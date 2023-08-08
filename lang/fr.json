@@ -3,7 +3,7 @@
   "index": {
     "header": {
       "title": "",
-      "intro": "Créer un MMO Touhou dans Minecraft",
+      "intro": "Un MMO Touhou dans Minecraft",
       "group": "Rejoignez notre communauté !",
       "continue": "En savoir plus"
     },
@@ -18,68 +18,68 @@
       "items": [
         {
           "name": "Mobs personnalisés",
-          "description": "We have custom Touhou themed mobs with 0 mods!"
+          "description": "Nous avons des mobs personnalisés sur le thème de Touhou en utilisant 0 mods !"
         },
         {
-          "name": "Touhou Themed Classes",
-          "description": "Each class has unique gameplay to encourage players to experiment!"
+          "name": "Classes sur le thème de Touhou",
+          "description": "Chaque classe a un gameplay unique pour encourager les joueurs à expérimenter !"
         },
         {
-          "name": "Story Quests",
-          "description": "We have simple yet extensive quest lines with great rewards to players"
+          "name": "Quête Principales",
+          "description": "Nous avons des quêtes simples et étendues avec de grandes récompenses pour les joueurs"
         },
         {
-          "name": "Weather Events",
-          "description": "Each day is different in some way with dynamic seasons!"
+          "name": "Événements météorologiques",
+          "description": "Chaque jour est différent d'une certaine manière avec des saisons dynamiques!"
         }
       ]
     },
     "cta": {
-      "title": "Community",
+      "title": "Communauté",
       "subtitle": "",
-      "description": "Consider joining our ever growing discord server!",
-      "button": "Server Link"
+      "description": "Envisagez de rejoindre notre serveur discord !",
+      "button": "Lien du serveur"
     },
     "faq": {
-      "title": "Frequently Asked Questions ",
+      "title": "Questions fréquemment posées (FAQ)",
       "items": [
         {
-          "question": "Is there a map download?",
-          "answer": "No, because the map relies on the server's plugins to function.The map also keeps our project alive and we do not want to segment the community! Map is only given to people who knows what they are doing and they are contributing to the project one way or another.          "
+          "question": "Y a-t-il un téléchargement de carte ?",
+          "answer": "Non, parce que la carte repose sur les plugins du serveur pour fonctionner. La map maintient également notre projet en vie et nous ne voulons pas fractionner la communauté ! La map n'est donnée qu'aux personnes qui savent ce qu'elles font et qui contribuent au projet d'une manière ou d'une autre.          "
         },
         {
-          "question": "How can I let you guys know about issues?",
-          "answer": "For quick reports on survival, use ⁠#bug-reports, or if it regards a moderation issue please contact the staff team in ⁠#staff-ticket."
+          "question": "Comment puis-je vous informer sur les problèmes ?",
+          "answer": "Pour des petits bugs sur la survie, utilisez #bug-reports, ou si cela concerne un problème de modération, veuillez contacter l'équipe du personnel dans #staff-ticket."
         },
         {
-          "question": "I can't join the server?",
-          "answer": "The server does not allow cracked accounts access to it, so that may be one reason. Otherwise please open a ticket in #staff-contact with a screenshot of the error-message you are getting, staff will help out as best they can."
+          "question": "Je n'arrive pas à rejoindre le serveur ?",
+          "answer": "Le serveur n'autorise pas l'accès à des comptes craqués, ce qui peut être une des raisons. Sinon, veuillez ouvrir un ticket dans #staff-contact avec une capture d'écran du message d'erreur que vous recevez, le personnel vous aidera du mieux qu'il peut."
         },
         {
-          "question": "Does this server has chat reporting on?",
-          "answer": "No, and never will be."
+          "question": "Est-ce que ce serveur a un \"chat report\" (rapport de tchat)?",
+          "answer": "Non, et jamais il n'en aura."
         },
         {
-          "question": "I'm experiencing some connection issues?",
-          "answer": "Yes, that might be case for wifi and server being generally far. If it's something that everyone experiences please report it to staff."
+          "question": "Je rencontre des problèmes de connexion ?",
+          "answer": "Oui, cela pourrait être le cas pour le wifi et le serveur étant généralement très loin. Si c'est quelque chose que tout le monde expérimente, s'il vous plaît signaler au personnel."
         }
       ]
     },
     "rules": {
       "title": "",
-      "subtitle": "Server Rules",
-      "description": "Important rules to keep community clean",
-      "button": "Rules"
+      "subtitle": "Règles du serveur",
+      "description": "Règles importantes pour garder une communauté propre",
+      "button": "Règles"
     },
     "support": {
-      "title": "Support the project!",
-      "description": "This is a Non-Profit project so every donation helps us out!",
+      "title": "Soutenez ce projet!",
+      "description": "C'est un projet à but non lucratif, donc chaque don nous aide !",
       "button": "Patreon"
     }
   },
   "Navbar": {
-    "home": "home",
-    "about": "about",
-    "wiki": "wiki"
+    "home": "Accueil",
+    "about": "À propos",
+    "wiki": "Wiki"
   }
 }
