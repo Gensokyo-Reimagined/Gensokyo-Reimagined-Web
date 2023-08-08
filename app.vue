@@ -1,12 +1,12 @@
 <template>
   <seo-kit />
   <!--<OgImageScreenshot />-->
-  <OgImageStatic />
   <NuxtLayout>
     <NuxtPage class="bg-[var(--md-sys-color-background)]" />
   </NuxtLayout>
 </template>
 <script setup>
+const runtimeConfig = useRuntimeConfig()
 useHead({
   link: [
     {
@@ -26,6 +26,12 @@ useHead({
       onload: 'this.onload=null;this.rel="stylesheet"',
       href: '/css/twemoji-flags.min.css'
     }
-  ]
+  ],
+  meta: [
+    {
+      property: 'og:image',
+      content: runtimeConfig.public.siteImage,
+    },
+  ],
 })
 </script>
