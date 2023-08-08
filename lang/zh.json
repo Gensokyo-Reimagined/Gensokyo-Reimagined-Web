@@ -22,7 +22,7 @@
         },
         {
           "name": "东方风职业",
-          "description": "Each class has unique gameplay to encourage players to experiment!"
+          "description": "每个职业都有其独特的玩法以鼓励玩家去积极尝试！"
         },
         {
           "name": "故事任务",
@@ -69,7 +69,7 @@
       "title": "",
       "subtitle": "服务器规则",
       "description": "维护社区环境的重要规则",
-      "button": "规则"
+      "button": "查看规则"
     },
     "support": {
       "title": "支持此项目！",
