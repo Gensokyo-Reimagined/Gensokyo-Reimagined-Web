@@ -17,7 +17,7 @@
         </div>
       </div>
       <div class="order-first mx-auto md:ml-auto md:mb-auto md:mx-0 md:order-last md:self-endS max-w-xl">
-        <img :src="appConfig.IndexAbobutImg" class="rounded-xl">
+        <nuxt-img :src="appConfig.IndexAbobutImg" class="rounded-xl" quality="80" loading="lazy" />
       </div>
     </div>
   </div>

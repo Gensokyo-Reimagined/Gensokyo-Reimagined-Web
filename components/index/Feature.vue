@@ -27,7 +27,7 @@
             </dd>
             <div class="mt-auto pt-5 m-5">
               <nuxt-img class="rounded-xl" :src="feature.img" quality="80" loading="lazy"
-                sizes="sm:100vw md:50vw lg:400px" />
+                sizes="sm:100vw md:50vw lg:400px" width="400" height="212" />
             </div>
 
           </div>

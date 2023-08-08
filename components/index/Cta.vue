@@ -26,7 +26,7 @@
           <nuxt-img
             class="object-cover object-left-top transform translate-x-6 translate-y-6 rounded-md sm:translate-x-16 lg:translate-y-20"
             :src="appConfig.IndexCtaImg" alt="App screenshot" quality="80" loading="lazy"
-            sizes="sm:100vw md:50vw lg:400px" />
+            sizes="sm:100vw md:50vw lg:400px" width="400" height="300" />
         </div>
       </div>
     </div>

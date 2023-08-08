@@ -22,7 +22,7 @@ useHead({
       rel: 'preload',
       as: 'style',
       onload: 'this.onload=null;this.rel="stylesheet"',
-      href: 'https://fastly.jsdelivr.net/gh/SebastianAigner/twemoji-amazing/twemoji-amazing.css'
+      href: '/css/twemoji-flags.min.css'
     }
   ]
 })
