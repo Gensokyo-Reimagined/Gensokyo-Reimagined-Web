@@ -3,83 +3,83 @@
   "index": {
     "header": {
       "title": "",
-      "intro": "Creating a Touhou MMO in Minecraft",
-      "group": "Join our Community!",
-      "continue": "Learn more"
+      "intro": "Создаём ММО по Touhou в Minecraft",
+      "group": "Наш Discord сервер!",
+      "continue": "Узнать больше"
     },
     "about": {
-      "title": "About Us",
-      "subtitle": "Small explanation about the project!",
-      "description": "The Project started quite small initially with few people but as time went on project started to get some attraction and goals went bigger. Now we are creating playable version of Entirety of Touhou Universe with combining MMO and Survival Minecraft elements with requiring 0 mods to play on for maximum accessibility for everyone."
+      "title": "О проекте",
+      "subtitle": "Немного информации о сервере!",
+      "description": "Наш проект начинал с малого, изначально всего пара человек занималось им. Но по прошествию времени мы стали получать больше внимания, что сделало наши цели более значительными. Сейчас мы создаём играбельную версию вселенной Touhou, смешивая это с ММО и стандартным выживанием в Minecraft, вместе с тем заботясь о том, чтобы сервер работал без модов, что необходимо для максимальной простоты захода на него."
     },
     "feature": {
       "title": "",
-      "subtitle": "Server Features",
+      "subtitle": "Особенности сервера",
       "items": [
         {
-          "name": "Custom Mobs",
-          "description": "We have custom Touhou themed mobs with 0 mods!"
+          "name": "Собственные мобы",
+          "description": "У нас есть уникальные мобы, сделанные в тематике Touhou, без модов!"
         },
         {
-          "name": "Touhou Themed Classes",
-          "description": "Each class has unique gameplay to encourage players to experiement!"
+          "name": "Классы основанные на Touhou",
+          "description": "У каждого класса свой уникальный геймплей, что открывает перед игроками поле для экспериментов!"
         },
         {
-          "name": "Story Quests",
-          "description": "We have simple yet extensive quest lines with great rewards to players"
+          "name": "Задания и истории",
+          "description": "У нас есть простые, но развёрнутые последовательности заданий со значительной наградой за них"
         },
         {
-          "name": "Weather Events",
-          "description": "Each day is different in some way with dynamic seasons!"
+          "name": "Погодные явления",
+          "description": "Отличия в каждом дне за счёт изменяющихся времён года!"
         }
       ]
     },
     "cta": {
-      "title": "Community",
+      "title": "Сообщество",
       "subtitle": "",
-      "description": "Consider joining our ever growing discord server!",
-      "button": "Server Link"
+      "description": "Присоединяйтесь к нашему постоянно растущему Discord серверу!",
+      "button": "Ссылка на сервер"
     },
     "faq": {
-      "title": "Frequently Asked Questions ",
+      "title": "Часто Задаваемые Вопросы ",
       "items": [
         {
-          "question": "Is there a map download?",
-          "answer": "No, because the map relies on the server's plugins to function.The map also keeps our project alive and we do not want to segment the community! Map is only given to people who knows what they are doing and they are contributing to the project one way or another.          "
+          "question": "Можно ли загрузить карту сервера?",
+          "answer": "Нет, потому что для её работы карты необходимы плагины сервера. Карта также позволяет нашему проекту жить и мы не хотим дробить наше сообщество! Карта даётся только тем, кто знает, что делает и вносит свой клан в проект тем или иным способом.          "
         },
         {
-          "question": "How can I let you guys know about issues?",
-          "answer": "For quick reports on survival, use ⁠#bug-reports, or if it regards a moderation issue please contact the staff team in ⁠#staff-ticket."
+          "question": "Как я могу рассказать вам о проблеме?",
+          "answer": "Для быстрых репортов о багах в выживании используйте #bug-reports или, если это проблема с модерацией, проинформируйте администрацию об этом с помощью #staff-ticket."
         },
         {
-          "question": "I can't join the server?",
-          "answer": "The server does not allow cracked accounts access to it, so that may be one reason. Otherwise please open a ticket in #staff-contact with a screenshot of the error-message you are getting, staff will help out as best they can."
+          "question": "Почему я не могу зайти на сервер?",
+          "answer": "На сервер невозможно зайти со взломанных аккаунтов, что может и быть проблемой. В ином случае свяжитесь с администрацией с помощью #stuff-ticket со скриншотом ошибки, которую вы получили, администрация поможет вам настолько насколько они могут."
         },
         {
-          "question": "Does this server has chat reporting on?",
-          "answer": "No, and never will be."
+          "question": "Есть ли на сервере чат репорты?",
+          "answer": "Нет и никогда не будет."
         },
         {
-          "question": "I'm experiencing some connection issues?",
-          "answer": "Yes, that might be case for wifi and server being generally far. If it's something that everyone experiences please report it to staff."
+          "question": "Что делать, если у меня проблемы с соединением?",
+          "answer": "Это может быть вызвано вашим интернетом или тем, что сервер относится далеко. Если подобные проблемы у всех на сервере - проинформируйте администрацию."
         }
       ]
     },
     "rules": {
       "title": "",
-      "subtitle": "Server Rules",
-      "description": "Important rules to keep community clean",
-      "button": "Rules"
+      "subtitle": "Правила сервера",
+      "description": "Необходимые правила для чистоты сообщества",
+      "button": "Правила"
     },
     "support": {
-      "title": "Support the project!",
-      "description": "This is a Non-Profit project so every donation helps us out!",
+      "title": "Поддержите проект!",
+      "description": "Наш проект некоммерческий, поэтому каждое пожертвование помогает нам!",
       "button": "Patreon"
     }
   },
   "Navbar": {
-    "home": "home",
-    "about": "about",
-    "wiki": "wiki"
+    "home": "Домой",
+    "about": "О нас",
+    "wiki": "Вики"
   }
 }
