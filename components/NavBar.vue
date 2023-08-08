@@ -209,6 +209,11 @@ export default {
           name: "čeština",
           flag: "twa-flag-czechia"
         },
+        {
+          lang: "it",
+          name: "italiano",
+          flag: "twa-flag-italy"
+        },
       ]
     };
   },
