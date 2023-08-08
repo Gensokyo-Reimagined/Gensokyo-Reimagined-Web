@@ -22,7 +22,7 @@
       </div>
       <div class="mt-8 md:mt-0 md:order-1">
         <p class="text-base text-center text-gray-400">
-          &copy; 2020-2022 Gensokyo-Reimagined —
+          &copy; 2022-2023 Gensokyo-Reimagined —
           <a href="https://github.com/Gensokyo-Reimagined" target="_blank">@Gensokyo-Reimagined</a>
         </p>
       </div>
