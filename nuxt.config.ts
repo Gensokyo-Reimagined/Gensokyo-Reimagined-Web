@@ -84,6 +84,7 @@ export default defineNuxtConfig({
         process.env.NUXT_PUBLIC_SITE_URL || 'https://gensokyoreimagined.net',
       siteName: 'Gensokyo Reimagined',
       siteDescription: 'Welcome to Gensokyo!',
+      siteImage: (process.env.NUXT_PUBLIC_SITE_URL || 'https://gensokyoreimagined.net')+'/public/img/about_pic_embed.webp',
       language: 'en', // prefer more explicit language codes like `en-AU` over `en`
     },
   },
