@@ -18,7 +18,7 @@ useHead({
       rel: 'preload',
       as: 'style',
       onload: 'this.onload=null;this.rel="stylesheet"',
-      href: 'https://cdn.staticaly.com/gh/HoubunSOP/font-awesome-6/main/css/all.min.css'
+      href: 'https://cdn.bootcdn.net/ajax/libs/font-awesome/6.4.0/css/all.min.css'
     },
     {
       rel: 'preload',

@@ -30,7 +30,7 @@
                   <a href="https://discord.gg/U9fZSJJcte" target="_blank"
                     class="flex items-center justify-center w-full px-8 py-3 text-base font-medium text-[var(--md-sys-color-background)] bg-[var(--md-sys-color-primary)] border border-transparent rounded-md hover:bg-[var(--md-sys-color-secondary)] md:py-4 md:text-lg md:px-10">
                     {{ $t('index.header.group') }}
-                    <i class="fa-duotone fa-arrow-up-right-from-square ml-3 -mr-1"></i>
+                    <i class="fa-solid fa-arrow-up-right-from-square ml-3 -mr-1"></i>
                   </a>
                 </div>
                 <div class="mt-3 sm:mt-0 sm:ml-3">
@@ -52,7 +52,7 @@
       }" :modules="modules">
         <swiper-slide class="transition-opacity ease-in-out" v-for="currentImageUrl in imageUrls" :key="currentImageUrl">
           <nuxt-img class="w-full object-cover" :src="currentImageUrl" quality="80" loading="lazy"
-            sizes="sm:100vw md:50vw lg:400px" />
+            sizes="sm:100vw md:50vw lg:800px" />
         </swiper-slide>
       </swiper>
 

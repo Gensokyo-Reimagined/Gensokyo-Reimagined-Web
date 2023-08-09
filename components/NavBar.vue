@@ -10,7 +10,7 @@
               sizes="sm:100vw md:50vw lg:400px" />
           </div>
           <div class="hidden sm:ml-6 sm:flex sm:space-x-8 items-center">
-            <nuxt-link to="#"
+            <nuxt-link to="/"
               class="px-3 py-2 text-[var(--md-sys-color-on-background)] hover:text-[var(--md-sys-color-on-secondary-container)] font-medium">
               {{ $t('Navbar.home') }}
             </nuxt-link>
@@ -21,6 +21,10 @@
             <a :href="appConfig.NavBarLinkWiki"
               class="px-3 py-2 text-[var(--md-sys-color-on-background)] hover:text-[var(--md-sys-color-on-secondary-container)] font-medium">
               {{ $t('Navbar.wiki') }}
+            </a>
+            <a :href="appConfig.NavBarLinkMap"
+              class="px-3 py-2 text-[var(--md-sys-color-on-background)] hover:text-[var(--md-sys-color-on-secondary-container)] font-medium">
+              {{ $t('Navbar.map') }}
             </a>
           </div>
         </div>
@@ -234,18 +238,18 @@ export default {
     toggleColorMode () {
       if (this.$colorMode.preference === 'dark') {
         this.$colorMode.preference = 'light'
-        this.ColorButtonClass = 'fa-duotone fa-sun'
+        this.ColorButtonClass = 'fa-solid fa-sun'
       } else {
         this.$colorMode.preference = 'dark'
-        this.ColorButtonClass = 'fa-duotone fa-moon'
+        this.ColorButtonClass = 'fa-solid fa-moon'
       }
     }
   },
   mounted () {
     if (this.$colorMode.preference === 'dark') {
-      this.ColorButtonClass = 'fa-duotone fa-moon'
+      this.ColorButtonClass = 'fa-solid fa-moon'
     } else {
-      this.ColorButtonClass = 'fa-duotone fa-sun'
+      this.ColorButtonClass = 'fa-solid fa-sun'
     }
   }
 };

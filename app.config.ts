@@ -30,4 +30,6 @@ export default defineAppConfig({
   NavBarLinkAbout: '/',
   NavBarLinkWiki: '/',
   NavBarLinkGithub: 'https://github.com/Gensokyo-Reimagined',
+  NavBarLinkMap:
+    'http://build.gensokyoreimagined.net:8080/?world=minecraft_overworld',
 })

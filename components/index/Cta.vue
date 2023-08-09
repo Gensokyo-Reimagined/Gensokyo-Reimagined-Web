@@ -18,7 +18,7 @@
             <a href="https://discord.gg/U9fZSJJcte" target="_blank"
               class="inline-flex items-center px-5 py-3 mt-8 text-base font-medium text-[var(--md-sys-color-on-background)] bg-[var(--md-sys-color-on-error)] border border-transparent rounded-md shadow hover:bg-[var(--md-sys-color-error-container)">
               {{ $t('index.cta.button') }}
-              <i class="fa-duotone fa-arrow-up-right-from-square ml-3 -mr-1"></i>
+              <i class="fa-solid fa-arrow-up-right-from-square ml-3 -mr-1"></i>
             </a>
           </div>
         </div>

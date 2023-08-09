@@ -14,7 +14,7 @@
           <a href="https://www.patreon.com/gensokyoreimagined" target="_blank"
             class="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-[var(--md-sys-color-background)] bg-[var(--md-sys-color-primary)] border border-transparent rounded-md hover:bg-[var(--md-sys-color-secondary)]">
             {{ $t('index.support.button') }}
-            <i class="fa-duotone fa-arrow-up-right-from-square ml-3 -mr-1"></i>
+            <i class="fa-solid fa-arrow-up-right-from-square ml-3 -mr-1"></i>
           </a>
         </div>
       </div>
