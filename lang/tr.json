@@ -3,84 +3,84 @@
   "index": {
     "header": {
       "title": "",
-      "intro": "Creating a Touhou MMO in Minecraft",
-      "group": "Join our Community!",
-      "continue": "Learn more"
+      "intro": "Minecraft'da Touhou MMO'su yaratıyor",
+      "group": "Topluluğumuza Katıl!",
+      "continue": "Daha fazla bilgi edinin"
     },
     "about": {
-      "title": "About Us",
-      "subtitle": "Small explanation about the project!",
-      "description": "The Project started quite small initially with few people but as time went on project started to get some attraction and goals went bigger. Now we are creating playable version of Entirety of Touhou Universe with combining MMO and Survival Minecraft elements with requiring 0 mods to play on for maximum accessibility for everyone."
+      "title": "Hakkımızda",
+      "subtitle": "Proje hakkında küçük açıklama!",
+      "description": "Proje başlangıçta birkaç kişiyle oldukça küçük başladı, ancak zaman geçtikçe projeye ilgi artmaya başladı ve hedefler büyüdü. Şimdi, herkes için maksimum erişilebilirlik sağlamak için 0 mod gerektiren MMO ve Survival Minecraft öğelerini birleştirerek Touhou evreninin tamamının oynanabilir halini oluşturuyoruz."
     },
     "feature": {
       "title": "",
-      "subtitle": "Server Features",
+      "subtitle": "Sunucu Özellikleri",
       "items": [
         {
-          "name": "Custom Mobs",
-          "description": "We have custom Touhou themed mobs with 0 mods!"
+          "name": "Özel Yaratıklar",
+          "description": "Touhou temalı 0 mod ile özel yaratıklarımız var!"
         },
         {
-          "name": "Touhou Themed Classes",
-          "description": "Each class has unique gameplay to encourage players to experiment!"
+          "name": "Touhou Konseptli Klaslar",
+          "description": "Her klas, oyuncuları denemeye teşvik etmek için kendine özgü bir oynanışa sahiptir!"
         },
         {
-          "name": "Story Quests",
-          "description": "We have simple yet extensive quest lines with great rewards to players"
+          "name": "Hikaye Görevleri",
+          "description": "Oyunculara harika ödüller veren basit ama kapsamlı görev gruplarımız var"
         },
         {
-          "name": "Weather Events",
-          "description": "Each day is different in some way with dynamic seasons!"
+          "name": "Hava Olayları",
+          "description": "Dinamik mevsimlerle her gün bir şekilde farklıdır!"
         }
       ]
     },
     "cta": {
-      "title": "Community",
+      "title": "Topluluk",
       "subtitle": "",
-      "description": "Consider joining our ever growing discord server!",
-      "button": "Server Link"
+      "description": "Sürekli büyüyen discord sunucumuza katılmayı göz önünde bulundur!",
+      "button": "Sunucu Linki"
     },
     "faq": {
-      "title": "Frequently Asked Questions ",
+      "title": "Sıkça Sorulan Sorular",
       "items": [
         {
-          "question": "Is there a map download?",
-          "answer": "No, because the map relies on the server's plugins to function.The map also keeps our project alive and we do not want to segment the community! Map is only given to people who knows what they are doing and they are contributing to the project one way or another.          "
+          "question": "Harita indirilebiliyor mu?",
+          "answer": "Hayır, çünkü haritanın çalışması için sunucunun eklentilerine ihtiyacı var. Harita aynı zamanda projemizi canlı tutuyor ve topluluğu bölmek istemiyoruz! Harita sadece ne yaptığını bilen ve projeye öyle ya da böyle katkıda bulunan kişilere verilir."
         },
         {
-          "question": "How can I let you guys know about issues?",
-          "answer": "For quick reports on survival, use ⁠#bug-reports, or if it regards a moderation issue please contact the staff team in ⁠#staff-ticket."
+          "question": "Sorunları size nasıl bildirebilirim?",
+          "answer": "Hayatta kalma ile ilgili ayrıntılı raporlar için #bug-reports'u kullanın veya bir moderasyon sorunu söz konusuysa lütfen #staff-ticket kısmından personel ekibiyle iletişime geçin."
         },
         {
-          "question": "I can't join the server?",
-          "answer": "The server does not allow cracked accounts access to it, so that may be one reason. Otherwise please open a ticket in #staff-contact with a screenshot of the error-message you are getting, staff will help out as best they can."
+          "question": "Sunucuya katılamıyorum?",
+          "answer": "Sunucu, crackli hesapların erişimine izin vermiyor, bu nedenlerden biri olabilir. Aksi takdirde, lütfen aldığınız hata mesajının ekran görüntüsüyle birlikte #staff-contact'ta bir bilet açın, ekip elinden geldiğince yardımcı olacaktır."
         },
         {
-          "question": "Does this server has chat reporting on?",
-          "answer": "No, and never will be."
+          "question": "Bu sunucuda sohbet raporlaması açık mı?",
+          "answer": "Hayır ve asla da olmayacak."
         },
         {
-          "question": "I'm experiencing some connection issues?",
-          "answer": "Yes, that might be case for wifi and server being generally far. If it's something that everyone experiences please report it to staff."
+          "question": "Bazı bağlantı sorunları yaşıyorum?",
+          "answer": "Evet, bu durum wifi ve sunucunun genel olarak uzak olmasıyla ilgili olabilir. Herkesin yaşadığı bir şeyse lütfen bunu personele bildirin."
         }
       ]
     },
     "rules": {
       "title": "",
-      "subtitle": "Server Rules",
-      "description": "Important rules to keep community clean",
-      "button": "Rules"
+      "subtitle": "Sunucu kuralları",
+      "description": "Topluluğu temiz tutmak için önemli kurallar",
+      "button": "Kurallar"
     },
     "support": {
-      "title": "Support the project!",
-      "description": "This is a Non-Profit project so every donation helps us out!",
+      "title": "Projeyi destekle!",
+      "description": "Bu bir Kar Amacı Gütmeyen projedir, bu nedenle her bağış bize yardımcı olur!",
       "button": "Patreon"
     }
   },
   "Navbar": {
-    "home": "home",
-    "about": "about",
+    "home": "ana sayfa",
+    "about": "hakkında",
     "wiki": "wiki",
-    "map": "map"
+    "map": "harita"
   }
 }
