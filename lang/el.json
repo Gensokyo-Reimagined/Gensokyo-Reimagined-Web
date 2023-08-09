@@ -80,6 +80,7 @@
   "Navbar": {
     "home": "home",
     "about": "about",
-    "wiki": "wiki"
+    "wiki": "wiki",
+    "map": "map"
   }
 }
