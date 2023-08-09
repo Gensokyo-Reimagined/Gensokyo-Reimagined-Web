@@ -80,6 +80,7 @@
   "Navbar": {
     "home": "ホーム",
     "about": "約",
-    "wiki": "wiki"
+    "wiki": "wiki",
+    "map": "map"
   }
 }
