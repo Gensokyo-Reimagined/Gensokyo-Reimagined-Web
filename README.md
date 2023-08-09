@@ -67,6 +67,7 @@ Many thanks to the following staff for their translation and proofreading
 - ru: [@n n](https://crowdin.com/profile/igorsolarev2006)
 - tr:
 - uk:
+- it: [@Kurobu](https://crowdin.com/profile/kurobu)
 
 
 ## Config 🔧
