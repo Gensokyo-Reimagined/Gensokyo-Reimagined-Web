@@ -6,7 +6,7 @@
 
 # Gensokyo-Reimagined-Web
 
-[Website (not yet online)]()
+[Website](https://www.gensokyoreimagined.net/)
 
 </div>
 
