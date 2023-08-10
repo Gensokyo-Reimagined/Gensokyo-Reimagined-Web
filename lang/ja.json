@@ -35,7 +35,7 @@
       ]
     },
     "cta": {
-      "title": "Community",
+      "title": "共同体",
       "subtitle": "",
       "description": "Consider joining our ever growing discord server!",
       "button": "Server Link"
@@ -69,7 +69,7 @@
       "title": "",
       "subtitle": "Server Rules",
       "description": "Important rules to keep community clean",
-      "button": "Rules"
+      "button": "ルール"
     },
     "support": {
       "title": "Support the project!",
@@ -80,7 +80,7 @@
   "Navbar": {
     "home": "ホーム",
     "about": "約",
-    "wiki": "wiki",
-    "map": "map"
+    "wiki": "ウィキ",
+    "map": "地図"
   }
 }
