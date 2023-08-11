@@ -29,30 +29,17 @@ The repository is using the packages in the list below
 
 If you want to add i18n, please go to discord or issue and we will add the corresponding language to the repository
 
-If you want to translate an existing language, please go to [crowdin](https://crowdin.com/project/gensokyo-reimagined-web) and translate
+If you want to translate an existing language, please go to [gensokyoreimagined weblate](https://weblate.gensokyoreimagined.net/projects/gensokyo-reimagined-web/gensokyo-reimagined-web/) and translate
 
-> [!WARNING]  
+> [!WARNING]
 > Do not directly modify the contents of the lang folder except for en.json, as everything else is generated automatically
 
 ### Translation in each language 💬
 
-> [!NOTE]  
+> [!NOTE]
 > Badge data may be cached and updated automatically each time it is merged.
 
-[![Crowdin](https://badges.crowdin.net/gensokyo-reimagined-web/localized.svg)](https://crowdin.com/project/gensokyo-reimagined-web)
-
-![cs translation](<https://img.shields.io/badge/dynamic/json?color=blue&label=cs&style=flat&logo=crowdin&query=%24.progress[?(@.data.languageId==%27cs%27)].data.translationProgress&url=https%3A%2F%2Fbadges.awesome-crowdin.com%2Fstats-15098433-604479.json>)
-![de translation](<https://img.shields.io/badge/dynamic/json?color=blue&label=de&style=flat&logo=crowdin&query=%24.progress[?(@.data.languageId==%27de%27)].data.translationProgress&url=https%3A%2F%2Fbadges.awesome-crowdin.com%2Fstats-15098433-604479.json>)
-![el translation](<https://img.shields.io/badge/dynamic/json?color=blue&label=el&style=flat&logo=crowdin&query=%24.progress[?(@.data.languageId==%27el%27)].data.translationProgress&url=https%3A%2F%2Fbadges.awesome-crowdin.com%2Fstats-15098433-604479.json>)
-![es-ES translation](<https://img.shields.io/badge/dynamic/json?color=blue&label=es-ES&style=flat&logo=crowdin&query=%24.progress[?(@.data.languageId==%27es-ES%27)].data.translationProgress&url=https%3A%2F%2Fbadges.awesome-crowdin.com%2Fstats-15098433-604479.json>)
-![fr translation](<https://img.shields.io/badge/dynamic/json?color=blue&label=fr&style=flat&logo=crowdin&query=%24.progress[?(@.data.languageId==%27fr%27)].data.translationProgress&url=https%3A%2F%2Fbadges.awesome-crowdin.com%2Fstats-15098433-604479.json>)
-![it translation](<https://img.shields.io/badge/dynamic/json?color=blue&label=it&style=flat&logo=crowdin&query=%24.progress[?(@.data.languageId==%27it%27)].data.translationProgress&url=https%3A%2F%2Fbadges.awesome-crowdin.com%2Fstats-15098433-604479.json>)
-![ja translation](<https://img.shields.io/badge/dynamic/json?color=blue&label=ja&style=flat&logo=crowdin&query=%24.progress[?(@.data.languageId==%27ja%27)].data.translationProgress&url=https%3A%2F%2Fbadges.awesome-crowdin.com%2Fstats-15098433-604479.json>)
-![pl translation](<https://img.shields.io/badge/dynamic/json?color=blue&label=pl&style=flat&logo=crowdin&query=%24.progress[?(@.data.languageId==%27pl%27)].data.translationProgress&url=https%3A%2F%2Fbadges.awesome-crowdin.com%2Fstats-15098433-604479.json>)
-![ru translation](<https://img.shields.io/badge/dynamic/json?color=blue&label=ru&style=flat&logo=crowdin&query=%24.progress[?(@.data.languageId==%27ru%27)].data.translationProgress&url=https%3A%2F%2Fbadges.awesome-crowdin.com%2Fstats-15098433-604479.json>)
-![tr translation](<https://img.shields.io/badge/dynamic/json?color=blue&label=tr&style=flat&logo=crowdin&query=%24.progress[?(@.data.languageId==%27tr%27)].data.translationProgress&url=https%3A%2F%2Fbadges.awesome-crowdin.com%2Fstats-15098433-604479.json>)
-![uk translation](<https://img.shields.io/badge/dynamic/json?color=blue&label=uk&style=flat&logo=crowdin&query=%24.progress[?(@.data.languageId==%27uk%27)].data.translationProgress&url=https%3A%2F%2Fbadges.awesome-crowdin.com%2Fstats-15098433-604479.json>)
-![zh-CN translation](<https://img.shields.io/badge/dynamic/json?color=blue&label=zh-CN&style=flat&logo=crowdin&query=%24.progress[?(@.data.languageId==%27zh-CN%27)].data.translationProgress&url=https%3A%2F%2Fbadges.awesome-crowdin.com%2Fstats-15098433-604479.json>)
+[![翻译状态](https://weblate.gensokyoreimagined.net/widget/gensokyo-reimagined-web/gensokyo-reimagined-web/multi-auto.svg)](https://weblate.gensokyoreimagined.net/engage/gensokyo-reimagined-web/)
 
 ### translator ✒️
 
@@ -73,7 +60,7 @@ Many thanks to the following staff for their translation and proofreading
 
 ## Config 🔧
 
-> [!IMPORTANT]  
+> [!IMPORTANT]
 > Starting here is written for developers and regular contributors can skip
 
 We now have 3 configuration files,
