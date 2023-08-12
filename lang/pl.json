@@ -3,11 +3,11 @@
     "index": {
         "header": {
             "intro": "Creating a Touhou MMO in Minecraft",
-            "group": "Join our Community!",
+            "group": "Dołącz do naszej Społeczności!",
             "continue": "Learn more"
         },
         "about": {
-            "title": "About Us",
+            "title": "O nas",
             "subtitle": "Small explanation about the project!",
             "description": "The Project started quite small initially with few people but as time went on project started to get some attraction and goals went bigger. Now we are creating playable version of Entirety of Touhou Universe with combining MMO and Survival Minecraft elements with requiring 0 mods to play on for maximum accessibility for everyone."
         },
@@ -19,7 +19,7 @@
                     "description": "We have custom Touhou themed mobs with 0 mods!"
                 },
                 {
-                    "name": "Touhou Themed Classes",
+                    "name": "Klasy postaci inspirowane Touhou",
                     "description": "Each class has unique gameplay to encourage players to experiment!"
                 },
                 {
@@ -33,7 +33,7 @@
             ]
         },
         "cta": {
-            "title": "Community",
+            "title": "Społeczność",
             "description": "Consider joining our ever growing discord server!",
             "button": "Server Link"
         },
