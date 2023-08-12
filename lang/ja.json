@@ -1,18 +1,18 @@
 {
-    "servername": "Gensokyo Reimagined",
+    "servername": "幻想郷 Reimagined",
     "index": {
         "header": {
             "intro": "Creating a Touhou MMO in Minecraft",
             "group": "Join our Community!",
-            "continue": "Learn more"
+            "continue": "詳細はこちら"
         },
         "about": {
-            "title": "About Us",
+            "title": "私達について",
             "subtitle": "Small explanation about the project!",
             "description": "The Project started quite small initially with few people but as time went on project started to get some attraction and goals went bigger. Now we are creating playable version of Entirety of Touhou Universe with combining MMO and Survival Minecraft elements with requiring 0 mods to play on for maximum accessibility for everyone."
         },
         "feature": {
-            "subtitle": "サーバ特徴",
+            "subtitle": "サーバー特徴",
             "items": [
                 {
                     "name": "Custom Mobs",
@@ -23,7 +23,7 @@
                     "description": "Each class has unique gameplay to encourage players to experiment!"
                 },
                 {
-                    "name": "Story Quests",
+                    "name": "話のクエスト",
                     "description": "We have simple yet extensive quest lines with great rewards to players"
                 },
                 {
