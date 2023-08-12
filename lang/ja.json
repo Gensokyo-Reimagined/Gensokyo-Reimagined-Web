@@ -1,86 +1,82 @@
 {
-  "servername": "Gensokyo Reimagined",
-  "index": {
-    "header": {
-      "title": "",
-      "intro": "Creating a Touhou MMO in Minecraft",
-      "group": "Join our Community!",
-      "continue": "Learn more"
-    },
-    "about": {
-      "title": "About Us",
-      "subtitle": "Small explanation about the project!",
-      "description": "The Project started quite small initially with few people but as time went on project started to get some attraction and goals went bigger. Now we are creating playable version of Entirety of Touhou Universe with combining MMO and Survival Minecraft elements with requiring 0 mods to play on for maximum accessibility for everyone."
-    },
-    "feature": {
-      "title": "",
-      "subtitle": "Server Features",
-      "items": [
-        {
-          "name": "Custom Mobs",
-          "description": "We have custom Touhou themed mobs with 0 mods!"
+    "servername": "Gensokyo Reimagined",
+    "index": {
+        "header": {
+            "intro": "Creating a Touhou MMO in Minecraft",
+            "group": "Join our Community!",
+            "continue": "Learn more"
         },
-        {
-          "name": "Touhou Themed Classes",
-          "description": "Each class has unique gameplay to encourage players to experiment!"
+        "about": {
+            "title": "About Us",
+            "subtitle": "Small explanation about the project!",
+            "description": "The Project started quite small initially with few people but as time went on project started to get some attraction and goals went bigger. Now we are creating playable version of Entirety of Touhou Universe with combining MMO and Survival Minecraft elements with requiring 0 mods to play on for maximum accessibility for everyone."
         },
-        {
-          "name": "Story Quests",
-          "description": "We have simple yet extensive quest lines with great rewards to players"
+        "feature": {
+            "subtitle": "サーバ特徴",
+            "items": [
+                {
+                    "name": "Custom Mobs",
+                    "description": "We have custom Touhou themed mobs with 0 mods!"
+                },
+                {
+                    "name": "Touhou Themed Classes",
+                    "description": "Each class has unique gameplay to encourage players to experiment!"
+                },
+                {
+                    "name": "Story Quests",
+                    "description": "We have simple yet extensive quest lines with great rewards to players"
+                },
+                {
+                    "name": "Weather Events",
+                    "description": "Each day is different in some way with dynamic seasons!"
+                }
+            ]
         },
-        {
-          "name": "Weather Events",
-          "description": "Each day is different in some way with dynamic seasons!"
+        "cta": {
+            "title": "共同体",
+            "description": "Consider joining our ever growing discord server!",
+            "button": "Server Link"
+        },
+        "faq": {
+            "title": "Frequently Asked Questions ",
+            "items": [
+                {
+                    "question": "Is there a map download?",
+                    "answer": "No, because the map relies on the server's plugins to function.The map also keeps our project alive and we do not want to segment the community! Map is only given to people who knows what they are doing and they are contributing to the project one way or another.          "
+                },
+                {
+                    "question": "How can I let you guys know about issues?",
+                    "answer": "For quick reports on survival, use ⁠#bug-reports, or if it regards a moderation issue please contact the staff team in ⁠#staff-ticket."
+                },
+                {
+                    "question": "I can't join the server?",
+                    "answer": "The server does not allow cracked accounts access to it, so that may be one reason. Otherwise please open a ticket in #staff-contact with a screenshot of the error-message you are getting, staff will help out as best they can."
+                },
+                {
+                    "question": "Does this server has chat reporting on?",
+                    "answer": "No, and never will be."
+                },
+                {
+                    "question": "I'm experiencing some connection issues?",
+                    "answer": "Yes, that might be case for wifi and server being generally far. If it's something that everyone experiences please report it to staff."
+                }
+            ]
+        },
+        "rules": {
+            "subtitle": "Server Rules",
+            "description": "Important rules to keep community clean",
+            "button": "ルール"
+        },
+        "support": {
+            "title": "Support the project!",
+            "description": "This is a Non-Profit project so every donation helps us out!",
+            "button": "Patreon"
         }
-      ]
     },
-    "cta": {
-      "title": "共同体",
-      "subtitle": "",
-      "description": "Consider joining our ever growing discord server!",
-      "button": "Server Link"
-    },
-    "faq": {
-      "title": "Frequently Asked Questions ",
-      "items": [
-        {
-          "question": "Is there a map download?",
-          "answer": "No, because the map relies on the server's plugins to function.The map also keeps our project alive and we do not want to segment the community! Map is only given to people who knows what they are doing and they are contributing to the project one way or another.          "
-        },
-        {
-          "question": "How can I let you guys know about issues?",
-          "answer": "For quick reports on survival, use ⁠#bug-reports, or if it regards a moderation issue please contact the staff team in ⁠#staff-ticket."
-        },
-        {
-          "question": "I can't join the server?",
-          "answer": "The server does not allow cracked accounts access to it, so that may be one reason. Otherwise please open a ticket in #staff-contact with a screenshot of the error-message you are getting, staff will help out as best they can."
-        },
-        {
-          "question": "Does this server has chat reporting on?",
-          "answer": "No, and never will be."
-        },
-        {
-          "question": "I'm experiencing some connection issues?",
-          "answer": "Yes, that might be case for wifi and server being generally far. If it's something that everyone experiences please report it to staff."
-        }
-      ]
-    },
-    "rules": {
-      "title": "",
-      "subtitle": "Server Rules",
-      "description": "Important rules to keep community clean",
-      "button": "ルール"
-    },
-    "support": {
-      "title": "Support the project!",
-      "description": "This is a Non-Profit project so every donation helps us out!",
-      "button": "Patreon"
+    "Navbar": {
+        "home": "ホーム",
+        "about": "約",
+        "wiki": "ウィキ",
+        "map": "地図"
     }
-  },
-  "Navbar": {
-    "home": "ホーム",
-    "about": "約",
-    "wiki": "ウィキ",
-    "map": "地図"
-  }
 }

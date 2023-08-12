@@ -1,86 +1,82 @@
 {
-  "servername": "Gensokyo Reimagined",
-  "index": {
-    "header": {
-      "title": "",
-      "intro": "Creando un MMO de Touhou en Minecraft",
-      "group": "¡Únete a nuestra comunidad!",
-      "continue": "Aprender más"
-    },
-    "about": {
-      "title": "Quiénes somos",
-      "subtitle": "¡Breve explicación del proyecto!",
-      "description": "El proyecto inició siendo algo muy pequeño, con apenas un puñado de personas, pero con el tiempo fue cobrando fuerza y nuestras metas se hicieron más grandes. Ahora estamos creando una versión jugable de todo el universo de Touhou, combinando elementos de supervivencia de Minecraft y MMOs, sin mods y accesible para todos."
-    },
-    "feature": {
-      "title": "",
-      "subtitle": "Características del servidor",
-      "items": [
-        {
-          "name": "Criaturas únicas",
-          "description": "Nuevas criaturas inspiradas en Touhou, ¡sin mods!"
+    "servername": "Gensokyo Reimagined",
+    "index": {
+        "header": {
+            "intro": "Creando un MMO de Touhou en Minecraft",
+            "group": "¡Únete a nuestra comunidad!",
+            "continue": "Aprender más"
         },
-        {
-          "name": "Clases temáticas",
-          "description": "¡Todas con jugabilidad única para motivar la experimentación!"
+        "about": {
+            "title": "Quiénes somos",
+            "subtitle": "¡Breve explicación del proyecto!",
+            "description": "El proyecto inició siendo algo muy pequeño, con apenas un puñado de personas, pero con el tiempo fue cobrando fuerza y nuestras metas se hicieron más grandes. Ahora estamos creando una versión jugable de todo el universo de Touhou, combinando elementos de supervivencia de Minecraft y MMOs, sin mods y accesible para todos."
         },
-        {
-          "name": "Misiones de historia",
-          "description": "Aventuras simples pero extensas, y con grandes recompensas"
+        "feature": {
+            "subtitle": "Características del servidor",
+            "items": [
+                {
+                    "name": "Criaturas únicas",
+                    "description": "Nuevas criaturas inspiradas en Touhou, ¡sin mods!"
+                },
+                {
+                    "name": "Clases temáticas",
+                    "description": "¡Todas con jugabilidad única para motivar la experimentación!"
+                },
+                {
+                    "name": "Misiones de historia",
+                    "description": "Aventuras simples pero extensas, y con grandes recompensas"
+                },
+                {
+                    "name": "Cambios de clima",
+                    "description": "¡Cada día es diferente con las estaciones dinámicas!"
+                }
+            ]
         },
-        {
-          "name": "Cambios de clima",
-          "description": "¡Cada día es diferente con las estaciones dinámicas!"
+        "cta": {
+            "title": "Comunidad",
+            "description": "¡Anímate a unirte a nuestro servidor de Discord!",
+            "button": "Enlace al servidor"
+        },
+        "faq": {
+            "title": "Preguntas frecuentes ",
+            "items": [
+                {
+                    "question": "¿Puedo descargar el mapa?",
+                    "answer": "No, el mapa depende de nuestros plugins para funcionar. Es también lo que mantiene nuestro proyecto vivo, ¡y no queremos dividir nuestra comunidad! Solo entregamos los archivos del mapa a quienes contribuyen al proyecto de una u otra manera.          "
+                },
+                {
+                    "question": "¿Cómo puedo informar de un problema?",
+                    "answer": "Si se relaciona a Survival, usa el canal #bug-reports. Si es un asunto de moderación, por favor contacta a nuestro equipo en #staff-ticket."
+                },
+                {
+                    "question": "¿Por qué no puedo entrar al servidor?",
+                    "answer": "El servidor no permite el acceso a cuentas pirateadas, esa puede ser la razón. Si no, crea un ticket en #staff-ticket con una captura de pantalla del error que estás teniendo. Te ayudaremos lo mejor que podamos."
+                },
+                {
+                    "question": "¿Están activados los reportes de chat en este servidor?",
+                    "answer": "No, y nunca lo estarán."
+                },
+                {
+                    "question": "¿Por qué tengo problemas de conexión?",
+                    "answer": "Puede ser por tu wifi, o porque estés geográficamente lejos del servidor. Si es algo que le está pasando a todos, avísanos."
+                }
+            ]
+        },
+        "rules": {
+            "subtitle": "Reglas del servidor",
+            "description": "Normas importantes para el bien de la comunidad",
+            "button": "Reglas"
+        },
+        "support": {
+            "title": "¡Apoya el proyecto!",
+            "description": "El proyecto es totalmente gratis, ¡pero apreciamos cualquier donación!",
+            "button": "Patreon"
         }
-      ]
     },
-    "cta": {
-      "title": "Comunidad",
-      "subtitle": "",
-      "description": "¡Anímate a unirte a nuestro servidor de Discord!",
-      "button": "Enlace al servidor"
-    },
-    "faq": {
-      "title": "Preguntas frecuentes ",
-      "items": [
-        {
-          "question": "¿Puedo descargar el mapa?",
-          "answer": "No, el mapa depende de nuestros plugins para funcionar. Es también lo que mantiene nuestro proyecto vivo, ¡y no queremos dividir nuestra comunidad! Solo entregamos los archivos del mapa a quienes contribuyen al proyecto de una u otra manera.          "
-        },
-        {
-          "question": "¿Cómo puedo informar de un problema?",
-          "answer": "Si se relaciona a Survival, usa el canal #bug-reports. Si es un asunto de moderación, por favor contacta a nuestro equipo en #staff-ticket."
-        },
-        {
-          "question": "¿Por qué no puedo entrar al servidor?",
-          "answer": "El servidor no permite el acceso a cuentas pirateadas, esa puede ser la razón. Si no, crea un ticket en #staff-ticket con una captura de pantalla del error que estás teniendo. Te ayudaremos lo mejor que podamos."
-        },
-        {
-          "question": "¿Están activados los reportes de chat en este servidor?",
-          "answer": "No, y nunca lo estarán."
-        },
-        {
-          "question": "¿Por qué tengo problemas de conexión?",
-          "answer": "Puede ser por tu wifi, o porque estés geográficamente lejos del servidor. Si es algo que le está pasando a todos, avísanos."
-        }
-      ]
-    },
-    "rules": {
-      "title": "",
-      "subtitle": "Reglas del servidor",
-      "description": "Normas importantes para el bien de la comunidad",
-      "button": "Reglas"
-    },
-    "support": {
-      "title": "¡Apoya el proyecto!",
-      "description": "El proyecto es totalmente gratis, ¡pero apreciamos cualquier donación!",
-      "button": "Patreon"
+    "Navbar": {
+        "home": "inicio",
+        "about": "acerca de",
+        "wiki": "wiki",
+        "map": "mapa"
     }
-  },
-  "Navbar": {
-    "home": "inicio",
-    "about": "acerca de",
-    "wiki": "wiki",
-    "map": "mapa"
-  }
 }
