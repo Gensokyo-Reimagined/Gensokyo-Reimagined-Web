@@ -13,58 +13,71 @@ export default defineNuxtConfig({
     classSuffix: '',
   },
   i18n: {
-    strategy: 'prefix_except_default',
+    strategy: 'prefix',
     locales: [
       {
         code: 'en',
+        iso: 'en-US',
         file: 'en.json',
       },
       {
         code: 'ja',
+        iso: 'ja-JP',
         file: 'ja.json',
       },
       {
         code: 'zh',
+        iso: 'zh-CN',
         file: 'zh.json',
       },
       {
         code: 'es',
+        iso: 'es-ES',
         file: 'es.json',
       },
       {
         code: 'fr',
+        iso: 'fr-FR',
         file: 'fr.json',
       },
       {
         code: 'de',
+        iso: 'de-DE',
         file: 'de.json',
       },
       {
         code: 'pl',
+        iso: 'pl-PL',
         file: 'pl.json',
       },
       {
         code: 'el',
+        iso: 'el-GR',
         file: 'el.json',
       },
       {
         code: 'ru',
+        iso: 'ru-RU',
         file: 'ru.json',
       },
       {
         code: 'tr',
+        iso: 'tr-TR',
         file: 'tr.json',
       },
       {
         code: 'uk',
+        iso: 'uk-UA',
         file: 'uk.json',
       },
       {
         code: 'cs',
+        iso: 'cs-CZ',
         file: 'cs.json',
       },
       {
         code: 'it',
+        iso: 'it-IT',
         file: 'it.json',
       },
     ],
