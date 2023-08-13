@@ -13,7 +13,7 @@ export default defineNuxtConfig({
     classSuffix: '',
   },
   i18n: {
-    strategy: 'prefix',
+    //strategy: 'prefix',
     locales: [
       {
         code: 'en',
