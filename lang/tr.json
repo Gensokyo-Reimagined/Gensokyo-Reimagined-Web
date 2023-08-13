@@ -1,86 +1,82 @@
 {
-  "servername": "Gensokyo Reimagined",
-  "index": {
-    "header": {
-      "title": "",
-      "intro": "Minecraft'da Touhou MMO'su yaratıyor",
-      "group": "Topluluğumuza Katıl!",
-      "continue": "Daha fazla bilgi edinin"
-    },
-    "about": {
-      "title": "Hakkımızda",
-      "subtitle": "Proje hakkında küçük açıklama!",
-      "description": "Proje başlangıçta birkaç kişiyle oldukça küçük başladı, ancak zaman geçtikçe projeye ilgi artmaya başladı ve hedefler büyüdü. Şimdi, herkes için maksimum erişilebilirlik sağlamak için 0 mod gerektiren MMO ve Survival Minecraft öğelerini birleştirerek Touhou evreninin tamamının oynanabilir halini oluşturuyoruz."
-    },
-    "feature": {
-      "title": "",
-      "subtitle": "Sunucu Özellikleri",
-      "items": [
-        {
-          "name": "Özel Yaratıklar",
-          "description": "Touhou temalı 0 mod ile özel yaratıklarımız var!"
+    "servername": "Gensokyo Reimagined",
+    "index": {
+        "header": {
+            "intro": "Minecraft'da Touhou MMO'su yaratıyor",
+            "group": "Topluluğumuza Katıl!",
+            "continue": "Daha fazla bilgi edinin"
         },
-        {
-          "name": "Touhou Konseptli Klaslar",
-          "description": "Her klas, oyuncuları denemeye teşvik etmek için kendine özgü bir oynanışa sahiptir!"
+        "about": {
+            "title": "Hakkımızda",
+            "subtitle": "Proje hakkında küçük açıklama!",
+            "description": "Proje başlangıçta birkaç kişiyle oldukça küçük başladı, ancak zaman geçtikçe projeye ilgi artmaya başladı ve hedefler büyüdü. Şimdi, herkes için maksimum erişilebilirlik sağlamak için 0 mod gerektiren MMO ve Survival Minecraft öğelerini birleştirerek Touhou evreninin tamamının oynanabilir halini oluşturuyoruz."
         },
-        {
-          "name": "Hikaye Görevleri",
-          "description": "Oyunculara harika ödüller veren basit ama kapsamlı görev gruplarımız var"
+        "feature": {
+            "subtitle": "Sunucu Özellikleri",
+            "items": [
+                {
+                    "name": "Özel Yaratıklar",
+                    "description": "Touhou temalı 0 mod ile özel yaratıklarımız var!"
+                },
+                {
+                    "name": "Touhou Konseptli Klaslar",
+                    "description": "Her klas, oyuncuları denemeye teşvik etmek için kendine özgü bir oynanışa sahiptir!"
+                },
+                {
+                    "name": "Hikaye Görevleri",
+                    "description": "Oyunculara harika ödüller veren basit ama kapsamlı görev gruplarımız var"
+                },
+                {
+                    "name": "Hava Olayları",
+                    "description": "Dinamik mevsimlerle her gün bir şekilde farklıdır!"
+                }
+            ]
         },
-        {
-          "name": "Hava Olayları",
-          "description": "Dinamik mevsimlerle her gün bir şekilde farklıdır!"
+        "cta": {
+            "title": "Topluluk",
+            "description": "Sürekli büyüyen discord sunucumuza katılmayı göz önünde bulundur!",
+            "button": "Sunucu Linki"
+        },
+        "faq": {
+            "title": "Sıkça Sorulan Sorular ",
+            "items": [
+                {
+                    "question": "Harita indirilebiliyor mu?",
+                    "answer": "Hayır, çünkü haritanın çalışması için sunucunun eklentilerine ihtiyacı var. Harita aynı zamanda projemizi canlı tutuyor ve topluluğu bölmek istemiyoruz! Harita sadece ne yaptığını bilen ve projeye öyle ya da böyle katkıda bulunan kişilere verilir."
+                },
+                {
+                    "question": "Sorunları size nasıl bildirebilirim?",
+                    "answer": "Hayatta kalma ile ilgili ayrıntılı raporlar için #bug-reports'u kullanın veya bir moderasyon sorunu söz konusuysa lütfen #staff-ticket kısmından personel ekibiyle iletişime geçin."
+                },
+                {
+                    "question": "Sunucuya katılamıyorum?",
+                    "answer": "Sunucu, crackli hesapların erişimine izin vermiyor, bu nedenlerden biri olabilir. Aksi takdirde, lütfen aldığınız hata mesajının ekran görüntüsüyle birlikte #staff-contact'ta bir bilet açın, ekip elinden geldiğince yardımcı olacaktır."
+                },
+                {
+                    "question": "Bu sunucuda sohbet raporlaması açık mı?",
+                    "answer": "Hayır ve asla da olmayacak."
+                },
+                {
+                    "question": "Bazı bağlantı sorunları yaşıyorum?",
+                    "answer": "Evet, bu durum wifi ve sunucunun genel olarak uzak olmasıyla ilgili olabilir. Herkesin yaşadığı bir şeyse lütfen bunu personele bildirin."
+                }
+            ]
+        },
+        "rules": {
+            "subtitle": "Sunucu kuralları",
+            "description": "Topluluğu temiz tutmak için önemli kurallar",
+            "button": "Kurallar"
+        },
+        "support": {
+            "title": "Projeyi destekle!",
+            "description": "Bu bir Kar Amacı Gütmeyen projedir, bu nedenle her bağış bize yardımcı olur!",
+            "button": "Patreon"
         }
-      ]
     },
-    "cta": {
-      "title": "Topluluk",
-      "subtitle": "",
-      "description": "Sürekli büyüyen discord sunucumuza katılmayı göz önünde bulundur!",
-      "button": "Sunucu Linki"
-    },
-    "faq": {
-      "title": "Sıkça Sorulan Sorular",
-      "items": [
-        {
-          "question": "Harita indirilebiliyor mu?",
-          "answer": "Hayır, çünkü haritanın çalışması için sunucunun eklentilerine ihtiyacı var. Harita aynı zamanda projemizi canlı tutuyor ve topluluğu bölmek istemiyoruz! Harita sadece ne yaptığını bilen ve projeye öyle ya da böyle katkıda bulunan kişilere verilir."
-        },
-        {
-          "question": "Sorunları size nasıl bildirebilirim?",
-          "answer": "Hayatta kalma ile ilgili ayrıntılı raporlar için #bug-reports'u kullanın veya bir moderasyon sorunu söz konusuysa lütfen #staff-ticket kısmından personel ekibiyle iletişime geçin."
-        },
-        {
-          "question": "Sunucuya katılamıyorum?",
-          "answer": "Sunucu, crackli hesapların erişimine izin vermiyor, bu nedenlerden biri olabilir. Aksi takdirde, lütfen aldığınız hata mesajının ekran görüntüsüyle birlikte #staff-contact'ta bir bilet açın, ekip elinden geldiğince yardımcı olacaktır."
-        },
-        {
-          "question": "Bu sunucuda sohbet raporlaması açık mı?",
-          "answer": "Hayır ve asla da olmayacak."
-        },
-        {
-          "question": "Bazı bağlantı sorunları yaşıyorum?",
-          "answer": "Evet, bu durum wifi ve sunucunun genel olarak uzak olmasıyla ilgili olabilir. Herkesin yaşadığı bir şeyse lütfen bunu personele bildirin."
-        }
-      ]
-    },
-    "rules": {
-      "title": "",
-      "subtitle": "Sunucu kuralları",
-      "description": "Topluluğu temiz tutmak için önemli kurallar",
-      "button": "Kurallar"
-    },
-    "support": {
-      "title": "Projeyi destekle!",
-      "description": "Bu bir Kar Amacı Gütmeyen projedir, bu nedenle her bağış bize yardımcı olur!",
-      "button": "Patreon"
+    "Navbar": {
+        "home": "ana sayfa",
+        "about": "hakkında",
+        "wiki": "wiki",
+        "map": "harita"
     }
-  },
-  "Navbar": {
-    "home": "ana sayfa",
-    "about": "hakkında",
-    "wiki": "wiki",
-    "map": "harita"
-  }
 }

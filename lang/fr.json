@@ -1,86 +1,82 @@
 {
-  "servername": "Gensokyo Reimagined",
-  "index": {
-    "header": {
-      "title": "",
-      "intro": "Un MMO Touhou dans Minecraft",
-      "group": "Rejoignez notre communauté !",
-      "continue": "En savoir plus"
-    },
-    "about": {
-      "title": "À propos",
-      "subtitle": "De petite explication sur le projet !",
-      "description": "Le projet a commencé plutôt niche dans un premier temps avec peu de personnes mais au fur et à mesure nous avons obtenu de l'attrait et les objectifs ont grandi. Maintenant nous sommes en train de créer une version avec un aspect MMO et Survie sur l'univers de Touhou jouable entierement sans aucun mods pour jouer pour une accessibilité maximale pour tout le monde."
-    },
-    "feature": {
-      "title": "",
-      "subtitle": "Caractéristiques du serveur",
-      "items": [
-        {
-          "name": "Mobs personnalisés",
-          "description": "Nous avons des mobs personnalisés sur le thème de Touhou en utilisant 0 mods !"
+    "servername": "Gensokyo Reimagined",
+    "index": {
+        "header": {
+            "intro": "Un MMO Touhou dans Minecraft",
+            "group": "Rejoignez notre communauté !",
+            "continue": "En savoir plus"
         },
-        {
-          "name": "Classes sur le thème de Touhou",
-          "description": "Chaque classe a un gameplay unique pour encourager les joueurs à expérimenter !"
+        "about": {
+            "title": "À propos",
+            "subtitle": "De petite explication sur le projet !",
+            "description": "Le projet a commencé plutôt niche dans un premier temps avec peu de personnes mais au fur et à mesure nous avons obtenu de l'attrait et les objectifs ont grandi. Maintenant nous sommes en train de créer une version avec un aspect MMO et Survie sur l'univers de Touhou jouable entierement sans aucun mods pour jouer pour une accessibilité maximale pour tout le monde."
         },
-        {
-          "name": "Quête Principales",
-          "description": "Nous avons des quêtes simples et étendues avec de grandes récompenses pour les joueurs"
+        "feature": {
+            "subtitle": "Caractéristiques du serveur",
+            "items": [
+                {
+                    "name": "Mobs personnalisés",
+                    "description": "Nous avons des mobs personnalisés sur le thème de Touhou en utilisant 0 mods !"
+                },
+                {
+                    "name": "Classes sur le thème de Touhou",
+                    "description": "Chaque classe a un gameplay unique pour encourager les joueurs à expérimenter !"
+                },
+                {
+                    "name": "Quête Principales",
+                    "description": "Nous avons des quêtes simples et étendues avec de grandes récompenses pour les joueurs"
+                },
+                {
+                    "name": "Événements météorologiques",
+                    "description": "Chaque jour est différent d'une certaine manière avec des saisons dynamiques!"
+                }
+            ]
         },
-        {
-          "name": "Événements météorologiques",
-          "description": "Chaque jour est différent d'une certaine manière avec des saisons dynamiques!"
+        "cta": {
+            "title": "Communauté",
+            "description": "Envisagez de rejoindre notre serveur discord !",
+            "button": "Lien du serveur"
+        },
+        "faq": {
+            "title": "Questions fréquemment posées (FAQ)",
+            "items": [
+                {
+                    "question": "Y a-t-il un téléchargement de carte ?",
+                    "answer": "Non, parce que la carte repose sur les plugins du serveur pour fonctionner. La map maintient également notre projet en vie et nous ne voulons pas fractionner la communauté ! La map n'est donnée qu'aux personnes qui savent ce qu'elles font et qui contribuent au projet d'une manière ou d'une autre.          "
+                },
+                {
+                    "question": "Comment puis-je vous informer sur les problèmes ?",
+                    "answer": "Pour des petits bugs sur la survie, utilisez #bug-reports, ou si cela concerne un problème de modération, veuillez contacter l'équipe du personnel dans #staff-ticket."
+                },
+                {
+                    "question": "Je n'arrive pas à rejoindre le serveur ?",
+                    "answer": "Le serveur n'autorise pas l'accès à des comptes craqués, ce qui peut être une des raisons. Sinon, veuillez ouvrir un ticket dans #staff-contact avec une capture d'écran du message d'erreur que vous recevez, le personnel vous aidera du mieux qu'il peut."
+                },
+                {
+                    "question": "Est-ce que ce serveur a un \"chat report\" (rapport de tchat)?",
+                    "answer": "Non, et jamais il n'en aura."
+                },
+                {
+                    "question": "Je rencontre des problèmes de connexion ?",
+                    "answer": "Oui, cela pourrait être le cas pour le wifi et le serveur étant généralement très loin. Si c'est quelque chose que tout le monde expérimente, s'il vous plaît signaler au personnel."
+                }
+            ]
+        },
+        "rules": {
+            "subtitle": "Règles du serveur",
+            "description": "Règles importantes pour garder une communauté propre",
+            "button": "Règles"
+        },
+        "support": {
+            "title": "Soutenez ce projet!",
+            "description": "C'est un projet à but non lucratif, donc chaque don nous aide !",
+            "button": "Patreon"
         }
-      ]
     },
-    "cta": {
-      "title": "Communauté",
-      "subtitle": "",
-      "description": "Envisagez de rejoindre notre serveur discord !",
-      "button": "Lien du serveur"
-    },
-    "faq": {
-      "title": "Questions fréquemment posées (FAQ)",
-      "items": [
-        {
-          "question": "Y a-t-il un téléchargement de carte ?",
-          "answer": "Non, parce que la carte repose sur les plugins du serveur pour fonctionner. La map maintient également notre projet en vie et nous ne voulons pas fractionner la communauté ! La map n'est donnée qu'aux personnes qui savent ce qu'elles font et qui contribuent au projet d'une manière ou d'une autre.          "
-        },
-        {
-          "question": "Comment puis-je vous informer sur les problèmes ?",
-          "answer": "Pour des petits bugs sur la survie, utilisez #bug-reports, ou si cela concerne un problème de modération, veuillez contacter l'équipe du personnel dans #staff-ticket."
-        },
-        {
-          "question": "Je n'arrive pas à rejoindre le serveur ?",
-          "answer": "Le serveur n'autorise pas l'accès à des comptes craqués, ce qui peut être une des raisons. Sinon, veuillez ouvrir un ticket dans #staff-contact avec une capture d'écran du message d'erreur que vous recevez, le personnel vous aidera du mieux qu'il peut."
-        },
-        {
-          "question": "Est-ce que ce serveur a un \"chat report\" (rapport de tchat)?",
-          "answer": "Non, et jamais il n'en aura."
-        },
-        {
-          "question": "Je rencontre des problèmes de connexion ?",
-          "answer": "Oui, cela pourrait être le cas pour le wifi et le serveur étant généralement très loin. Si c'est quelque chose que tout le monde expérimente, s'il vous plaît signaler au personnel."
-        }
-      ]
-    },
-    "rules": {
-      "title": "",
-      "subtitle": "Règles du serveur",
-      "description": "Règles importantes pour garder une communauté propre",
-      "button": "Règles"
-    },
-    "support": {
-      "title": "Soutenez ce projet!",
-      "description": "C'est un projet à but non lucratif, donc chaque don nous aide !",
-      "button": "Patreon"
+    "Navbar": {
+        "home": "Accueil",
+        "about": "À propos",
+        "wiki": "Wiki",
+        "map": "carte"
     }
-  },
-  "Navbar": {
-    "home": "Accueil",
-    "about": "À propos",
-    "wiki": "Wiki",
-    "map": "carte"
-  }
 }
