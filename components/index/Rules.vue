@@ -6,9 +6,10 @@
     </div>
     <div class="relative px-4 py-12 mx-auto max-w-7xl sm:px-6 lg:px-8 lg:py-16">
       <div class="md:ml-auto md:w-1/2 md:pl-10">
+        <!--
         <h2 class="text-base font-semibold tracking-wider text-[var(--md-sys-color-outline)] uppercase">
           {{ $t('index.rules.title') }}
-        </h2>
+        </h2>-->
         <p class="mt-2 text-3xl font-extrabold tracking-tight text-[var(--md-sys-color-background)] sm:text-4xl">
           {{ $t('index.rules.subtitle') }}
         </p>
