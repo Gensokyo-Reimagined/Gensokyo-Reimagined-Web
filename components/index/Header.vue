@@ -17,9 +17,9 @@
                 <span class="block text-[var(--md-sys-color-primary)] xl:inline">
                   {{ $t('servername') }}
                 </span>
-                <span class="block xl:inline">
+                <!--<span class="block xl:inline">
                   {{ $t('index.header.title') }}
-                </span>
+                </span>-->
               </h1>
               <p
                 class="mt-3 text-base text-[var(--md-sys-color-outline)] sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">

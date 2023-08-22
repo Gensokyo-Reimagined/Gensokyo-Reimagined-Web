@@ -8,9 +8,10 @@
               <span class="block">
                 {{ $t('index.cta.title') }}
               </span>
+              <!--
               <span class="block">
                 {{ $t('index.cta.subtitle') }}
-              </span>
+              </span>-->
             </h2>
             <p class="mt-4 text-lg leading-6 text-[var(--md-sys-color-error-container)]">
               {{ $t('index.cta.description') }}
