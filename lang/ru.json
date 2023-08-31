@@ -77,6 +77,7 @@
         "home": "Домой",
         "about": "О нас",
         "wiki": "Вики",
-        "map": "карта"
+        "map": "карта",
+        "translation": "translation"
     }
 }

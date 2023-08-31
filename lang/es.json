@@ -77,6 +77,7 @@
         "home": "inicio",
         "about": "acerca de",
         "wiki": "wiki",
-        "map": "mapa"
+        "map": "mapa",
+        "translation": "translation"
     }
 }
