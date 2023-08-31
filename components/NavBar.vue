@@ -26,6 +26,10 @@
               class="px-3 py-2 text-[var(--md-sys-color-on-background)] hover:text-[var(--md-sys-color-on-secondary-container)] font-medium">
               {{ $t('Navbar.map') }}
             </a>
+            <a :href="appConfig.NavBarLinkTranslation"
+              class="px-3 py-2 text-[var(--md-sys-color-on-background)] hover:text-[var(--md-sys-color-on-secondary-container)] font-medium">
+              {{ $t('Navbar.translation') }}
+            </a>
           </div>
         </div>
         <div class="hidden sm:flex sm:items-center sm:ml-6 sm:space-x-4">
