@@ -2,82 +2,82 @@
     "servername": "Gensokyo Reimagined",
     "index": {
         "header": {
-            "intro": "Creating a Touhou MMO in Minecraft",
+            "intro": "Tworzenie MMO o Touhou w Minecrafcie",
             "group": "Dołącz do naszej Społeczności!",
-            "continue": "Learn more"
+            "continue": "Dowiedz się więcej"
         },
         "about": {
-            "title": "O nas",
-            "subtitle": "Small explanation about the project!",
-            "description": "The Project started quite small initially with few people but as time went on project started to get some attraction and goals went bigger. Now we are creating playable version of Entirety of Touhou Universe with combining MMO and Survival Minecraft elements with requiring 0 mods to play on for maximum accessibility for everyone."
+            "title": "O Nas",
+            "subtitle": "Krótkie wyjaśnienie projektu",
+            "description": "Projekt powstał z inicjatywy paru osób, ale z czasem projekt zaczął zyskiwać na popularności, i zaczęliśmy stawiać coraz wyższe cele. Teraz pracujemy nad stworzeniem grywalnej wersji całego uniwersum Touhou, mieszając MMO z elementami trybu przetrwania Minecrafta, przy tym wymagając 0 modyfikacji dla maksymalnej dostępności dla każdego."
         },
         "feature": {
-            "subtitle": "Server Features",
+            "subtitle": "Cechy Serwera",
             "items": [
                 {
-                    "name": "Custom Mobs",
-                    "description": "We have custom Touhou themed mobs with 0 mods!"
+                    "name": "Niestandardowe Moby",
+                    "description": "Posiadamy niestandardowe stylizowane na Touhou moby bez żadnych modyfikacji!"
                 },
                 {
                     "name": "Klasy postaci inspirowane Touhou",
-                    "description": "Each class has unique gameplay to encourage players to experiment!"
+                    "description": "Każda klasa ma unikatową rozgrywkę żeby zachęcić graczy do eksperymentowania!"
                 },
                 {
-                    "name": "Story Quests",
-                    "description": "We have simple yet extensive quest lines with great rewards to players"
+                    "name": "Zadania Fabularne",
+                    "description": "Mamy proste, ale długie wątki fabularne, z świetnymi nagrodami dla graczy"
                 },
                 {
-                    "name": "Weather Events",
-                    "description": "Each day is different in some way with dynamic seasons!"
+                    "name": "Zdarzenia Pogodowe",
+                    "description": "Każdy dzień jest inny dzięki dynamicznym porom roku!"
                 }
             ]
         },
         "cta": {
             "title": "Społeczność",
-            "description": "Consider joining our ever growing discord server!",
-            "button": "Server Link"
+            "description": "Rozważ dołączenie do naszego stale powiększającego się serwera na Discordzie!",
+            "button": "Link do Serwera"
         },
         "faq": {
-            "title": "Frequently Asked Questions ",
+            "title": "Często Zadawane Pytania",
             "items": [
                 {
-                    "question": "Is there a map download?",
-                    "answer": "No, because the map relies on the server's plugins to function.The map also keeps our project alive and we do not want to segment the community! Map is only given to people who knows what they are doing and they are contributing to the project one way or another.          "
+                    "question": "Czy jest możliwość pobrania mapy?",
+                    "answer": "Nie, ponieważ mapa jest zależna od dodatków naszego serwera do działania. Mapa także powoduje że projekt jest aktywny, a nie chcemy dzielić społeczności! Mapa jest dawana jedynie osobom które wiedzą co robią, i pomagają rozwijać w jakiś sposób projekt."
                 },
                 {
-                    "question": "How can I let you guys know about issues?",
-                    "answer": "For quick reports on survival, use ⁠#bug-reports, or if it regards a moderation issue please contact the staff team in ⁠#staff-ticket."
+                    "question": "Jak mogę powiadomić was o problemach?",
+                    "answer": "Dla szybkich zgłoszeń w trybie przetrwania, użyj kanału #bug-reports, lub jeżeli to sprawa dla moderacji, skontaktuj się używając kanału #staff-ticket."
                 },
                 {
-                    "question": "I can't join the server?",
-                    "answer": "The server does not allow cracked accounts access to it, so that may be one reason. Otherwise please open a ticket in #staff-contact with a screenshot of the error-message you are getting, staff will help out as best they can."
+                    "question": "Nie mogę dołączyć do serwera?",
+                    "answer": "Serwer nie zezwala na dostęp przez konta non-premium, więc to może być powodem. W innym przypadku, otwórz ticket na kanale #staff-contact z zrzutem ekranu błędu który otrzymujesz, personel pomoże najlepiej jak umie."
                 },
                 {
-                    "question": "Does this server has chat reporting on?",
-                    "answer": "No, and never will be."
+                    "question": "Czy serwer ma włączone zgłaszanie wiadomości chatu?",
+                    "answer": "Nie, i nigdy nie będzie miał."
                 },
                 {
-                    "question": "I'm experiencing some connection issues?",
-                    "answer": "Yes, that might be case for wifi and server being generally far. If it's something that everyone experiences please report it to staff."
+                    "question": "Mam problemy z łącznością?",
+                    "answer": "Tak, to może być problem połączenia Wi-Fi i serwera który jest generalnie daleko. Jeżeli to jest coś z czym problem mają wszyscy, zgłoś to do personelu."
                 }
             ]
         },
         "rules": {
-            "subtitle": "Server Rules",
-            "description": "Important rules to keep community clean",
-            "button": "Rules"
+            "subtitle": "Zasady Serwera",
+            "description": "Ważne zasady dla utrzymania porządku w społeczności",
+            "button": "Zasady"
         },
         "support": {
-            "title": "Support the project!",
-            "description": "This is a Non-Profit project so every donation helps us out!",
+            "title": "Wspomóż projekt!",
+            "description": "Ten projekt jest non-profit, więc każda dotacja jest dla nas pomocna!",
             "button": "Patreon"
         }
     },
     "Navbar": {
-        "home": "home",
-        "about": "about",
+        "home": "strona główna",
+        "about": "o projekcie",
         "wiki": "wiki",
-        "map": "map",
-        "translation": "translation"
+        "map": "mapa",
+        "translation": "tłumaczenie"
     }
 }
