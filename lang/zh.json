@@ -1,5 +1,5 @@
 {
-    "servername": "幻想乡：重铸",
+    "servername": "幻想乡：重现",
     "index": {
         "header": {
             "intro": "创造一个以东方 Project 为主题的 MMO Minecraft 服务器",
@@ -15,7 +15,7 @@
             "subtitle": "服务器特色",
             "items": [
                 {
-                    "name": "自定义生物",
+                    "name": "定制的生物",
                     "description": "我们有零模组依赖的独特东方风生物！"
                 },
                 {
