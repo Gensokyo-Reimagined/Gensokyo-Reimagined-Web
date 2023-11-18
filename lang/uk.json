@@ -2,82 +2,86 @@
     "servername": "Gensokyo Reimagined",
     "index": {
         "header": {
-            "intro": "Creating a Touhou MMO in Minecraft",
-            "group": "Join our Community!",
-            "continue": "Learn more"
+            "intro": "Створення MMO Touhou в Minecraft",
+            "group": "Приєднуйся до спільноти!",
+            "continue": "Дізнайся більше",
+            "title": " "
         },
         "about": {
-            "title": "About Us",
-            "subtitle": "Small explanation about the project!",
-            "description": "The Project started quite small initially with few people but as time went on project started to get some attraction and goals went bigger. Now we are creating playable version of Entirety of Touhou Universe with combining MMO and Survival Minecraft elements with requiring 0 mods to play on for maximum accessibility for everyone."
+            "title": "Про нас",
+            "subtitle": "Невелике пояснення про проєкт!",
+            "description": "Спочатку проєкт розпочався з невеликої кількості людей, але з часом проєкт почав набувати популярності, а цілі стали набагато масштабнішими. Зараз ми створюємо ігрову версію Всесвіту Touhou, що поєднує в собі елементи MMO та виживання в Minecraft і не потребує жодних модів для гри, щоб зробити її максимально доступною для всіх бажаючих."
         },
         "feature": {
-            "subtitle": "Server Features",
+            "subtitle": "Можливості сервера",
             "items": [
                 {
-                    "name": "Custom Mobs",
-                    "description": "We have custom Touhou themed mobs with 0 mods!"
+                    "name": "Штучні моби",
+                    "description": "У нас є штучні тематичні моби Touhou з 0 модами!"
                 },
                 {
-                    "name": "Touhou Themed Classes",
-                    "description": "Each class has unique gameplay to encourage players to experiment!"
+                    "name": "Тематичні класи Touhou",
+                    "description": "Кожен клас має унікальний ігролад, що заохочує гравців до експериментів!"
                 },
                 {
-                    "name": "Story Quests",
-                    "description": "We have simple yet extensive quest lines with great rewards to players"
+                    "name": "Сюжетні завдання",
+                    "description": "У нас є прості, але розгалужені лінії завдань з великими нагородами для гравців"
                 },
                 {
-                    "name": "Weather Events",
-                    "description": "Each day is different in some way with dynamic seasons!"
+                    "name": "Погодні явища",
+                    "description": "Кожен день чимось відрізняється від інших завдяки динамічним порам року!"
                 }
-            ]
+            ],
+            "title": " "
         },
         "cta": {
-            "title": "Community",
-            "description": "Consider joining our ever growing discord server!",
-            "button": "Server Link"
+            "title": "Спільнота",
+            "description": "Подумайте про те, щоб приєднатися до нашого постійно зростаючого діскорд серверу!",
+            "button": "Посилання на сервер",
+            "subtitle": " "
         },
         "faq": {
-            "title": "Frequently Asked Questions ",
+            "title": "Поширені питання",
             "items": [
                 {
-                    "question": "Is there a map download?",
-                    "answer": "No, because the map relies on the server's plugins to function.The map also keeps our project alive and we do not want to segment the community! Map is only given to people who knows what they are doing and they are contributing to the project one way or another.          "
+                    "question": "Чи можна завантажити мапу?",
+                    "answer": "Ні, тому що мапа покладається на плагіни сервера, щоб функціонувати. Мапа також підтримує наш проєкт, і ми не хочемо сегментувати спільноту! Мапу отримують лише люди, які знають, що вони роблять, і так чи інакше роблять свій внесок у проект."
                 },
                 {
-                    "question": "How can I let you guys know about issues?",
-                    "answer": "For quick reports on survival, use ⁠#bug-reports, or if it regards a moderation issue please contact the staff team in ⁠#staff-ticket."
+                    "question": "Як я можу повідомити вам про проблеми?",
+                    "answer": "Для швидких звітів про виживання використовуйте #bug-reports, або якщо це стосується проблеми модерації, будь ласка, зв'яжіться з командою персоналу в #staff-ticket."
                 },
                 {
-                    "question": "I can't join the server?",
-                    "answer": "The server does not allow cracked accounts access to it, so that may be one reason. Otherwise please open a ticket in #staff-contact with a screenshot of the error-message you are getting, staff will help out as best they can."
+                    "question": "Я не можу приєднатися до сервера?",
+                    "answer": "Сервер не дозволяє доступ до нього піратським акаунтам, тому це може бути однією з причин. В іншому випадку, будь ласка, відкрийте тікет в #staff-contact зі знятком повідомлення про помилку, яке ви отримуєте, і співробітники допоможуть вам, як тільки зможуть."
                 },
                 {
-                    "question": "Does this server has chat reporting on?",
-                    "answer": "No, and never will be."
+                    "question": "Чи є на цьому сервері підтримка звітів у чаті?",
+                    "answer": "Ні, і ніколи не буде."
                 },
                 {
-                    "question": "I'm experiencing some connection issues?",
-                    "answer": "Yes, that might be case for wifi and server being generally far. If it's something that everyone experiences please report it to staff."
+                    "question": "У мене виникають проблеми з підключенням?",
+                    "answer": "Так, це може бути пов'язано з тим, що вай фай та сервер знаходяться дуже далеко. Якщо це трапляється у всіх, будь ласка, повідомте про це співробітникам."
                 }
             ]
         },
         "rules": {
-            "subtitle": "Server Rules",
-            "description": "Important rules to keep community clean",
-            "button": "Rules"
+            "subtitle": "Правила серверу",
+            "description": "Важливі правила для підтримання чистої спільноті",
+            "button": "Правила",
+            "title": " "
         },
         "support": {
-            "title": "Support the project!",
-            "description": "This is a Non-Profit project so every donation helps us out!",
-            "button": "Patreon"
+            "title": "Підтримай проєкт!",
+            "description": "Це неприбутковий проєкт, тому кожна пожертва допомагає нам!",
+            "button": "Патреон"
         }
     },
     "Navbar": {
-        "home": "home",
-        "about": "about",
-        "wiki": "wiki",
-        "map": "map",
-        "translation": "translation"
+        "home": "Дім",
+        "about": "Про",
+        "wiki": "Вікі",
+        "map": "Мапа",
+        "translation": "Переклади"
     }
 }
