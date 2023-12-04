@@ -14,12 +14,12 @@
           <i class="fa-brands fa-discord"></i>
         </a>
         <a
-          href="https://www.patreon.com/gensokyoreimagined"
+          href="https://www.buymeacoffee.com/greimagined/membership"
           target="_blank"
           class="text-gray-400 hover:text-gray-500"
         >
-          <span class="sr-only">Patreon</span>
-          <i class="fa-brands fa-patreon"></i>
+          <span class="sr-only">"BuyMeACoffee"</span>
+          <i class="fa-brands fa-buymeacoffee"></i>
         </a>
       </div>
       <div class="mt-8 md:mt-0 md:order-1">
