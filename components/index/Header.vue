@@ -1,7 +1,11 @@
 <template>
-  <div class="relative overflow-hidden bg-[var(--md-sys-color-background)] pt-16">
+  <div
+    class="relative overflow-hidden bg-[var(--md-sys-color-background)] pt-16"
+  >
     <div class="mx-auto max-w-7xl flex">
-      <div class="relative z-10 pb-8 sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32">
+      <div
+        class="relative z-10 pb-8 sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32"
+      >
         <!--<svg
           class="absolute inset-y-0 right-0 hidden w-48 h-full text-[var(--md-sys-color-background)] transform translate-x-1/2 lg:block"
           fill="currentColor" viewbox="0 0 100 100" preserveaspectratio="none" aria-hidden="true">
@@ -9,12 +13,18 @@
           </polygon>
         </svg>-->
         <navbar>
-          <main class="px-4 mx-auto mt-10 max-w-7xl sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28 z-[11] relative">
+          <main
+            class="px-4 mx-auto mt-10 max-w-7xl sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28 z-[11] relative"
+          >
             <div
-              class="sm:text-center lg:text-left lg:bg-white/30 lg:dark:bg-black/30 lg:backdrop-blur lg:p-5 lg:rounded-xl">
+              class="sm:text-center lg:text-left lg:bg-white/30 lg:dark:bg-black/30 lg:backdrop-blur lg:p-5 lg:rounded-xl"
+            >
               <h1
-                class="text-4xl font-extrabold tracking-tight text-[var(--md-sys-color-on-background)] sm:text-5xl md:text-6xl">
-                <span class="block text-[var(--md-sys-color-primary)] xl:inline">
+                class="text-4xl font-extrabold tracking-tight text-[var(--md-sys-color-on-background)] sm:text-5xl md:text-6xl"
+              >
+                <span
+                  class="block text-[var(--md-sys-color-primary)] xl:inline"
+                >
                   {{ $t('servername') }}
                 </span>
                 <!--<span class="block xl:inline">
@@ -22,20 +32,30 @@
                 </span>-->
               </h1>
               <p
-                class="mt-3 text-base text-[var(--md-sys-color-outline)] sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
+                class="mt-3 text-base text-[var(--md-sys-color-outline)] sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0"
+              >
                 {{ $t('index.header.intro') }}
               </p>
-              <div class="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
+              <div
+                class="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start"
+              >
                 <div class="rounded-md shadow">
-                  <a href="https://discord.gg/U9fZSJJcte" target="_blank"
-                    class="flex items-center justify-center w-full px-8 py-3 text-base font-medium text-[var(--md-sys-color-background)] bg-[var(--md-sys-color-primary)] border border-transparent rounded-md hover:bg-[var(--md-sys-color-secondary)] md:py-4 md:text-lg md:px-10">
+                  <a
+                    href="https://discord.gg/U9fZSJJcte"
+                    target="_blank"
+                    class="flex items-center justify-center w-full px-8 py-3 text-base font-medium text-[var(--md-sys-color-background)] bg-[var(--md-sys-color-primary)] border border-transparent rounded-md hover:bg-[var(--md-sys-color-secondary)] md:py-4 md:text-lg md:px-10"
+                  >
                     {{ $t('index.header.group') }}
-                    <i class="fa-solid fa-arrow-up-right-from-square ml-3 -mr-1"></i>
+                    <i
+                      class="fa-solid fa-arrow-up-right-from-square ml-3 -mr-1"
+                    ></i>
                   </a>
                 </div>
                 <div class="mt-3 sm:mt-0 sm:ml-3">
-                  <nuxt-link to="#features"
-                    class="flex items-center justify-center w-full px-8 py-3 text-base font-medium text-[var(--md-sys-color-on-background)] bg-[var(--md-sys-color-secondary-container)] border border-transparent rounded-md hover:bg-[var(--md-sys-color-primary-container)] md:py-4 md:text-lg md:px-10">
+                  <nuxt-link
+                    to="#features"
+                    class="flex items-center justify-center w-full px-8 py-3 text-base font-medium text-[var(--md-sys-color-on-background)] bg-[var(--md-sys-color-secondary-container)] border border-transparent rounded-md hover:bg-[var(--md-sys-color-primary-container)] md:py-4 md:text-lg md:px-10"
+                  >
                     {{ $t('index.header.continue') }}
                   </nuxt-link>
                 </div>
@@ -46,47 +66,61 @@
       </div>
     </div>
     <div class="pt-16 lg:absolute lg:inset-y-0 lg:right-0 w-full lg:blur-sm">
-      <swiper class="w-full h-56 sm:h-72 md:h-96 lg:w-full lg:h-full" :slidesPerView="1" :loop="true" :autoplay="{
-        delay: changeTime,
-        disableOnInteraction: false,
-      }" :modules="modules">
-        <swiper-slide class="transition-opacity ease-in-out" v-for="currentImageUrl in imageUrls" :key="currentImageUrl">
-          <nuxt-img class="w-full object-cover" :src="currentImageUrl" quality="80" loading="lazy"
-            sizes="sm:100vw md:50vw lg:800px" />
+      <swiper
+        class="w-full h-56 sm:h-72 md:h-96 lg:w-full lg:h-full"
+        :slidesPerView="1"
+        :loop="true"
+        :autoplay="{
+          delay: changeTime,
+          disableOnInteraction: false,
+        }"
+        :modules="modules"
+      >
+        <swiper-slide
+          class="transition-opacity ease-in-out"
+          v-for="currentImageUrl in imageUrls"
+          :key="currentImageUrl"
+        >
+          <nuxt-img
+            class="w-full object-cover"
+            :src="currentImageUrl"
+            quality="50"
+            sizes="sm:100vw md:50vw lg:800px"
+            alt="current image"
+          />
         </swiper-slide>
       </swiper>
-
     </div>
   </div>
 </template>
 <script>
 // Import Swiper Vue.js components
-import { Swiper, SwiperSlide } from 'swiper/vue';
+import { Swiper, SwiperSlide } from 'swiper/vue'
 
 // Import Swiper styles
-import 'swiper/css';
+import 'swiper/css'
 
-import { Autoplay } from 'swiper/modules';
+import { Autoplay } from 'swiper/modules'
 
 export default {
   components: {
     Swiper,
     SwiperSlide,
   },
-  setup () {
+  setup() {
     const appConfig = useAppConfig()
 
     const state = reactive({
       appConfig: appConfig,
     })
 
-    return { state, modules: [Autoplay], }
+    return { state, modules: [Autoplay] }
   },
-  data () {
+  data() {
     return {
       imageUrls: this.state.appConfig.IndexHeaderImg,
       changeTime: this.state.appConfig.IndexHeaderImgChangeTime,
-    };
-  }
+    }
+  },
 }
 </script>
