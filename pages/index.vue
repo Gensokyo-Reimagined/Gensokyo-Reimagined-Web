@@ -10,7 +10,7 @@
 
 <script setup>
 useSeoMeta({
-  title: ''
+  title: 'Creating a Touhou MMO Server in Minecraft',
 })
 </script>
 
