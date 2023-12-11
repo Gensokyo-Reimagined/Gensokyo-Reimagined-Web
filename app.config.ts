@@ -29,13 +29,13 @@ export default defineAppConfig({
   DCLink: 'https://discord.gg/U9fZSJJcte',
 
   IPCtaShow: true,
-  IndexIPCtaImg: '/img/discord-screenshot.webp',
+  IndexIPCtaImg: '/img/main_min.webp',
   // main page -> IPcta Component's Server IP context
   BuildServerIP: 'build.gensokyoreimagined.net',
   SurvivalServerIP: 'Survival.gensokyoreimagined.net',
 
   MPCtaShow: true,
-  IndexModPackCtaImg: '/img/discord-screenshot.webp',
+  IndexModPackCtaImg: '/img/modrinth.webp',
   MPLink: 'https://modrinth.com/modpack/gensokyo-reimagined-qol',
 
   IndexRulesImg: '/img/minecraft-bookshelf.webp',

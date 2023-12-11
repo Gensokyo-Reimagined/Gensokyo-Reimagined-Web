@@ -46,6 +46,7 @@ If you want to translate an existing language, please go to [gensokyoreimagined 
 ### translator ✒️
 
 Many thanks to the following staff for their translation and proofreading
+
 [@Afk-82](https://crowdin.com/profile/afk-82) [@DanClypse](https://crowdin.com/profile/danclypse) [@hanja_2007](https://crowdin.com/profile/hanja_2007) [@n n](https://crowdin.com/profile/igorsolarev2006)[@Kurobu](https://crowdin.com/profile/kurobu) [@nolemretaWxd](https://weblate.gensokyoreimagined.net/user/nolemretaWxd/) [@Peaceful'Nightu](https://weblate.gensokyoreimagined.net/user/nolemretaWxdNightu) [@arksc](https://weblate.gensokyoreimagined.net/user/arksc) [@AlphaUberKesha](https://weblate.gensokyoreimagined.net/user/Alfozir_Vognystyj)
 
 ## Config 🔧
