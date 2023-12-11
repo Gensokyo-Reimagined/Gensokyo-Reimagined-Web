@@ -2,14 +2,14 @@
     "servername": "幻想乡：重现",
     "index": {
         "header": {
-            "intro": "创造一个以东方 Project 为主题的 MMO Minecraft 服务器",
+            "intro": "创造一个东方Project主题的MMO Minecraft服务器",
             "group": "加入我们的社区！",
             "continue": "了解更多"
         },
         "about": {
             "title": "关于我们",
             "subtitle": "关于此项目的简要概述！",
-            "description": "这最初是一个规模很小，参与人数也很少的项目，但随着时间的推移，项目吸引了越来越多的人，也因而有了更大的目标。现在，我们计划创造一个东方世界观下的将 Minecraft 与 MMO [大型多人在线游戏] 要素相结合的服务器，为了尽可能地方便每个人游玩，加入服务器无需安装任何模组。"
+            "description": "这最初是一个规模很小，参与人数也很少的项目，但随着时间的推移，项目吸引了越来越多的人，也因而有了更大的目标。现在，我们计划创造一个东方世界观下的将Minecraft与MMO（大型多人在线游戏）要素相结合的服务器，为了尽可能地方便每个人游玩，加入服务器无需安装任何模组。"
         },
         "feature": {
             "subtitle": "服务器特色",
@@ -70,7 +70,7 @@
         "support": {
             "title": "支持此项目！",
             "description": "这是一个非盈利项目，每一笔捐赠都能帮助我们！",
-            "button": "Patreon"
+            "button": "BuyMeACoffee"
         }
     },
     "Navbar": {
