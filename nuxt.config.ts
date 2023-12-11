@@ -80,6 +80,11 @@ export default defineNuxtConfig({
         iso: 'it-IT',
         file: 'it.json',
       },
+      {
+        code: 'th',
+        iso: 'th-TH',
+        file: 'th.json',
+      },
     ],
     langDir: 'lang',
     defaultLocale: 'en',
