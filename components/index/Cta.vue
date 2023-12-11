@@ -45,6 +45,7 @@
               </span>
               <button
                 class="font-mono inline-flex items-center px-5 py-1 my-4 text-xs font-medium text-[var(--md-sys-color-on-background)] bg-[var(--md-sys-color-on-error)] border border-transparent rounded-md shadow hover:bg-[var(--md-sys-color-error-container)]"
+                @click="copyToClipboard(appConfig.SurvivalServerIP)"
               >
                 {{ appConfig.SurvivalServerIP }}
                 <i class="fa-solid fa-copy ml-3 -mr-1"></i>
@@ -58,9 +59,10 @@
               </span>
               <button
                 class="font-mono inline-flex items-center px-5 py-1 my-4 text-xs font-medium text-[var(--md-sys-color-on-background)] bg-[var(--md-sys-color-on-error)] border border-transparent rounded-md shadow hover:bg-[var(--md-sys-color-error-container)]"
+                @click="copyToClipboard(appConfig.BuildServerIP)"
               >
                 {{ appConfig.BuildServerIP }}
-                <i class="fa-solid fa-copy ml-3 -mr-1"></i>
+                <i :class="iconClass"></i>
               </button>
             </p>
           </div>
@@ -171,6 +173,33 @@
     </div>
   </div>
 </template>
-<script setup>
-const appConfig = useAppConfig()
+<script>
+export default {
+  setup() {
+    const appConfig = useAppConfig()
+    return {
+      appConfig,
+    }
+  },
+  methods: {
+    copyToClipboard(text) {
+      try {
+        this.iconClass = 'fa-solid fa-copy ml-3 -mr-1'
+        navigator.clipboard.writeText(text)
+        this.iconClass = 'fa-solid fa-check ml-3 -mr-1'
+        setTimeout(() => {
+          this.iconClass = 'fa-solid fa-copy ml-3 -mr-1'
+        }, 3000)
+      } catch (e) {
+        console.error(e)
+        this.iconClass = 'fa-solid fa-xmark ml-3 -mr-1'
+      }
+    },
+  },
+  data() {
+    return {
+      iconClass: 'fa-solid fa-copy ml-3 -mr-1',
+    }
+  },
+}
 </script>
