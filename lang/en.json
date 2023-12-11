@@ -34,11 +34,24 @@
         }
       ]
     },
+    "IPcta": {
+      "title": "ServerIP title",
+      "subtitle": "",
+      "description": "description",
+      "buildtitle": "BuildServerIP",
+      "survivaltitle": "SurvivalServerIP"
+    },
     "cta": {
       "title": "Community",
       "subtitle": "",
       "description": "Consider joining our ever growing discord server!",
       "button": "Server Link"
+    },
+    "MPcta": {
+      "title": "ModPack title",
+      "subtitle": "",
+      "description": "description",
+      "button": "ModPack Link"
     },
     "faq": {
       "title": "Frequently Asked Questions",
