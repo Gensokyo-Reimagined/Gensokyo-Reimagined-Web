@@ -35,11 +35,11 @@
       ]
     },
     "IPcta": {
-      "title": "ServerIP title",
+      "title": "Server IPs",
       "subtitle": "",
-      "description": "description",
-      "buildtitle": "BuildServerIP",
-      "survivaltitle": "SurvivalServerIP"
+      "description": "Version: 1.20.X",
+      "buildtitle": "Build Server",
+      "survivaltitle": "MMORPG Server"
     },
     "cta": {
       "title": "Community",
@@ -48,10 +48,10 @@
       "button": "Server Link"
     },
     "MPcta": {
-      "title": "ModPack title",
+      "title": "Try our Optimized Modpack for the Server!",
       "subtitle": "",
-      "description": "description",
-      "button": "ModPack Link"
+      "description": "",
+      "button": "Modrinth"
     },
     "faq": {
       "title": "Frequently Asked Questions",

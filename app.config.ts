@@ -29,10 +29,10 @@ export default defineAppConfig({
   DCLink: 'https://discord.gg/U9fZSJJcte',
 
   IPCtaShow: true,
-  IndexIPCtaImg: '/img/main_min.webp',
+  IndexIPCtaImg: '/img/ipc.webp',
   // main page -> IPcta Component's Server IP context
   BuildServerIP: 'build.gensokyoreimagined.net',
-  SurvivalServerIP: 'Survival.gensokyoreimagined.net',
+  SurvivalServerIP: 'Under Development',
 
   MPCtaShow: true,
   IndexModPackCtaImg: '/img/modrinth.webp',
