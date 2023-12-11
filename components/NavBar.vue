@@ -343,6 +343,11 @@ export default {
           name: 'italiano',
           flag: 'twa-flag-italy',
         },
+        {
+          lang: 'th',
+          name: 'ภาษาไทย',
+          flag: 'twa-flag-thailand',
+        },
       ],
     }
   },
