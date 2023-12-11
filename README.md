@@ -1,5 +1,5 @@
 <p align="center">
-    <img src="https://cdn.staticaly.com/gh/Gensokyo-Reimagined/Gensokyo-Reimagined-Web/main/public/logo.svg" width="200" height="auto" alt="houbunsop">
+    <img src="https://raw.githubusercontent.com/Gensokyo-Reimagined/Gensokyo-Reimagined-Web/main/public/logo.svg" width="200" height="auto" alt="Gensokyo-Reimagined">
 </p>
 
 <div align="center">
@@ -24,6 +24,8 @@ The repository is using the packages in the list below
 - [@nuxtjs/i18n](https://v8.i18n.nuxtjs.org/)
 - [Seo-Kit](https://nuxt.com.cn/modules/seo-kit)
 - [Tailwind CSS](https://tailwindcss.nuxtjs.org/)
+- [@nuxtjs/color-mode](https://color-mode.nuxtjs.org/)
+- [@nuxtjs/partytown](https://nuxt.com/modules/partytown)
 
 ## i18n 🌐
 
@@ -44,19 +46,7 @@ If you want to translate an existing language, please go to [gensokyoreimagined 
 ### translator ✒️
 
 Many thanks to the following staff for their translation and proofreading
-
-- zh-CN: [@Afk-82](https://crowdin.com/profile/afk-82)
-- Ja:
-- cs:
-- de:
-- el:
-- es-ES: [@DanClypse](https://crowdin.com/profile/danclypse)
-- fr: [@hanja_2007](https://crowdin.com/profile/hanja_2007)
-- pl:
-- ru: [@n n](https://crowdin.com/profile/igorsolarev2006)
-- tr:
-- uk:
-- it: [@Kurobu](https://crowdin.com/profile/kurobu)
+[@Afk-82](https://crowdin.com/profile/afk-82) [@DanClypse](https://crowdin.com/profile/danclypse) [@hanja_2007](https://crowdin.com/profile/hanja_2007) [@n n](https://crowdin.com/profile/igorsolarev2006)[@Kurobu](https://crowdin.com/profile/kurobu) [@nolemretaWxd](https://weblate.gensokyoreimagined.net/user/nolemretaWxd/) [@Peaceful'Nightu](https://weblate.gensokyoreimagined.net/user/nolemretaWxdNightu) [@arksc](https://weblate.gensokyoreimagined.net/user/arksc) [@AlphaUberKesha](https://weblate.gensokyoreimagined.net/user/Alfozir_Vognystyj)
 
 ## Config 🔧
 
