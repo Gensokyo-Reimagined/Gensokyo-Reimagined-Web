@@ -55,7 +55,7 @@
               <span
                 class="mr-8 text-lg leading-6 text-[var(--md-sys-color-error-container)]"
               >
-                {{ $t('index.IPcta.buildtitle') }}::
+                {{ $t('index.IPcta.buildtitle') }}:
               </span>
               <button
                 class="font-mono inline-flex items-center px-5 py-1 my-4 text-xs font-medium text-[var(--md-sys-color-on-background)] bg-[var(--md-sys-color-on-error)] border border-transparent rounded-md shadow hover:bg-[var(--md-sys-color-error-container)]"
