@@ -71,6 +71,16 @@
             "title": "Support the project!",
             "description": "This is a Non-Profit project so every donation helps us out!",
             "button": "BuyMeACoffee"
+        },
+        "IPcta": {
+            "description": "Version: 1.20.X",
+            "survivaltitle": "MMORPG Server",
+            "buildtitle": "Build Server",
+            "title": "Server IPs"
+        },
+        "MPcta": {
+            "title": "Try our Optimized Modpack for the Server!",
+            "button": "Modrinth"
         }
     },
     "Navbar": {
