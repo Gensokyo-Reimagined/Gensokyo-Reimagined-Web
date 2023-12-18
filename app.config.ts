@@ -24,7 +24,20 @@ export default defineAppConfig({
     '/img/season.webp',
   ],
   //main page -> cta Component on the right of the picture. The method used is similar to that of IndexHeaderImg
+  DCCtaShow: true,
   IndexCtaImg: '/img/discord-screenshot.webp',
+  DCLink: 'https://discord.gg/U9fZSJJcte',
+
+  IPCtaShow: true,
+  IndexIPCtaImg: '/img/ipc.webp',
+  // main page -> IPcta Component's Server IP context
+  BuildServerIP: 'build.gensokyoreimagined.net',
+  SurvivalServerIP: 'Under Development',
+
+  MPCtaShow: true,
+  IndexModPackCtaImg: '/img/modrinth.webp',
+  MPLink: 'https://modrinth.com/modpack/gensokyo-reimagined-qol',
+
   IndexRulesImg: '/img/minecraft-bookshelf.webp',
   //Links in Navbar support all url formats
   NavBarLinkAbout: '/',
