@@ -71,6 +71,16 @@
             "title": "Поддержите проект!",
             "description": "Наш проект некоммерческий, поэтому каждое пожертвование помогает нам!",
             "button": "Patreon"
+        },
+        "IPcta": {
+            "title": "Server IPs",
+            "buildtitle": "Build Server",
+            "survivaltitle": "MMORPG Server",
+            "description": "Version: 1.20.X"
+        },
+        "MPcta": {
+            "title": "Try our Optimized Modpack for the Server!",
+            "button": "Modrinth"
         }
     },
     "Navbar": {
