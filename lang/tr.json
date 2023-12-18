@@ -71,6 +71,16 @@
             "title": "Projeyi destekle!",
             "description": "Bu bir Kar Amacı Gütmeyen projedir, bu nedenle her bağış bize yardımcı olur!",
             "button": "Patreon"
+        },
+        "IPcta": {
+            "title": "Server IPs",
+            "description": "Version: 1.20.X",
+            "buildtitle": "Build Server",
+            "survivaltitle": "MMORPG Server"
+        },
+        "MPcta": {
+            "button": "Modrinth",
+            "title": "Try our Optimized Modpack for the Server!"
         }
     },
     "Navbar": {
