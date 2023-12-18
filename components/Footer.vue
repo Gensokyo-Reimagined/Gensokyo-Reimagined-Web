@@ -19,7 +19,7 @@
           class="text-gray-400 hover:text-gray-500"
         >
           <span class="sr-only">"BuyMeACoffee"</span>
-          <i class="fa-brands fa-buymeacoffee"></i>
+          <i class="fa-solid fa-mug-hot"></i>
         </a>
       </div>
       <div class="mt-8 md:mt-0 md:order-1">
