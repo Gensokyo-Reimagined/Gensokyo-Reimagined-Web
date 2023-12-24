@@ -18,7 +18,7 @@ useHead({
       rel: 'preload',
       as: 'style',
       onload: 'this.onload=null;this.rel="stylesheet"',
-      href: 'https://cdn.bootcdn.net/ajax/libs/font-awesome/6.4.0/css/all.min.css',
+      href: '/css/all.min.css',
     },
     {
       rel: 'preload',
