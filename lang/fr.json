@@ -9,7 +9,7 @@
         "about": {
             "title": "À propos",
             "subtitle": "De petite explication sur le projet !",
-            "description": "Le projet a commencé plutôt niche dans un premier temps avec peu de personnes mais au fur et à mesure nous avons obtenu de l'attrait et les objectifs ont grandi. Maintenant nous sommes en train de créer une version avec un aspect MMO et Survie sur l'univers de Touhou jouable entierement sans aucun mods pour jouer pour une accessibilité maximale pour tout le monde."
+            "description": "Le project a commencé sur des humbles bases, initiallement avec une poignée de bénévoles, mais au fil du temps, le projet a commencé à attirer de l'attention, et les objectifs ont grandit avec. Désormais, notre but est de créer un jeu situé dans l'Univers de Touhou, dans Minecraft, de manière à ce que n'importe qui puisse jouer, avec aucun mods nécéssaires."
         },
         "feature": {
             "subtitle": "Caractéristiques du serveur",
@@ -73,10 +73,10 @@
             "button": "Patreon"
         },
         "IPcta": {
-            "title": "Server IPs",
+            "title": "Adresses IP",
             "description": "Version: 1.20.X",
-            "buildtitle": "Build Server",
-            "survivaltitle": "MMORPG Server"
+            "buildtitle": "Serveur Build",
+            "survivaltitle": "Serveur MMORPG"
         },
         "MPcta": {
             "title": "Try our Optimized Modpack for the Server!",
