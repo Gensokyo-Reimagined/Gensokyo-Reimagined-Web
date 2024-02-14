@@ -2,9 +2,11 @@ export default defineAppConfig({
   //main page -> For the image on the right side of the page header, please put the corresponding image in public/img, and then fill in /img/1.png if the file name is 1.png
   IndexHeaderImg: [
     '/img/main_min.webp',
-    '/img/asura.webp',
     '/img/youkaimountain.webp',
     '/img/sunflower.webp',
+    '/img/youkaiforest.webp',
+    '/img/shop.webp',
+    '/img/village.webp'
   ],
   //Image switching time, in milliseconds
   IndexHeaderImgChangeTime: '5000',
