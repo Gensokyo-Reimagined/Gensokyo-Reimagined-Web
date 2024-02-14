@@ -2,92 +2,92 @@
     "servername": "Gensokyo Reimagined",
     "index": {
         "header": {
-            "intro": "Creating a Touhou MMO Server in Minecraft",
-            "group": "Join our Community!",
-            "continue": "Learn more"
+            "intro": "สร้างเซิร์ฟมายคราฟธีมโทโฮ (Touhou) ในรูปแบบ MMO",
+            "group": "มาเข้าร่วมคอมมูนิตี้ของเราสิ!",
+            "continue": "เรียนรู้เพิ่มเเติม"
         },
         "about": {
-            "title": "About Us",
-            "subtitle": "Small explanation about the project!",
-            "description": "The Project started quite small initially with few people but as time went on project started to get some attraction and goals went bigger. Now we are creating playable version of Entirety of Touhou Universe with combining MMO and Survival Minecraft elements with requiring 0 mods to play on for maximum accessibility for everyone."
+            "title": "เกียวกับเรา",
+            "subtitle": "การอธิบายเล็กน้อยเกี่ยวกับโปรเจกต์ของเรา!",
+            "description": "โปรเจกต์ของเราตอนแรกเริ่มนั้นมีคนทำเพียงไม่กี่คน แต่พอเวลาผ่านไปโปรเจกค์ของเราก็เริ่มเป็นที่สนใจมากขึ้นและจุดมุ่งหมายก็เริ่มที่จะใหญ่ขึ้นตาม ซึ่งตอนนี้เรากำลังสร้างแผนที่ของทั้งจักรวาลโทโฮที่สามารถเล่นได้พร้อมกับผสานระบบ MMO และการเอาตัวรอดแบบมายคราฟเข้าด้วยกันโดยไม่พึ่งม็อดในการเล่นเลย เพื่อความเข้าถึงที่สะดวกและง่ายดายสำหรับทุกคน"
         },
         "faq": {
             "items": [
                 {
-                    "question": "Is there a map download?",
-                    "answer": "No, because the map relies on the server's plugins to function.The map also keeps our project alive and we do not want to segment the community! Map is only given to people who knows what they are doing and they are contributing to the project one way or another."
+                    "question": "มีที่ให้โหลดแมพไหม?",
+                    "answer": "ไม่มี เพราะว่าตัวแมพนั้นพึ่งพา Plugins ของเซิร์ฟเพื่อที่จะให้มันทำงานได้ และตัวแมพเองก็คือสิ่งที่ทำให้โปรเจคของเรามีชีวิตอยู่ได้และเราไม่อยากแบ่งแยกคอมมูนิตี้ของเรา โดยเราจะให้ตัวแมพนี้กับคนที่รู้จริงๆว่าตัวเองทำอะไรอยู่และสนุบสนุนโปรเจคของเราในทางใดทางหนึ่ง"
                 },
                 {
-                    "question": "How can I let you guys know about issues?",
-                    "answer": "For quick reports on survival, use ⁠#bug-reports, or if it regards a moderation issue please contact the staff team in ⁠#staff-ticket."
+                    "question": "ฉันจะรายงานปัญหาได้อย่างไร?",
+                    "answer": "สำหรับการรายงานปัญหาในส่วนของโหมดเอาตัวรอด ให้ใช้ช่อง #bug-reports แต่ถ้าหากเป็นปัญหาในส่วนของการบริหารเซิร์ฟต่างๆ ให้ติดต่อพนักงานผ่านทางช่อง #staff-ticket"
                 },
                 {
-                    "question": "I can't join the server?",
-                    "answer": "The server does not allow cracked accounts access to it, so that may be one reason. Otherwise please open a ticket in #staff-contact with a screenshot of the error-message you are getting, staff will help out as best they can."
+                    "question": "ฉันเข้าเซิร์ฟไม่ได้?",
+                    "answer": "เซิร์ฟนี้จะรับเฉพาะ ID แท้ (ผู้ที่ซื้อตัวเกมจริงมา) เท่านั้น ซึ่งอาจจะเป็นสาเหตุหนึ่งก็ได้ ไม่เช่นงั้นได้โปรดติดต่อพนักงานช่วยเหลือในช่อง #staff-contact พร้อมแนบรูปข้อความ Error ที่ได้ ทีมงานจะค่อยช่วยเหลือคุณเท่าที่จะทำได้"
                 },
                 {
-                    "question": "Does this server have chat reporting on?",
-                    "answer": "No, and never will be."
+                    "question": "เซิร์ฟนี้มีระบบรีพอร์ตแชทไหม?",
+                    "answer": "ไม่มี และจะไม่มีวันมี"
                 },
                 {
-                    "question": "I'm experiencing some connection issues?",
-                    "answer": "Yes, that might be case for wifi and server being generally far. If it's something that everyone experiences please report it to staff."
+                    "question": "ฉันกำลังพบเจอปัญหาการเชื่อมต่ออยู่?",
+                    "answer": "ใช่ ซึ่งอาจจะเกิดจากการที่เน็ตของคุณและเซิร์ฟของเราอยู่ไกล แต่ถ้าหากเป็นปัญหาที่ทุกคนพบเจออยู่กรุณาติดต่อพนักงานด้วย"
                 }
             ],
-            "title": "Frequently Asked Questions"
+            "title": "คำถามที่พบบ่อย"
         },
         "feature": {
-            "subtitle": "Server Features",
+            "subtitle": "ระบบในเซิร์ฟเวอร์",
             "items": [
                 {
-                    "name": "Custom Mobs",
-                    "description": "We have custom Touhou themed mobs with 0 mods!"
+                    "name": "ม็อบแบบคัสตอม",
+                    "description": "เรามีม็อบในธีมของโทโฮโดยไม่ต้องพึ่งม็อดเลย!"
                 },
                 {
-                    "name": "Touhou Themed Classes",
-                    "description": "Each class has unique gameplay to encourage players to experiment!"
+                    "name": "สายอาชีพในธีมโทโฮ",
+                    "description": "สายอาชีพแต่ละสายมีวิธีการเล่นที่หลากหลายเพื่อสนับสนุนให้ผู้เล่นได้ทดลองแนวการเล่นของตัวเอง!"
                 },
                 {
-                    "name": "Story Quests",
-                    "description": "We have simple yet extensive quest lines with great rewards to players"
+                    "name": "เควสเนื้อเรื่อง",
+                    "description": "เรามีระบบเควสที่เรียบง่ายแต่เต็มไปด้วยเนื้อหาและรางวัลสำหรับผู้เล่น"
                 },
                 {
-                    "name": "Weather Events",
-                    "description": "Each day is different in some way with dynamic seasons!"
+                    "name": "อีเว้นท์สภาพอากาศ",
+                    "description": "ด้วยฤดูการที่เปลี่ยนไปตามเวลาในเกมทำให้ในแต่ละวันมีความต่างต่างกันไม่มากก็น้อย!"
                 }
             ]
         },
         "cta": {
-            "title": "Community",
-            "description": "Consider joining our ever growing discord server!",
-            "button": "Server Link"
+            "title": "คอมมูนิตี้",
+            "description": "มาเข้าร่วมเซิร์ฟ Discord ของเราสิ!",
+            "button": "ลิ้งค์เซิร์ฟ"
         },
         "rules": {
-            "subtitle": "Server Rules",
-            "description": "Important rules to keep community clean",
-            "button": "Rules"
+            "subtitle": "กฎของเซิร์ฟ",
+            "description": "กฎสำคัญเพื่อให้คอมมูนิตี้ใสสะอาด",
+            "button": "กฎต่างๆ"
         },
         "support": {
-            "title": "Support the project!",
-            "description": "This is a Non-Profit project so every donation helps us out!",
+            "title": "สนับสนุนโปรเจคของเราสิ!",
+            "description": "นี้เป็นโปรเจคที่ไม่แสวงหากำไร เพราะฉะนั้นการบริจาคทุกบาทจะช่วยเราได้มากเลย!",
             "button": "BuyMeACoffee"
         },
         "IPcta": {
-            "description": "Version: 1.20.X",
-            "survivaltitle": "MMORPG Server",
-            "buildtitle": "Build Server",
-            "title": "Server IPs"
+            "description": "เวอร์ชั่น: 1.20.X",
+            "survivaltitle": "เซิร์ฟ MMORPG",
+            "buildtitle": "เซิร์ฟสร้าง",
+            "title": "IP ของเซิร์ฟต่างๆ"
         },
         "MPcta": {
-            "title": "Try our Optimized Modpack for the Server!",
+            "title": "ลองใช้ Modpack ที่ปรับให้เข้ากับเซิร์ฟของเราดูสิ!",
             "button": "Modrinth"
         }
     },
     "Navbar": {
-        "home": "home",
-        "about": "about",
-        "wiki": "wiki",
-        "map": "map",
-        "translation": "translation"
+        "home": "หน้าหลัก",
+        "about": "เกี่ยวกับ",
+        "wiki": "วิกิ",
+        "map": "แผนที่เซิร์ฟ",
+        "translation": "แปลภาษา"
     }
 }
