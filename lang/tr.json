@@ -2,7 +2,7 @@
     "servername": "Gensokyo Reimagined",
     "index": {
         "header": {
-            "intro": "Minecraft'da Touhou MMO'su yaratıyor",
+            "intro": "Minecraft'da Touhou MMO Sunucusu yapıyor",
             "group": "Topluluğumuza Katıl!",
             "continue": "Daha fazla bilgi edinin"
         },
@@ -38,7 +38,7 @@
             "button": "Sunucu Linki"
         },
         "faq": {
-            "title": "Sıkça Sorulan Sorular ",
+            "title": "Sıkça Sorulan Sorular",
             "items": [
                 {
                     "question": "Harita indirilebiliyor mu?",
@@ -63,24 +63,24 @@
             ]
         },
         "rules": {
-            "subtitle": "Sunucu kuralları",
+            "subtitle": "Sunucu Kuralları",
             "description": "Topluluğu temiz tutmak için önemli kurallar",
             "button": "Kurallar"
         },
         "support": {
             "title": "Projeyi destekle!",
-            "description": "Bu bir Kar Amacı Gütmeyen projedir, bu nedenle her bağış bize yardımcı olur!",
-            "button": "Patreon"
+            "description": "Bu Kar Amacı Gütmeyen bir projedir, bu nedenle her bağış bize yardımcı olur!",
+            "button": "BuyMeACoffee"
         },
         "IPcta": {
-            "title": "Server IPs",
-            "description": "Version: 1.20.X",
-            "buildtitle": "Build Server",
-            "survivaltitle": "MMORPG Server"
+            "title": "Sunucu IPleri",
+            "description": "Sürüm: 1.20.X",
+            "buildtitle": "İnşaa Sunucusu",
+            "survivaltitle": "MMORPG Sunucusu"
         },
         "MPcta": {
             "button": "Modrinth",
-            "title": "Try our Optimized Modpack for the Server!"
+            "title": "Sunucu için Optimize Edilmiş Mod Paketimizi Deneyin!"
         }
     },
     "Navbar": {
@@ -88,6 +88,6 @@
         "about": "hakkında",
         "wiki": "wiki",
         "map": "harita",
-        "translation": "translation"
+        "translation": "çeviri"
     }
 }
