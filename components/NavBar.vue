@@ -380,6 +380,20 @@ export default {
     } else {
       this.ColorButtonClass = 'fa-solid fa-sun'
     }
+    //需要注意的是此方法不支持刷新，因为只要切换到其他语言之后刷新会导致重新转到用户浏览器的语言
+    //It is important to note that this method does not support refreshing,
+    //because refreshing after switching to another language will result in going back to the language of the user's browser
+    const userLanguage = navigator.language
+    const languageCode = userLanguage.split('-')[0]
+
+    const matchingLanguage = this.languages.find(
+      (lang) => lang.lang === languageCode
+    )
+
+    if (matchingLanguage) {
+      const langCode = matchingLanguage.lang
+      this.$router.push(`/${langCode}`)
+    }
   },
 }
 </script>
