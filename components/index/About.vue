@@ -49,6 +49,7 @@
     </navbar>
     <div
       class="pt-32 px-4 py-16 mx-auto max-w-7xl sm:px-6 lg:px-8 flex flex-col md:flex-row relative"
+      id="aboutus"
     >
       <div class="info order-last mt-5 md:order-first md:mr-4 md:mt-0">
         <div

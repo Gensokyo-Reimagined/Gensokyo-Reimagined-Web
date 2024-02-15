@@ -43,7 +43,7 @@ export default defineAppConfig({
 
   IndexRulesImg: '/img/minecraft-bookshelf.webp',
   //Links in Navbar support all url formats
-  NavBarLinkAbout: '/',
+  NavBarLinkAbout: '#aboutus',
   NavBarLinkWiki: 'https://wiki.gensokyoreimagined.net/',
   NavBarLinkGithub: 'https://github.com/Gensokyo-Reimagined',
   NavBarLinkMap:
