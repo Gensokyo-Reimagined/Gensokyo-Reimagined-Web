@@ -4,7 +4,7 @@
   >
     <div class="mx-auto max-w-7xl lg:h-screen flex items-center justify-center">
       <div
-        class="max-lg:absolute max-lg:top-16 max-lg:left-0 lg:relative z-10 pt-10 md:pb-20 lg:w-full lg:pb-28 xl:pb-32 flex justify-center"
+        class="max-lg:absolute max-lg:top-16 max-lg:left-0 lg:relative z-10 pt-10 md:pb-20 w-full lg:pb-28 xl:pb-32 flex justify-center"
       >
         <nuxt-img
           class="lg:absolute lg:top-1/2 lg:left-1/2 transform lg:-translate-x-1/2 lg:-translate-y-1/2 object-cover max-lg:w-1/2 max-lg:h-1/2"
@@ -16,7 +16,7 @@
       </div>
     </div>
     <div
-      class="lg:pt-16 lg:absolute lg:inset-y-0 lg:right-0 w-full lg:h-screen lg:blur-sm"
+      class="lg:pt-16 lg:absolute lg:inset-y-0 lg:right-0 w-full lg:h-screen blur-sm"
     >
       <swiper
         class="w-full h-56 sm:h-72 md:h-96 lg:w-full lg:h-full"
@@ -43,9 +43,9 @@
         </swiper-slide>
       </swiper>
     </div>
-    <div class="absolute inset-0 max-md:hidden">
+    <div class="absolute inset-0">
       <div
-        class="absolute bottom-0 w-full bg-gradient-to-b from-transparent to-[var(--md-sys-color-background)] h-24"
+        class="absolute bottom-0 w-full bg-gradient-to-b from-transparent to-[var(--md-sys-color-background)] lg:h-24 md:h-12 sm:h-6 h-4"
       ></div>
     </div>
   </div>
