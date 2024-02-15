@@ -381,16 +381,18 @@ export default {
       this.ColorButtonClass = 'fa-solid fa-sun'
     }
     //需要注意的是此方法不支持刷新，因为只要切换到其他语言之后刷新会导致重新转到用户浏览器的语言
+    //尝试过用方法进行存储cookie来判断是否用户自定义语言，但是似乎会导致并不能点击语言进行切换，故暂时放弃
     //It is important to note that this method does not support refreshing,
     //because refreshing after switching to another language will result in going back to the language of the user's browser
+    //I tried to use the method to store cookies to determine whether the language is user-defined,
+    //but it seems that it can not click the language to switch, so I gave up for the time being
     const userLanguage = navigator.language
     const languageCode = userLanguage.split('-')[0]
 
     const matchingLanguage = this.languages.find(
       (lang) => lang.lang === languageCode
     )
-
-    if (matchingLanguage) {
+    if (matchingLanguage && matchingLanguage.lang != 'en') {
       const langCode = matchingLanguage.lang
       this.$router.push(`/${langCode}`)
     }
