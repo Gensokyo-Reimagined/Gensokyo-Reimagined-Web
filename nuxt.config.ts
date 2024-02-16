@@ -2,16 +2,25 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
   modules: [
-    'nuxt-typed-router',
     '@nuxtjs/i18n',
     '@nuxt/image',
     '@nuxtjs/tailwindcss',
     '@nuxtjs/color-mode',
-    '@nuxtjs/partytown',
   ],
+  // other plugin
+  extends: ['nuxt-seo-kit'],
+  // css import
+  css: ['@/assets/css/main.css'],
+  // Nuxt-image
+  image: {
+    format: ['webp'],
+  },
+  // turn off ssr mode
+  ssr: false,
   colorMode: {
     classSuffix: '',
   },
+  // Nuxt-i18n
   i18n: {
     //strategy: 'prefix',
     locales: [
@@ -94,8 +103,6 @@ export default defineNuxtConfig({
       redirectOn: 'root', // recommended
     },
   },
-  extends: ['nuxt-seo-kit'],
-  css: ['@/assets/css/main.css'],
   experimental: {
     writeEarlyHints: false,
   },
@@ -107,6 +114,32 @@ export default defineNuxtConfig({
       siteDescription: 'Welcome to Gensokyo!',
       siteImage: '/img/about_pic_embed.webp',
       language: 'en', // prefer more explicit language codes like `en-AU` over `en`
+    },
+  },
+  // optimization
+  webpack: {
+    optimization: {
+      splitChunks: {
+        chunks: 'async',
+        maxSize: 2000,
+        minRemainingSize: 0,
+        minChunks: 1,
+        maxAsyncRequests: 30,
+        maxInitialRequests: 30,
+        enforceSizeThreshold: 50000,
+        cacheGroups: {
+          defaultVendors: {
+            test: /[\\/]node_modules[\\/]/,
+            priority: -10,
+            reuseExistingChunk: true,
+          },
+          default: {
+            minChunks: 2,
+            priority: -20,
+            reuseExistingChunk: true,
+          },
+        },
+      },
     },
   },
 })
