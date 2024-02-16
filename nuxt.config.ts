@@ -15,8 +15,8 @@ export default defineNuxtConfig({
   image: {
     format: ['webp'],
   },
-  // turn off ssr mode
-  ssr: false,
+  // maybe sometime will turn off ssr mode
+  ssr: true,
   colorMode: {
     classSuffix: '',
   },
