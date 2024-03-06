@@ -1,13 +1,13 @@
 {
-    "servername": "Gensokyo Reimagined",
+    "servername": "Gensokyo neu interpretiert",
     "index": {
         "header": {
-            "intro": "Creating a Touhou MMO in Minecraft",
-            "group": "Join our Community!",
-            "continue": "Learn more"
+            "intro": "Erstellen eines Touhou MMO Servers in Minecraft",
+            "group": "Werden Sie Mitglied unserer Gemeinschaft!",
+            "continue": "Mehr erfahren"
         },
         "about": {
-            "title": "About Us",
+            "title": "Über uns",
             "subtitle": "Small explanation about the project!",
             "description": "The Project started quite small initially with few people but as time went on project started to get some attraction and goals went bigger. Now we are creating playable version of Entirety of Touhou Universe with combining MMO and Survival Minecraft elements with requiring 0 mods to play on for maximum accessibility for everyone."
         },
