@@ -2,92 +2,92 @@
     "servername": "Gensokyo Reimagined",
     "index": {
         "header": {
-            "intro": "Creating a Touhou MMO in Minecraft",
-            "group": "Join our Community!",
-            "continue": "Learn more"
+            "intro": "Δημιουργία ενός διακομιστή Touhou MMO στο Minecraft",
+            "group": "Γίνετε μέλος της Κοινότητάς μας!",
+            "continue": "Μάθετε περισσότερα"
         },
         "about": {
-            "title": "About Us",
-            "subtitle": "Small explanation about the project!",
-            "description": "The Project started quite small initially with few people but as time went on project started to get some attraction and goals went bigger. Now we are creating playable version of Entirety of Touhou Universe with combining MMO and Survival Minecraft elements with requiring 0 mods to play on for maximum accessibility for everyone."
+            "title": "Σχετικά με εμάς",
+            "subtitle": "Μικρή εξήγηση για το έργο!",
+            "description": "Το έργο ξεκίνησε αρχικά αρκετά μικρό με λίγα άτομα, αλλά όσο περνούσε ο καιρός το έργο άρχισε να προσελκύει κόσμο και οι στόχοι έγιναν μεγαλύτεροι. Τώρα δημιουργούμε την playable έκδοση του Entirety of Touhou Universe με συνδυασμό MMO και Survival Minecraft στοιχείων με την απαίτηση 0 mods για να παίξετε για μέγιστη προσβασιμότητα για όλους."
         },
         "feature": {
-            "subtitle": "Server Features",
+            "subtitle": "Χαρακτηριστικά διακομιστή",
             "items": [
                 {
-                    "name": "Custom Mobs",
-                    "description": "We have custom Touhou themed mobs with 0 mods!"
+                    "name": "Προσαρμοσμένα Mobs",
+                    "description": "Έχουμε προσαρμοσμένα mobs με θέμα το Touhou με 0 mods!"
                 },
                 {
-                    "name": "Touhou Themed Classes",
-                    "description": "Each class has unique gameplay to encourage players to experiment!"
+                    "name": "Τάξεις με θέμα το Touhou",
+                    "description": "Κάθε κλάση έχει μοναδικό gameplay για να ενθαρρύνει τους παίκτες να πειραματιστούν!"
                 },
                 {
-                    "name": "Story Quests",
-                    "description": "We have simple yet extensive quest lines with great rewards to players"
+                    "name": "Αποστολές ιστορίας",
+                    "description": "Έχουμε απλές αλλά εκτεταμένες γραμμές αναζήτησης με μεγάλες ανταμοιβές για τους παίκτες"
                 },
                 {
-                    "name": "Weather Events",
-                    "description": "Each day is different in some way with dynamic seasons!"
+                    "name": "Καιρικά φαινόμενα",
+                    "description": "Κάθε μέρα είναι διαφορετική κατά κάποιο τρόπο με δυναμικές εποχές!"
                 }
             ]
         },
         "cta": {
-            "title": "Community",
-            "description": "Consider joining our ever growing discord server!",
-            "button": "Server Link"
+            "title": "Κοινότητα",
+            "description": "Εξετάστε το ενδεχόμενο να γίνετε μέλος στον ολοένα αυξανόμενο discord server μας!",
+            "button": "Σύνδεσμος διακομιστή"
         },
         "faq": {
-            "title": "Frequently Asked Questions ",
+            "title": "Συχνές ερωτήσεις",
             "items": [
                 {
-                    "question": "Is there a map download?",
-                    "answer": "No, because the map relies on the server's plugins to function.The map also keeps our project alive and we do not want to segment the community! Map is only given to people who knows what they are doing and they are contributing to the project one way or another.          "
+                    "question": "Υπάρχει δυνατότητα λήψης χάρτη;",
+                    "answer": "Όχι, επειδή ο χάρτης βασίζεται στα plugins του διακομιστή για να λειτουργήσει.Ο χάρτης κρατάει επίσης ζωντανό το έργο μας και δεν θέλουμε να κατατμήσουμε την κοινότητα! Ο χάρτης δίνεται μόνο σε άτομα που ξέρουν τι κάνουν και συνεισφέρουν στο έργο με τον ένα ή τον άλλο τρόπο."
                 },
                 {
-                    "question": "How can I let you guys know about issues?",
-                    "answer": "For quick reports on survival, use ⁠#bug-reports, or if it regards a moderation issue please contact the staff team in ⁠#staff-ticket."
+                    "question": "Πώς μπορώ να σας ενημερώσω για θέματα;",
+                    "answer": "Για γρήγορες αναφορές σχετικά με την επιβίωση, χρησιμοποιήστε το #bug-reports, ή αν πρόκειται για κάποιο θέμα συντονισμού, παρακαλούμε επικοινωνήστε με την ομάδα προσωπικού στο #staff-ticket."
                 },
                 {
-                    "question": "I can't join the server?",
-                    "answer": "The server does not allow cracked accounts access to it, so that may be one reason. Otherwise please open a ticket in #staff-contact with a screenshot of the error-message you are getting, staff will help out as best they can."
+                    "question": "Δεν μπορώ να μπω στον διακομιστή;",
+                    "answer": "Ο διακομιστής δεν επιτρέπει την πρόσβαση σπασμένων λογαριασμών σε αυτόν, οπότε αυτός μπορεί να είναι ένας λόγος. Διαφορετικά, παρακαλούμε ανοίξτε ένα ticket στο #staff-contact με ένα screenshot του μηνύματος σφάλματος που λαμβάνετε, το προσωπικό θα σας βοηθήσει όσο καλύτερα μπορεί."
                 },
                 {
-                    "question": "Does this server has chat reporting on?",
-                    "answer": "No, and never will be."
+                    "question": "Αυτός ο διακομιστής έχει αναφορές συνομιλίας;",
+                    "answer": "Όχι, και δεν θα γίνει ποτέ."
                 },
                 {
-                    "question": "I'm experiencing some connection issues?",
-                    "answer": "Yes, that might be case for wifi and server being generally far. If it's something that everyone experiences please report it to staff."
+                    "question": "Αντιμετωπίζω κάποια προβλήματα σύνδεσης;",
+                    "answer": "Ναι, αυτό μπορεί να συμβαίνει επειδή το wifi και ο διακομιστής είναι γενικά μακριά. Αν είναι κάτι που αντιμετωπίζουν όλοι, παρακαλούμε να το αναφέρετε στο προσωπικό."
                 }
             ]
         },
         "rules": {
-            "subtitle": "Server Rules",
-            "description": "Important rules to keep community clean",
-            "button": "Rules"
+            "subtitle": "Κανόνες διακομιστή",
+            "description": "Σημαντικοί κανόνες για να διατηρηθεί η κοινότητα καθαρή",
+            "button": "Κανόνες"
         },
         "support": {
-            "title": "Support the project!",
-            "description": "This is a Non-Profit project so every donation helps us out!",
-            "button": "Patreon"
+            "title": "Υποστηρίξτε το έργο!",
+            "description": "Αυτό είναι ένα μη κερδοσκοπικό έργο, οπότε κάθε δωρεά μας βοηθάει!",
+            "button": "BuyMeACoffee"
         },
         "IPcta": {
-            "title": "Server IPs",
-            "description": "Version: 1.20.X",
-            "buildtitle": "Build Server",
-            "survivaltitle": "MMORPG Server"
+            "title": "IPs διακομιστών",
+            "description": "Έκδοση: 1.20.X",
+            "buildtitle": "Κατασκευή διακομιστή",
+            "survivaltitle": "Διακομιστής MMORPG"
         },
         "MPcta": {
-            "title": "Try our Optimized Modpack for the Server!",
+            "title": "Δοκιμάστε το Βελτιστοποιημένο Modpack μας για τον Server!",
             "button": "Modrinth"
         }
     },
     "Navbar": {
-        "home": "home",
-        "about": "about",
+        "home": "σπίτι",
+        "about": "σχετικά με το",
         "wiki": "wiki",
-        "map": "map",
-        "translation": "translation"
+        "map": "χάρτης",
+        "translation": "μετάφραση"
     }
 }
