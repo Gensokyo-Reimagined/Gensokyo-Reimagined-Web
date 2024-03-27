@@ -9,7 +9,7 @@
         "about": {
             "title": "私達について",
             "subtitle": "プロジェクトの簡単な紹介！",
-            "description": "The Project started quite small initially with few people but as time went on project started to get some attraction and goals went bigger. Now we are creating playable version of Entirety of Touhou Universe with combining MMO and Survival Minecraft elements with requiring 0 mods to play on for maximum accessibility for everyone."
+            "description": "このプロジェクトは、当初は数人で始めた小さなものでしたが、時間が経つにつれて、魅力的なプロジェクトになり、目標も大きくなりました。現在では、MMOとサバイバルMinecraftの要素を併せ持つ、東方ユニバース全体のプレイアブルバージョンを制作しています。"
         },
         "feature": {
             "subtitle": "サーバー特徴",
@@ -20,14 +20,14 @@
                 },
                 {
                     "name": "東方テーマクラーセズ",
-                    "description": "Each class has unique gameplay to encourage players to experiment!"
+                    "description": "各クラスにはユニークなゲームプレイがあり、プレイヤーはいろいろ試してみることができる！"
                 },
                 {
                     "name": "物語のクエスト",
-                    "description": "We have simple yet extensive quest lines with great rewards to players"
+                    "description": "私たちは、シンプルでありながら、プレイヤーに大きな報酬を与える広範なクエストラインを持っています。"
                 },
                 {
-                    "name": "Weather Events",
+                    "name": "気象イベント",
                     "description": "Each day is different in some way with dynamic seasons!"
                 }
             ]

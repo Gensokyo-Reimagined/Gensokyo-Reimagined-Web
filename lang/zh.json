@@ -73,10 +73,10 @@
             "button": "BuyMeACoffee"
         },
         "IPcta": {
-            "description": "Version: 1.20.X",
-            "buildtitle": "Build Server",
-            "survivaltitle": "MMORPG Server",
-            "title": "Server IPs"
+            "description": "版本: 1.20.X",
+            "buildtitle": "建筑服务器",
+            "survivaltitle": "MMORPG服务器",
+            "title": "服务器IP"
         },
         "MPcta": {
             "title": "Try our Optimized Modpack for the Server!",
