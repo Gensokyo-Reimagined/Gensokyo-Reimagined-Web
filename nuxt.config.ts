@@ -94,6 +94,11 @@ export default defineNuxtConfig({
         iso: 'th-TH',
         file: 'th.json',
       },
+      {
+        code: 'lt',
+        iso: 'lt-LT',
+        file: 'lt.json',
+      },
     ],
     langDir: 'lang',
     defaultLocale: 'en',

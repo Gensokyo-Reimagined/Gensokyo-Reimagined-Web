@@ -348,6 +348,11 @@ export default {
           name: 'ภาษาไทย',
           flag: 'twa-flag-thailand',
         },
+        {
+          lang: 'lt',
+          name: 'Lietuvių',
+          flag: 'twa-flag-lithuania',
+        },
       ],
     }
   },
