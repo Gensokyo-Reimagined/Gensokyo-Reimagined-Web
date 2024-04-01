@@ -4,7 +4,8 @@
         "header": {
             "intro": "Создаём ММО-сервер по Touhou в Minecraft",
             "group": "Наш Discord сервер!",
-            "continue": "Узнать больше"
+            "continue": "Узнать больше",
+            "title": " "
         },
         "about": {
             "title": "О проекте",
@@ -30,12 +31,14 @@
                     "name": "Погодные явления",
                     "description": "Отличия в каждом дне за счёт изменяющихся времён года!"
                 }
-            ]
+            ],
+            "title": " "
         },
         "cta": {
             "title": "Сообщество",
             "description": "Присоединяйтесь к нашему постоянно растущему Discord серверу!",
-            "button": "Ссылка на сервер"
+            "button": "Ссылка на сервер",
+            "subtitle": " "
         },
         "faq": {
             "title": "Часто Задаваемые Вопросы",
@@ -65,7 +68,8 @@
         "rules": {
             "subtitle": "Правила сервера",
             "description": "Необходимые правила для поддержания дружбы в сообществе",
-            "button": "Правила"
+            "button": "Правила",
+            "title": " "
         },
         "support": {
             "title": "Поддержите проект!",
@@ -76,11 +80,14 @@
             "title": "IP сервера",
             "buildtitle": "Сервер для Строительства",
             "survivaltitle": "Сервер ММОРПГ",
-            "description": "Версия: 1.20.X"
+            "description": "Версия: 1.20.X",
+            "subtitle": " "
         },
         "MPcta": {
             "title": "Попробуйте нашу Оптимизированную Сборку для Сервера!",
-            "button": "Modrinth"
+            "button": "Modrinth",
+            "subtitle": " ",
+            "description": " "
         }
     },
     "Navbar": {

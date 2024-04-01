@@ -4,7 +4,8 @@
         "header": {
             "intro": "Minecraft'da Touhou MMO Sunucusu yapıyor",
             "group": "Topluluğumuza Katıl!",
-            "continue": "Daha fazla bilgi edinin"
+            "continue": "Daha fazla bilgi edinin",
+            "title": " "
         },
         "about": {
             "title": "Hakkımızda",
@@ -30,12 +31,14 @@
                     "name": "Hava Olayları",
                     "description": "Dinamik mevsimlerle her gün bir şekilde farklıdır!"
                 }
-            ]
+            ],
+            "title": " "
         },
         "cta": {
             "title": "Topluluk",
             "description": "Sürekli büyüyen discord sunucumuza katılmayı göz önünde bulundur!",
-            "button": "Sunucu Linki"
+            "button": "Sunucu Linki",
+            "subtitle": " "
         },
         "faq": {
             "title": "Sıkça Sorulan Sorular",
@@ -65,7 +68,8 @@
         "rules": {
             "subtitle": "Sunucu Kuralları",
             "description": "Topluluğu temiz tutmak için önemli kurallar",
-            "button": "Kurallar"
+            "button": "Kurallar",
+            "title": " "
         },
         "support": {
             "title": "Projeyi destekle!",
@@ -76,11 +80,14 @@
             "title": "Sunucu IPleri",
             "description": "Sürüm: 1.20.X",
             "buildtitle": "İnşaa Sunucusu",
-            "survivaltitle": "MMORPG Sunucusu"
+            "survivaltitle": "MMORPG Sunucusu",
+            "subtitle": " "
         },
         "MPcta": {
             "button": "Modrinth",
-            "title": "Sunucu için Optimize Edilmiş Mod Paketimizi Deneyin!"
+            "title": "Sunucu için Optimize Edilmiş Mod Paketimizi Deneyin!",
+            "subtitle": " ",
+            "description": " "
         }
     },
     "Navbar": {

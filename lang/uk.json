@@ -80,11 +80,14 @@
             "title": "Server IPs",
             "description": "Version: 1.20.X",
             "buildtitle": "Build Server",
-            "survivaltitle": "MMORPG Server"
+            "survivaltitle": "MMORPG Server",
+            "subtitle": " "
         },
         "MPcta": {
             "title": "Try our Optimized Modpack for the Server!",
-            "button": "Modrinth"
+            "button": "Modrinth",
+            "subtitle": " ",
+            "description": " "
         }
     },
     "Navbar": {
