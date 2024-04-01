@@ -154,11 +154,12 @@
                 {{ $t('index.cta.subtitle') }}
               </span>-->
             </h2>
+            <!--
             <p
               class="mt-4 text-lg leading-6 text-[var(--md-sys-color-error-container)]"
             >
               {{ $t('index.MPcta.description') }}
-            </p>
+            </p>-->
             <a
               :href="appConfig.MPLink"
               target="_blank"
