@@ -2,92 +2,99 @@
     "servername": "Gensokyo Reimagined",
     "index": {
         "header": {
-            "intro": "Creating a Touhou MMO in Minecraft",
-            "group": "Join our Community!",
-            "continue": "Learn more"
+            "intro": "Kuriame Touhou MMO serverį Minecrafte",
+            "group": "Prisijunk prie mūsų bendruomenės!",
+            "continue": "Sužinok daugiau",
+            "title": " "
         },
         "about": {
-            "title": "About Us",
-            "subtitle": "Small explanation about the project!",
-            "description": "The Project started quite small initially with few people but as time went on project started to get some attraction and goals went bigger. Now we are creating playable version of Entirety of Touhou Universe with combining MMO and Survival Minecraft elements with requiring 0 mods to play on for maximum accessibility for everyone."
+            "title": "Apie mus",
+            "subtitle": "Trumpas paaiškinimas apie mūsų projektą!",
+            "description": "Šis projektas buvo mažas ir prasidėjo su penkiomis žmonėmis, bet po kiek laiko pradėjome gauti daugiau dėmesio ir mūsų tikslas padidėjo. Dabar mes kuriame žaidžiama versija Touhou pasaulio ir kombinuojame MMO su Survival Minecraft elementu, taip pat be modų, kad visi galėtu žaisti."
         },
         "feature": {
-            "subtitle": "Server Features",
+            "subtitle": "Serverio funkcijos",
             "items": [
                 {
-                    "name": "Custom Mobs",
-                    "description": "We have custom Touhou themed mobs with 0 mods!"
+                    "name": "Pridėti Mobai",
+                    "description": "Mes turime Touhou temos mobų be 0 modų!"
                 },
                 {
-                    "name": "Touhou Themed Classes",
-                    "description": "Each class has unique gameplay to encourage players to experiment!"
+                    "name": "Touhou Temos Klases",
+                    "description": "Kiekviena klasė turi savo unikalų žaidimo eigą skatinti žaidėjus eksperimentuoti!"
                 },
                 {
-                    "name": "Story Quests",
-                    "description": "We have simple yet extensive quest lines with great rewards to players"
+                    "name": "Pasakojimo užduotis",
+                    "description": "Mes turime paprastas, bet ilgas užduotis su puikiomis apdovanojimais žaidėjams"
                 },
                 {
-                    "name": "Weather Events",
-                    "description": "Each day is different in some way with dynamic seasons!"
+                    "name": "Oro įvykiai",
+                    "description": "Kiekviena diena yra skirtinga kažkokiu būdu ir yra su dinamiškomis sezonais!"
                 }
-            ]
+            ],
+            "title": " "
         },
         "cta": {
-            "title": "Community",
-            "description": "Consider joining our ever growing discord server!",
-            "button": "Server Link"
+            "title": "Bendruomenė",
+            "description": "Prisijunk prie mūsų tebeaugamo Discord serverio!",
+            "button": "Serverio nuoroda",
+            "subtitle": " "
         },
         "faq": {
-            "title": "Frequently Asked Questions ",
+            "title": "Dažnai užduodami klausimai",
             "items": [
                 {
-                    "question": "Is there a map download?",
-                    "answer": "No, because the map relies on the server's plugins to function.The map also keeps our project alive and we do not want to segment the community! Map is only given to people who knows what they are doing and they are contributing to the project one way or another.          "
+                    "question": "Ar galima atsisiųsti Mapą?",
+                    "answer": "Ne, nes Mapo funkcijos priklauso nuo serverio pluginų. Mapas taip pat palaiko mūsų projekto gyvybingumą ir mes nenorime suskaidyti mūsų bendruomenę! Žemėlapis suteikiamas tik tiems žmonėms, kurie žino, ką daro, ir vienaip ar kitaip prisideda prie projekto."
                 },
                 {
-                    "question": "How can I let you guys know about issues?",
-                    "answer": "For quick reports on survival, use ⁠#bug-reports, or if it regards a moderation issue please contact the staff team in ⁠#staff-ticket."
+                    "question": "Kaip aš galėčiau pranešti jums apie problemas?",
+                    "answer": "Kad greitai praneštum apie survivalo problemas, naudokite #bug-reports, jeigu tai apie moderavimo problemas, prašau praneškite mūsų komandai ⁠#staff-ticket."
                 },
                 {
-                    "question": "I can't join the server?",
-                    "answer": "The server does not allow cracked accounts access to it, so that may be one reason. Otherwise please open a ticket in #staff-contact with a screenshot of the error-message you are getting, staff will help out as best they can."
+                    "question": "Aš negalių įeiti į serverį?",
+                    "answer": "Serveris neleidžia naudotis nulaužtomis paskyromis, todėl tai gali būti viena iš priežasčių. Priešingu atveju prašome atidaryti bilietą #staff-contact ir pateikti rodomos klaidos pranešimo ekrano nuotrauką, ir mūsu komanda padės, kaip galės."
                 },
                 {
-                    "question": "Does this server has chat reporting on?",
-                    "answer": "No, and never will be."
+                    "question": "Ar šis serveris turi chat problemų pranešimą įjungta?",
+                    "answer": "Ne ir niekada neturės."
                 },
                 {
-                    "question": "I'm experiencing some connection issues?",
-                    "answer": "Yes, that might be case for wifi and server being generally far. If it's something that everyone experiences please report it to staff."
+                    "question": "Aš susidūriau su ryšio problemomis?",
+                    "answer": "Taip, tai gali būti atvejis, kai \"Wi-Fi\" ir serveris apskritai yra toli. Jei su tuo susiduria visi, prašau praneškite apie tai mūsų komandai."
                 }
             ]
         },
         "rules": {
-            "subtitle": "Server Rules",
-            "description": "Important rules to keep community clean",
-            "button": "Rules"
+            "subtitle": "Serverio taisyklės",
+            "description": "Svarbios taisyklės, kad galėtume palaikyti mūsų bendruomenę tvarkinga",
+            "button": "Taisykles",
+            "title": " "
         },
         "support": {
-            "title": "Support the project!",
-            "description": "This is a Non-Profit project so every donation helps us out!",
-            "button": "Patreon"
+            "title": "Palaikykite projektą!",
+            "description": "Tai ne pelno siekiantis projektas, todėl kiekviena auka mums padeda!",
+            "button": "BuyMeACoffee"
         },
         "IPcta": {
-            "title": "Server IPs",
-            "description": "Version: 1.20.X",
-            "buildtitle": "Build Server",
-            "survivaltitle": "MMORPG Server"
+            "title": "Serverio IPs",
+            "description": "Versija: 1.20.X",
+            "buildtitle": "Konstravimo Serveris",
+            "survivaltitle": "MMORPG Serveris",
+            "subtitle": " "
         },
         "MPcta": {
             "button": "Modrinth",
-            "title": "Try our Optimized Modpack for the Server!"
+            "title": "Išbandyk mūsu optimizuota Modpack serveriui!",
+            "subtitle": " ",
+            "description": " "
         }
     },
     "Navbar": {
         "home": "home",
-        "about": "about",
+        "about": "apie",
         "wiki": "wiki",
         "map": "map",
-        "translation": "translation"
+        "translation": "vertimas"
     }
 }
