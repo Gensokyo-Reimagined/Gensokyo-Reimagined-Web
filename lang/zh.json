@@ -4,7 +4,8 @@
         "header": {
             "intro": "创造一个东方Project主题的MMO Minecraft服务器",
             "group": "加入我们的社区！",
-            "continue": "了解更多"
+            "continue": "了解更多",
+            "title": " "
         },
         "about": {
             "title": "关于我们",
@@ -30,12 +31,14 @@
                     "name": "风云变幻",
                     "description": "动态的季节更替使得每一天都不太一样！"
                 }
-            ]
+            ],
+            "title": " "
         },
         "cta": {
             "title": "社群",
             "description": "考虑加入我们不断壮大的Discord服务器！",
-            "button": "Discord服务器链接"
+            "button": "Discord服务器链接",
+            "subtitle": " "
         },
         "faq": {
             "title": "常见问题",
@@ -65,7 +68,8 @@
         "rules": {
             "subtitle": "服务器规则",
             "description": "维护社区环境的重要规则",
-            "button": "查看规则"
+            "button": "查看规则",
+            "title": " "
         },
         "support": {
             "title": "支持此项目！",
@@ -76,11 +80,14 @@
             "description": "版本: 1.20.X",
             "buildtitle": "建筑服务器",
             "survivaltitle": "MMORPG服务器",
-            "title": "服务器IP"
+            "title": "服务器IP",
+            "subtitle": " "
         },
         "MPcta": {
             "title": "Try our Optimized Modpack for the Server!",
-            "button": "Modrinth"
+            "button": "Modrinth",
+            "subtitle": " ",
+            "description": " "
         }
     },
     "Navbar": {

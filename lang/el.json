@@ -4,7 +4,8 @@
         "header": {
             "intro": "Δημιουργία ενός διακομιστή Touhou MMO στο Minecraft",
             "group": "Γίνετε μέλος της Κοινότητάς μας!",
-            "continue": "Μάθετε περισσότερα"
+            "continue": "Μάθετε περισσότερα",
+            "title": " "
         },
         "about": {
             "title": "Σχετικά με εμάς",
@@ -30,12 +31,14 @@
                     "name": "Καιρικά φαινόμενα",
                     "description": "Κάθε μέρα είναι διαφορετική κατά κάποιο τρόπο με δυναμικές εποχές!"
                 }
-            ]
+            ],
+            "title": " "
         },
         "cta": {
             "title": "Κοινότητα",
             "description": "Εξετάστε το ενδεχόμενο να γίνετε μέλος στον ολοένα αυξανόμενο discord server μας!",
-            "button": "Σύνδεσμος διακομιστή"
+            "button": "Σύνδεσμος διακομιστή",
+            "subtitle": " "
         },
         "faq": {
             "title": "Συχνές ερωτήσεις",
@@ -65,7 +68,8 @@
         "rules": {
             "subtitle": "Κανόνες διακομιστή",
             "description": "Σημαντικοί κανόνες για να διατηρηθεί η κοινότητα καθαρή",
-            "button": "Κανόνες"
+            "button": "Κανόνες",
+            "title": " "
         },
         "support": {
             "title": "Υποστηρίξτε το έργο!",
@@ -76,11 +80,14 @@
             "title": "IPs διακομιστών",
             "description": "Έκδοση: 1.20.X",
             "buildtitle": "Κατασκευή διακομιστή",
-            "survivaltitle": "Διακομιστής MMORPG"
+            "survivaltitle": "Διακομιστής MMORPG",
+            "subtitle": " "
         },
         "MPcta": {
             "title": "Δοκιμάστε το Βελτιστοποιημένο Modpack μας για τον Server!",
-            "button": "Modrinth"
+            "button": "Modrinth",
+            "subtitle": " ",
+            "description": " "
         }
     },
     "Navbar": {
