@@ -294,6 +294,11 @@ export default {
           flag: 'twa-flag-china',
         },
         {
+          lang: 'zh_hk',
+          name: '繁體中文',
+          flag: '',
+        },
+        {
           lang: 'es',
           name: 'español',
           flag: 'twa-flag-spain',

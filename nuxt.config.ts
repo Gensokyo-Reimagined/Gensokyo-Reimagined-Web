@@ -40,6 +40,11 @@ export default defineNuxtConfig({
         file: 'zh.json',
       },
       {
+        code: 'zh_hk',
+        iso: 'zh-HK',
+        file: 'zh_hk.json',
+      },
+      {
         code: 'es',
         iso: 'es-ES',
         file: 'es.json',
