@@ -1,0 +1,100 @@
+{
+    "servername": "幻想乡：再造",
+    "index": {
+        "header": {
+            "intro": "创造一个东方Project主题的MMO Minecraft服务器",
+            "group": "加入我们的社区！",
+            "continue": "了解更多",
+            "title": " "
+        },
+        "about": {
+            "title": "关于我们",
+            "subtitle": "关于此项目的简要概述！",
+            "description": "这最初是一个规模很小，参与人数也很少的项目，但随着时间的推移，项目吸引了越来越多的人，也因而有了更大的目标。现在，我们计划创造一个东方世界观下的将Minecraft与MMO（大型多人在线游戏）要素相结合的服务器，为了尽可能地方便每个人游玩，加入服务器无需安装任何模组。"
+        },
+        "feature": {
+            "subtitle": "服务器特色",
+            "items": [
+                {
+                    "name": "定制的生物",
+                    "description": "我们有零模组依赖的独特东方风生物！"
+                },
+                {
+                    "name": "东方风职业",
+                    "description": "每个职业都有其独特的玩法以鼓励玩家去积极尝试！"
+                },
+                {
+                    "name": "剧情任务",
+                    "description": "我们有简单而庞大的任务线，它们提供了丰厚的奖励"
+                },
+                {
+                    "name": "风云变幻",
+                    "description": "动态的季节更替使得每一天都不太一样！"
+                }
+            ],
+            "title": " "
+        },
+        "cta": {
+            "title": "社群",
+            "description": "考虑加入我们不断壮大的Discord服务器！",
+            "button": "Discord服务器链接",
+            "subtitle": " "
+        },
+        "faq": {
+            "title": "常见问题",
+            "items": [
+                {
+                    "question": "我可以下载地图吗？",
+                    "answer": "不可以，因为本地图依赖服务器插件来正常工作。而且，该地图也让我们的项目保持活力，我们不希望分割社区！因此，地图只会给予那些为项目做出过贡献，且清楚自己在干什么的人。"
+                },
+                {
+                    "question": "我该如何向你们反馈问题呢？",
+                    "answer": "如需快速报告生存服的漏洞，请使用 #bug-reports 频道；对于涉及到社区维护的问题，请在 #staff-ticket 频道联系我们的管理团队。"
+                },
+                {
+                    "question": "我无法进入服务器？",
+                    "answer": "这可能是由于该服务器不允许使用盗版（离线）账户进入。对于任何其它问题，请在 #staff-contact 频道中创建工单，并附上您收到的错误信息的截图，我们的工作人员会尽力帮助您解决问题。"
+                },
+                {
+                    "question": "此服务器有开启聊天举报吗？",
+                    "answer": "不，永远都不会。"
+                },
+                {
+                    "question": "我遇到了一些连接问题？",
+                    "answer": "是的，这也许是因为你正在使用无线网络，或是你所处的地理位置与服务器相距较远。如果很多人都出现了相同情况，请报告给管理员。"
+                }
+            ]
+        },
+        "rules": {
+            "subtitle": "服务器规则",
+            "description": "维护社区环境的重要规则",
+            "button": "查看规则",
+            "title": " "
+        },
+        "support": {
+            "title": "支持此项目！",
+            "description": "这是一个非盈利项目，每一笔捐赠都能帮助我们！",
+            "button": "BuyMeACoffee"
+        },
+        "IPcta": {
+            "description": "版本: 1.20.X",
+            "buildtitle": "建筑服务器",
+            "survivaltitle": "MMORPG服务器",
+            "title": "服务器IP",
+            "subtitle": " "
+        },
+        "MPcta": {
+            "title": "Try our Optimized Modpack for the Server!",
+            "button": "Modrinth",
+            "subtitle": " ",
+            "description": " "
+        }
+    },
+    "Navbar": {
+        "home": "首页",
+        "about": "关于",
+        "wiki": "百科",
+        "map": "地图",
+        "translation": "帮助翻译"
+    }
+}
