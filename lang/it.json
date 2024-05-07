@@ -4,7 +4,8 @@
         "header": {
             "intro": "Creiamo un Server MMO di Touhou su Minecraft",
             "group": "Unisciti alla nostra Community!",
-            "continue": "Scopri di più"
+            "continue": "Scopri di più",
+            "title": " "
         },
         "about": {
             "title": "Chi Siamo",
@@ -30,12 +31,14 @@
                     "name": "Eventi Meteorologici",
                     "description": "Ogni giorno è diverso dall'altro grazie alle stagioni dinamiche!"
                 }
-            ]
+            ],
+            "title": " "
         },
         "cta": {
             "title": "Community",
             "description": "Entra nel nostro server Discord in costante crescita!",
-            "button": "Link del Server"
+            "button": "Link del Server",
+            "subtitle": " "
         },
         "faq": {
             "title": "Domande Frequenti",
@@ -65,7 +68,8 @@
         "rules": {
             "subtitle": "Regole del Server",
             "description": "Regole importanti per tenere pulita la community",
-            "button": "Regole"
+            "button": "Regole",
+            "title": " "
         },
         "support": {
             "title": "Supporta il progetto!",
@@ -76,11 +80,14 @@
             "title": "IP dei Server",
             "description": "Versione: 1.20.X",
             "buildtitle": "Server Build",
-            "survivaltitle": "Server MMORPG"
+            "survivaltitle": "Server MMORPG",
+            "subtitle": " "
         },
         "MPcta": {
             "title": "Prova il nostro Modpack Ottimizzato per il Server!",
-            "button": "Modrinth"
+            "button": "Modrinth",
+            "subtitle": " ",
+            "description": " "
         }
     },
     "Navbar": {
