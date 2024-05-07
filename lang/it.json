@@ -2,85 +2,92 @@
     "servername": "Gensokyo Reimagined",
     "index": {
         "header": {
-            "intro": "Creazione di un MMO di Touhou su Minecraft",
+            "intro": "Creiamo un Server MMO di Touhou su Minecraft",
             "group": "Unisciti alla nostra Community!",
-            "continue": "Scopri di più"
+            "continue": "Scopri di più",
+            "title": " "
         },
         "about": {
-            "title": "Chi siamo",
-            "subtitle": "Breve spiegazione sul progetto!",
-            "description": "Il progetto è iniziato come qualcosa di piccolo con poche persone ma col passare del tempo ha cominciato a ricevere attenzione e i traguardi sono cresciuti. Adesso stiamo creando una versione giocabile dell'intero universo di Touhou unendo elementi di sopravvivenza e MMO con nessuna mod richiesta per permettere l'accessibilità a tutti."
+            "title": "Chi Siamo",
+            "subtitle": "Breve spiegazione del progetto!",
+            "description": "Il progetto è iniziato come qualcosa di piccolo con poche persone ma, col passare del tempo, ha iniziato a ricevere attenzioni e gli obiettivi sono cresciuti. Adesso stiamo creando una versione giocabile dell'Intero Universo di Touhou unendo elementi MMO e di Sopravvivenza di Minecraft senza la necessità di alcuna mod per renderlo il più accessibile a tutti."
         },
         "feature": {
-            "subtitle": "Funzionalità del server",
+            "subtitle": "Funzionalità del Server",
             "items": [
                 {
-                    "name": "Creature uniche",
-                    "description": "Abbiamo creature a tema Touhou senza l'utilizzo di nessuna mod!"
+                    "name": "Mob Unici",
+                    "description": "Abbiamo Mob a tema Touhou senza l'utilizzo di mod!"
                 },
                 {
-                    "name": "Classi a tema Touhou",
+                    "name": "Classi a Tema Touhou",
                     "description": "Ogni classe ha uno stile di gioco unico per incoraggiare i giocatori a sperimentare!"
                 },
                 {
-                    "name": "Missioni storia",
-                    "description": "Abbiamo semplici ma lunghe missioni con ottime ricompense per i giocatori"
+                    "name": "Missioni Storia",
+                    "description": "Abbiamo missioni semplici ma lunghe con ottime ricompense per i giocatori"
                 },
                 {
-                    "name": "Eventi Meteo",
-                    "description": "Ogni giorno è diverso a suo modo grazie a stagioni dinamiche!"
+                    "name": "Eventi Meteorologici",
+                    "description": "Ogni giorno è diverso dall'altro grazie alle stagioni dinamiche!"
                 }
-            ]
+            ],
+            "title": " "
         },
         "cta": {
             "title": "Community",
-            "description": "Considera unirti al nostro server Discord in crescita costante!",
-            "button": "Link del server"
+            "description": "Entra nel nostro server Discord in costante crescita!",
+            "button": "Link del Server",
+            "subtitle": " "
         },
         "faq": {
-            "title": "Domande frequenti ",
+            "title": "Domande Frequenti",
             "items": [
                 {
-                    "question": "C'è modo di scaricare la mappa?",
-                    "answer": "No, perché la mappa si affida ai plugin del server per funzionare. La mappa mantiene anche il nostro progetto in vita e non vogliamo che la community si divida! La mappa è data solo a giocatori competenti che stanno contribuendo al progetto in un modo o nell'altro.          "
+                    "question": "C'è un download della mappa?",
+                    "answer": "No, perché la mappa si affida ai plugin del server per funzionare. La mappa mantiene anche il nostro progetto in vita e non vogliamo dividere la community! La mappa viene data solo a giocatori competenti che stanno contribuendo al progetto in un modo o nell'altro."
                 },
                 {
-                    "question": "Come posso informarvi di problematiche?",
-                    "answer": "Per segnalazioni veloci riguardo modalità sopravvivenza, usa #bug-reports, o se riguarda problemi di moderazione, perfavore contatta lo staff in #staff-ticket."
+                    "question": "Come posso notificarvi di eventuali problemi?",
+                    "answer": "Per segnalazioni rapide sulla modalità sopravvivenza, usa #bug-reports, o se riguada un problema di moderazione contatta lo staff su #staff-ticket."
                 },
                 {
                     "question": "Perché non riesco a unirmi al server?",
-                    "answer": "Il server non permette l'accesso agli account truccati, questo potrebbe essere il motivo. Altrimenti per favore richiedi un ticket in #staff-contact e invia una foto del codice errore che ti viene dato, lo staff ti aiuterà al meglio delle loro capacità."
+                    "answer": "Il server non permette agli account craccati di entrare, quindi questo potrebbe essere uno dei motivi. In alternativa apri un ticket su #staff-contact con una foto del messaggio di errore che appare e lo staff ti aiuterà al meglio."
                 },
                 {
-                    "question": "Questo server da modo di segnalare i messaggi in chat?",
-                    "answer": "No e non lo avrà in futuro."
+                    "question": "Questo server ha la segnalazione dei messaggi in chat?",
+                    "answer": "No, e non la avrà mai."
                 },
                 {
-                    "question": "Sto avendo problemi di connessione?",
-                    "answer": "Si, ciò potrebbe essere causato da una connessione wifi e il server molto distante. Se è un problema che molti stanno avendo, per favore segnalalo allo staff."
+                    "question": "Sto avendo problemi di connessione",
+                    "answer": "Si, potrebbe succedere con il wifi e generalmente se il server è distante. Se è un problema che stanno avendo tutti ti chiediamo di segnalarlo allo staff."
                 }
             ]
         },
         "rules": {
-            "subtitle": "Regole del server",
+            "subtitle": "Regole del Server",
             "description": "Regole importanti per tenere pulita la community",
-            "button": "Regole"
+            "button": "Regole",
+            "title": " "
         },
         "support": {
             "title": "Supporta il progetto!",
-            "description": "Questo è un progetto senza profitti perciò ogni donazione è di grande aiuto!",
-            "button": "Patreon"
+            "description": "Questo è un progetto Non-Profit, perciò ogni donazione è di grande aiuto!",
+            "button": "BuyMeACoffee"
         },
         "IPcta": {
-            "title": "Server IPs",
-            "description": "Version: 1.20.X",
-            "buildtitle": "Build Server",
-            "survivaltitle": "MMORPG Server"
+            "title": "IP dei Server",
+            "description": "Versione: 1.20.X",
+            "buildtitle": "Server Build",
+            "survivaltitle": "Server MMORPG",
+            "subtitle": " "
         },
         "MPcta": {
-            "title": "Try our Optimized Modpack for the Server!",
-            "button": "Modrinth"
+            "title": "Prova il nostro Modpack Ottimizzato per il Server!",
+            "button": "Modrinth",
+            "subtitle": " ",
+            "description": " "
         }
     },
     "Navbar": {
@@ -88,6 +95,6 @@
         "about": "informazioni",
         "wiki": "wiki",
         "map": "mappa",
-        "translation": "translation"
+        "translation": "traduzione"
     }
 }
