@@ -1,100 +1,100 @@
 {
-    "servername": "幻想乡：再造",
+    "servername": "幻想鄉：重構",
     "index": {
         "header": {
-            "intro": "创造一个东方Project主题的MMO Minecraft服务器",
-            "group": "加入我们的社区！",
+            "intro": "創造一個東方Project為主題的MMO Minecraft伺服器",
+            "group": "加入我們的社群！",
             "continue": "了解更多",
             "title": " "
         },
         "about": {
-            "title": "关于我们",
-            "subtitle": "关于此项目的简要概述！",
-            "description": "这最初是一个规模很小，参与人数也很少的项目，但随着时间的推移，项目吸引了越来越多的人，也因而有了更大的目标。现在，我们计划创造一个东方世界观下的将Minecraft与MMO（大型多人在线游戏）要素相结合的服务器，为了尽可能地方便每个人游玩，加入服务器无需安装任何模组。"
+            "title": "關於我們",
+            "subtitle": "關於這項計畫的簡單概要！",
+            "description": "這個項目最初是由一小群人開始的，但隨著時間的推移，這個項目逐漸引起了關注，目標也變得更加宏大。現在我們正在創建一個結合了MMO以及Minecraft生存元素的伺服器，並且為了讓大家都可以遊玩，因此這個伺服器並不需要安裝任何模組。"
         },
         "feature": {
-            "subtitle": "服务器特色",
+            "subtitle": "伺服器特色",
             "items": [
                 {
-                    "name": "定制的生物",
-                    "description": "我们有零模组依赖的独特东方风生物！"
+                    "name": "客製化的生物",
+                    "description": "我們有無需模組的客製化東方風格生物！"
                 },
                 {
-                    "name": "东方风职业",
-                    "description": "每个职业都有其独特的玩法以鼓励玩家去积极尝试！"
+                    "name": "東方風格職業",
+                    "description": "每個職業都有獨特的玩法以鼓勵玩家嘗試！"
                 },
                 {
-                    "name": "剧情任务",
-                    "description": "我们有简单而庞大的任务线，它们提供了丰厚的奖励"
+                    "name": "劇情任務",
+                    "description": "我們有簡單但龐大的任務線，並且他們會提供玩家豐富的獎勵"
                 },
                 {
-                    "name": "风云变幻",
-                    "description": "动态的季节更替使得每一天都不太一样！"
+                    "name": "天氣系統",
+                    "description": "動態的季節變化令每一天都不一樣！"
                 }
             ],
             "title": " "
         },
         "cta": {
             "title": "社群",
-            "description": "考虑加入我们不断壮大的Discord服务器！",
-            "button": "Discord服务器链接",
+            "description": "考慮加入我們日益壯大的Discord伺服器！",
+            "button": "Discord伺服器連結",
             "subtitle": " "
         },
         "faq": {
-            "title": "常见问题",
+            "title": "常見問題",
             "items": [
                 {
-                    "question": "我可以下载地图吗？",
-                    "answer": "不可以，因为本地图依赖服务器插件来正常工作。而且，该地图也让我们的项目保持活力，我们不希望分割社区！因此，地图只会给予那些为项目做出过贡献，且清楚自己在干什么的人。"
+                    "question": "我有辦法下載地圖檔嗎？",
+                    "answer": "沒辦法，因為此地圖依靠伺服器插件來正常運作。並且，此地圖也讓我們的項目保持活躍，我們不希望因此分裂社群！所以，此地圖只會給予清楚自己正在做甚麼且對於這個項目有著貢獻的人。"
                 },
                 {
-                    "question": "我该如何向你们反馈问题呢？",
-                    "answer": "如需快速报告生存服的漏洞，请使用 #bug-reports 频道；对于涉及到社区维护的问题，请在 #staff-ticket 频道联系我们的管理团队。"
+                    "question": "我該如何回饋問題給你們？",
+                    "answer": "如果需要於生存模式快速回報錯誤，請使用 #bug-reports 頻道；對於管理方面的問題，請在 #staff-ticket 頻道聯絡管理團隊。"
                 },
                 {
-                    "question": "我无法进入服务器？",
-                    "answer": "这可能是由于该服务器不允许使用盗版（离线）账户进入。对于任何其它问题，请在 #staff-contact 频道中创建工单，并附上您收到的错误信息的截图，我们的工作人员会尽力帮助您解决问题。"
+                    "question": "我無法進入伺服器？",
+                    "answer": "這可能是由於此伺服器不允許盜版玩家進入。對於任何其他問題，请在 #staff-contact 頻道中建立一個工單，並附上您收到的錯誤訊息的截圖，我們的工作人員會盡力幫您解決問題。"
                 },
                 {
-                    "question": "此服务器有开启聊天举报吗？",
-                    "answer": "不，永远都不会。"
+                    "question": "這個伺服器有開啟聊天檢舉功能嗎？",
+                    "answer": "沒有，並且永遠也不會有。"
                 },
                 {
-                    "question": "我遇到了一些连接问题？",
-                    "answer": "是的，这也许是因为你正在使用无线网络，或是你所处的地理位置与服务器相距较远。如果很多人都出现了相同情况，请报告给管理员。"
+                    "question": "我遇到了一些連線問題？",
+                    "answer": "這可能是由於你在使用WiFi，或是你所在的位置距離伺服器比較遠。如果很多人都出現了同樣的情形，請向管理員回報。"
                 }
             ]
         },
         "rules": {
-            "subtitle": "服务器规则",
-            "description": "维护社区环境的重要规则",
-            "button": "查看规则",
+            "subtitle": "伺服器規則",
+            "description": "保持社群環境的重要規則",
+            "button": "查看規則",
             "title": " "
         },
         "support": {
-            "title": "支持此项目！",
-            "description": "这是一个非盈利项目，每一笔捐赠都能帮助我们！",
+            "title": "支持此項目！",
+            "description": "這是一個非營利的項目，因此每一筆贊助都能幫助我們！",
             "button": "BuyMeACoffee"
         },
         "IPcta": {
             "description": "版本: 1.20.X",
-            "buildtitle": "建筑服务器",
-            "survivaltitle": "MMORPG服务器",
-            "title": "服务器IP",
+            "buildtitle": "建築伺服器",
+            "survivaltitle": "MMORPG伺服器",
+            "title": "伺服器IP",
             "subtitle": " "
         },
         "MPcta": {
-            "title": "Try our Optimized Modpack for the Server!",
+            "title": "試試我們為了伺服器而做的優化模組包！",
             "button": "Modrinth",
             "subtitle": " ",
             "description": " "
         }
     },
     "Navbar": {
-        "home": "首页",
-        "about": "关于",
-        "wiki": "百科",
-        "map": "地图",
-        "translation": "帮助翻译"
+        "home": "首頁",
+        "about": "關於",
+        "wiki": "維基百科",
+        "map": "地圖",
+        "translation": "幫助翻譯"
     }
 }
