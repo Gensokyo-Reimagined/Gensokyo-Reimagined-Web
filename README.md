@@ -41,11 +41,13 @@ If you want to translate an existing language, please go to [gensokyoreimagined 
 
 [![翻译状态](https://weblate.gensokyoreimagined.net/widget/gensokyo-reimagined-web/gensokyo-reimagined-web/multi-auto.svg)](https://weblate.gensokyoreimagined.net/engage/gensokyo-reimagined-web/)
 
-### translator ✒️
+### How to submit a new language translation
 
-Many thanks to the following staff for their translation and proofreading
+ping Taiyou in [translations](https://discord.com/channels/1013224109473284126/1146842530114179163) or whatever is called Website Developer, which will theoretically add the languages you need to add in weblate (sorry, we can't do that automatically for now).
 
-[@Afk-82](https://crowdin.com/profile/afk-82) [@DanClypse](https://crowdin.com/profile/danclypse) [@hanja_2007](https://crowdin.com/profile/hanja_2007) [@n n](https://crowdin.com/profile/igorsolarev2006)[@Kurobu](https://crowdin.com/profile/kurobu) [@nolemretaWxd](https://weblate.gensokyoreimagined.net/user/nolemretaWxd/) [@Peaceful'Nightu](https://weblate.gensokyoreimagined.net/user/nolemretaWxdNightu) [@arksc](https://weblate.gensokyoreimagined.net/user/arksc) [@AlphaUberKesha](https://weblate.gensokyoreimagined.net/user/Alfozir_Vognystyj)
+Then you can click on the image below to translate
+
+[![翻译状态](https://weblate.gensokyoreimagined.net/widget/gensokyo-reimagined-web/gensokyo-reimagined-web/open-graph.png)](https://weblate.gensokyoreimagined.net/engage/gensokyo-reimagined-web/)
 
 ## Config 🔧
 
@@ -79,7 +81,7 @@ In the repository, all you need to do is add a new language as follows in i18n o
   },
 ```
 
-Then you need to add the corresponding language to data() in `<script>` 在 `components/NavBar.vue` as follows
+Then you need to add the corresponding language to data() in `<script>` in `components/NavBar.vue` as follows
 
 ```json
 
@@ -101,7 +103,9 @@ languages: [
 
 ```
 
-Then go to crowdin and add the appropriate language
+Then ping Taiyou in [translations](https://discord.com/channels/1013224109473284126/1146842530114179163) or whatever is called Website Developer, which will theoretically add the languages you need to add in weblate (sorry, we can't do that automatically for now).
+
+Then go to weblate and add the appropriate language
 
 ## Known problem ✏️
 
