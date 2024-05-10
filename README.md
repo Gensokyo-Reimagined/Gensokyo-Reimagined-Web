@@ -49,6 +49,8 @@ Then you can click on the image below to translate
 
 [![翻译状态](https://weblate.gensokyoreimagined.net/widget/gensokyo-reimagined-web/gensokyo-reimagined-web/open-graph.png)](https://weblate.gensokyoreimagined.net/engage/gensokyo-reimagined-web/)
 
+Now you can configure the site's language selection box according to [here](https://github.com/Gensokyo-Reimagined/Gensokyo-Reimagined-Web/tree/main?tab=readme-ov-file#how-to-add-new-i18n-language)
+
 ## Config 🔧
 
 > [!IMPORTANT]
@@ -67,6 +69,13 @@ There are usually comments in the configuration file to tell you how to fill it 
 If you need to change the theme color, go to `/assets/css/main.css`
 
 ### How to add new i18n language
+
+> [!WARNING]
+> Please note that your language has been added to weblate as you proceed
+>
+> We recommend that weblate pull your language file into the repository before proceeding with the following action to prevent the file name from being filled in incorrectly
+>
+> Language flags can be found [here](https://github.com/iamludal/twemoji-awesome/blob/master/cheatsheet.md#Flags)
 
 In the repository, all you need to do is add a new language as follows in i18n of `nuxt.config.ts`
 
@@ -102,8 +111,6 @@ languages: [
       ]
 
 ```
-
-Then ping Taiyou in [translations](https://discord.com/channels/1013224109473284126/1146842530114179163) or whatever is called Website Developer, which will theoretically add the languages you need to add in weblate (sorry, we can't do that automatically for now).
 
 Then go to weblate and add the appropriate language
 
