@@ -6,7 +6,7 @@
         class="overflow-hidden bg-[var(--md-sys-color-error)] rounded-lg shadow-xl lg:grid lg:grid-cols-2 lg:gap-4"
       >
         <div class="-mt-6 aspect-w-5 aspect-h-3 md:aspect-w-2 md:aspect-h-1">
-          <nuxt-img
+          <img
             class="object-cover object-left-top transform translate-x-6 translate-y-6 rounded-md sm:translate-x-16 lg:translate-y-20"
             :src="appConfig.IndexIPCtaImg"
             alt="App screenshot"
@@ -107,7 +107,7 @@
           </div>
         </div>
         <div class="-mt-6 aspect-w-5 aspect-h-3 md:aspect-w-2 md:aspect-h-1">
-          <nuxt-img
+          <img
             class="object-cover object-left-top transform translate-x-6 translate-y-6 rounded-md sm:translate-x-16 lg:translate-y-20"
             :src="appConfig.IndexCtaImg"
             alt="App screenshot"
@@ -128,7 +128,7 @@
         class="overflow-hidden bg-[var(--md-sys-color-error)] rounded-lg shadow-xl lg:grid lg:grid-cols-2 lg:gap-4"
       >
         <div class="-mt-6 aspect-w-5 aspect-h-3 md:aspect-w-2 md:aspect-h-1">
-          <nuxt-img
+          <img
             class="object-cover object-left-top transform translate-x-6 translate-y-6 rounded-md sm:translate-x-16 lg:translate-y-20"
             :src="appConfig.IndexModPackCtaImg"
             alt="App screenshot"

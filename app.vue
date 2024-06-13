@@ -7,6 +7,13 @@
 </template>
 <script setup>
 const runtimeConfig = useRuntimeConfig()
+useSeoMeta({
+  title: 'Gensokyo Reimagined',
+  ogTitle: 'Gensokyo Reimagined',
+  description: 'Creating a Touhou MMO Server in Minecraft',
+  ogDescription: 'Creating a Touhou MMO Server in Minecraft',
+  ogImage: 'https://www.gensokyoreimagined.net/img/about_pic.webp',
+})
 useHead({
   link: [
     {

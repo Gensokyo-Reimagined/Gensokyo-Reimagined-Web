@@ -1,20 +1,14 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: true },
-  modules: [
-    '@nuxtjs/i18n',
-    '@nuxt/image',
-    '@nuxtjs/tailwindcss',
-    '@nuxtjs/color-mode',
-  ],
+  app: {
+    buildAssetsDir: 'static',
+  },
+  modules: ['@nuxtjs/i18n', '@nuxtjs/tailwindcss', '@nuxtjs/color-mode'],
   // other plugin
   extends: ['nuxt-seo-kit'],
   // css import
   css: ['@/assets/css/main.css'],
-  // Nuxt-image
-  image: {
-    format: ['webp'],
-  },
   // maybe sometime will turn off ssr mode
   ssr: true,
   colorMode: {
@@ -115,6 +109,7 @@ export default defineNuxtConfig({
   },
   experimental: {
     writeEarlyHints: false,
+    payloadExtraction: false,
   },
   runtimeConfig: {
     public: {
