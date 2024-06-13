@@ -40,7 +40,7 @@
               {{ $t(feature.description) }}
             </dd>
             <div class="mt-auto pt-5 m-5">
-              <nuxt-img
+              <img
                 class="rounded-xl"
                 :src="feature.img"
                 quality="80"

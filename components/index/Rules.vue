@@ -3,7 +3,7 @@
     <div
       class="h-56 bg- bg-[var(--md-sys-color-background)] sm:h-72 md:absolute md:left-0 md:h-full md:w-1/2"
     >
-      <nuxt-img
+      <img
         class="object-cover w-full h-full"
         :src="appConfig.IndexRulesImg"
         quality="80"

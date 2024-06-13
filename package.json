@@ -2,7 +2,8 @@
   "name": "nuxt-app",
   "private": true,
   "scripts": {
-    "build": "nuxt build",
+    "build": "nuxt generate",
+    "realbuild": "nuxt build",
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
@@ -10,12 +11,10 @@
   },
   "devDependencies": {
     "@nuxt/devtools": "latest",
-    "@nuxt/image": "^1.3.0",
     "@nuxtjs/color-mode": "^3.3.2",
     "@nuxtjs/i18n": "^8.1.1",
     "@nuxtjs/tailwindcss": "^6.11.4",
     "@types/node": "^20.11.19",
-    "ipx": "^3.0.1",
     "nuxt": "^3.10.2",
     "nuxt-seo-kit": "^1.3.13",
     "postcss": "^8.4.35",

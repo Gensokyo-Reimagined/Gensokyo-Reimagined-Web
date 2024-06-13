@@ -19,7 +19,7 @@
 
 The repository is using the packages in the list below
 
-- [Nuxt Image](https://v1.image.nuxtjs.org/)
+- ~~[Nuxt Image](https://v1.image.nuxtjs.org/)~~
 - [@nuxtjs/i18n](https://v8.i18n.nuxtjs.org/)
 - [Seo-Kit](https://nuxt.com.cn/modules/seo-kit)
 - [Tailwind CSS](https://tailwindcss.nuxtjs.org/)
@@ -116,13 +116,15 @@ Then go to weblate and add the appropriate language
 
 ## Known problem ✏️
 
-because the nuxt image module uses ipx for image optimization, there may be problems in the development process of not being able to display images,
+~~because the nuxt image module uses ipx for image optimization, there may be problems in the development process of not being able to display images,~~
 
-and errors like `[500] [IPX_ERROR] Could not load the \"sharp\" module using the win32-x64 runtime\nPossible solutions:\n- Please upgrade Node.js:\n    Found 18.9.0\n    Requires ^18.17.0 || ^20.3.0 || >=21.0.0\n- Consult the installation documentation:\n    See https://sharp.pixelplumbing.com/install` May occur when accessing images.
+~~and errors like `[500] [IPX_ERROR] Could not load the \"sharp\" module using the win32-x64 runtime\nPossible solutions:\n- Please upgrade Node.js:\n    Found 18.9.0\n    Requires ^18.17.0 || ^20.3.0 || >=21.0.0\n- Consult the installation documentation:\n    See https://sharp.pixelplumbing.com/install` May occur when accessing images.~~
 
-Please ensure that your nodejs version is controlled at 18.17.0 (there may be problems with other modules later than this version). I don't know why that is
+~~Please ensure that your nodejs version is controlled at 18.17.0 (there may be problems with other modules later than this version). I don't know why that is~~
 
-because using nuxt-seo-kit will cause the nuxt-i18n module to print warning, which should be no problem
+~~because using nuxt-seo-kit will cause the nuxt-i18n module to print warning, which should be no problem~~
+
+Now that nuxt/image has been removed and built using SSG, the above issues have been resolved
 
 ## Setup
 
@@ -160,13 +162,13 @@ Build the application for production:
 
 ```bash
 # npm
-npm run build
+npm run generate
 
 # pnpm
-pnpm run build
+pnpm run generate
 
 # yarn
-yarn build
+yarn generate
 ```
 
 Locally preview production build:

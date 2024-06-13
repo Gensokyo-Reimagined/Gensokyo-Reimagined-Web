@@ -6,7 +6,7 @@
       <div
         class="max-lg:absolute max-lg:top-16 max-lg:left-0 lg:relative z-10 pt-10 md:pb-20 w-full lg:pb-28 xl:pb-32 flex justify-center"
       >
-        <nuxt-img
+        <img
           class="lg:absolute lg:top-1/2 lg:left-1/2 transform lg:-translate-x-1/2 lg:-translate-y-1/2 object-cover max-lg:w-1/2 max-lg:h-1/2"
           :src="logoImg"
           quality="50"
@@ -33,7 +33,7 @@
           v-for="currentImageUrl in imageUrls"
           :key="currentImageUrl"
         >
-          <nuxt-img
+          <img
             class="w-full lg:h-screen object-cover"
             :src="currentImageUrl"
             quality="50"
