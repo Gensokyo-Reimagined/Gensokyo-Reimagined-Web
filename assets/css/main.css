@@ -2,9 +2,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-*{
+* {
   transition: background-color 0.25s ease-out, color 0.25s ease-out;
 }
-body{
+body {
   background-color: var(--md-sys-color-background);
+}
+:root {
+  --md-sys-color-error-dark: #ff6b71;
+  --md-sys-color-primary-dark: #f28395;
+  --md-sys-color-on-secondary-container-dark: #e2354c;
+  --md-sys-color-outline-dark: #ffd0d5;
 }
