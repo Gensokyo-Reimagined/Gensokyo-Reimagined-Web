@@ -1,8 +1,8 @@
 <template>
-  <seo-kit />
+  <seo-kit/>
   <!--<OgImageScreenshot />-->
   <NuxtLayout>
-    <NuxtPage class="bg-[var(--md-sys-color-background)]" />
+    <NuxtPage class="bg-[var(--md-sys-color-background)]"/>
   </NuxtLayout>
 </template>
 <script setup>

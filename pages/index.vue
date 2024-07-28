@@ -1,17 +1,19 @@
-<template>
-  <IndexHeader />
-  <IndexAbout />
-  <IndexFeature />
-  <IndexCta />
-  <IndexFaq />
-  <IndexRules />
-  <IndexSupport />
-</template>
-
-<script setup>
+<script lang="ts" setup>
 useSeoMeta({
   title: 'Creating a Touhou MMO Server in Minecraft',
 })
 </script>
 
-<style></style>
+<template>
+  <IndexHeader/>
+  <IndexAbout/>
+  <IndexFeature/>
+  <IndexCta/>
+  <IndexFaq/>
+  <IndexRules/>
+  <IndexSupport/>
+</template>
+
+<style scoped>
+
+</style>

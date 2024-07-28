@@ -3,7 +3,7 @@
     <div class="px-4 py-12 mx-auto max-w-7xl sm:py-16 sm:px-6 lg:px-8">
       <div class="max-w-3xl mx-auto divide-y-2 divide-gray-200">
         <h2
-          class="text-3xl font-extrabold text-center text-[var(--md-sys-color-on-background)] sm:text-4xl"
+            class="text-3xl font-extrabold text-center text-[var(--md-sys-color-on-background)] sm:text-4xl"
         >
           {{ $t('index.faq.title') }}
         </h2>
@@ -11,34 +11,34 @@
           <div v-for="faq in faqs" :key="faq.question" class="pt-6">
             <dt class="text-lg">
               <button
-                type="button"
-                class="flex items-start justify-between w-full text-left text-[var(--md-sys-color-outline)]"
-                aria-controls="faq-0"
-                aria-expanded="false"
-                @click="faq.open = !faq.open"
+                  aria-controls="faq-0"
+                  aria-expanded="false"
+                  class="flex items-start justify-between w-full text-left text-[var(--md-sys-color-outline)]"
+                  type="button"
+                  @click="faq.open = !faq.open"
               >
                 <span
-                  class="font-medium text-[var(--md-sys-color-on-background)]"
+                    class="font-medium text-[var(--md-sys-color-on-background)]"
                 >
                   {{ faq.question }}
                 </span>
                 <span class="flex items-center ml-6 h-7">
                   <svg
-                    :class="[
+                      :class="[
                       faq.open ? '-rotate-180' : 'rotate-0',
                       'h-6 w-6 transform',
                     ]"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewbox="0 0 24 24"
-                    stroke="currentColor"
-                    aria-hidden="true"
+                      aria-hidden="true"
+                      fill="none"
+                      stroke="currentColor"
+                      viewbox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
                   >
                     <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M19 9l-7 7-7-7"
+                        d="M19 9l-7 7-7-7"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
                     ></path>
                   </svg>
                 </span>
@@ -47,7 +47,7 @@
             <transition name="fade">
               <dd v-show="faq.open" class="pr-12 mt-2">
                 <p
-                  class="text-base text-[var(--md-sys-color-outline)] transition-all"
+                    class="text-base text-[var(--md-sys-color-outline)] transition-all"
                 >
                   {{ faq.answer }}
                 </p>

@@ -3,26 +3,26 @@
   <div v-if="appConfig.IPCtaShow" class="bg-[var(--md-sys-color-background)]">
     <div class="px-4 py-16 mx-auto max-w-7xl sm:px-6 lg:px-8">
       <div
-        class="overflow-hidden bg-[var(--md-sys-color-error)] rounded-lg shadow-xl lg:grid lg:grid-cols-2 lg:gap-4"
+          class="overflow-hidden bg-[var(--md-sys-color-error)] rounded-lg shadow-xl lg:grid lg:grid-cols-2 lg:gap-4"
       >
         <div class="-mt-6 aspect-w-5 aspect-h-3 md:aspect-w-2 md:aspect-h-1">
           <img
-            class="object-cover object-left-top transform translate-x-6 translate-y-6 rounded-md sm:translate-x-16 lg:translate-y-20"
-            :src="appConfig.IndexIPCtaImg"
-            alt="App screenshot"
-            quality="80"
-            loading="lazy"
-            sizes="sm:100vw md:50vw lg:400px"
-            width="400"
-            height="300"
+              :src="appConfig.IndexIPCtaImg"
+              alt="App screenshot"
+              class="object-cover object-left-top transform translate-x-6 translate-y-6 rounded-md sm:translate-x-16 lg:translate-y-20"
+              height="300"
+              loading="lazy"
+              quality="80"
+              sizes="sm:100vw md:50vw lg:400px"
+              width="400"
           />
         </div>
         <div
-          class="px-6 pt-10 pb-12 sm:pt-16 sm:px-16 lg:py-16 lg:pr-0 xl:py-20 xl:pl-10 xl:pr-4"
+            class="px-6 pt-10 pb-12 sm:pt-16 sm:px-16 lg:py-16 lg:pr-0 xl:py-20 xl:pl-10 xl:pr-4"
         >
           <div class="lg:self-center">
             <h2
-              class="text-3xl font-extrabold text-[var(--md-sys-color-on-error)] sm:text-4xl"
+                class="text-3xl font-extrabold text-[var(--md-sys-color-on-error)] sm:text-4xl"
             >
               <span class="block">
                 {{ $t('index.IPcta.title') }}
@@ -33,19 +33,19 @@
               </span>-->
             </h2>
             <p
-              class="mt-4 text-lg leading-6 text-[var(--md-sys-color-error-container)]"
+                class="mt-4 text-lg leading-6 text-[var(--md-sys-color-error-container)]"
             >
               {{ $t('index.IPcta.description') }}
             </p>
             <p>
               <span
-                class="mr-8 text-lg leading-6 text-[var(--md-sys-color-error-container)]"
+                  class="mr-8 text-lg leading-6 text-[var(--md-sys-color-error-container)]"
               >
                 {{ $t('index.IPcta.survivaltitle') }}:
               </span>
               <button
-                class="font-mono inline-flex items-center px-5 py-1 my-4 text-xs font-medium text-[var(--md-sys-color-on-background)] bg-[var(--md-sys-color-on-error)] border border-transparent rounded-md shadow hover:bg-[var(--md-sys-color-error-container)]"
-                @click="copyToClipboard(appConfig.SurvivalServerIP)"
+                  class="font-mono inline-flex items-center px-5 py-1 my-4 text-xs font-medium text-[var(--md-sys-color-on-background)] bg-[var(--md-sys-color-on-error)] border border-transparent rounded-md shadow hover:bg-[var(--md-sys-color-error-container)]"
+                  @click="copyToClipboard(appConfig.SurvivalServerIP)"
               >
                 {{ appConfig.SurvivalServerIP }}
                 <i class="fa-solid fa-copy ml-3 -mr-1"></i>
@@ -53,13 +53,13 @@
             </p>
             <p>
               <span
-                class="mr-8 text-lg leading-6 text-[var(--md-sys-color-error-container)]"
+                  class="mr-8 text-lg leading-6 text-[var(--md-sys-color-error-container)]"
               >
                 {{ $t('index.IPcta.buildtitle') }}:
               </span>
               <button
-                class="font-mono inline-flex items-center px-5 py-1 my-4 text-xs font-medium text-[var(--md-sys-color-on-background)] bg-[var(--md-sys-color-on-error)] border border-transparent rounded-md shadow hover:bg-[var(--md-sys-color-error-container)]"
-                @click="copyToClipboard(appConfig.BuildServerIP)"
+                  class="font-mono inline-flex items-center px-5 py-1 my-4 text-xs font-medium text-[var(--md-sys-color-on-background)] bg-[var(--md-sys-color-on-error)] border border-transparent rounded-md shadow hover:bg-[var(--md-sys-color-error-container)]"
+                  @click="copyToClipboard(appConfig.BuildServerIP)"
               >
                 {{ appConfig.BuildServerIP }}
                 <i :class="iconClass"></i>
@@ -74,14 +74,14 @@
   <div v-if="appConfig.DCCtaShow" class="bg-[var(--md-sys-color-background)]">
     <div class="px-4 py-16 mx-auto max-w-7xl sm:px-6 lg:px-8">
       <div
-        class="overflow-hidden bg-[var(--md-sys-color-error)] rounded-lg shadow-xl lg:grid lg:grid-cols-2 lg:gap-4"
+          class="overflow-hidden bg-[var(--md-sys-color-error)] rounded-lg shadow-xl lg:grid lg:grid-cols-2 lg:gap-4"
       >
         <div
-          class="px-6 pt-10 pb-12 sm:pt-16 sm:px-16 lg:py-16 lg:pr-0 xl:py-20 xl:px-20"
+            class="px-6 pt-10 pb-12 sm:pt-16 sm:px-16 lg:py-16 lg:pr-0 xl:py-20 xl:px-20"
         >
           <div class="lg:self-center">
             <h2
-              class="text-3xl font-extrabold text-[var(--md-sys-color-on-error)] sm:text-4xl"
+                class="text-3xl font-extrabold text-[var(--md-sys-color-on-error)] sm:text-4xl"
             >
               <span class="block">
                 {{ $t('index.cta.title') }}
@@ -92,14 +92,14 @@
               </span>-->
             </h2>
             <p
-              class="mt-4 text-lg leading-6 text-[var(--md-sys-color-error-container)]"
+                class="mt-4 text-lg leading-6 text-[var(--md-sys-color-error-container)]"
             >
               {{ $t('index.cta.description') }}
             </p>
             <a
-              :href="appConfig.DCLink"
-              target="_blank"
-              class="inline-flex items-center px-5 py-3 mt-8 text-base font-medium text-[var(--md-sys-color-on-background)] bg-[var(--md-sys-color-on-error)] border border-transparent rounded-md shadow hover:bg-[var(--md-sys-color-error-container)]"
+                :href="appConfig.DCLink"
+                class="inline-flex items-center px-5 py-3 mt-8 text-base font-medium text-[var(--md-sys-color-on-background)] bg-[var(--md-sys-color-on-error)] border border-transparent rounded-md shadow hover:bg-[var(--md-sys-color-error-container)]"
+                target="_blank"
             >
               {{ $t('index.cta.button') }}
               <i class="fa-solid fa-arrow-up-right-from-square ml-3 -mr-1"></i>
@@ -108,14 +108,14 @@
         </div>
         <div class="-mt-6 aspect-w-5 aspect-h-3 md:aspect-w-2 md:aspect-h-1">
           <img
-            class="object-cover object-left-top transform translate-x-6 translate-y-6 rounded-md sm:translate-x-16 lg:translate-y-20"
-            :src="appConfig.IndexCtaImg"
-            alt="App screenshot"
-            quality="80"
-            loading="lazy"
-            sizes="sm:100vw md:50vw lg:400px"
-            width="400"
-            height="300"
+              :src="appConfig.IndexCtaImg"
+              alt="App screenshot"
+              class="object-cover object-left-top transform translate-x-6 translate-y-6 rounded-md sm:translate-x-16 lg:translate-y-20"
+              height="300"
+              loading="lazy"
+              quality="80"
+              sizes="sm:100vw md:50vw lg:400px"
+              width="400"
           />
         </div>
       </div>
@@ -125,26 +125,26 @@
   <div v-if="appConfig.MPCtaShow" class="bg-[var(--md-sys-color-background)]">
     <div class="px-4 py-16 mx-auto max-w-7xl sm:px-6 lg:px-8">
       <div
-        class="overflow-hidden bg-[var(--md-sys-color-error)] rounded-lg shadow-xl lg:grid lg:grid-cols-2 lg:gap-4"
+          class="overflow-hidden bg-[var(--md-sys-color-error)] rounded-lg shadow-xl lg:grid lg:grid-cols-2 lg:gap-4"
       >
         <div class="-mt-6 aspect-w-5 aspect-h-3 md:aspect-w-2 md:aspect-h-1">
           <img
-            class="object-cover object-left-top transform translate-x-6 translate-y-6 rounded-md sm:translate-x-16 lg:translate-y-20"
-            :src="appConfig.IndexModPackCtaImg"
-            alt="App screenshot"
-            quality="80"
-            loading="lazy"
-            sizes="sm:100vw md:50vw lg:400px"
-            width="400"
-            height="300"
+              :src="appConfig.IndexModPackCtaImg"
+              alt="App screenshot"
+              class="object-cover object-left-top transform translate-x-6 translate-y-6 rounded-md sm:translate-x-16 lg:translate-y-20"
+              height="300"
+              loading="lazy"
+              quality="80"
+              sizes="sm:100vw md:50vw lg:400px"
+              width="400"
           />
         </div>
         <div
-          class="px-6 pt-10 pb-12 sm:pt-16 sm:px-16 lg:py-16 lg:pr-0 xl:py-20 xl:px-20"
+            class="px-6 pt-10 pb-12 sm:pt-16 sm:px-16 lg:py-16 lg:pr-0 xl:py-20 xl:px-20"
         >
           <div class="lg:self-center">
             <h2
-              class="text-3xl font-extrabold text-[var(--md-sys-color-on-error)] sm:text-4xl"
+                class="text-3xl font-extrabold text-[var(--md-sys-color-on-error)] sm:text-4xl"
             >
               <span class="block">
                 {{ $t('index.MPcta.title') }}
@@ -161,9 +161,9 @@
               {{ $t('index.MPcta.description') }}
             </p>-->
             <a
-              :href="appConfig.MPLink"
-              target="_blank"
-              class="inline-flex items-center px-5 py-3 mt-8 text-base font-medium text-[var(--md-sys-color-on-background)] bg-[var(--md-sys-color-on-error)] border border-transparent rounded-md shadow hover:bg-[var(--md-sys-color-error-container)]"
+                :href="appConfig.MPLink"
+                class="inline-flex items-center px-5 py-3 mt-8 text-base font-medium text-[var(--md-sys-color-on-background)] bg-[var(--md-sys-color-on-error)] border border-transparent rounded-md shadow hover:bg-[var(--md-sys-color-error-container)]"
+                target="_blank"
             >
               {{ $t('index.MPcta.button') }}
               <i class="fa-solid fa-arrow-up-right-from-square ml-3 -mr-1"></i>
