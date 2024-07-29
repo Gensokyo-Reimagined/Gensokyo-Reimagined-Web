@@ -1,52 +1,27 @@
 <template>
-  <div
-      class="relative overflow-hidden bg-[var(--md-sys-color-background)] pt-16 lg:h-screen"
-  >
+  <div class="relative overflow-hidden bg-[var(--md-sys-color-background)] pt-16 lg:h-screen">
     <div class="mx-auto max-w-7xl lg:h-screen flex items-center justify-center">
       <div
-          class="max-lg:absolute max-lg:top-16 max-lg:left-0 lg:relative z-10 pt-10 md:pb-20 w-full lg:pb-28 xl:pb-32 flex justify-center"
-      >
-        <img
-            :src="logoImg"
-            alt="current image"
-            class="lg:absolute lg:top-1/2 lg:left-1/2 transform lg:-translate-x-1/2 lg:-translate-y-1/2 object-cover max-lg:w-1/2 max-lg:h-1/2"
-            quality="50"
-            sizes="sm:100vw md:50vw lg:800px"
-        />
+          class="max-lg:absolute max-lg:top-16 max-lg:left-0 lg:relative z-10 pt-10 md:pb-20 w-full lg:pb-28 xl:pb-32 flex justify-center">
+        <img :src="logoImg" alt="current image"
+             class="lg:absolute lg:top-1/2 lg:left-1/2 transform lg:-translate-x-1/2 lg:-translate-y-1/2 object-cover max-lg:w-1/2 max-lg:h-1/2"/>
       </div>
     </div>
-    <div
-        class="lg:pt-16 lg:absolute lg:inset-y-0 lg:right-0 w-full lg:h-screen blur-sm"
-    >
-      <swiper
-          :autoplay="{
-          delay: changeTime,
-          disableOnInteraction: false,
-        }"
-          :loop="true"
-          :modules="modules"
-          :slidesPerView="1"
-          class="w-full h-56 sm:h-72 md:h-96 lg:w-full lg:h-full"
-      >
-        <swiper-slide
-            v-for="currentImageUrl in imageUrls"
-            :key="currentImageUrl"
-            class="transition-opacity ease-in-out"
-        >
-          <img
-              :src="currentImageUrl"
-              alt="current image"
-              class="w-full lg:h-screen object-cover"
-              quality="50"
-              sizes="sm:100vw md:50vw lg:800px"
-          />
+    <div class="lg:pt-16 lg:absolute lg:inset-y-0 lg:right-0 w-full lg:h-screen blur-sm">
+      <swiper :autoplay="{
+			delay: changeTime,
+			disableOnInteraction: false,
+			}" :loop="true" :modules="modules" :slidesPerView="1" class="w-full h-56 sm:h-72 md:h-96 lg:w-full lg:h-full">
+        <swiper-slide v-for="currentImageUrl in imageUrls" :key="currentImageUrl"
+                      class="transition-opacity ease-in-out">
+          <img :src="currentImageUrl" alt="current image" class="w-full lg:h-screen object-cover"/>
         </swiper-slide>
       </swiper>
     </div>
     <div class="absolute inset-0">
       <div
-          class="absolute bottom-0 w-full bg-gradient-to-b from-transparent to-[var(--md-sys-color-background)] lg:h-24 md:h-12 sm:h-6 h-4"
-      ></div>
+          class="absolute bottom-0 w-full bg-gradient-to-b from-transparent to-[var(--md-sys-color-background)] lg:h-24 md:h-12 sm:h-6 h-4">
+      </div>
     </div>
   </div>
 </template>

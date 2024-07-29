@@ -5,6 +5,11 @@
     <NuxtPage class="bg-[var(--md-sys-color-background)]"/>
   </NuxtLayout>
 </template>
+<style>
+html, body {
+  scroll-behavior: smooth;
+}
+</style>
 <script setup>
 const runtimeConfig = useRuntimeConfig()
 useSeoMeta({

@@ -2,37 +2,26 @@
   <div id="features" class="py-12 bg-[var(--md-sys-color-background)]">
     <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
       <div class="lg:text-center">
-        <!--
-        <h2 class="text-base font-semibold tracking-wide text-[var(--md-sys-color-primary)] uppercase">
-          {{ $t('index.feature.title') }}
+        <!-- <h2 class="text-base font-semibold tracking-wide text-[var(--md-sys-color-primary)]
+        uppercase">
+        {{ $t('index.feature.title') }}
         </h2>-->
-        <p
-            class="mt-2 text-3xl font-extrabold leading-8 tracking-tight text-[var(--md-sys-color-on-background)] sm:text-4xl"
-        >
+        <p class="mt-2 text-3xl font-extrabold leading-8 tracking-tight text-[var(--md-sys-color-on-background)] sm:text-4xl">
           {{ $t('index.feature.subtitle') }}
         </p>
-        <p
-            class="max-w-2xl mt-4 text-xl text-[var(--md-sys-color-outline)] lg:mx-auto"
-        ></p>
+        <p class="max-w-2xl mt-4 text-xl text-[var(--md-sys-color-outline)] lg:mx-auto">
+        </p>
       </div>
       <div class="mt-10">
-        <dl
-            class="space-y-10 md:space-y-0 md:grid md:grid-cols-2 md:gap-x-8 md:gap-y-10"
-        >
-          <div
-              v-for="feature in feature"
-              :key="feature.name"
-              class="relative flex flex-col"
-          >
+        <dl class="space-y-10 md:space-y-0 md:grid md:grid-cols-2 md:gap-x-8 md:gap-y-10">
+          <div v-for="feature in feature" :key="feature.name" class="relative flex flex-col">
             <dt>
               <div
-                  class="absolute flex items-center justify-center w-12 h-12 text-[var(--md-sys-color-on-tertiary-container)] bg-[var(--md-sys-color-tertiary-container)] rounded-md"
-              >
-                <i :class="feature.icon"></i>
+                  class="absolute flex items-center justify-center w-12 h-12 text-[var(--md-sys-color-on-tertiary-container)] bg-[var(--md-sys-color-tertiary-container)] rounded-md">
+                <i :class="feature.icon">
+                </i>
               </div>
-              <p
-                  class="ml-16 text-lg font-medium leading-6 text-[var(--md-sys-color-on-background)]"
-              >
+              <p class="ml-16 text-lg font-medium leading-6 text-[var(--md-sys-color-on-background)]">
                 {{ $t(feature.name) }}
               </p>
             </dt>
@@ -40,15 +29,8 @@
               {{ $t(feature.description) }}
             </dd>
             <div class="mt-auto pt-5 m-5">
-              <img
-                  :src="feature.img"
-                  alt="feature image"
-                  class="rounded-xl"
-                  height="212"
-                  loading="lazy"
-                  quality="80"
-                  sizes="sm:100vw md:50vw lg:400px"
-                  width="400"
+              <img :src="feature.img" alt="feature image" class="rounded-xl" height="212"
+                   loading="lazy" width="400"
               />
             </div>
           </div>
@@ -66,17 +48,18 @@ export default {
       appConfig: appConfig,
     })
 
-    return {state}
+    return {
+      state
+    }
   },
   data() {
     return {
-      feature: [
-        {
-          name: this.$t('index.feature.items[0].name'),
-          description: this.$t('index.feature.items[0].description'),
-          icon: this.state.appConfig.IndexFeatureIcon[0],
-          img: this.state.appConfig.IndexFeatureImg[0],
-        },
+      feature: [{
+        name: this.$t('index.feature.items[0].name'),
+        description: this.$t('index.feature.items[0].description'),
+        icon: this.state.appConfig.IndexFeatureIcon[0],
+        img: this.state.appConfig.IndexFeatureImg[0],
+      },
         {
           name: this.$t('index.feature.items[1].name'),
           description: this.$t('index.feature.items[1].description'),
