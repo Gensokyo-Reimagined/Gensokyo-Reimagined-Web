@@ -1,23 +1,18 @@
-{
-  "image": [
-    "https://cdn.discordapp.com/role-icons/1013224428366209074/e64cda92194d37da672aaa3900662e1a.webp",
-    "https://cdn.discordapp.com/role-icons/1109247869623472248/b8cba4252c8c67905df692f066fd1f8d.webp",
-    "https://cdn.discordapp.com/role-icons/1098325043513131018/9fed0780f5f5f50ae250d9af44b6bd9a.webp",
-    "https://cdn.discordapp.com/role-icons/1195148404565749800/1ca021595bc675f6b7ea845b0eecb947.webp",
-    "https://cdn.discordapp.com/role-icons/1015923794948411412/ae7b3c093cd77085d4833f68703dd9e5.webp"
-  ],
-  "label": [
-    "身份组图标，Admin",
-    "身份组图标，Lead Designer",
-    "身份组图标，Build Lead",
-    "身份组图标，System Manager",
-    "身份组图标，Developer"
-  ],
-  "color": [
-    "rgb(255, 122, 123)",
-    "rgb(97, 66, 255)",
-    "rgb(36, 91, 255)",
-    "rgb(104, 255, 60)",
-    "rgb(34, 255, 183)"
-  ]
-}
+[
+  {
+    "name": "Developer",
+    "list": [
+      {
+        "name": "misaka10843",
+        "avatar": "http",
+        "avatarUseGithub": true,
+        "position": "Web Developer",
+        "contact": {
+          "discord": "qwq",
+          "twitter": "qwq",
+          "github": "qwq"
+        }
+      }
+    ]
+  }
+]

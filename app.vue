@@ -9,6 +9,13 @@
 html, body {
   scroll-behavior: smooth;
 }
+#nprogress .bar {
+  background: var(--md-sys-color-on-primary) !important;
+  height: 4px;
+}
+#nprogress .peg {
+  box-shadow: 0 0 10px var(--md-sys-color-on-primary), 0 0 5px var(--md-sys-color-on-primary) !important;
+}
 </style>
 <script setup>
 const runtimeConfig = useRuntimeConfig()

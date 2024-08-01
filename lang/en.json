@@ -97,5 +97,9 @@
     "map": "map",
     "translation": "translation",
     "contributor": "contributor"
+  },
+  "contributor": {
+    "title": "Contributors of Gensokyo Reimagined",
+    "description": "Our heartfelt thanks to all the contributors whose support helps Gensokyo Reimagined become better with every step."
   }
 }

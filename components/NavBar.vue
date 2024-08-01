@@ -175,9 +175,11 @@ export default {
   setup() {
     const switchLocalePath = useSwitchLocalePath()
     const appConfig = useAppConfig()
+    const localePath = useLocalePath()
     return {
       switchLocalePath,
       appConfig,
+      localePath,
     }
   },
   data() {
@@ -308,7 +310,7 @@ export default {
     const matchingLanguage = this.languages.find((lang) => lang.lang === languageCode)
     if (matchingLanguage && matchingLanguage.lang !== 'en') {
       const langCode = matchingLanguage.lang
-      this.$router.push(`/${langCode}`)
+      this.localePath('index', langCode)
     }
   },
 }
