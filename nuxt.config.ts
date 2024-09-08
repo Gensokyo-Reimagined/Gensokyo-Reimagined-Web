@@ -101,6 +101,11 @@ export default defineNuxtConfig({
                 iso: 'lt-LT',
                 file: 'lt.json',
             },
+            {
+                code: 'by',
+                iso: 'by-HM',
+                file: 'by.json',
+            },
         ],
         langDir: 'lang',
         defaultLocale: 'en',

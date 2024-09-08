@@ -358,6 +358,11 @@ export default {
           name: 'Lietuvių',
           flag: 'twa-flag-lithuania',
         },
+        {
+          lang: 'by',
+          name: 'беларуская',
+          flag: 'twa-flag-belarus',
+        }
       ],
     }
   },
