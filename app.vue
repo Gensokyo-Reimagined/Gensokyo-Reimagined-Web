@@ -6,14 +6,12 @@
   </NuxtLayout>
 </template>
 <script setup>
-const runtimeConfig = useRuntimeConfig()
-useSeoMeta({
-  title: 'Gensokyo Reimagined',
-  ogTitle: 'Gensokyo Reimagined',
-  description: 'Creating a Touhou MMO Server in Minecraft',
-  ogDescription: 'Creating a Touhou MMO Server in Minecraft',
-  ogImage: 'https://www.gensokyoreimagined.net/img/about_pic.webp',
-})
+//defineOgImage({
+//  url: 'https://www.gensokyoreimagined.net/img/about_pic.webp',
+//  width: 1186,
+//  height: 628,
+//  alt: 'about_pic',
+//})
 useHead({
   link: [
     {
@@ -32,12 +30,6 @@ useHead({
       as: 'style',
       onload: 'this.onload=null;this.rel="stylesheet"',
       href: '/css/twemoji-flags.min.css',
-    },
-  ],
-  meta: [
-    {
-      property: 'og:image',
-      content: runtimeConfig.public.siteImage,
     },
   ],
 })
