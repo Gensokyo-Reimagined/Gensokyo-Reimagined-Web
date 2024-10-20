@@ -55,6 +55,7 @@ Now you can configure the site's language selection box according to [here](http
 
 > [!IMPORTANT]
 > Starting here is written for developers and regular contributors can skip
+> Legacy issues with i18n may be fixed in the near future, and the related documentation below may be outdated
 
 We now have 3 configuration files,
 
