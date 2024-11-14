@@ -14,3 +14,10 @@ body {
   --md-sys-color-on-secondary-container-dark: #e2354c;
   --md-sys-color-outline-dark: #ffd0d5;
 }
+#nprogress .bar {
+    background-color: var(--md-sys-color-primary) !important;
+}
+#nprogress .peg {
+    box-shadow: 0 0 10px var(--md-sys-color-outline), 0 0 5px var(--md-sys-color-outline) !important;
+
+}
