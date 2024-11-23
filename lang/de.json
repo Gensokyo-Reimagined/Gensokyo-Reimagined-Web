@@ -9,7 +9,7 @@
         "about": {
             "title": "Über uns",
             "subtitle": "Kurze Erklärung über das Projekt!",
-            "description": "Das Projekt begann recht klein mit nur wenigen Leuten, aber mit der Zeit bekam es mehr Aufmerksamkeit und unsere Ziele wurden größer. Jetzt erstellen wir eine spielbare Version des gesamten Touhou-Universums, indem wir MMO- und Survival-Minecraft-Elemente kombinieren ohne dass Mods zum Spielen benötigt werden, um das Spiel für alle zugänglich zu machen."
+            "description": "Das Projekt begann recht klein mit nur wenigen Mithelfern, aber mit der Zeit bekam es mehr Aufmerksamkeit und unsere Ziele wurden größer. Jetzt erstellen wir eine spielbare Version des gesamten Touhou-Universums, indem wir MMO- und Survival-Minecraft-Elemente kombinieren ohne dass Mods zum Spielen benötigt werden, um das Spiel für alle zugänglich zu machen."
         },
         "feature": {
             "subtitle": "Server Features",
@@ -74,7 +74,7 @@
         },
         "IPcta": {
             "title": "Server IPs",
-            "description": "Version: 1.20.X",
+            "description": "Version: 1.21.1",
             "buildtitle": "Bau Server",
             "survivaltitle": "MMORPG Server"
         },
