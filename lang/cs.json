@@ -9,85 +9,85 @@
         "about": {
             "title": "O nás",
             "subtitle": "Menší informace k projektu!",
-            "description": "The Project started quite small initially with few people but as time went on project started to get some attraction and goals went bigger. Now we are creating playable version of Entirety of Touhou Universe with combining MMO and Survival Minecraft elements with requiring 0 mods to play on for maximum accessibility for everyone."
+            "description": "Projekt byl z počátku celkem malý a pracovalo na něm jenom pár lidí, ale postupem času začal získávat na popularitě a cíle se zvětšovaly. Nyní vytváříme hratelnou verzi celého Touhou vesmíru s kombinací prvků MMO (Hra pro masivní počet hráčů) a Survival Minecraftu (Hry o přežití) která vyžaduje 0 módu ke hraní aby mohla být přístupná všem."
         },
         "feature": {
-            "subtitle": "Server Features",
+            "subtitle": "Funkce Serveru",
             "items": [
                 {
-                    "name": "Custom Mobs",
-                    "description": "We have custom Touhou themed mobs with 0 mods!"
+                    "name": "Naši vlastní Mobové",
+                    "description": "Máme vlastní Touhou moby bez modifikací!"
                 },
                 {
-                    "name": "Touhou Themed Classes",
-                    "description": "Each class has unique gameplay to encourage players to experiment!"
+                    "name": "Třídy s tématikou Touhou",
+                    "description": "Každá třída má jedinečnou hratelnost, která vybízí hráče k tomu, aby experimentovali!"
                 },
                 {
-                    "name": "Story Quests",
-                    "description": "We have simple yet extensive quest lines with great rewards to players"
+                    "name": "Příběhové mise",
+                    "description": "Máme jednoduché, ale rozsáhlé úkoly se skvělými odměnami pro hráče"
                 },
                 {
-                    "name": "Weather Events",
-                    "description": "Each day is different in some way with dynamic seasons!"
+                    "name": "Počasí",
+                    "description": "Každý den je díky dynamickým ročním obdobím v něčem odlišný!"
                 }
             ]
         },
         "cta": {
-            "title": "Community",
-            "description": "Consider joining our ever growing discord server!",
-            "button": "Server Link"
+            "title": "Komunita",
+            "description": "Zvažte možnost připojit se k našemu stále roustoucímu Discord serveru!",
+            "button": "Odkaz na server"
         },
         "faq": {
-            "title": "Frequently Asked Questions ",
+            "title": "Často kladené otázky",
             "items": [
                 {
-                    "question": "Is there a map download?",
-                    "answer": "No, because the map relies on the server's plugins to function.The map also keeps our project alive and we do not want to segment the community! Map is only given to people who knows what they are doing and they are contributing to the project one way or another.          "
+                    "question": "Je tady někde možnost stáhnout si vaší mapu?",
+                    "answer": "Ne, protože fungování mapy závisí na serverových pluginech. Mapa taky udržuje náš projek při životě a nechceme tím rozdělovat komunitu! Mapu dáváme pouze lidem, kteří vědí co dělají a kteří nějakým způsobem přispívají k projektu."
                 },
                 {
-                    "question": "How can I let you guys know about issues?",
-                    "answer": "For quick reports on survival, use ⁠#bug-reports, or if it regards a moderation issue please contact the staff team in ⁠#staff-ticket."
+                    "question": "Jak vás můžu informovat o chybách?",
+                    "answer": "Pro rychlé hlášení o survivalu použíj ⁠#bug-reports, nebo pokud se jedná o problém s moderováním, kontaktuj náš tým v ⁠#staff-ticket."
                 },
                 {
-                    "question": "I can't join the server?",
-                    "answer": "The server does not allow cracked accounts access to it, so that may be one reason. Otherwise please open a ticket in #staff-contact with a screenshot of the error-message you are getting, staff will help out as best they can."
+                    "question": "Nemůžu se připojit na server?",
+                    "answer": "Server nepovoluje přístup warez účtům, takže to by mohl být jeden z důvodů. Pokud se ale jedná o něco jiného, kontaktuj nás v #staff-contact se snímkem obrazovky ukazující chybové hlášení co ti vyskakuje. Náš tým se ti pokusí pomoc jak nejlépe dovede."
                 },
                 {
-                    "question": "Does this server has chat reporting on?",
-                    "answer": "No, and never will be."
+                    "question": "Má tenhle server zapnutý nahlašování chatu?",
+                    "answer": "Ne a nikdy mít nebude."
                 },
                 {
-                    "question": "I'm experiencing some connection issues?",
-                    "answer": "Yes, that might be case for wifi and server being generally far. If it's something that everyone experiences please report it to staff."
+                    "question": "Mám problémy s připojením.",
+                    "answer": "Ano, to může být způsobeno tím, že wifi je daleko od serveru. Pokud maj ale s připojením problém všichni, nahlaš to prosím našemu týmu."
                 }
             ]
         },
         "rules": {
-            "subtitle": "Server Rules",
-            "description": "Important rules to keep community clean",
-            "button": "Rules"
+            "subtitle": "Pravidla serveru",
+            "description": "Důležitá pravidla pro udržení pořádku v komunitě.",
+            "button": "Pravidla"
         },
         "support": {
-            "title": "Support the project!",
-            "description": "This is a Non-Profit project so every donation helps us out!",
-            "button": "Patreon"
+            "title": "Podpoř projekt!",
+            "description": "Jedná se o neziskový projekt, takže každej dar nám pomůže!",
+            "button": "BuyMeACoffee"
         },
         "IPcta": {
-            "title": "Server IPs",
-            "description": "Version: 1.20.X",
-            "buildtitle": "Build Server",
+            "title": "IP k serveru",
+            "description": "Verze: 1.21.1",
+            "buildtitle": "Stavitelský server",
             "survivaltitle": "MMORPG Server"
         },
         "MPcta": {
             "button": "Modrinth",
-            "title": "Try our Optimized Modpack for the Server!"
+            "title": "Vyzkoušejte náš optimalizovaný modpack pro server!"
         }
     },
     "Navbar": {
-        "home": "home",
-        "about": "about",
+        "home": "domeček",
+        "about": "o nás",
         "wiki": "wiki",
-        "map": "map",
-        "translation": "translation"
+        "map": "mapa",
+        "translation": "překlad"
     }
 }
