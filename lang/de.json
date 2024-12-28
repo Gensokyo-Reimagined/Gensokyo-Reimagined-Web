@@ -3,7 +3,7 @@
     "index": {
         "header": {
             "intro": "Erstellen eines Touhou-MMO-Servers in Minecraft",
-            "group": "Werden Sie Teil unserer Community!",
+            "group": "Werde Teil unserer Community!",
             "continue": "Mehr erfahren"
         },
         "about": {
@@ -16,7 +16,7 @@
             "items": [
                 {
                     "name": "Custom Mobs",
-                    "description": "Wir haben, auf Touhou basierende Gegner, ganz ohne zusätzliche Mods!"
+                    "description": "Wir haben, auf Touhou basierende Mobs, ganz ohne zusätzliche Mods!"
                 },
                 {
                     "name": "Auf Touhou Basierende Klassen",
@@ -24,11 +24,11 @@
                 },
                 {
                     "name": "Story Quests",
-                    "description": "Wir haben einfache, aber umfangreiche Questreihen mit tollen Belohnungen für die Spieler"
+                    "description": "Wir haben einfache, aber umfangreiche Questreihen mit tollen Belohnungen für Spieler"
                 },
                 {
                     "name": "Wetter Events",
-                    "description": "Durch die dynamischen Jahreszeiten ist jeder Tag anders!"
+                    "description": "Jeder Tag ist etwas anders durch die dynamischen Jahreszeiten!"
                 }
             ]
         },
