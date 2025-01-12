@@ -2,14 +2,15 @@
     "servername": "Gensokyo Reimagined",
     "index": {
         "header": {
-            "intro": "Un MMO Touhou dans Minecraft",
+            "intro": "Création d'un serveur MMO Touhou dans Minecraft",
             "group": "Rejoignez notre communauté !",
-            "continue": "En savoir plus"
+            "continue": "En savoir plus",
+            "title": " "
         },
         "about": {
-            "title": "À propos",
-            "subtitle": "De petite explication sur le projet !",
-            "description": "Le project a commencé sur des humbles bases, initiallement avec une poignée de bénévoles, mais au fil du temps, le projet a commencé à attirer de l'attention, et les objectifs ont grandit avec. Désormais, notre but est de créer un jeu situé dans l'Univers de Touhou, dans Minecraft, de manière à ce que n'importe qui puisse jouer, avec aucun mods nécéssaires."
+            "title": "À propos de nous",
+            "subtitle": "Une petite explication sur le projet !",
+            "description": "Le project a commencé sur des humbles bases, initialement avec une poignée de bénévoles, mais au fil du temps, le projet a commencé à attirer de l'attention, et les objectifs ont grandi avec. Désormais, notre but est de créer un jeu situé dans l'Univers de Touhou, dans Minecraft, de manière à ce que n'importe qui puisse y jouer, avec aucun mod nécessaire."
         },
         "feature": {
             "subtitle": "Caractéristiques du serveur",
@@ -24,36 +25,38 @@
                 },
                 {
                     "name": "Quête Principales",
-                    "description": "Nous avons des quêtes simples et étendues avec de grandes récompenses pour les joueurs"
+                    "description": "Nous avons des quêtes simples mais étendues avec de grandes récompenses pour les joueurs"
                 },
                 {
                     "name": "Événements météorologiques",
-                    "description": "Chaque jour est différent d'une certaine manière avec des saisons dynamiques!"
+                    "description": "Chaque jour est différent d'une certaine manière avec les saisons dynamiques !"
                 }
-            ]
+            ],
+            "title": " "
         },
         "cta": {
             "title": "Communauté",
             "description": "Envisagez de rejoindre notre serveur discord !",
-            "button": "Lien du serveur"
+            "button": "Lien du serveur",
+            "subtitle": " "
         },
         "faq": {
-            "title": "Questions fréquemment posées (FAQ)",
+            "title": "Foire aux Questions (FAQ)",
             "items": [
                 {
                     "question": "Y a-t-il un téléchargement de carte ?",
-                    "answer": "Non, parce que la carte repose sur les plugins du serveur pour fonctionner. La map maintient également notre projet en vie et nous ne voulons pas fractionner la communauté ! La map n'est donnée qu'aux personnes qui savent ce qu'elles font et qui contribuent au projet d'une manière ou d'une autre.          "
+                    "answer": "Non, parce que la carte repose sur les plugins du serveur pour fonctionner. La map maintient également notre projet en vie et nous ne voulons pas fractionner la communauté ! La map n'est donnée qu'aux personnes qui savent ce qu'elles font et qui contribuent au projet d'une manière ou d'une autre."
                 },
                 {
                     "question": "Comment puis-je vous informer sur les problèmes ?",
-                    "answer": "Pour des petits bugs sur la survie, utilisez #bug-reports, ou si cela concerne un problème de modération, veuillez contacter l'équipe du personnel dans #staff-ticket."
+                    "answer": "Pour des petits bugs sur la survie, utilisez #bug-reports, ou si cela concerne un problème de modération, veuillez contacter le staff dans #staff-ticket."
                 },
                 {
                     "question": "Je n'arrive pas à rejoindre le serveur ?",
                     "answer": "Le serveur n'autorise pas l'accès à des comptes craqués, ce qui peut être une des raisons. Sinon, veuillez ouvrir un ticket dans #staff-contact avec une capture d'écran du message d'erreur que vous recevez, le personnel vous aidera du mieux qu'il peut."
                 },
                 {
-                    "question": "Est-ce que ce serveur a un \"chat report\" (rapport de tchat)?",
+                    "question": "Est-ce que ce serveur a un \"chat report\" (signalement de tchat) ?",
                     "answer": "Non, et jamais il n'en aura."
                 },
                 {
@@ -65,29 +68,33 @@
         "rules": {
             "subtitle": "Règles du serveur",
             "description": "Règles importantes pour garder une communauté propre",
-            "button": "Règles"
+            "button": "Règles",
+            "title": " "
         },
         "support": {
-            "title": "Soutenez ce projet!",
+            "title": "Soutenez le projet !",
             "description": "C'est un projet à but non lucratif, donc chaque don nous aide !",
-            "button": "Patreon"
+            "button": "BuyMeACoffee"
         },
         "IPcta": {
-            "title": "Adresses IP",
-            "description": "Version: 1.20.X",
+            "title": "Adresses IP des serveurs",
+            "description": "Version : 1.21.1",
             "buildtitle": "Serveur Build",
-            "survivaltitle": "Serveur MMORPG"
+            "survivaltitle": "Serveur MMORPG",
+            "subtitle": " "
         },
         "MPcta": {
-            "title": "Try our Optimized Modpack for the Server!",
-            "button": "Modrinth"
+            "title": "Essayez notre pack de mods optimisé pour le serveur !",
+            "button": "Modrinth",
+            "subtitle": " ",
+            "description": " "
         }
     },
     "Navbar": {
         "home": "Accueil",
         "about": "À propos",
         "wiki": "Wiki",
-        "map": "carte",
-        "translation": "translation"
+        "map": "Carte",
+        "translation": "Traduction"
     }
 }
