@@ -7,7 +7,7 @@
       >
         <div class="-mt-6 aspect-w-5 aspect-h-3 md:aspect-w-2 md:aspect-h-1">
           <img
-            class="object-cover object-left-top transform translate-x-6 translate-y-6 rounded-md sm:translate-x-16 lg:translate-y-20"
+            class="object-cover object-left-top transform rounded-md sm:translate-x-16 lg:translate-y-20"
             :src="appConfig.IndexIPCtaImg"
             alt="App screenshot"
             quality="80"
@@ -48,7 +48,7 @@
                 @click="copyToClipboard(appConfig.SurvivalServerIP)"
               >
                 {{ appConfig.SurvivalServerIP }}
-                <i class="fa-solid fa-copy ml-3 -mr-1"></i>
+                <i :class="iconClass"></i>
               </button>
             </p>
             <p>
@@ -129,7 +129,7 @@
       >
         <div class="-mt-6 aspect-w-5 aspect-h-3 md:aspect-w-2 md:aspect-h-1">
           <img
-            class="object-cover object-left-top transform translate-x-6 translate-y-6 rounded-md sm:translate-x-16 lg:translate-y-20"
+            class="object-cover object-left-top transform rounded-md sm:translate-x-16 lg:translate-y-20"
             :src="appConfig.IndexModPackCtaImg"
             alt="App screenshot"
             quality="80"

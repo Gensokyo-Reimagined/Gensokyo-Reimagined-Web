@@ -1,11 +1,13 @@
 <template>
-  <IndexHeader />
-  <IndexAbout />
-  <IndexFeature />
-  <IndexCta />
-  <IndexFaq />
-  <IndexRules />
-  <IndexSupport />
+  <div>
+    <IndexHeader/>
+    <IndexAbout/>
+    <IndexFeature/>
+    <IndexCta/>
+    <IndexFaq/>
+    <IndexRules/>
+    <IndexSupport/>
+  </div>
 </template>
 
 <script setup>

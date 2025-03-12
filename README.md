@@ -84,33 +84,36 @@ In the repository, all you need to do is add a new language as follows in i18n o
   i18n: {
     locales: [
       {
-        code: '[Language code, such as en/ja]',
+        code: '[Language code, such as en/ja]', 
+        iso: '[Language iso, such as en-US/ja-JP]',
         file: '[The character entered in code].json',
       },
-    ],
-  },
+    ]
+  }
 ```
+
+> for some languages (such as traditional Chinese(HK)), code cannot be written as zh_hk, it should be hk
 
 Then you need to add the corresponding language to data() in `<script>` in `components/NavBar.vue` as follows
 
-```json
-
+```javascript
 languages: [
-        {
-          lang: "en",
-          name: "English",
-          flag: "twa-flag-united-states"
-        }, {
-          lang: "ja",
-          name: "日本語",
-          flag: "twa-flag-japan"
-        },{
-          lang: "[Language code, such as en/ja]",
-          name: "[Language name]",
-          flag: "[twitter national flags, such as twa-flag-united states for the flag of the United States]"
-        },
-      ]
-
+  {
+    lang: "en",
+    name: "English",
+    flag: "twa-flag-united-states"
+  },
+  {
+    lang: "ja",
+    name: "日本語",
+    flag: "twa-flag-japan"
+  },
+  {
+    lang: "[Language code, such as en/ja]",
+    name: "[Language name]",
+    flag: "[twitter national flags, such as twa-flag-united states for the flag of the United States]"
+  }
+]
 ```
 
 Then go to weblate and add the appropriate language
