@@ -10,13 +10,13 @@ NProgress.configure({
     minimum: 0.4,// 初始化时的最小百分比,
 });
 
-export default defineNuxtPlugin(() : void => {
+export default defineNuxtPlugin((): void => {
 
     useRouter().beforeEach((): void => {
         NProgress.start();
     });
 
-    useRouter().afterEach(() : void => {
+    useRouter().afterEach((): void => {
         NProgress.done();
     });
 })

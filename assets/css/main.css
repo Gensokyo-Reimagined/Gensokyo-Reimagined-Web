@@ -1,23 +1,28 @@
 @import url(theme.css);
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 * {
-  transition: all 0.25s ease-out, color 0.25s ease-out;
+    transition: all 0.25s ease-out, color 0.25s ease-out;
 }
+
 body {
-  background-color: var(--md-sys-color-background);
+    background-color: var(--md-sys-color-background);
 }
+
 :root {
-  --md-sys-color-error-dark: #ff6b71;
-  --md-sys-color-primary-dark: #f28395;
-  --md-sys-color-on-secondary-container-dark: #e2354c;
-  --md-sys-color-outline-dark: #ffd0d5;
+    --md-sys-color-error-dark: #ff6b71;
+    --md-sys-color-primary-dark: #f28395;
+    --md-sys-color-on-secondary-container-dark: #e2354c;
+    --md-sys-color-outline-dark: #ffd0d5;
 }
+
 #nprogress .bar {
-  background-color: var(--md-sys-color-primary) !important;
+    background-color: var(--md-sys-color-primary) !important;
 }
+
 #nprogress .peg {
-  box-shadow: 0 0 10px var(--md-sys-color-outline),
+    box-shadow: 0 0 10px var(--md-sys-color-outline),
     0 0 5px var(--md-sys-color-outline) !important;
 }

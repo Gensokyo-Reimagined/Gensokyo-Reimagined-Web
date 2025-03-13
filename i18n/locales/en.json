@@ -1,6 +1,8 @@
 {
   "servername": "Gensokyo Reimagined",
+  "description": "Welcome to Gensokyo!",
   "index": {
+    "title": "Creating a Touhou MMO Server in Minecraft",
     "header": {
       "title": "",
       "intro": "Creating a Touhou MMO Server in Minecraft",
