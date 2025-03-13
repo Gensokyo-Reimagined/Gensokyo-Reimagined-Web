@@ -18,20 +18,20 @@ export default defineNuxtConfig({
     // css import
     css: ['@/assets/css/main.css'],
 
-    // maybe sometime will turn off ssr mode
+    // turn on ssr mode to optimize seo
     ssr: true,
 
     colorMode: {
         classSuffix: '',
     },
     schemaOrg: {
-        enabled: false,
+        enabled: true,
     },
     ogImage: {
-        enabled: false,
+        enabled: true,
     },
     sitemap: {
-        enabled: false,
+        enabled: true,
     },
     site: {
         url: process.env.NUXT_PUBLIC_SITE_URL || 'https://gensokyoreimagined.net',

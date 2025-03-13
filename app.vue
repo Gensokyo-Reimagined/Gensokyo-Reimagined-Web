@@ -1,17 +1,15 @@
 <template>
-  <!--<seo-kit />-->
-  <!--<OgImageScreenshot />-->
   <NuxtLayout>
     <NuxtPage class="bg-[var(--md-sys-color-background)]" />
   </NuxtLayout>
 </template>
 <script setup>
-//defineOgImage({
-//  url: 'https://www.gensokyoreimagined.net/img/about_pic.webp',
-//  width: 1186,
-//  height: 628,
-//  alt: 'about_pic',
-//})
+const { t } = useI18n()
+// create seo
+useSeoMeta({
+  ogImage: 'https://www.gensokyoreimagined.net/img/about_pic.webp',
+  description:(t('description'))
+})
 useHead({
   link: [
     {

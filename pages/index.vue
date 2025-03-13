@@ -11,8 +11,9 @@
 </template>
 
 <script setup>
+const {t} = useI18n()
 useSeoMeta({
-  title: 'Creating a Touhou MMO Server in Minecraft',
+  title: (t('index.title')),
 })
 </script>
 
