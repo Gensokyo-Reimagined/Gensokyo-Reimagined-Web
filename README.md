@@ -67,7 +67,7 @@ to [here](https://github.com/Gensokyo-Reimagined/Gensokyo-Reimagined-Web/tree/ma
 
 We now have 3 configuration files,
 
-one is in `/i18n/en.json`, which is the source text of i18n,
+one is in `/i18n/locales/en.json`, which is the source text of i18n,
 
 one is in `/app.config.ts`, which is the configuration file of the element content, such as setting ICONS/images
 somewhere,

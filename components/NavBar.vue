@@ -38,18 +38,21 @@
             </a>
             <a
                 :href="appConfig.NavBarLinkWiki"
+                target="_blank"
                 class="px-3 py-2 text-[var(--md-sys-color-on-background)] hover:text-[var(--md-sys-color-on-secondary-container)] font-medium"
             >
               {{ $t('Navbar.wiki') }}
             </a>
             <a
                 :href="appConfig.NavBarLinkMap"
+                target="_blank"
                 class="px-3 py-2 text-[var(--md-sys-color-on-background)] hover:text-[var(--md-sys-color-on-secondary-container)] font-medium"
             >
               {{ $t('Navbar.map') }}
             </a>
             <a
                 :href="appConfig.NavBarLinkTranslation"
+                target="_blank"
                 class="px-3 py-2 text-[var(--md-sys-color-on-background)] hover:text-[var(--md-sys-color-on-secondary-container)] font-medium"
             >
               {{ $t('Navbar.translation') }}
@@ -130,18 +133,21 @@
         </a>
         <a
             :href="appConfig.NavBarLinkMap"
+            target="_blank"
             class="block px-3 py-2 rounded-md text-base font-medium text-[var(--md-sys-color-on-background)] hover:text-[var(--md-sys-color-on-secondary-container)]"
         >
           {{ $t('Navbar.map') }}
         </a>
         <a
             :href="appConfig.NavBarLinkWiki"
+            target="_blank"
             class="block px-3 py-2 rounded-md text-base font-medium text-[var(--md-sys-color-on-background)] hover:text-[var(--md-sys-color-on-secondary-container)]"
         >
           {{ $t('Navbar.wiki') }}
         </a>
         <a
             :href="appConfig.NavBarLinkTranslation"
+            target="_blank"
             class="block px-3 py-2 rounded-md text-base font-medium text-[var(--md-sys-color-on-background)] hover:text-[var(--md-sys-color-on-secondary-container)]"
         >
           {{ $t('Navbar.translation') }}
