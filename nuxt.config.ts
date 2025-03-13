@@ -7,10 +7,11 @@ export default defineNuxtConfig({
     },
 
     modules: [
-        '@nuxtjs/i18n',
-        '@nuxtjs/tailwindcss',
-        '@nuxtjs/color-mode',
-        '@nuxtjs/seo',
+      '@nuxtjs/i18n',
+      '@nuxtjs/tailwindcss',
+      '@nuxtjs/color-mode',
+      '@nuxtjs/seo',
+      '@nuxt/image',
     ],
 
     plugins: [{src: '~/plugins/router-nprogress.ts', mode: 'client'}],
@@ -46,7 +47,7 @@ export default defineNuxtConfig({
             cookieKey: 'i18n_redirected',
             redirectOn: 'root'
         },
-        strategy: 'prefix_except_default',
+        strategy: 'prefix_and_default',
         locales: [
             {
                 code: 'en',

@@ -6,21 +6,21 @@
       <div class="flex justify-between h-16">
         <div class="flex">
           <div class="flex-shrink-0 flex items-center">
-            <img
+            <nuxt-img
+                alt="Logo"
                 class="block lg:hidden h-8 w-auto"
-                src="/logo.svg"
-                alt="Logo"
-                quality="80"
                 loading="lazy"
+                quality="80"
                 sizes="sm:100vw md:50vw lg:400px"
+                src="/logo.svg"
             />
-            <img
-                class="hidden lg:block h-8 w-auto"
-                src="/logo.svg"
+            <nuxt-img
                 alt="Logo"
-                quality="80"
+                class="hidden lg:block h-8 w-auto"
                 loading="lazy"
+                quality="80"
                 sizes="sm:100vw md:50vw lg:400px"
+                src="/logo.svg"
             />
           </div>
           <div class="hidden sm:ml-6 sm:flex sm:space-x-8 items-center">
@@ -65,48 +65,48 @@
             <i :class="ColorButtonClass"></i>
           </button>
           <a
-              class="inline-flex items-center justify-center p-2 rounded-md text-[var(--md-sys-color-primary)] hover:text-[var(--md-sys-color-secondary)] hover:bg-[var(--md-sys-color-secondary-container)] focus:outline-none focus:[var(--md-sys-color-secondary-container)] focus:[var(--md-sys-color-secondary)]"
               :href="appConfig.NavBarLinkGithub"
+              class="inline-flex items-center justify-center p-2 rounded-md text-[var(--md-sys-color-primary)] hover:text-[var(--md-sys-color-secondary)] hover:bg-[var(--md-sys-color-secondary-container)] focus:outline-none focus:[var(--md-sys-color-secondary-container)] focus:[var(--md-sys-color-secondary)]"
           >
             <i class="fa-brands fa-github"></i>
           </a>
         </div>
         <div class="-mr-2 flex items-center sm:hidden">
           <button
-              @click="isMenuOpen = !isMenuOpen"
-              type="button"
-              class="inline-flex items-center justify-center p-2 rounded-md text-[var(--md-sys-color-primary)] hover:text-[var(--md-sys-color-secondary)] hover:[var(--md-sys-color-secondary-container)] focus:outline-none focus:[var(--md-sys-color-secondary-container)] focus:[var(--md-sys-color-secondary)]"
               :aria-expanded="isMenuOpen"
               :class="{
               'bg-[var(--md-sys-color-secondary-container)]': isMenuOpen,
             }"
+              class="inline-flex items-center justify-center p-2 rounded-md text-[var(--md-sys-color-primary)] hover:text-[var(--md-sys-color-secondary)] hover:[var(--md-sys-color-secondary-container)] focus:outline-none focus:[var(--md-sys-color-secondary-container)] focus:[var(--md-sys-color-secondary)]"
+              type="button"
+              @click="isMenuOpen = !isMenuOpen"
           >
             <svg
                 :class="{ hidden: isMenuOpen, block: !isMenuOpen }"
                 class="h-6 w-6"
-                stroke="currentColor"
                 fill="none"
+                stroke="currentColor"
                 viewBox="0 0 24 24"
             >
               <path
+                  d="M4 6h16M4 12h16M4 18h16"
                   stroke-linecap="round"
                   stroke-linejoin="round"
                   stroke-width="2"
-                  d="M4 6h16M4 12h16M4 18h16"
               />
             </svg>
             <svg
                 :class="{ hidden: !isMenuOpen, block: isMenuOpen }"
                 class="h-6 w-6"
-                stroke="currentColor"
                 fill="none"
+                stroke="currentColor"
                 viewBox="0 0 24 24"
             >
               <path
+                  d="M6 18L18 6M6 6l12 12"
                   stroke-linecap="round"
                   stroke-linejoin="round"
                   stroke-width="2"
-                  d="M6 18L18 6M6 6l12 12"
               />
             </svg>
           </button>
@@ -117,8 +117,8 @@
     <div :class="{ block: isMenuOpen, hidden: !isMenuOpen }" class="sm:hidden">
       <div class="px-2 pt-2 pb-3">
         <nuxt-link
-            to="#"
             class="block px-3 py-2 rounded-md text-base font-medium text-[var(--md-sys-color-on-background)] hover:text-[var(--md-sys-color-on-secondary-container)]"
+            to="#"
         >
           {{ $t('Navbar.home') }}
         </nuxt-link>
@@ -157,8 +157,8 @@
             <i :class="ColorButtonClass"></i>
           </button>
           <a
-              class="inline-flex items-center justify-center p-2 rounded-md text-[var(--md-sys-color-primary)] hover:text-[var(--md-sys-color-secondary)] hover:bg-[var(--md-sys-color-secondary-container)] focus:outline-none focus:[var(--md-sys-color-secondary-container)] focus:[var(--md-sys-color-secondary)]"
               :href="appConfig.NavBarLinkGithub"
+              class="inline-flex items-center justify-center p-2 rounded-md text-[var(--md-sys-color-primary)] hover:text-[var(--md-sys-color-secondary)] hover:bg-[var(--md-sys-color-secondary-container)] focus:outline-none focus:[var(--md-sys-color-secondary-container)] focus:[var(--md-sys-color-secondary)]"
           >
             <i class="fa-brands fa-github"></i>
           </a>

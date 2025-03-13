@@ -12,8 +12,8 @@
         <ul class="mt-6 divide-y divide-gray-200 basis-1/2">
           <li v-for="(faq, index) in faqs" :key="index">
             <button
-                class="relative flex gap-2 items-center w-full py-5 text-base font-semibold text-left border-t md:text-lg border-base-content/10 text-[var(--md-sys-color-outline)]"
                 :aria-expanded="faq.expanded"
+                class="relative flex gap-2 items-center w-full py-5 text-base font-semibold text-left border-t md:text-lg border-base-content/10 text-[var(--md-sys-color-outline)]"
                 @click="toggleFAQ(faq)"
             >
               <span class="flex-1 font-medium text-[var(--md-sys-color-on-background)]">{{ faq.question }}</span>
@@ -22,23 +22,23 @@
                       faq.open ? '-rotate-180' : 'rotate-0',
                       'h-6 w-6 transform',
                     ]"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewbox="0 0 24 24"
-                  stroke="currentColor"
                   aria-hidden="true"
+                  fill="none"
+                  stroke="currentColor"
+                  viewbox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
               >
                 <path
+                    d="M19 9l-7 7-7-7"
                     stroke-linecap="round"
                     stroke-linejoin="round"
                     stroke-width="2"
-                    d="M19 9l-7 7-7-7"
                 ></path>
               </svg>
             </button>
             <div
-                class="transition-all duration-300 ease-in-out overflow-hidden"
                 :style="{ maxHeight: faq.expanded ? '100px' : '0px' }"
+                class="transition-all duration-300 ease-in-out overflow-hidden"
             >
               <div class="pb-5 leading-relaxed">
                 <div class="space-y-2 leading-relaxed text-[var(--md-sys-color-outline)]">{{ faq.answer }}</div>

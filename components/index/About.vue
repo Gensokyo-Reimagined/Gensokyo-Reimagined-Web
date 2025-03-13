@@ -24,9 +24,9 @@
         <div class="mt-5 sm:mt-8 sm:flex justify-center">
           <div class="rounded-md shadow">
             <a
+                class="flex items-center justify-center w-full px-8 py-3 text-base font-medium text-[var(--md-sys-color-background)] bg-[var(--md-sys-color-primary)] border border-transparent rounded-md hover:bg-[var(--md-sys-color-secondary)] md:py-4 md:text-lg md:px-10"
                 href="https://discord.gg/U9fZSJJcte"
                 target="_blank"
-                class="flex items-center justify-center w-full px-8 py-3 text-base font-medium text-[var(--md-sys-color-background)] bg-[var(--md-sys-color-primary)] border border-transparent rounded-md hover:bg-[var(--md-sys-color-secondary)] md:py-4 md:text-lg md:px-10"
             >
               {{ $t('index.header.group') }}
               <i
@@ -36,8 +36,8 @@
           </div>
           <div class="mt-3 sm:mt-0 sm:ml-3">
             <nuxt-link
-                to="#features"
                 class="flex items-center justify-center w-full px-8 py-3 text-base font-medium text-[var(--md-sys-color-on-background)] bg-[var(--md-sys-color-secondary-container)] border border-transparent rounded-md hover:bg-[var(--md-sys-color-primary-container)] md:py-4 md:text-lg md:px-10"
+                to="#features"
             >
               {{ $t('index.header.continue') }}
             </nuxt-link>
@@ -46,8 +46,8 @@
       </div>
     </main>
     <div
-        class="pt-32 px-4 py-16 mx-auto max-w-7xl sm:px-6 lg:px-8 flex flex-col md:flex-row relative"
         id="aboutus"
+        class="pt-32 px-4 py-16 mx-auto max-w-7xl sm:px-6 lg:px-8 flex flex-col md:flex-row relative"
     >
       <div class="info order-last mt-5 md:order-first md:mr-4 md:mt-0">
         <div
@@ -75,12 +75,12 @@
       <div
           class="order-first mx-auto md:ml-auto md:mb-auto md:mx-0 md:order-last md:self-endS max-w-xl"
       >
-        <img
+        <nuxt-img
             :src="appConfig.IndexAbobutImg"
-            class="rounded-xl"
-            quality="80"
-            loading="lazy"
             alt="about us image"
+            class="rounded-xl"
+            loading="lazy"
+            quality="80"
         />
       </div>
     </div>

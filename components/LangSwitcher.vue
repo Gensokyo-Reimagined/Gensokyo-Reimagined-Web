@@ -4,46 +4,46 @@
         class="text-xl leading-5 font-semibold bg-[var(--md-sys-color-secondary-container)] rounded-full py-1 px-3 flex items-center space-x-2 hover:bg-[var(--md-sys-color-tertiary-container)] dark:highlight-white/5"
         @click="toggleDropdown()"
     >
-      <i class="twa" :class="getFlag(selectedLang)"></i>
+      <i :class="getFlag(selectedLang)" class="twa"></i>
       <svg
           :class="{ 'transform rotate-180': isDropdownOpen }"
-          width="6"
-          height="3"
-          class="ml-2 overflow-visible"
           aria-hidden="true"
+          class="ml-2 overflow-visible"
+          height="3"
+          width="6"
       >
         <path
             d="M0 0L3 3L6 0"
             fill="none"
             stroke="currentColor"
-            stroke-width="1.5"
             stroke-linecap="round"
+            stroke-width="1.5"
         ></path>
       </svg>
     </button>
     <div
         v-if="isDropdownOpen"
-        class="absolute top-full mt-1 py-2 w-40 rounded-lg bg-[var(--md-sys-color-background)] shadow ring-1 ring-slate-900/5 text-sm leading-6 font-semibold text-[var(--md-sys-color-on-background)]"
         id="headlessui-menu-items-:r1:"
+        class="absolute top-full mt-1 py-2 w-40 rounded-lg bg-[var(--md-sys-color-background)] shadow ring-1 ring-slate-900/5 text-sm leading-6 font-semibold text-[var(--md-sys-color-on-background)]"
         role="menu"
         tabindex="0"
     >
       <nuxt-link
           v-for="language in languages"
           :key="language.lang"
-          @click.prevent.stop="setLocale(language.lang)"
-          class="block px-3 py-1 cursor-pointer"
           :class="{
                   'text-[var(--md-sys-color-secondary)] ':
                     language.lang === selectedLang,
                 }"
+          class="block px-3 py-1 cursor-pointer"
           role="menuitem"
           tabindex="-1"
+          @click.prevent.stop="setLocale(language.lang)"
       >
         <i
+            :class="language.flag"
             class="twa"
             style="margin-right: 10px"
-            :class="language.flag"
         ></i
         >{{ language.name }}
       </nuxt-link>
@@ -69,7 +69,6 @@ export default {
       isMenuOpen: false,
       isDropdownOpen: false,
       ColorButtonClass: '',
-      //selectedLang: this.$i18n.locale,
       languages: [
         {
           lang: 'en',

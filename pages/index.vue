@@ -14,6 +14,7 @@
 const {t} = useI18n()
 useSeoMeta({
   title: (t('index.title')),
+  twitterTitle: (t('index.title')),
 })
 </script>
 
