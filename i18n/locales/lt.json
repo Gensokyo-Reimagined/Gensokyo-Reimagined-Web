@@ -88,7 +88,8 @@
             "title": "Išbandyk mūsu optimizuota Modpack serveriui!",
             "subtitle": " ",
             "description": " "
-        }
+        },
+        "title": "Creating a Touhou MMO Server in Minecraft"
     },
     "Navbar": {
         "home": "home",
@@ -96,5 +97,6 @@
         "wiki": "wiki",
         "map": "map",
         "translation": "vertimas"
-    }
+    },
+    "description": "Welcome to Gensokyo!"
 }
