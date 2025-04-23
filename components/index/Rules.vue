@@ -28,12 +28,14 @@
         </p>
         <div class="mt-8">
           <div class="inline-flex rounded-md shadow">
-            <nuxt-link
+            <a
                 class="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-[var(--md-sys-color-on-background)] bg-[var(--md-sys-color-secondary-container)] border border-transparent rounded-md hover:bg-[var(--md-sys-color-primary-container)"
-                :herf="appConfig.RulesUrl"
+                :href="appConfig.RulesUrl"
+                target="_blank"
             >
               {{ $t('index.rules.button') }}
-            </nuxt-link>
+              <i class="fa-solid fa-arrow-up-right-from-square ml-3 -mr-1"></i>
+            </a>
           </div>
         </div>
       </div>
