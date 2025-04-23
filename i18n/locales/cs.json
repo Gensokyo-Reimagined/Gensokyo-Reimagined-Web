@@ -81,7 +81,8 @@
         "MPcta": {
             "button": "Modrinth",
             "title": "Vyzkoušejte náš optimalizovaný modpack pro server!"
-        }
+        },
+        "title": "Creating a Touhou MMO Server in Minecraft"
     },
     "Navbar": {
         "home": "domeček",
@@ -89,5 +90,6 @@
         "wiki": "wiki",
         "map": "mapa",
         "translation": "překlad"
-    }
+    },
+    "description": "Welcome to Gensokyo!"
 }

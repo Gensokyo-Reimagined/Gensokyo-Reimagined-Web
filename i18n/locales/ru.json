@@ -88,7 +88,8 @@
             "button": "Modrinth",
             "subtitle": " ",
             "description": " "
-        }
+        },
+        "title": "Creating a Touhou MMO Server in Minecraft"
     },
     "Navbar": {
         "home": "Домой",
@@ -96,5 +97,6 @@
         "wiki": "Вики",
         "map": "карта",
         "translation": "перевод"
-    }
+    },
+    "description": "Welcome to Gensokyo!"
 }

@@ -88,7 +88,8 @@
             "title": "Sunucu için Optimize Edilmiş Mod Paketimizi Deneyin!",
             "subtitle": " ",
             "description": " "
-        }
+        },
+        "title": "Creating a Touhou MMO Server in Minecraft"
     },
     "Navbar": {
         "home": "ana sayfa",
@@ -96,5 +97,6 @@
         "wiki": "wiki",
         "map": "harita",
         "translation": "çeviri"
-    }
+    },
+    "description": "Welcome to Gensokyo!"
 }

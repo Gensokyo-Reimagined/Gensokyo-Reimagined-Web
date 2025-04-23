@@ -81,7 +81,8 @@
             "title": "Support the project!",
             "description": "This is a Non-Profit project so every donation helps us out!",
             "button": "BuyMeACoffee"
-        }
+        },
+        "title": "Creating a Touhou MMO Server in Minecraft"
     },
     "Navbar": {
         "home": "home",
@@ -89,5 +90,6 @@
         "wiki": "wiki",
         "map": "map",
         "translation": "translation"
-    }
+    },
+    "description": "Welcome to Gensokyo!"
 }
