@@ -11,14 +11,15 @@
   },
   "devDependencies": {
     "@nuxt/devtools": "latest",
-    "@nuxtjs/color-mode": "^3.3.2",
-    "@nuxtjs/i18n": "^8.3.1",
-    "@nuxtjs/seo": "^2.0.0-rc.23",
-    "@nuxtjs/tailwindcss": "^6.11.4",
-    "@types/node": "^20.11.19",
-    "nuxt": "^3.10.2",
-    "postcss": "^8.4.35",
-    "swiper": "^11.0.6"
+    "@nuxt/image": "^1.9.0",
+    "@nuxtjs/color-mode": "^3.5.2",
+    "@nuxtjs/i18n": "^9.3.1",
+    "@nuxtjs/seo": "^3.0.0-beta.3",
+    "@nuxtjs/tailwindcss": "^6.13.2",
+    "@types/node": "^22.13.10",
+    "nuxt": "^3.16.0",
+    "postcss": "^8.5.3",
+    "swiper": "^11.2.5"
   },
   "dependencies": {
     "nprogress": "^0.2.0"

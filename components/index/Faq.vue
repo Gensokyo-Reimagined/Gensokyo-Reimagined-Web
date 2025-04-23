@@ -1,60 +1,51 @@
 <template>
   <div class="bg-[var(--md-sys-color-background)]">
+
+
     <div class="px-4 py-12 mx-auto max-w-7xl sm:py-16 sm:px-6 lg:px-8">
       <div class="max-w-3xl mx-auto divide-y-2 divide-gray-200">
         <h2
-          class="text-3xl font-extrabold text-center text-[var(--md-sys-color-on-background)] sm:text-4xl"
+            class="text-3xl font-extrabold text-center text-[var(--md-sys-color-on-background)] sm:text-4xl"
         >
           {{ $t('index.faq.title') }}
         </h2>
-        <dl class="mt-6 space-y-6 divide-y divide-gray-200">
-          <div v-for="faq in faqs" :key="faq.question" class="pt-6">
-            <dt class="text-lg">
-              <button
-                type="button"
-                class="flex items-start justify-between w-full text-left text-[var(--md-sys-color-outline)]"
-                aria-controls="faq-0"
-                aria-expanded="false"
-                @click="faq.open = !faq.open"
-              >
-                <span
-                  class="font-medium text-[var(--md-sys-color-on-background)]"
-                >
-                  {{ faq.question }}
-                </span>
-                <span class="flex items-center ml-6 h-7">
-                  <svg
-                    :class="[
+        <ul class="mt-6 divide-y divide-gray-200 basis-1/2">
+          <li v-for="(faq, index) in faqs" :key="index">
+            <button
+                :aria-expanded="faq.expanded"
+                class="relative flex gap-2 items-center w-full py-5 text-base font-semibold text-left border-t md:text-lg border-base-content/10 text-[var(--md-sys-color-outline)]"
+                @click="toggleFAQ(faq)"
+            >
+              <span class="flex-1 font-medium text-[var(--md-sys-color-on-background)]">{{ faq.question }}</span>
+              <svg
+                  :class="[
                       faq.open ? '-rotate-180' : 'rotate-0',
                       'h-6 w-6 transform',
                     ]"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewbox="0 0 24 24"
-                    stroke="currentColor"
-                    aria-hidden="true"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M19 9l-7 7-7-7"
-                    ></path>
-                  </svg>
-                </span>
-              </button>
-            </dt>
-            <transition name="fade">
-              <dd v-show="faq.open" class="pr-12 mt-2">
-                <p
-                  class="text-base text-[var(--md-sys-color-outline)] transition-all"
-                >
-                  {{ faq.answer }}
-                </p>
-              </dd>
-            </transition>
-          </div>
-        </dl>
+                  aria-hidden="true"
+                  fill="none"
+                  stroke="currentColor"
+                  viewbox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                    d="M19 9l-7 7-7-7"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                ></path>
+              </svg>
+            </button>
+            <div
+                :style="{ maxHeight: faq.expanded ? '100px' : '0px' }"
+                class="transition-all duration-300 ease-in-out overflow-hidden"
+            >
+              <div class="pb-5 leading-relaxed">
+                <div class="space-y-2 leading-relaxed text-[var(--md-sys-color-outline)]">{{ faq.answer }}</div>
+              </div>
+            </div>
+          </li>
+        </ul>
       </div>
     </div>
   </div>
@@ -93,8 +84,9 @@ export default {
     }
   },
   methods: {
-    toggle() {
-      this.open = !this.open
+    toggleFAQ(faq) {
+      faq.expanded = !faq.expanded
+      faq.open = !faq.open
     },
   },
 }

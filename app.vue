@@ -1,17 +1,17 @@
 <template>
-  <seo-kit />
-  <!--<OgImageScreenshot />-->
   <NuxtLayout>
-    <NuxtPage class="bg-[var(--md-sys-color-background)]" />
+    <NuxtPage class="bg-[var(--md-sys-color-background)]"/>
   </NuxtLayout>
 </template>
 <script setup>
-//defineOgImage({
-//  url: 'https://www.gensokyoreimagined.net/img/about_pic.webp',
-//  width: 1186,
-//  height: 628,
-//  alt: 'about_pic',
-//})
+const {t} = useI18n()
+// create seo
+useSeoMeta({
+  ogImage: 'https://www.gensokyoreimagined.net/img/about_pic.webp',
+  twitterImage: 'https://www.gensokyoreimagined.net/img/about_pic.webp',
+  description: (t('description')),
+  twitterDescription: (t('description')),
+})
 useHead({
   link: [
     {
@@ -20,15 +20,11 @@ useHead({
       href: '/favicon.ico',
     },
     {
-      rel: 'preload',
-      as: 'style',
-      onload: 'this.onload=null;this.rel="stylesheet"',
+      rel: 'stylesheet',
       href: '/css/all.min.css',
     },
     {
-      rel: 'preload',
-      as: 'style',
-      onload: 'this.onload=null;this.rel="stylesheet"',
+      rel: 'stylesheet',
       href: '/css/twemoji-flags.min.css',
     },
   ],
