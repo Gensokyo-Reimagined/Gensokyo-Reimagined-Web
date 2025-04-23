@@ -30,7 +30,7 @@
           <div class="inline-flex rounded-md shadow">
             <nuxt-link
                 class="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-[var(--md-sys-color-on-background)] bg-[var(--md-sys-color-secondary-container)] border border-transparent rounded-md hover:bg-[var(--md-sys-color-primary-container)"
-                to="/"
+                :herf="appConfig.RulesUrl"
             >
               {{ $t('index.rules.button') }}
             </nuxt-link>

@@ -29,7 +29,7 @@ export default defineAppConfig({
     //main page -> cta Component on the right of the picture. The method used is similar to that of IndexHeaderImg
     DCCtaShow: true,
     IndexCtaImg: '/img/discord-screenshot.webp',
-    DCLink: 'https://discord.gg/U9fZSJJcte',
+    DCLink: 'https://discord.gg/greimagined',
 
     IPCtaShow: true,
     IndexIPCtaImg: '/img/ipc.webp',
@@ -42,6 +42,7 @@ export default defineAppConfig({
     MPLink: 'https://modrinth.com/modpack/gensokyo-reimagined-qol',
 
     IndexRulesImg: '/img/minecraft-bookshelf.webp',
+    RulesUrl: 'https://gensokyoreimagined.wiki.gg/wiki/Server_Rules',
     //Links in Navbar support all url formats
     NavBarLinkAbout: '#aboutus',
     NavBarLinkWiki: 'https://gensokyoreimagined.wiki.gg/wiki/Gensokyo_Reimagined_Wiki',
