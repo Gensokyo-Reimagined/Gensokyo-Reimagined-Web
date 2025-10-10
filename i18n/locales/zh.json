@@ -89,7 +89,7 @@
             "subtitle": " ",
             "description": " "
         },
-        "title": "Creating a Touhou MMO Server in Minecraft"
+        "title": "在Minecraft中创建一个东方MMO服务器"
     },
     "Navbar": {
         "home": "首页",
@@ -98,5 +98,5 @@
         "map": "地图",
         "translation": "帮助翻译"
     },
-    "description": "Welcome to Gensokyo!"
+    "description": "欢迎来到幻想乡!"
 }
