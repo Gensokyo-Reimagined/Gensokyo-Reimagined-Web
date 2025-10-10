@@ -38,11 +38,11 @@
             "button": "Enlace al servidor"
         },
         "faq": {
-            "title": "Preguntas frecuentes ",
+            "title": "Preguntas frecuentes",
             "items": [
                 {
                     "question": "¿Puedo descargar el mapa?",
-                    "answer": "No, el mapa depende de nuestros plugins para funcionar. Es también lo que mantiene nuestro proyecto vivo, ¡y no queremos dividir nuestra comunidad! Solo entregamos los archivos del mapa a quienes contribuyen al proyecto de una u otra manera.          "
+                    "answer": "No, el mapa depende de nuestros plugins para funcionar. Es también lo que mantiene nuestro proyecto vivo, ¡y no queremos dividir nuestra comunidad! Solo entregamos los archivos del mapa a quienes contribuyen al proyecto de una u otra manera."
                 },
                 {
                     "question": "¿Cómo puedo informar de un problema?",
@@ -74,22 +74,22 @@
         },
         "IPcta": {
             "description": "Version: 1.20.X",
-            "buildtitle": "Build Server",
-            "survivaltitle": "MMORPG Server",
+            "buildtitle": "Servidor de Construcción",
+            "survivaltitle": "Servidor MMORPG",
             "title": "Server IPs"
         },
         "MPcta": {
             "button": "Modrinth",
-            "title": "Try our Optimized Modpack for the Server!"
+            "title": "Prueba nuestro Modpack Optimizado para el Server!"
         },
-        "title": "Creating a Touhou MMO Server in Minecraft"
+        "title": "Creando un Servidor MMO de Touhou en Minecraft"
     },
     "Navbar": {
         "home": "inicio",
         "about": "acerca de",
         "wiki": "wiki",
         "map": "mapa",
-        "translation": "translation"
+        "translation": "traducción"
     },
-    "description": "Welcome to Gensokyo!"
+    "description": "Bienvenidos a Gensokyo!"
 }
