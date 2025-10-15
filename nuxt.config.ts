@@ -110,7 +110,7 @@ export default defineNuxtConfig({
     ],
     langDir: 'locales',
     defaultLocale: 'en',
-    lazy: true,
+    lazy: false,
   },
 
   experimental: {
