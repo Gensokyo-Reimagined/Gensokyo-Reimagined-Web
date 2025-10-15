@@ -5,11 +5,23 @@ export default defineNuxtConfig({
     app: {
         buildAssetsDir: 'static',
         head: {
-        link: [
-            { rel: 'preconnect', href: 'https://gensokyoreimagined.net' },
-            { rel: 'dns-prefetch', href: 'https://gensokyoreimagined.net' }
-        ]
-    }
+            link: [
+                { rel: 'preconnect', href: 'https://gensokyoreimagined.net' },
+                { rel: 'dns-prefetch', href: 'https://gensokyoreimagined.net' },
+                {
+                    rel: 'preload',
+                    href: '/css/all.min.css',
+                    as: 'style',
+                    onload: "this.onload=null;this.rel='stylesheet'"
+                },
+                {
+                    rel: 'stylesheet',
+                    href: '/css/all.min.css',
+                    media: 'print',
+                    onload: "this.media='all'"
+                }
+            ]
+        }
     },
 
     modules: [
