@@ -14,6 +14,16 @@ export default defineNuxtConfig({
       '@nuxt/image',
     ],
 
+    nitro: {
+        prerender: {
+            // Ignore image optimization URLs during prerender
+            ignore: [
+                '/.netlify/images',
+                '/_ipx'
+            ]
+        }
+    },
+
     image: {
         provider: 'netlify',
         formats: ['avif', 'webp'],
