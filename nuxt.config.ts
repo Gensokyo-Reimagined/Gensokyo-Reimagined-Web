@@ -15,7 +15,6 @@ export default defineNuxtConfig({
     ],
 
     image: {
-        provider: 'netlify',
         formats: ['avif', 'webp'],
         presets: {
             logo: {
