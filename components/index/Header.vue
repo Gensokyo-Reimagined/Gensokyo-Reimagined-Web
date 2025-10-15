@@ -40,17 +40,17 @@
           quality="80"
         />
       </div>
-
-      <p class="mt-8 text-base text-[var(--md-sys-color-outline)] sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:text-xl text-shadow">
+      
+      <p class="mt-4 text-base text-[var(--md-sys-color-outline)] sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:text-xl text-shadow">
         {{ $t('index.header.intro') }}
       </p>
 
-      <div v-if="playerCount !== null" class="mt-6 text-base text-[var(--md-sys-color-outline)] sm:text-lg text-shadow">
+      <div v-if="playerCount !== null" class="mt-4 text-base text-[var(--md-sys-color-outline)] sm:text-lg text-shadow">
         <i class="fa-solid fa-users mr-2 text-[var(--md-sys-color-primary)]"></i>
         Join <strong class="text-[var(--md-sys-color-on-background)]">{{ playerCount }}</strong> players online!
       </div>
       
-      <div class="mt-8 sm:mt-10 mb-16 lg:mb-0 flex flex-col sm:flex-row gap-4 justify-center items-center">
+      <div class="mt-6 sm:mt-8 mb-16 lg:mb-0 flex flex-col sm:flex-row gap-4 justify-center items-center">
         <a
           class="group relative inline-flex items-center justify-center px-8 py-4 text-base font-medium text-[var(--md-sys-color-on-primary)] bg-[var(--md-sys-color-primary)] border border-transparent rounded-xl overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-2xl md:text-lg md:px-10 button-shine"
           href="https://discord.gg/U9fZSJJcte"
@@ -75,13 +75,7 @@
       </div>
     </div>
 
-    <div class="hidden lg:block absolute bottom-8 left-1/2 transform -translate-x-1/2 z-20">
-      <div class="scroll-indicator">
-        <div class="scroll-arrow"></div>
-        <span class="text-sm text-[var(--md-sys-color-outline)] mt-2">Scroll to explore</span>
-      </div>
     </div>
-  </div>
 </template>
 
 <script>
@@ -162,30 +156,7 @@ export default {
   filter: blur(2px) brightness(0.8);
 }
 
-/* Scroll indicator */
-.scroll-indicator {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  animation: bounce 2s ease-in-out infinite;
-}
-
-.scroll-arrow {
-  width: 24px;
-  height: 24px;
-  border-right: 2px solid var(--md-sys-color-primary);
-  border-bottom: 2px solid var(--md-sys-color-primary);
-  transform: rotate(45deg);
-}
-
-@keyframes bounce {
-  0%, 100% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(10px);
-  }
-}
+/* REMOVED: Scroll indicator styles */
 
 /* Button shine effect */
 @keyframes shimmer {
