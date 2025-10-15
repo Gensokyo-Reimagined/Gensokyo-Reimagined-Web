@@ -2,10 +2,6 @@
 export default defineNuxtConfig({
     devtools: {enabled: true},
 
-    app: {
-        buildAssetsDir: 'static',
-    },
-
     modules: [
       '@nuxtjs/i18n',
       '@nuxtjs/tailwindcss',
