@@ -1,20 +1,5 @@
 <template>
   <div class="relative overflow-hidden pt-16 lg:h-screen">
-    <!-- Preload the first carousel image for LCP -->
-    <Head>
-      <Link 
-        rel="preload" 
-        as="image" 
-        :href="imageUrls[0]"
-        :imagesrcset="`
-          /_ipx/w_640&q_80&blur_2/${imageUrls[0]} 640w,
-          /_ipx/w_1280&q_80&blur_2/${imageUrls[0]} 1280w,
-          /_ipx/w_1920&q_80&blur_2/${imageUrls[0]} 1920w
-        `"
-        imagesizes="100vw"
-      />
-    </Head>
-
     <div class="lg:pt-16 lg:absolute lg:inset-y-0 lg:right-0 w-full lg:h-screen">
       <swiper
         :autoplay="{
@@ -80,7 +65,7 @@
             <i class="fa-solid fa-arrow-up-right-from-square ml-3 transition-transform group-hover:translate-x-1 group-hover:-translate-y-1"></i>
           </span>
           <div class="absolute inset-0 bg-gradient-to-r from-transparent via-white to-transparent opacity-0 group-hover:opacity-20 shimmer"></div>
-        </a>
+        >
         
         <nuxt-link
           class="group inline-flex items-center justify-center px-8 py-4 text-base font-medium text-[var(--md-sys-color-on-secondary-container)] bg-[var(--md-sys-color-secondary-container)] border-2 border-[var(--md-sys-color-outline)] rounded-xl transition-all duration-300 hover:scale-105 hover:bg-[var(--md-sys-color-primary-container)] hover:border-[var(--md-sys-color-primary)] md:text-lg md:px-10"
@@ -93,7 +78,6 @@
         </nuxt-link>
       </div>
     </div>
-
   </div>
 </template>
 
@@ -116,6 +100,26 @@ export default {
     const state = reactive({
       appConfig: appConfig,
     })
+    
+    // Preload first carousel image for LCP
+    if (state.appConfig.IndexHeaderImg && state.appConfig.IndexHeaderImg[0]) {
+      useHead({
+        link: [
+          {
+            rel: 'preload',
+            as: 'image',
+            href: state.appConfig.IndexHeaderImg[0],
+            imagesrcset: `
+              /_ipx/w_640&q_80&blur_2/${state.appConfig.IndexHeaderImg[0]} 640w,
+              /_ipx/w_1280&q_80&blur_2/${state.appConfig.IndexHeaderImg[0]} 1280w,
+              /_ipx/w_1920&q_80&blur_2/${state.appConfig.IndexHeaderImg[0]} 1920w
+            `,
+            imagesizes: '100vw'
+          }
+        ]
+      })
+    }
+    
     return { state, modules: [Autoplay] }
   },
   data() {
