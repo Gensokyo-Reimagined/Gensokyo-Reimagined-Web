@@ -1,5 +1,19 @@
 <template>
   <div class="relative overflow-hidden pt-16 lg:h-screen">
+    <!-- Preload the FIRST carousel image -->
+    <Head>
+      <Link 
+        rel="preload" 
+        as="image" 
+        :href="imageUrls[0]"
+        :imagesrcset="`
+          /_ipx/w_640&q_80&blur_2/${imageUrls[0]} 640w,
+          /_ipx/w_1280&q_80&blur_2/${imageUrls[0]} 1280w,
+          /_ipx/w_1920&q_80&blur_2/${imageUrls[0]} 1920w
+        `"
+        imagesizes="100vw"
+      />
+    </Head>
     <div class="lg:pt-16 lg:absolute lg:inset-y-0 lg:right-0 w-full lg:h-screen">
       <swiper
         :autoplay="{
@@ -12,81 +26,28 @@
         class="w-full h-96 sm:h-[500px] md:h-[600px] lg:w-full lg:h-full"
       >
         <swiper-slide
-          v-for="currentImageUrl in imageUrls"
+          v-for="(currentImageUrl, index) in imageUrls"
           :key="currentImageUrl"
           class="transition-opacity ease-in-out"
         >
           <nuxt-img
             :src="currentImageUrl"
             alt="Gensokyo Reimagined background"
+            :fetchpriority="index === 0 ? 'high' : 'low'"
+            :loading="index === 0 ? 'eager' : 'lazy'"
             class="w-full h-full object-cover carousel-image"
             preset="carousel"
-            placeholder
+            :placeholder="index !== 0"
           />
         </swiper-slide>
       </swiper>
-      
-      <div class="absolute inset-0 bg-gradient-to-r from-[var(--md-sys-color-background)] via-transparent to-[var(--md-sys-color-background)] opacity-60"></div>
-      <div class="absolute inset-0 bg-gradient-to-b from-[var(--md-sys-color-background)] via-transparent to-[var(--md-sys-color-background)]"></div>
     </div>
-
-    <div class="mx-auto max-w-7xl lg:h-screen flex flex-col items-center justify-center relative z-20 px-4 text-center">
-      
-      <div class="logo-container relative mt-16 lg:mt-0">
-        <nuxt-img
-          :src="logoImg"
-          alt="Gensokyo Reimagined Logo"
-          fetchpriority="high"
-          class="logo-image relative z-10 w-1/2 mx-auto h-auto lg:w-[450px] xl:w-[550px]"
-          preset="logo" 
-          preload 
-        />
-      </div>
-      
-      <p class="mt-4 text-base text-[var(--md-sys-color-outline)] sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:text-xl text-shadow">
-        {{ $t('index.header.intro') }}
-      </p>
-
-      <div v-if="playerCount !== null" class="mt-4 text-base text-[var(--md-sys-color-outline)] sm:text-lg text-shadow">
-        <i class="fa-solid fa-users mr-2 text-[var(--md-sys-color-primary)]"></i>
-        Join <strong class="text-[var(--md-sys-color-on-background)]">{{ playerCount }}</strong> players online!
-      </div>
-      
-      <div class="mt-6 sm:mt-8 mb-16 lg:mb-0 flex flex-col sm:flex-row gap-4 justify-center items-center">
-        <a
-          class="group relative inline-flex items-center justify-center px-8 py-4 text-base font-medium text-[var(--md-sys-color-on-primary)] bg-[var(--md-sys-color-primary)] border border-transparent rounded-xl overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-2xl md:text-lg md:px-10 button-shine"
-          href="https://discord.gg/U9fZSJJcte"
-          target="_blank"
-        >
-          <span class="relative z-10 flex items-center">
-            {{ $t('index.header.group') }}
-            <i class="fa-solid fa-arrow-up-right-from-square ml-3 transition-transform group-hover:translate-x-1 group-hover:-translate-y-1"></i>
-          </span>
-          <div class="absolute inset-0 bg-gradient-to-r from-transparent via-white to-transparent opacity-0 group-hover:opacity-20 shimmer"></div>
-        </a>
-        
-        <nuxt-link
-          class="group inline-flex items-center justify-center px-8 py-4 text-base font-medium text-[var(--md-sys-color-on-secondary-container)] bg-[var(--md-sys-color-secondary-container)] border-2 border-[var(--md-sys-color-outline)] rounded-xl transition-all duration-300 hover:scale-105 hover:bg-[var(--md-sys-color-primary-container)] hover:border-[var(--md-sys-color-primary)] md:text-lg md:px-10"
-          to="#features"
-        >
-          {{ $t('index.header.continue') }}
-          <svg class="ml-2 w-5 h-5 transition-transform group-hover:translate-y-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
-          </svg>
-        </nuxt-link>
-      </div>
-    </div>
-
-    </div>
+  </div>
 </template>
 
 <script>
-// Import Swiper Vue.js components
 import { Swiper, SwiperSlide } from 'swiper/vue'
-
-// Import Swiper styles
 import 'swiper/css'
-
 import { Autoplay } from 'swiper/modules'
 
 export default {
