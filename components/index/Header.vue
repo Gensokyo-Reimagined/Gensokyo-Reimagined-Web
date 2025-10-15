@@ -55,11 +55,11 @@
       </div>
       
       <div class="mt-6 sm:mt-8 mb-16 lg:mb-0 flex flex-col sm:flex-row gap-4 justify-center items-center">
-        
+        <a
           class="group relative inline-flex items-center justify-center px-8 py-4 text-base font-medium text-[var(--md-sys-color-on-primary)] bg-[var(--md-sys-color-primary)] border border-transparent rounded-xl overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-2xl md:text-lg md:px-10 button-shine"
           href="https://discord.gg/U9fZSJJcte"
           target="_blank"
-        <a>
+        >
           <span class="relative z-10 flex items-center">
             {{ $t('index.header.group') }}
             <i class="fa-solid fa-arrow-up-right-from-square ml-3 transition-transform group-hover:translate-x-1 group-hover:-translate-y-1"></i>

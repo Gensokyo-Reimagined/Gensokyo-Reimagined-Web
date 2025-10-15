@@ -31,7 +31,7 @@ export default defineNuxtConfig({
     },
 
     image: {
-        provider: 'netlify',
+        provider: 'ipx',
         formats: ['avif', 'webp'],
         presets: {
             logo: {
@@ -41,7 +41,7 @@ export default defineNuxtConfig({
             },
             carousel: {
                 modifiers: {
-                    quality: '40',
+                    quality: '70',
                     blur: 2,
                 }
             },
@@ -53,7 +53,7 @@ export default defineNuxtConfig({
             },
             rulesImage: {
                 modifiers: {
-                    quality: '70',
+                    quality: '80',
                     sizes: 'sm:100vw md:50vw',
                 }
             }

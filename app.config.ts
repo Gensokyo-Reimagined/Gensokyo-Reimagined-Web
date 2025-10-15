@@ -41,7 +41,7 @@ export default defineAppConfig({
     IndexModPackCtaImg: '/img/modrinth.webp',
     MPLink: 'https://modrinth.com/modpack/gensokyo-reimagined-qol',
 
-    IndexRulesImg: '/img/minecraft-bookshelf.webp',
+    IndexRulesImg: '/img/rules.webp',
     RulesUrl: 'https://gensokyoreimagined.wiki.gg/wiki/Server_Rules',
     //Links in Navbar support all url formats
     NavBarLinkAbout: '#aboutus',
