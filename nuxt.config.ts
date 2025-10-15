@@ -4,6 +4,12 @@ export default defineNuxtConfig({
 
     app: {
         buildAssetsDir: 'static',
+        head: {
+        link: [
+            { rel: 'preconnect', href: 'https://gensokyoreimagined.net' },
+            { rel: 'dns-prefetch', href: 'https://gensokyoreimagined.net' }
+        ]
+    }
     },
 
     modules: [
@@ -13,6 +19,46 @@ export default defineNuxtConfig({
       '@nuxtjs/seo',
       '@nuxt/image',
     ],
+
+    nitro: {
+        prerender: {
+            // Ignore image optimization URLs during prerender
+            ignore: [
+                '/.netlify/images',
+                '/_ipx'
+            ]
+        }
+    },
+
+    image: {
+        provider: 'netlify', //for local development ipx is required DONT FORGET TO SWITCH BACK TO NETLIFY ONCE UR DONE
+        formats: ['avif', 'webp'],
+        presets: {
+            logo: {
+                modifiers: {
+                    quality: '70',
+                }
+            },
+            carousel: {
+                modifiers: {
+                    quality: '70',
+                    blur: 2,
+                }
+            },
+            featureCard: {
+                modifiers: {
+                    quality: '50',
+                    sizes: 'sm:100vw md:50vw lg:400px',
+                }
+            },
+            rulesImage: {
+                modifiers: {
+                    quality: '80',
+                    sizes: 'sm:100vw md:50vw',
+                }
+            }
+        }
+    },
 
     plugins: [{src: '~/plugins/router-nprogress.ts', mode: 'client'}],
 

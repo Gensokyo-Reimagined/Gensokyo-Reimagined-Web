@@ -93,10 +93,10 @@
     }
   },
   "Navbar": {
-    "home": "home",
-    "about": "about",
-    "wiki": "wiki",
-    "map": "map",
-    "translation": "translation"
+    "home": "Home",
+    "about": "About",
+    "wiki": "Wiki",
+    "map": "Map",
+    "translation": "Translation"
   }
 }

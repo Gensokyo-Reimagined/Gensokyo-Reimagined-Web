@@ -2,12 +2,12 @@ export default defineAppConfig({
     HeaderLogoImg: '/img/logo.webp',
     //main page -> For the image on the right side of the page header, please put the corresponding image in public/img, and then fill in /img/1.png if the file name is 1.png
     IndexHeaderImg: [
-        '/img/main_min.webp',
-        '/img/youkaimountain.webp',
-        '/img/sunflower.webp',
-        '/img/youkaiforest.webp',
-        '/img/shop.webp',
-        '/img/village.webp',
+        '/img/1.webp',
+        '/img/2.webp',
+        '/img/3.webp',
+        '/img/4.webp',
+        '/img/5.webp',
+        '/img/6.webp',
     ],
     //Image switching time, in milliseconds
     IndexHeaderImgChangeTime: '5000',
@@ -41,7 +41,7 @@ export default defineAppConfig({
     IndexModPackCtaImg: '/img/modrinth.webp',
     MPLink: 'https://modrinth.com/modpack/gensokyo-reimagined-qol',
 
-    IndexRulesImg: '/img/minecraft-bookshelf.webp',
+    IndexRulesImg: '/img/rules.webp',
     RulesUrl: 'https://gensokyoreimagined.wiki.gg/wiki/Server_Rules',
     //Links in Navbar support all url formats
     NavBarLinkAbout: '#aboutus',
