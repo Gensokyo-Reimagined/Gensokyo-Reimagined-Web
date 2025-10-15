@@ -74,7 +74,7 @@
         },
         "IPcta": {
             "title": "Server IPs",
-            "description": "Version: 1.21.1",
+            "description": "Version: 1.21.8",
             "buildtitle": "Bau Server",
             "survivaltitle": "MMORPG Server"
         },
