@@ -30,24 +30,24 @@ export default defineNuxtConfig({
         presets: {
             logo: {
                 modifiers: {
-                    quality: '80',
+                    quality: '70',
                 }
             },
             carousel: {
                 modifiers: {
-                    quality: '80',
+                    quality: '60',
                     blur: 2,
                 }
             },
             featureCard: {
                 modifiers: {
-                    quality: '80',
+                    quality: '70',
                     sizes: 'sm:100vw md:50vw lg:400px',
                 }
             },
             rulesImage: {
                 modifiers: {
-                    quality: '80',
+                    quality: '70',
                     sizes: 'sm:100vw md:50vw',
                 }
             }
