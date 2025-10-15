@@ -41,13 +41,7 @@
         />
       </div>
 
-      <h1 class="text-4xl font-extrabold tracking-tight text-[var(--md-sys-color-on-background)] sm:text-5xl md:text-6xl mt-6 text-shadow">
-        <span class="block text-[var(--md-sys-color-primary)] xl:inline title-shimmer">
-          {{ $t('servername') }}
-        </span>
-      </h1>
-      
-      <p class="mt-3 text-base text-[var(--md-sys-color-outline)] sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl text-shadow">
+      <p class="mt-8 text-base text-[var(--md-sys-color-outline)] sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:text-xl text-shadow">
         {{ $t('index.header.intro') }}
       </p>
 
@@ -116,7 +110,6 @@ export default {
       logoImg: this.state.appConfig.HeaderLogoImg,
       imageUrls: this.state.appConfig.IndexHeaderImg,
       changeTime: parseInt(this.state.appConfig.IndexHeaderImgChangeTime) || 5000,
-      // NEW: State for storing the player count, initialized to null
       playerCount: null,
     }
   },
@@ -128,16 +121,13 @@ export default {
           throw new Error('Network response was not ok');
         }
         const data = await response.json();
-        // Check if the server is online before getting the player count
         if (data.online) {
           this.playerCount = data.players.now;
         } else {
-          // If the server is offline, you can show 0 or a message
           this.playerCount = 0; 
         }
       } catch (error) {
         console.error("Failed to fetch player count:", error);
-        // Display a fallback value if the API fails
         this.playerCount = 'N/A';
       }
     }
