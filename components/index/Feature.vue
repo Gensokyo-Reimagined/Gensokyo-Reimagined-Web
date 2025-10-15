@@ -1,97 +1,112 @@
 <template>
-  <div id="features" class="py-12 bg-[var(--md-sys-color-background)]">
-    <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
-      <div class="lg:text-center">
-        <!--
-        <h2 class="text-base font-semibold tracking-wide text-[var(--md-sys-color-primary)] uppercase">
-          {{ $t('index.feature.title') }}
-        </h2>-->
+  <div id="features" class="relative py-20 overflow-hidden">
+    <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8 relative z-10">
+      <div class="lg:text-center mb-16">
         <p
-            class="mt-2 text-3xl font-extrabold leading-8 tracking-tight text-[var(--md-sys-color-on-background)] sm:text-4xl"
+          class="mt-2 text-3xl font-extrabold leading-8 tracking-tight text-[var(--md-sys-color-on-background)] sm:text-4xl"
         >
           {{ $t('index.feature.subtitle') }}
         </p>
-        <p
-            class="max-w-2xl mt-4 text-xl text-[var(--md-sys-color-outline)] lg:mx-auto"
-        ></p>
+        <div class="flex justify-center mt-4">
+          <div class="h-1 w-20 rounded-full bg-[var(--md-sys-color-primary)]"></div>
+        </div>
       </div>
-      <div class="mt-10">
-        <dl
-            class="space-y-10 md:space-y-0 md:grid md:grid-cols-2 md:gap-x-8 md:gap-y-10"
+
+      <div class="grid gap-8 md:grid-cols-2 lg:gap-12">
+        <div
+          v-for="(feature, index) in features"
+          :key="feature.name"
+          class="group relative feature-card flex flex-col"
+          :style="{ animationDelay: `${index * 0.1}s` }"
         >
-          <div
-              v-for="feature in feature"
-              :key="feature.name"
-              class="relative flex flex-col"
+          <div 
+            class="absolute inset-0 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 spell-border"
           >
-            <dt>
-              <div
-                  class="absolute flex items-center justify-center w-12 h-12 text-[var(--md-sys-color-on-tertiary-container)] bg-[var(--md-sys-color-tertiary-container)] rounded-md"
+            <div class="h-full w-full rounded-xl bg-[var(--md-sys-color-background)]"></div>
+          </div>
+
+          <div 
+            class="relative rounded-xl p-6 bg-[var(--md-sys-color-surface)] border border-[var(--md-sys-color-outline-variant)] transition-all duration-300 group-hover:-translate-y-2 group-hover:shadow-2xl flex flex-col h-full"
+          >
+            <div class="flex items-start mb-4">
+              <div 
+                class="flex-shrink-0 flex items-center justify-center w-14 h-14 rounded-full bg-[var(--md-sys-color-tertiary-container)] text-[var(--md-sys-color-on-tertiary-container)] transition-transform duration-300 group-hover:scale-110 group-hover:rotate-12"
               >
-                <i :class="feature.icon"></i>
+                <i :class="feature.icon" class="text-2xl"></i>
               </div>
-              <p
-                  class="ml-16 text-lg font-medium leading-6 text-[var(--md-sys-color-on-background)]"
-              >
-                {{ $t(feature.name) }}
-              </p>
-            </dt>
-            <dd class="mt-2 ml-16 text-base text-[var(--md-sys-color-outline)]">
-              {{ $t(feature.description) }}
-            </dd>
-            <div class="mt-auto pt-5 m-5">
-              <nuxt-img
+              <div class="ml-4 flex-1">
+                <h3 
+                  class="text-xl font-bold mb-2 text-[var(--md-sys-color-on-background)]"
+                >
+                  {{ $t(feature.name) }}
+                </h3>
+                <p 
+                  class="text-base leading-relaxed text-[var(--md-sys-color-outline)]"
+                >
+                  {{ $t(feature.description) }}
+                </p>
+              </div>
+            </div>
+
+            <div class="relative mt-auto rounded-lg overflow-hidden">
+              <div class="aspect-[16/9] w-full">
+                <nuxt-img
                   :src="feature.img"
-                  alt="feature image"
-                  class="rounded-xl"
-                  height="212"
+                  :alt="$t(feature.name)"
+                  class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                   loading="lazy"
                   quality="80"
                   sizes="sm:100vw md:50vw lg:400px"
-                  width="400"
-              />
+                />
+              </div>
+              <div 
+                class="absolute inset-0 bg-gradient-to-br from-[var(--md-sys-color-primary)] to-[var(--md-sys-color-tertiary)] opacity-0 group-hover:opacity-20 transition-opacity duration-300"
+              ></div>
             </div>
+
+            <div 
+              class="absolute top-4 right-4 w-16 h-16 opacity-10 dot-pattern"
+            ></div>
           </div>
-        </dl>
+        </div>
       </div>
     </div>
   </div>
 </template>
+
 <script>
 export default {
   setup() {
     const appConfig = useAppConfig()
-
     const state = reactive({
       appConfig: appConfig,
     })
-
-    return {state}
+    return { state }
   },
   data() {
     return {
-      feature: [
+      features: [
         {
-          name: this.$t('index.feature.items[0].name'),
-          description: this.$t('index.feature.items[0].description'),
+          name: 'index.feature.items[0].name',
+          description: 'index.feature.items[0].description',
           icon: this.state.appConfig.IndexFeatureIcon[0],
           img: this.state.appConfig.IndexFeatureImg[0],
         },
         {
-          name: this.$t('index.feature.items[1].name'),
-          description: this.$t('index.feature.items[1].description'),
+          name: 'index.feature.items[1].name',
+          description: 'index.feature.items[1].description',
           icon: this.state.appConfig.IndexFeatureIcon[1],
           img: this.state.appConfig.IndexFeatureImg[1],
         },
         {
-          name: this.$t('index.feature.items[2].name'),
-          description: this.$t('index.feature.items[2].description'),
+          name: 'index.feature.items[2].name',
+          description: 'index.feature.items[2].description',
           icon: this.state.appConfig.IndexFeatureIcon[2],
           img: this.state.appConfig.IndexFeatureImg[2],
         },
         {
-          name: this.$t('index.feature.items[3].name'),
-          description: this.$t('index.feature.items[3].description'),
+          name: 'index.feature.items[3].name',
+          description: 'index.feature.items[3].description',
           icon: this.state.appConfig.IndexFeatureIcon[3],
           img: this.state.appConfig.IndexFeatureImg[3],
         },
@@ -100,3 +115,30 @@ export default {
   },
 }
 </script>
+
+<style scoped>
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.feature-card {
+  animation: fadeInUp 0.6s ease-out both;
+}
+
+.spell-border {
+  background: linear-gradient(135deg, var(--md-sys-color-primary) 0%, var(--md-sys-color-secondary-container) 100%);
+  padding: 2px;
+}
+
+.dot-pattern {
+  background-image: radial-gradient(circle, var(--md-sys-color-primary) 1px, transparent 1px);
+  background-size: 8px 8px;
+}
+</style>
