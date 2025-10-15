@@ -92,10 +92,10 @@
         "title": "Creating a Touhou MMO Server in Minecraft"
     },
     "Navbar": {
-        "home": "ana sayfa",
-        "about": "hakkında",
-        "wiki": "wiki",
-        "map": "harita",
+        "home": "Ana sayfa",
+        "about": "Hakkında",
+        "wiki": "Wiki",
+        "map": "Harita",
         "translation": "çeviri"
     },
     "description": "Welcome to Gensokyo!"
