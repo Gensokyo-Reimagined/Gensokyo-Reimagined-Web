@@ -64,12 +64,15 @@
           <button
               class="inline-flex items-center justify-center p-2 rounded-md text-[var(--md-sys-color-primary)] hover:text-[var(--md-sys-color-secondary)] hover:bg-[var(--md-sys-color-secondary-container)] focus:outline-none focus:[var(--md-sys-color-secondary-container)] focus:[var(--md-sys-color-secondary)]"
               @click="toggleColorMode"
+              :aria-label="$colorMode.preference === 'dark' ? 'Switch to light mode' : 'Switch to dark mode'"
           >
             <i :class="ColorButtonClass"></i>
           </button>
           <a
               :href="appConfig.NavBarLinkGithub"
               class="inline-flex items-center justify-center p-2 rounded-md text-[var(--md-sys-color-primary)] hover:text-[var(--md-sys-color-secondary)] hover:bg-[var(--md-sys-color-secondary-container)] focus:outline-none focus:[var(--md-sys-color-secondary-container)] focus:[var(--md-sys-color-secondary)]"
+              aria-label="Visit our GitHub repository"
+              target="_blank"
           >
             <i class="fa-brands fa-github"></i>
           </a>
@@ -83,6 +86,7 @@
               class="inline-flex items-center justify-center p-2 rounded-md text-[var(--md-sys-color-primary)] hover:text-[var(--md-sys-color-secondary)] hover:[var(--md-sys-color-secondary-container)] focus:outline-none focus:[var(--md-sys-color-secondary-container)] focus:[var(--md-sys-color-secondary)]"
               type="button"
               @click="isMenuOpen = !isMenuOpen"
+              :aria-label="isMenuOpen ? 'Close menu' : 'Open menu'"
           >
             <svg
                 :class="{ hidden: isMenuOpen, block: !isMenuOpen }"
@@ -90,6 +94,7 @@
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
+                aria-hidden="true"
             >
               <path
                   d="M4 6h16M4 12h16M4 18h16"
@@ -104,6 +109,7 @@
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
+                aria-hidden="true"
             >
               <path
                   d="M6 18L18 6M6 6l12 12"
@@ -159,12 +165,15 @@
           <button
               class="inline-flex items-center justify-center p-2 rounded-md text-[var(--md-sys-color-primary)] hover:text-[var(--md-sys-color-secondary)] hover:bg-[var(--md-sys-color-secondary-container)] focus:outline-none focus:[var(--md-sys-color-secondary-container)] focus:[var(--md-sys-color-secondary)]"
               @click="toggleColorMode"
+              :aria-label="$colorMode.preference === 'dark' ? 'Switch to light mode' : 'Switch to dark mode'"
           >
             <i :class="ColorButtonClass"></i>
           </button>
           <a
               :href="appConfig.NavBarLinkGithub"
               class="inline-flex items-center justify-center p-2 rounded-md text-[var(--md-sys-color-primary)] hover:text-[var(--md-sys-color-secondary)] hover:bg-[var(--md-sys-color-secondary-container)] focus:outline-none focus:[var(--md-sys-color-secondary-container)] focus:[var(--md-sys-color-secondary)]"
+              aria-label="Visit our GitHub repository"
+              target="_blank"
           >
             <i class="fa-brands fa-github"></i>
           </a>

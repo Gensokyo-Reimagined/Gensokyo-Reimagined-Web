@@ -41,14 +41,18 @@
                       <p class="text-white font-bold uppercase text-sm mb-2 tracking-wide drop-shadow">
                         {{ $t('index.IPcta.survivaltitle') }}
                       </p>
-                      <button @click="copyToClipboard(appConfig.SurvivalServerIP)" class="font-mono text-lg font-bold text-white flex items-center hover:text-white/80 transition-colors drop-shadow">
+                      <button 
+                        @click="copyToClipboard(appConfig.SurvivalServerIP)" 
+                        class="font-mono text-lg font-bold text-white flex items-center hover:text-white/80 transition-colors drop-shadow"
+                        :aria-label="`Copy survival server IP: ${appConfig.SurvivalServerIP}`"
+                      >
                         {{ appConfig.SurvivalServerIP }}
-                        <i :class="copyIcon" class="ml-3 text-base transition-all duration-300"></i>
+                        <i :class="copyIcon" class="ml-3 text-base transition-all duration-300" aria-hidden="true"></i>
                       </button>
                     </div>
                     <div class="ml-6">
                       <div class="w-12 h-12 rounded-full bg-white/20 flex items-center justify-center group-hover:rotate-12 group-hover:scale-110 transition-all duration-300 shadow-lg">
-                        <i class="fa-solid fa-bolt text-white text-xl drop-shadow"></i>
+                        <i class="fa-solid fa-bolt text-white text-xl drop-shadow" aria-hidden="true"></i>
                       </div>
                     </div>
                   </div>
@@ -60,14 +64,18 @@
                       <p class="text-white font-bold uppercase text-sm mb-2 tracking-wide drop-shadow">
                         {{ $t('index.IPcta.buildtitle') }}
                       </p>
-                      <button @click="copyToClipboard(appConfig.BuildServerIP)" class="font-mono text-lg font-bold text-white flex items-center hover:text-white/80 transition-colors drop-shadow">
+                      <button 
+                        @click="copyToClipboard(appConfig.BuildServerIP)" 
+                        class="font-mono text-lg font-bold text-white flex items-center hover:text-white/80 transition-colors drop-shadow"
+                        :aria-label="`Copy build server IP: ${appConfig.BuildServerIP}`"
+                      >
                         {{ appConfig.BuildServerIP }}
-                        <i :class="copyIcon" class="ml-3 text-base transition-all duration-300"></i>
+                        <i :class="copyIcon" class="ml-3 text-base transition-all duration-300" aria-hidden="true"></i>
                       </button>
                     </div>
                     <div class="ml-6">
                       <div class="w-12 h-12 rounded-full bg-white/20 flex items-center justify-center group-hover:rotate-12 group-hover:scale-110 transition-all duration-300 shadow-lg">
-                        <i class="fa-solid fa-hammer text-white text-xl drop-shadow"></i>
+                        <i class="fa-solid fa-hammer text-white text-xl drop-shadow" aria-hidden="true"></i>
                       </div>
                     </div>
                   </div>
@@ -91,9 +99,9 @@
               </p>
               <a :href="appConfig.DCLink" target="_blank" class="inline-flex items-center px-8 py-4 text-lg font-bold rounded-xl transition-all duration-300 hover:scale-105 shadow-xl group relative overflow-hidden" style="background: white; color: #5865F2;">
                 <div class="absolute inset-0 bg-gradient-to-r from-transparent via-blue-100 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-700"></div>
-                <i class="fa-brands fa-discord text-2xl mr-3 relative z-10 group-hover:rotate-12 transition-transform duration-300"></i>
+                <i class="fa-brands fa-discord text-2xl mr-3 relative z-10 group-hover:rotate-12 transition-transform duration-300" aria-hidden="true"></i>
                 <span class="relative z-10">{{ $t('index.cta.button') }}</span>
-                <i class="fa-solid fa-arrow-right ml-3 relative z-10 group-hover:translate-x-1 transition-transform duration-300"></i>
+                <i class="fa-solid fa-arrow-right ml-3 relative z-10 group-hover:translate-x-1 transition-transform duration-300" aria-hidden="true"></i>
               </a>
             </div>
             <div class="h-64 mt-8">
@@ -117,15 +125,15 @@
                 Enhanced performance and compatibility for the best experience!
               </p>
               <ul class="space-y-3 mb-8">
-                <li class="flex items-center text-white text-base group hover:translate-x-2 transition-transform duration-300"><i class="fa-solid fa-circle-check text-xl mr-3 group-hover:scale-125 transition-transform duration-300 drop-shadow"></i><span class="font-medium drop-shadow">Performance optimizations</span></li>
-                <li class="flex items-center text-white text-base group hover:translate-x-2 transition-transform duration-300"><i class="fa-solid fa-circle-check text-xl mr-3 group-hover:scale-125 transition-transform duration-300 drop-shadow"></i><span class="font-medium drop-shadow">Quality of life improvements</span></li>
-                <li class="flex items-center text-white text-base group hover:translate-x-2 transition-transform duration-300"><i class="fa-solid fa-circle-check text-xl mr-3 group-hover:scale-125 transition-transform duration-300 drop-shadow"></i><span class="font-medium drop-shadow">Easy installation</span></li>
+                <li class="flex items-center text-white text-base group hover:translate-x-2 transition-transform duration-300"><i class="fa-solid fa-circle-check text-xl mr-3 group-hover:scale-125 transition-transform duration-300 drop-shadow" aria-hidden="true"></i><span class="font-medium drop-shadow">Performance optimizations</span></li>
+                <li class="flex items-center text-white text-base group hover:translate-x-2 transition-transform duration-300"><i class="fa-solid fa-circle-check text-xl mr-3 group-hover:scale-125 transition-transform duration-300 drop-shadow" aria-hidden="true"></i><span class="font-medium drop-shadow">Quality of life improvements</span></li>
+                <li class="flex items-center text-white text-base group hover:translate-x-2 transition-transform duration-300"><i class="fa-solid fa-circle-check text-xl mr-3 group-hover:scale-125 transition-transform duration-300 drop-shadow" aria-hidden="true"></i><span class="font-medium drop-shadow">Easy installation</span></li>
               </ul>
               <a :href="appConfig.MPLink" target="_blank" class="inline-flex items-center px-8 py-4 text-lg font-bold rounded-xl transition-all duration-300 hover:scale-105 shadow-xl group relative overflow-hidden" style="background: white; color: #1BD96A;">
                 <div class="absolute inset-0 bg-gradient-to-r from-transparent via-green-100 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-700"></div>
-                <i class="fa-solid fa-download text-2xl mr-3 relative z-10 group-hover:translate-y-1 transition-transform duration-300"></i>
+                <i class="fa-solid fa-download text-2xl mr-3 relative z-10 group-hover:translate-y-1 transition-transform duration-300" aria-hidden="true"></i>
                 <span class="relative z-10">{{ $t('index.MPcta.button') }}</span>
-                <i class="fa-solid fa-arrow-right ml-3 relative z-10 group-hover:translate-x-1 transition-transform duration-300"></i>
+                <i class="fa-solid fa-arrow-right ml-3 relative z-10 group-hover:translate-x-1 transition-transform duration-300" aria-hidden="true"></i>
               </a>
             </div>
           </div>
@@ -138,7 +146,7 @@
 
 <script setup>
 import { reactive, ref } from 'vue'
-import CtaCard from './CtaCard.vue' // Import the new child component
+import CtaCard from './CtaCard.vue'
 
 const appConfig = useAppConfig()
 const copyIcon = ref('fa-solid fa-copy')
@@ -182,8 +190,6 @@ function copyToClipboard(text) {
 </script>
 
 <style scoped>
-/* All the original styles from your file can remain here unchanged. */
-/* Ambient fog drift animations */
 @keyframes fog-drift { 0%, 100% { transform: translate(0, 0) scale(1); opacity: 0.6; } 50% { transform: translate(30px, -20px) scale(1.1); opacity: 0.8; } }
 @keyframes fog-drift-slow { 0%, 100% { transform: translate(0, 0) scale(1); opacity: 0.5; } 50% { transform: translate(-40px, 30px) scale(1.15); opacity: 0.7; } }
 .animate-fog-drift { animation: fog-drift 15s ease-in-out infinite; }
