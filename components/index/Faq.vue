@@ -42,15 +42,7 @@
               </span>
             </span>
 
-            <span 
-              class="flex-shrink-0 ml-4 w-8 h-8 rounded-full bg-[var(--md-sys-color-primary-container)] text-[var(--md-sys-color-on-primary-container)] flex items-center justify-center transition-transform duration-300"
-              :class="{ 'rotate-180': openIndex === index }"
-            >
-              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-              </svg>
-            </span>
-          </button>
+            </button>
 
           <transition name="expand">
             <div
