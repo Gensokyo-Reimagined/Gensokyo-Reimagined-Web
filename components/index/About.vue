@@ -1,21 +1,17 @@
 <template>
   <div class="relative bg-[var(--md-sys-color-background)]">
-    <!-- Main Hero Content -->
     <main class="px-4 mx-auto mt-10 max-w-7xl sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28 z-[11] relative">
       <div class="text-center bg-[var(--md-sys-color-background)] lg:backdrop-blur-sm lg:p-8 lg:rounded-2xl hero-glow">
-        <!-- Title with gradient effect -->
         <h1 class="text-4xl font-extrabold tracking-tight text-[var(--md-sys-color-on-background)] sm:text-5xl md:text-6xl">
           <span class="block text-[var(--md-sys-color-primary)] xl:inline title-shimmer">
             {{ $t('servername') }}
           </span>
         </h1>
         
-        <!-- Subtitle -->
         <p class="mt-3 text-base text-[var(--md-sys-color-outline)] sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl fade-in-delay">
           {{ $t('index.header.intro') }}
         </p>
         
-        <!-- CTA Buttons -->
         <div class="mt-8 sm:mt-10 flex flex-col sm:flex-row gap-4 justify-center items-center">
           <a
             class="group relative inline-flex items-center justify-center px-8 py-4 text-base font-medium text-[var(--md-sys-color-on-primary)] bg-[var(--md-sys-color-primary)] border border-transparent rounded-xl overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-2xl md:text-lg md:px-10 button-shine"
@@ -42,13 +38,11 @@
       </div>
     </main>
 
-    <!-- About Us Section -->
     <div
       id="aboutus"
       class="pt-32 px-4 py-16 mx-auto max-w-7xl sm:px-6 lg:px-8 relative"
     >
       <div class="grid lg:grid-cols-2 gap-12 items-center">
-        <!-- Text Content -->
         <div class="info order-last lg:order-first space-y-6">
           <div class="inline-block">
             <span class="text-sm font-semibold tracking-wider text-[var(--md-sys-color-primary)] uppercase px-4 py-2 bg-[var(--md-sys-color-primary-container)] rounded-full">
@@ -66,7 +60,6 @@
             </p>
           </div>
 
-          <!-- Stats or highlights (optional) -->
           <div class="grid grid-cols-3 gap-6 pt-8">
             <div class="text-center p-4 rounded-xl bg-[var(--md-sys-color-surface)] border border-[var(--md-sys-color-outline-variant)] stat-card">
               <div class="text-3xl font-bold text-[var(--md-sys-color-primary)]">0</div>
@@ -83,14 +76,11 @@
           </div>
         </div>
 
-        <!-- Image/Visual Side -->
         <div class="order-first lg:order-last">
           <div class="relative">
-            <!-- Decorative elements -->
             <div class="absolute -top-4 -right-4 w-72 h-72 bg-[var(--md-sys-color-primary)] opacity-10 rounded-full blur-3xl"></div>
             <div class="absolute -bottom-4 -left-4 w-72 h-72 bg-[var(--md-sys-color-tertiary)] opacity-10 rounded-full blur-3xl"></div>
             
-            <!-- Main image container -->
             <div class="relative rounded-2xl overflow-hidden border-4 border-[var(--md-sys-color-outline-variant)] shadow-2xl transform hover:scale-105 transition-transform duration-500">
               <nuxt-img
                 :src="appConfig.IndexAbobutImg"
@@ -99,7 +89,6 @@
                 loading="lazy"
                 quality="90"
               />
-              <!-- Add a gradient overlay -->
               <div class="absolute inset-0 bg-gradient-to-t from-[var(--md-sys-color-background)] via-transparent to-transparent opacity-40"></div>
             </div>
           </div>
@@ -161,7 +150,7 @@ const appConfig = useAppConfig()
 }
 
 .hero-glow:hover::before {
-  opacity: 0.3;
+  opacity: 0.1;
 }
 
 .stat-card {

@@ -1,6 +1,5 @@
 <template>
   <div class="relative overflow-hidden pt-16 lg:h-screen">
-    <!-- Background Image Carousel with enhanced effects -->
     <div class="lg:pt-16 lg:absolute lg:inset-y-0 lg:right-0 w-full lg:h-screen">
       <swiper
         :autoplay="{
@@ -27,32 +26,27 @@
         </swiper-slide>
       </swiper>
       
-      <!-- Enhanced overlay with multiple gradients -->
       <div class="absolute inset-0 bg-gradient-to-r from-[var(--md-sys-color-background)] via-transparent to-[var(--md-sys-color-background)] opacity-60"></div>
       <div class="absolute inset-0 bg-gradient-to-b from-[var(--md-sys-color-background)] via-transparent to-[var(--md-sys-color-background)]"></div>
     </div>
 
-    <!-- Logo/Center Content -->
     <div class="mx-auto max-w-7xl lg:h-screen flex items-center justify-center relative z-20">
       <div class="max-lg:pt-10 lg:relative w-full flex justify-center items-center">
         <div class="logo-container relative">
-          <!-- Main logo -->
           <nuxt-img
             :src="logoImg"
             alt="Gensokyo Reimagined Logo"
-            class="logo-image relative z-10 w-64 h-auto sm:w-80 md:w-96 lg:w-[1000px]"
+            class="logo-image relative z-10 w-64 h-auto sm:w-80 md:w-96 lg:w-[650px] xl:w-[800px] 2xl:w-[900px] "
             quality="80"
           />
         </div>
       </div>
     </div>
 
-    <!-- Bottom gradient fade -->
     <div class="absolute inset-x-0 bottom-0 z-10">
       <div class="h-32 bg-gradient-to-t from-[var(--md-sys-color-background)] to-transparent"></div>
     </div>
 
-    <!-- Scroll indicator (only on large screens) -->
     <div class="hidden lg:block absolute bottom-8 left-1/2 transform -translate-x-1/2 z-20">
       <div class="scroll-indicator">
         <div class="scroll-arrow"></div>
