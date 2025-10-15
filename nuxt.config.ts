@@ -15,6 +15,7 @@ export default defineNuxtConfig({
     ],
 
     image: {
+        provider: 'ipx',
         formats: ['avif', 'webp'],
         presets: {
             logo: {
