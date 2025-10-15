@@ -37,7 +37,7 @@
           <div class="flex-1 bg-[var(--md-sys-color-surface)] p-8 flex flex-col justify-between">
             <div class="flex-1">
               <div class="flex items-center justify-center h-16 w-16 rounded-full bg-[#13C3FF] text-white mx-auto">
-                <nuxt-img src="/img/kofi_logo.svg" alt="Ko-fi Logo" class="w-12 h-12" />
+                <nuxt-img src="/img/kofi_logo.svg" alt="Ko-fi Logo" class="w-9 h-9" />
               </div>
               <h3 class="mt-6 text-xl font-bold text-center text-[var(--md-sys-color-on-surface)]">Ko-fi</h3>
               <p class="mt-4 text-base text-center text-[var(--md-sys-color-outline)]">Support us with a one-time donation or become a monthly member.</p>

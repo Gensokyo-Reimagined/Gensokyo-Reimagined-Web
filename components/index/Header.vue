@@ -20,8 +20,8 @@
             :src="currentImageUrl"
             alt="Gensokyo Reimagined background"
             class="w-full h-full object-cover carousel-image"
-            quality="60"
-            sizes="sm:100vw md:50vw lg:800px"
+            preset="carousel"
+            placeholder
           />
         </swiper-slide>
       </swiper>
@@ -37,7 +37,8 @@
           :src="logoImg"
           alt="Gensokyo Reimagined Logo"
           class="logo-image relative z-10 w-1/2 mx-auto h-auto lg:w-[450px] xl:w-[550px]"
-          quality="80"
+          preset="logo" 
+          preload 
         />
       </div>
       
@@ -148,12 +149,13 @@ export default {
 
 /* Carousel image effect */
 .carousel-image {
-  filter: blur(2px) brightness(0.7);
+  /* The blur is now handled by the preset, so you can remove it from here if you wish */
+  /* filter: blur(2px) brightness(0.7); */
+  filter: brightness(0.7);
   transition: filter 1s ease-in-out;
 }
-
 .swiper-slide-active .carousel-image {
-  filter: blur(2px) brightness(0.8);
+  filter: brightness(0.8);
 }
 
 /* REMOVED: Scroll indicator styles */

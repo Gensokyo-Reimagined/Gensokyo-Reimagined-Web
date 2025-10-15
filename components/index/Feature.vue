@@ -55,8 +55,8 @@
                   :alt="$t(feature.name)"
                   class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                   loading="lazy"
-                  quality="80"
-                  sizes="sm:100vw md:50vw lg:400px"
+                  preset="featureCard"
+                  placeholder
                 />
               </div>
               <div 

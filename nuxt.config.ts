@@ -14,6 +14,35 @@ export default defineNuxtConfig({
       '@nuxt/image',
     ],
 
+    image: {
+        formats: ['avif', 'webp'],
+        presets: {
+            logo: {
+                modifiers: {
+                    quality: '80',
+                }
+            },
+            carousel: {
+                modifiers: {
+                    quality: '80',
+                    blur: 2,
+                }
+            },
+            featureCard: {
+                modifiers: {
+                    quality: '80',
+                    sizes: 'sm:100vw md:50vw lg:400px',
+                }
+            },
+            rulesImage: {
+                modifiers: {
+                    quality: '80',
+                    sizes: 'sm:100vw md:50vw',
+                }
+            }
+        }
+    },
+
     plugins: [{src: '~/plugins/router-nprogress.ts', mode: 'client'}],
 
     // css import
