@@ -59,13 +59,13 @@
           class="group relative inline-flex items-center justify-center px-8 py-4 text-base font-medium text-[var(--md-sys-color-on-primary)] bg-[var(--md-sys-color-primary)] border border-transparent rounded-xl overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-2xl md:text-lg md:px-10 button-shine"
           href="https://discord.gg/U9fZSJJcte"
           target="_blank"
-        >
+        <a>
           <span class="relative z-10 flex items-center">
             {{ $t('index.header.group') }}
             <i class="fa-solid fa-arrow-up-right-from-square ml-3 transition-transform group-hover:translate-x-1 group-hover:-translate-y-1"></i>
           </span>
           <div class="absolute inset-0 bg-gradient-to-r from-transparent via-white to-transparent opacity-0 group-hover:opacity-20 shimmer"></div>
-        >
+        </a>
         
         <nuxt-link
           class="group inline-flex items-center justify-center px-8 py-4 text-base font-medium text-[var(--md-sys-color-on-secondary-container)] bg-[var(--md-sys-color-secondary-container)] border-2 border-[var(--md-sys-color-outline)] rounded-xl transition-all duration-300 hover:scale-105 hover:bg-[var(--md-sys-color-primary-container)] hover:border-[var(--md-sys-color-primary)] md:text-lg md:px-10"
