@@ -36,6 +36,7 @@
         <nuxt-img
           :src="logoImg"
           alt="Gensokyo Reimagined Logo"
+          fetchpriority="high"
           class="logo-image relative z-10 w-1/2 mx-auto h-auto lg:w-[450px] xl:w-[550px]"
           preset="logo" 
           preload 

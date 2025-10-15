@@ -4,6 +4,12 @@ export default defineNuxtConfig({
 
     app: {
         buildAssetsDir: 'static',
+        head: {
+        link: [
+            { rel: 'preconnect', href: 'https://gensokyoreimagined.net' },
+            { rel: 'dns-prefetch', href: 'https://gensokyoreimagined.net' }
+        ]
+    }
     },
 
     modules: [
@@ -35,13 +41,13 @@ export default defineNuxtConfig({
             },
             carousel: {
                 modifiers: {
-                    quality: '60',
+                    quality: '40',
                     blur: 2,
                 }
             },
             featureCard: {
                 modifiers: {
-                    quality: '70',
+                    quality: '50',
                     sizes: 'sm:100vw md:50vw lg:400px',
                 }
             },
