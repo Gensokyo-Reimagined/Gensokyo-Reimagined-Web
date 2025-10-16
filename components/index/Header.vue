@@ -103,25 +103,6 @@ export default {
     const state = reactive({
       appConfig: appConfig,
     })
-    if (state.appConfig.IndexHeaderImg && state.appConfig.IndexHeaderImg[0]) {
-  const firstImage = state.appConfig.IndexHeaderImg[0];
-  useHead({
-    link: [
-      {
-        rel: 'preload',
-        as: 'image',
-        href: firstImage,
-        imagesrcset: `
-          /_ipx/w_640&q_80&blur_2${firstImage} 640w,
-          /_ipx/w_1280&q_80&blur_2${firstImage} 1280w,
-          /_ipx/w_1920&q_80&blur_2${firstImage} 1920w
-        `,
-        imagesizes: '100vw'
-      }
-    ]
-  })
-}
-    
     return { state, modules: [Autoplay] }
   },
   data() {
