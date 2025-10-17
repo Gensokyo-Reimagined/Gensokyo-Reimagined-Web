@@ -5,11 +5,33 @@ export default defineNuxtConfig({
     app: {
         buildAssetsDir: 'static',
         head: {
-        link: [
-            { rel: 'preconnect', href: 'https://gensokyoreimagined.net' },
-            { rel: 'dns-prefetch', href: 'https://gensokyoreimagined.net' }
-        ]
-    }
+            link: [
+                { rel: 'preconnect', href: 'https://gensokyoreimagined.net' },
+                { rel: 'dns-prefetch', href: 'https://gensokyoreimagined.net' },
+                { rel: 'dns-prefetch', href: 'https://mcapi.us' },
+                { 
+                    rel: 'preload', 
+                    as: 'font', 
+                    type: 'font/woff2',
+                    href: '/font/fa-solid-900.woff2',
+                    crossorigin: 'anonymous'
+                },
+                { 
+                    rel: 'preload', 
+                    as: 'font', 
+                    type: 'font/woff2',
+                    href: '/font/fa-brands-400.woff2',
+                    crossorigin: 'anonymous'
+                },
+                { 
+                    rel: 'preload', 
+                    as: 'font', 
+                    type: 'font/woff2',
+                    href: '/font/fa-regular-400.woff2',
+                    crossorigin: 'anonymous'
+                }
+            ]
+        }
     },
 
     modules: [
