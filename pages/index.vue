@@ -1,12 +1,12 @@
 <template>
   <div>
     <IndexHeader/>
-    <IndexAbout/>
-    <IndexFeature/>
-    <IndexCta/>
-    <IndexFaq/>
-    <IndexRules/>
-    <IndexSupport/>
+    <LazyIndexAbout/>
+    <LazyIndexFeature/>
+    <LazyIndexCta/>
+    <LazyIndexFaq/>
+    <LazyIndexRules/>
+    <LazyIndexSupport/>
   </div>
 </template>
 
@@ -17,5 +17,3 @@ useSeoMeta({
   twitterTitle: (t('index.title')),
 })
 </script>
-
-<style></style>
