@@ -6,7 +6,10 @@
         :aria-label="$t('Navbar.changeLanguage') || 'Change language'"
         :aria-expanded="isDropdownOpen"
     >
-      <i :class="getFlag(selectedLang)" class="twa"></i>
+      <!-- Only show flag when CSS is loaded -->
+      <i v-if="flagsLoaded" :class="getFlag(selectedLang)" class="twa"></i>
+      <span v-else class="text-sm font-bold">{{ selectedLang.toUpperCase() }}</span>
+      
       <svg
           :class="{ 'transform rotate-180': isDropdownOpen }"
           aria-hidden="true"
@@ -43,11 +46,13 @@
           @click.prevent.stop="setLocale(language.lang)"
       >
         <i
+            v-if="flagsLoaded"
             :class="language.flag"
             class="twa"
             style="margin-right: 10px"
-        ></i
-        >{{ language.name }}
+        ></i>
+        <span v-else class="inline-block w-6 mr-2 text-xs">{{ language.lang.toUpperCase() }}</span>
+        {{ language.name }}
       </nuxt-link>
     </div>
   </div>
@@ -70,7 +75,7 @@ export default {
     return {
       isMenuOpen: false,
       isDropdownOpen: false,
-      ColorButtonClass: '',
+      flagsLoaded: false,
       languages: [
         {
           lang: 'en',
@@ -159,6 +164,29 @@ export default {
         },
       ],
     }
+  },
+  mounted() {
+    // Check if twemoji CSS is loaded
+    const checkFlagsLoaded = () => {
+      const testElement = document.createElement('i')
+      testElement.className = 'twa twa-flag-united-states'
+      testElement.style.position = 'absolute'
+      testElement.style.visibility = 'hidden'
+      document.body.appendChild(testElement)
+      
+      const hasBackground = window.getComputedStyle(testElement).backgroundImage !== 'none'
+      document.body.removeChild(testElement)
+      
+      if (hasBackground) {
+        this.flagsLoaded = true
+      } else {
+        // Check again in 100ms if not loaded yet
+        setTimeout(checkFlagsLoaded, 100)
+      }
+    }
+    
+    // Start checking after a small delay
+    setTimeout(checkFlagsLoaded, 50)
   },
   methods: {
     toggleDropdown() {
