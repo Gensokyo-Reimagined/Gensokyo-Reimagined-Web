@@ -1,145 +1,144 @@
 <template>
-  <div class="py-16">
-    <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
-      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+  <div class="py-16 px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+      
+      <CtaCard
+        v-if="appConfig.IPCtaShow"
+        gradientStyle="background: linear-gradient(135deg, #f28395 0%, #e2354c 50%, #d81b60 100%);"
+        class="lg:row-span-2"
+      >
+        <div class="mb-8 lg:mb-12">
+          <div 
+            ref="imageRef1"
+            class="image-tilt-container"
+            @mousemove="handleMouseMove($event, 'imageRef1')"
+            @mouseleave="handleMouseLeave('imageRef1')"
+            :style="imageStyles.imageRef1"
+          >
+            <nuxt-img
+              :src="appConfig.IndexIPCtaImg"
+              alt="Server"
+              class="image-itself"
+              loading="lazy"
+              quality="90"
+            />
+          </div>
+        </div>
         
-        <CtaCard
-          v-if="appConfig.IPCtaShow"
-          gradientStyle="background: linear-gradient(135deg, #f28395 0%, #e2354c 50%, #d81b60 100%);"
-          class="lg:row-span-2"
-        >
-          <div class="lg:grid lg:grid-cols-1 h-full flex flex-col justify-center">
-            <div class="mb-8 lg:mb-12">
-              <div 
-                ref="imageRef1"
-                class="image-tilt-container"
-                @mousemove="handleMouseMove($event, 'imageRef1')"
-                @mouseleave="handleMouseLeave('imageRef1')"
-                :style="imageStyles.imageRef1"
-              >
-                <nuxt-img
-                  :src="appConfig.IndexIPCtaImg"
-                  alt="Server"
-                  class="image-itself"
-                  loading="lazy"
-                  quality="90"
-                />
-              </div>
-            </div>
-            <div>
-              <h2 class="text-4xl font-extrabold text-white mb-4 drop-shadow-lg">
-                {{ $t('index.IPcta.title') }}
-              </h2>
-              <p class="text-lg text-white mb-8 drop-shadow">
-                {{ $t('index.IPcta.description') }}
-              </p>
-              <div class="space-y-4">
-                <div class="bg-white/10 backdrop-blur-md rounded-xl p-5 border border-white/30 hover:bg-white/20 hover:scale-[1.03] hover:border-white/50 transition-all duration-300 group relative overflow-hidden">
-                  <div class="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-700"></div>
-                  <div class="flex items-center justify-between relative z-10">
-                    <div class="flex-1">
-                      <p class="text-white font-bold uppercase text-sm mb-2 tracking-wide drop-shadow">
-                        {{ $t('index.IPcta.survivaltitle') }}
-                      </p>
-                      <button 
-                        @click="copyToClipboard(appConfig.SurvivalServerIP)" 
-                        class="font-mono text-lg font-bold text-white flex items-center hover:text-white/80 transition-colors drop-shadow"
-                        :aria-label="`Copy survival server IP: ${appConfig.SurvivalServerIP}`"
-                      >
-                        {{ appConfig.SurvivalServerIP }}
-                        <i :class="copyIcon" class="ml-3 text-base transition-all duration-300" aria-hidden="true"></i>
-                      </button>
-                    </div>
-                    <div class="ml-6">
-                      <div class="w-12 h-12 rounded-full bg-white/20 flex items-center justify-center group-hover:rotate-12 group-hover:scale-110 transition-all duration-300 shadow-lg">
-                        <i class="fa-solid fa-bolt text-white text-xl drop-shadow" aria-hidden="true"></i>
-                      </div>
-                    </div>
-                  </div>
+        <div>
+          <h2 class="text-4xl font-extrabold text-white mb-4 drop-shadow-lg">
+            {{ $t('index.IPcta.title') }}
+          </h2>
+          <p class="text-lg text-white mb-8 drop-shadow">
+            {{ $t('index.IPcta.description') }}
+          </p>
+          
+          <div class="space-y-4">
+            <button 
+              @click="copyToClipboard(appConfig.SurvivalServerIP)"
+              class="w-full bg-white/10 backdrop-blur-md rounded-xl p-5 border border-white/30 hover:bg-white/20 hover:scale-[1.03] hover:border-white/50 transition-all duration-300 group relative overflow-hidden"
+              :aria-label="`Copy survival server IP: ${appConfig.SurvivalServerIP}`"
+            >
+              <div class="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-700"></div>
+              
+              <div class="flex items-center justify-between relative z-10">
+                <div class="flex-1 text-left">
+                  <p class="text-white font-bold uppercase text-sm mb-2 tracking-wide drop-shadow">
+                    {{ $t('index.IPcta.survivaltitle') }}
+                  </p>
+                  <span class="font-mono text-lg font-bold text-white flex items-center drop-shadow">
+                    {{ appConfig.SurvivalServerIP }}
+                    <i :class="copyIcon" class="ml-3 text-base transition-all duration-300" aria-hidden="true"></i>
+                  </span>
                 </div>
-                <div class="bg-white/10 backdrop-blur-md rounded-xl p-5 border border-white/30 hover:bg-white/20 hover:scale-[1.03] hover:border-white/50 transition-all duration-300 group relative overflow-hidden">
-                  <div class="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-700"></div>
-                  <div class="flex items-center justify-between relative z-10">
-                    <div class="flex-1">
-                      <p class="text-white font-bold uppercase text-sm mb-2 tracking-wide drop-shadow">
-                        {{ $t('index.IPcta.buildtitle') }}
-                      </p>
-                      <button 
-                        @click="copyToClipboard(appConfig.BuildServerIP)" 
-                        class="font-mono text-lg font-bold text-white flex items-center hover:text-white/80 transition-colors drop-shadow"
-                        :aria-label="`Copy build server IP: ${appConfig.BuildServerIP}`"
-                      >
-                        {{ appConfig.BuildServerIP }}
-                        <i :class="copyIcon" class="ml-3 text-base transition-all duration-300" aria-hidden="true"></i>
-                      </button>
-                    </div>
-                    <div class="ml-6">
-                      <div class="w-12 h-12 rounded-full bg-white/20 flex items-center justify-center group-hover:rotate-12 group-hover:scale-110 transition-all duration-300 shadow-lg">
-                        <i class="fa-solid fa-hammer text-white text-xl drop-shadow" aria-hidden="true"></i>
-                      </div>
-                    </div>
-                  </div>
+                <div class="w-12 h-12 rounded-full bg-white/20 flex items-center justify-center group-hover:rotate-12 group-hover:scale-110 transition-all duration-300 shadow-lg">
+                  <i class="fa-solid fa-bolt text-white text-xl drop-shadow" aria-hidden="true"></i>
                 </div>
               </div>
-            </div>
-          </div>
-        </CtaCard>
-
-        <CtaCard
-          v-if="appConfig.DCCtaShow"
-          gradientStyle="background: linear-gradient(135deg, #5865F2 0%, #7289DA 100%);"
-        >
-          <div class="flex flex-col justify-between h-full">
-            <div>
-              <h2 class="text-4xl font-extrabold text-white mb-4 drop-shadow-lg">
-                {{ $t('index.cta.title') }}
-              </h2>
-              <p class="text-lg text-white/90 mb-8 drop-shadow">
-                {{ $t('index.cta.description') }}
-              </p>
-              <a :href="appConfig.DCLink" target="_blank" class="inline-flex items-center px-8 py-4 text-lg font-bold rounded-xl transition-all duration-300 hover:scale-105 shadow-xl group relative overflow-hidden" style="background: white; color: #5865F2;">
-                <div class="absolute inset-0 bg-gradient-to-r from-transparent via-blue-100 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-700"></div>
-                <i class="fa-brands fa-discord text-2xl mr-3 relative z-10 group-hover:rotate-12 transition-transform duration-300" aria-hidden="true"></i>
-                <span class="relative z-10">{{ $t('index.cta.button') }}</span>
-                <i class="fa-solid fa-arrow-right ml-3 relative z-10 group-hover:translate-x-1 transition-transform duration-300" aria-hidden="true"></i>
-              </a>
-            </div>
-            <div class="h-64 mt-8">
-              <div ref="imageRef2" class="image-tilt-container h-full" @mousemove="handleMouseMove($event, 'imageRef2')" @mouseleave="handleMouseLeave('imageRef2')" :style="imageStyles.imageRef2">
-                <nuxt-img :src="appConfig.IndexCtaImg" alt="Discord" class="image-itself object-cover" loading="lazy" quality="80" />
+            </button>
+            
+            <button 
+              @click="copyToClipboard(appConfig.BuildServerIP)"
+              class="w-full bg-white/10 backdrop-blur-md rounded-xl p-5 border border-white/30 hover:bg-white/20 hover:scale-[1.03] hover:border-white/50 transition-all duration-300 group relative overflow-hidden"
+              :aria-label="`Copy build server IP: ${appConfig.BuildServerIP}`"
+            >
+              <div class="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-700"></div>
+              
+              <div class="flex items-center justify-between relative z-10">
+                <div class="flex-1 text-left">
+                  <p class="text-white font-bold uppercase text-sm mb-2 tracking-wide drop-shadow">
+                    {{ $t('index.IPcta.buildtitle') }}
+                  </p>
+                  <span class="font-mono text-lg font-bold text-white flex items-center drop-shadow">
+                    {{ appConfig.BuildServerIP }}
+                    <i :class="copyIcon" class="ml-3 text-base transition-all duration-300" aria-hidden="true"></i>
+                  </span>
+                </div>
+                <div class="w-12 h-12 rounded-full bg-white/20 flex items-center justify-center group-hover:rotate-12 group-hover:scale-110 transition-all duration-300 shadow-lg">
+                  <i class="fa-solid fa-hammer text-white text-xl drop-shadow" aria-hidden="true"></i>
+                </div>
               </div>
-            </div>
+            </button>
           </div>
-        </CtaCard>
-        
-        <CtaCard
-          v-if="appConfig.MPCtaShow"
-          gradientStyle="background: linear-gradient(135deg, #1BD96A 0%, #16A34A 100%);"
-        >
-          <div class="flex flex-col justify-between h-full">
-            <div>
-              <h2 class="text-4xl font-extrabold text-white mb-4 drop-shadow-lg">
-                {{ $t('index.MPcta.title') }}
-              </h2>
-              <p class="text-lg text-white/90 mb-6 drop-shadow">
-                Enhanced performance and compatibility for the best experience!
-              </p>
-              <ul class="space-y-3 mb-8">
-                <li class="flex items-center text-white text-base group hover:translate-x-2 transition-transform duration-300"><i class="fa-solid fa-circle-check text-xl mr-3 group-hover:scale-125 transition-transform duration-300 drop-shadow" aria-hidden="true"></i><span class="font-medium drop-shadow">Performance optimizations</span></li>
-                <li class="flex items-center text-white text-base group hover:translate-x-2 transition-transform duration-300"><i class="fa-solid fa-circle-check text-xl mr-3 group-hover:scale-125 transition-transform duration-300 drop-shadow" aria-hidden="true"></i><span class="font-medium drop-shadow">Quality of life improvements</span></li>
-                <li class="flex items-center text-white text-base group hover:translate-x-2 transition-transform duration-300"><i class="fa-solid fa-circle-check text-xl mr-3 group-hover:scale-125 transition-transform duration-300 drop-shadow" aria-hidden="true"></i><span class="font-medium drop-shadow">Easy installation</span></li>
-              </ul>
-              <a :href="appConfig.MPLink" target="_blank" class="inline-flex items-center px-8 py-4 text-lg font-bold rounded-xl transition-all duration-300 hover:scale-105 shadow-xl group relative overflow-hidden" style="background: white; color: #1BD96A;">
-                <div class="absolute inset-0 bg-gradient-to-r from-transparent via-green-100 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-700"></div>
-                <i class="fa-solid fa-download text-2xl mr-3 relative z-10 group-hover:translate-y-1 transition-transform duration-300" aria-hidden="true"></i>
-                <span class="relative z-10">{{ $t('index.MPcta.button') }}</span>
-                <i class="fa-solid fa-arrow-right ml-3 relative z-10 group-hover:translate-x-1 transition-transform duration-300" aria-hidden="true"></i>
-              </a>
-            </div>
-          </div>
-        </CtaCard>
+        </div>
+      </CtaCard>
 
-      </div>
+      <CtaCard
+        v-if="appConfig.DCCtaShow"
+        gradientStyle="background: linear-gradient(135deg, #5865F2 0%, #7289DA 100%);"
+      >
+        <h2 class="text-4xl font-extrabold text-white mb-4 drop-shadow-lg">
+          {{ $t('index.cta.title') }}
+        </h2>
+        <p class="text-lg text-white/90 mb-8 drop-shadow">
+          {{ $t('index.cta.description') }}
+        </p>
+        <a :href="appConfig.DCLink" target="_blank" class="inline-flex items-center px-8 py-4 text-lg font-bold rounded-xl transition-all duration-300 hover:scale-105 shadow-xl group relative overflow-hidden" style="background: white; color: #5865F2;">
+          <div class="absolute inset-0 bg-gradient-to-r from-transparent via-blue-100 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-700"></div>
+          <i class="fa-brands fa-discord text-2xl mr-3 relative z-10 group-hover:rotate-12 transition-transform duration-300" aria-hidden="true"></i>
+          <span class="relative z-10">{{ $t('index.cta.button') }}</span>
+          <i class="fa-solid fa-arrow-right ml-3 relative z-10 group-hover:translate-x-1 transition-transform duration-300" aria-hidden="true"></i>
+        </a>
+        
+        <div class="h-64 mt-8">
+          <div ref="imageRef2" class="image-tilt-container h-full" @mousemove="handleMouseMove($event, 'imageRef2')" @mouseleave="handleMouseLeave('imageRef2')" :style="imageStyles.imageRef2">
+            <nuxt-img :src="appConfig.IndexCtaImg" alt="Discord" class="image-itself object-cover" loading="lazy" quality="80" />
+          </div>
+        </div>
+      </CtaCard>
+      
+      <CtaCard
+        v-if="appConfig.MPCtaShow"
+        gradientStyle="background: linear-gradient(135deg, #1BD96A 0%, #16A34A 100%);"
+      >
+        <h2 class="text-4xl font-extrabold text-white mb-4 drop-shadow-lg">
+          {{ $t('index.MPcta.title') }}
+        </h2>
+        <p class="text-lg text-white/90 mb-6 drop-shadow">
+          Enhanced performance and compatibility for the best experience!
+        </p>
+        <ul class="space-y-3 mb-8">
+          <li class="flex items-center text-white text-base group hover:translate-x-2 transition-transform duration-300">
+            <i class="fa-solid fa-circle-check text-xl mr-3 group-hover:scale-125 transition-transform duration-300 drop-shadow" aria-hidden="true"></i>
+            <span class="font-medium drop-shadow">Performance optimizations</span>
+          </li>
+          <li class="flex items-center text-white text-base group hover:translate-x-2 transition-transform duration-300">
+            <i class="fa-solid fa-circle-check text-xl mr-3 group-hover:scale-125 transition-transform duration-300 drop-shadow" aria-hidden="true"></i>
+            <span class="font-medium drop-shadow">Quality of life improvements</span>
+          </li>
+          <li class="flex items-center text-white text-base group hover:translate-x-2 transition-transform duration-300">
+            <i class="fa-solid fa-circle-check text-xl mr-3 group-hover:scale-125 transition-transform duration-300 drop-shadow" aria-hidden="true"></i>
+            <span class="font-medium drop-shadow">Easy installation</span>
+          </li>
+        </ul>
+        <a :href="appConfig.MPLink" target="_blank" class="inline-flex items-center px-8 py-4 text-lg font-bold rounded-xl transition-all duration-300 hover:scale-105 shadow-xl group relative overflow-hidden" style="background: white; color: #1BD96A;">
+          <div class="absolute inset-0 bg-gradient-to-r from-transparent via-green-100 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-700"></div>
+          <i class="fa-solid fa-download text-2xl mr-3 relative z-10 group-hover:translate-y-1 transition-transform duration-300" aria-hidden="true"></i>
+          <span class="relative z-10">{{ $t('index.MPcta.button') }}</span>
+          <i class="fa-solid fa-arrow-right ml-3 relative z-10 group-hover:translate-x-1 transition-transform duration-300" aria-hidden="true"></i>
+        </a>
+      </CtaCard>
+
     </div>
   </div>
 </template>

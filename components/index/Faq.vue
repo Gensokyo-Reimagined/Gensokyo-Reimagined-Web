@@ -27,33 +27,25 @@
             class="w-full px-6 py-5 text-left flex items-center justify-between hover:bg-[var(--md-sys-color-surface-variant)] transition-colors duration-200"
             :aria-expanded="openIndex === index"
           >
-            <span class="flex items-center flex-1">
-              <span 
-                class="flex-shrink-0 w-10 h-10 mr-4 rounded-full bg-[var(--md-sys-color-tertiary-container)] text-[var(--md-sys-color-on-tertiary-container)] flex items-center justify-center font-bold transition-transform duration-300"
-                :class="{ 'rotate-180': openIndex === index }"
-              >
-                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-                </svg>
-              </span>
-              
-              <span class="font-semibold text-lg text-[var(--md-sys-color-on-background)]">
-                {{ $t(item.question) }}
-              </span>
+            <span 
+              class="flex-shrink-0 w-10 h-10 mr-4 rounded-full bg-[var(--md-sys-color-tertiary-container)] text-[var(--md-sys-color-on-tertiary-container)] flex items-center justify-center font-bold transition-transform duration-300"
+              :class="{ 'rotate-180': openIndex === index }"
+            >
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+              </svg>
             </span>
-
-            </button>
+            
+            <span class="font-semibold text-lg text-[var(--md-sys-color-on-background)] flex-1">
+              {{ $t(item.question) }}
+            </span>
+          </button>
 
           <transition name="expand">
-            <div
-              v-if="openIndex === index"
-              class="px-6 pb-6"
-            >
-              <div class="pt-4 border-t border-[var(--md-sys-color-outline-variant)]">
-                <p class="text-base text-[var(--md-sys-color-outline)] leading-relaxed pl-14">
-                  {{ $t(item.answer) }}
-                </p>
-              </div>
+            <div v-if="openIndex === index" class="px-6 pb-6 pt-4 border-t border-[var(--md-sys-color-outline-variant)]">
+              <p class="text-base text-[var(--md-sys-color-outline)] leading-relaxed pl-14">
+                {{ $t(item.answer) }}
+              </p>
             </div>
           </transition>
         </div>

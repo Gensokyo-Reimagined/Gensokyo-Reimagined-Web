@@ -1,6 +1,6 @@
 <template>
   <div
-    class="rounded-3xl overflow-hidden shadow-2xl hover:shadow-3xl hover:scale-[1.02] transition-all duration-300 relative"
+    class="rounded-3xl overflow-hidden shadow-2xl hover:shadow-3xl hover:scale-[1.02] transition-all duration-300 relative p-12 lg:p-16"
     :style="gradientStyle"
     v-bind="$attrs"
   >
@@ -11,7 +11,7 @@
       <div class="absolute inset-0 bg-gradient-to-br from-transparent via-white/2 to-transparent animate-shimmer-slow"></div>
     </div>
 
-    <div class="p-12 lg:p-16 relative z-10 h-full flex flex-col">
+    <div class="relative z-10 h-full flex flex-col">
       <slot />
     </div>
   </div>

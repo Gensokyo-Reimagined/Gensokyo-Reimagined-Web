@@ -3,8 +3,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Only animate elements that need transitions */
+button, 
+a, 
+.transition-all,
+.hover\:scale-105:hover,
+.hover\:scale-\[1\.02\]:hover,
+.hover\:scale-\[1\.03\]:hover {
+    transition: all 0.25s ease-out;
+    will-change: transform;
+}
+
+/* Color transitions for all elements */
 * {
-    transition: all 0.25s ease-out, color 0.25s ease-out;
+    transition: color 0.25s ease-out;
 }
 
 body {
