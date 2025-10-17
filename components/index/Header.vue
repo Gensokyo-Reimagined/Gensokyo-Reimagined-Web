@@ -177,12 +177,6 @@ export default {
   animation: shimmer 2s infinite;
 }
 
-/* Title shimmer effect */
-@keyframes titleShimmer {
-  0%, 100% { opacity: 1; }
-  50% { opacity: 0.8; }
-}
-
 .title-shimmer {
   animation: titleShimmer 3s ease-in-out infinite;
 }
