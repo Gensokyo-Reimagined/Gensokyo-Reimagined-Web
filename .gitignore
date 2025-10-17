@@ -128,3 +128,4 @@ dist
 
 .history/
 .output/
+.vscode/settings.json

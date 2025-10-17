@@ -17,7 +17,6 @@
           v-for="(feature, index) in features"
           :key="feature.name"
           class="group relative feature-card flex flex-col"
-          :style="{ animationDelay: `${index * 0.1}s` }"
         >
           <div 
             class="absolute inset-0 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 spell-border"
@@ -117,21 +116,6 @@ export default {
 </script>
 
 <style scoped>
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(30px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-.feature-card {
-  animation: fadeInUp 0.6s ease-out both;
-}
-
 .spell-border {
   background: linear-gradient(135deg, var(--md-sys-color-primary) 0%, var(--md-sys-color-secondary-container) 100%);
   padding: 2px;

@@ -126,10 +126,9 @@ export default {
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
 }
 
-/* Expand transition */
 .expand-enter-active,
 .expand-leave-active {
-  transition: all 0.3s ease;
+  transition: max-height 0.3s ease;
   max-height: 500px;
   overflow: hidden;
 }
@@ -137,12 +136,10 @@ export default {
 .expand-enter-from,
 .expand-leave-to {
   max-height: 0;
-  opacity: 0;
 }
 
 .expand-enter-to,
 .expand-leave-from {
   max-height: 500px;
-  opacity: 1;
 }
 </style>

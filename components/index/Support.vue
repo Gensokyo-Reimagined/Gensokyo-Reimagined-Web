@@ -74,32 +74,13 @@
 </template>
 
 <script>
-// No script logic is needed.
 export default {}
 </script>
 
 <style scoped>
-@keyframes card-fade-in {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
 .support-card {
-  animation: card-fade-in 0.5s ease-out forwards;
-  opacity: 0; /* Start hidden */
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-
-/* Stagger the animation */
-.support-card:nth-child(1) { animation-delay: 0.1s; }
-.support-card:nth-child(2) { animation-delay: 0.2s; }
-.support-card:nth-child(3) { animation-delay: 0.3s; }
 
 .support-card:hover {
   transform: translateY(-8px);
