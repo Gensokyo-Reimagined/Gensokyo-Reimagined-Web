@@ -22,28 +22,4 @@ useHead({
   ],
 })
 
-// Load non-critical CSS asynchronously on client side only
-if (process.client) {
-  onMounted(() => {
-    const loadCSS = (href, id) => {
-      if (document.getElementById(id)) return
-      
-      const link = document.createElement('link')
-      link.id = id
-      link.rel = 'stylesheet'
-      link.href = href
-      link.media = 'print'
-      link.onload = function() {
-        this.media = 'all'
-      }
-      document.head.appendChild(link)
-    }
-    
-    // Defer loading slightly to prioritize critical render
-    requestAnimationFrame(() => {
-      loadCSS('/css/all.min.css', 'font-awesome')
-      loadCSS('/css/twemoji-flags.min.css', 'twemoji-flags')
-    })
-  })
-}
 </script>
