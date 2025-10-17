@@ -115,22 +115,27 @@ export default {
   },
   methods: {
     async fetchPlayerCount() {
-      try {
-        const response = await fetch('https://mcapi.us/server/status?ip=build.gensokyoreimagined.net&port=25565');
-        if (!response.ok) {
-          throw new Error('Network response was not ok');
-        }
-        const data = await response.json();
-        if (data.online) {
-          this.playerCount = data.players.now;
-        } else {
-          this.playerCount = 0; 
-        }
-      } catch (error) {
-        console.error("Failed to fetch player count:", error);
-        this.playerCount = 'N/A';
-      }
+    const cached = localStorage.getItem('playerCount')
+    const cacheTime = localStorage.getItem('playerCountTime')
+    
+    if (cached && cacheTime && Date.now() - parseInt(cacheTime) < 60000) {
+        this.playerCount = cached
+        return
     }
+
+    try {
+        const response = await fetch('https://mcapi.us/server/status?ip=build.gensokyoreimagined.net&port=25565')
+        const data = await response.json()
+        const count = data.online ? data.players.now : 0
+        
+        this.playerCount = count
+        localStorage.setItem('playerCount', count)
+        localStorage.setItem('playerCountTime', Date.now().toString())
+    } catch (error) {
+        console.error("Failed to fetch player count:", error)
+        this.playerCount = 'N/A'
+    }
+  }
   },
   mounted() {
   if (document.readyState === 'complete') {

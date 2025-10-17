@@ -58,7 +58,7 @@ export default defineNuxtConfig({
         presets: {
             logo: {
                 modifiers: {
-                    quality: '70',
+                    quality: '60',
                 }
             },
             carousel: {
