@@ -133,8 +133,14 @@ export default {
     }
   },
   mounted() {
+  if (document.readyState === 'complete') {
     this.fetchPlayerCount();
+  } else {
+    window.addEventListener('load', () => {
+      this.fetchPlayerCount();
+    });
   }
+}
 }
 </script>
 
