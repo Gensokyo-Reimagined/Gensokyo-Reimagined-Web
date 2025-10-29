@@ -53,7 +53,7 @@ export default defineNuxtConfig({
     },
 
     image: {
-        provider: 'netlify', //for local development ipx is required DONT FORGET TO SWITCH BACK TO NETLIFY ONCE UR DONE
+        provider: process.env.NODE_ENV === 'development' ? 'ipx' : 'netlify',
         formats: ['avif', 'webp'],
         presets: {
             logo: {
