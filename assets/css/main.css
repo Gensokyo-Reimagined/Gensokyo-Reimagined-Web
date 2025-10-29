@@ -4,9 +4,13 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+    scroll-behavior: smooth;
+}
+
 /* Only animate elements that need transitions */
-button, 
-a, 
+button,
+a,
 .transition-all,
 .hover\:scale-105:hover,
 .hover\:scale-\[1\.02\]:hover,

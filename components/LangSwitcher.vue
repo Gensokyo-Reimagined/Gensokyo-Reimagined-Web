@@ -1,10 +1,10 @@
 <template>
   <div class="relative">
     <button
+        :aria-expanded="isDropdownOpen"
+        :aria-label="$t('Navbar.changeLanguage') || 'Change language'"
         class="text-xl leading-5 font-semibold bg-[var(--md-sys-color-secondary-container)] rounded-full py-1 px-3 flex items-center space-x-2 hover:bg-[var(--md-sys-color-tertiary-container)] dark:highlight-white/5"
         @click="toggleDropdown()"
-        :aria-label="$t('Navbar.changeLanguage') || 'Change language'"
-        :aria-expanded="isDropdownOpen"
     >
       <i :class="getFlag(selectedLang)" class="twa"></i>
       <svg
