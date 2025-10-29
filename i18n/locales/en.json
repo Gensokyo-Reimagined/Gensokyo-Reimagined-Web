@@ -7,7 +7,8 @@
       "title": "",
       "intro": "Creating a Touhou MMO Server in Minecraft",
       "group": "Join our Community!",
-      "continue": "Learn more"
+      "continue": "Learn more",
+      "playerCount": "Join {count} players online!"
     },
     "about": {
       "title": "About Us",

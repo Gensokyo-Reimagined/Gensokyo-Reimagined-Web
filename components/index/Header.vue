@@ -51,7 +51,11 @@
 
       <div v-if="playerCount !== null" class="mt-4 text-base text-[var(--md-sys-color-outline)] sm:text-lg text-shadow">
         <i class="fa-solid fa-users mr-2 text-[var(--md-sys-color-primary)]"></i>
-        Join <strong class="text-[var(--md-sys-color-on-background)]">{{ playerCount }}</strong> players online!
+        <i18n-t keypath="index.header.playerCount" tag="span">
+          <template #count>
+            <strong class="text-[var(--md-sys-color-on-background)]">{{ playerCount }}</strong>
+          </template>
+        </i18n-t>
       </div>
       
       <div class="mt-6 sm:mt-8 mb-16 lg:mb-0 flex flex-col sm:flex-row gap-4 justify-center items-center">
