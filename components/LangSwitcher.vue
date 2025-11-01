@@ -9,7 +9,7 @@
         class="text-xl leading-5 font-semibold bg-[var(--md-sys-color-secondary-container)] rounded-full py-1 px-3 flex items-center space-x-2 hover:bg-[var(--md-sys-color-tertiary-container)] dark:highlight-white/5 transition-colors duration-200"
         @click="toggleDropdown"
     >
-      <i :class="getFlag(selectedLang)" class="twa"></i>
+      <i :class="currentFlag" class="twa"></i>
       <svg
           :class="{ 'rotate-180': isDropdownOpen }"
           aria-hidden="true"
@@ -72,7 +72,7 @@
 </template>
 
 <script setup>
-const {setLocale, locale} = useI18n()
+const { setLocale, locale } = useI18n()
 
 const isDropdownOpen = ref(false)
 const closeTimeout = ref(null)
@@ -167,6 +167,13 @@ const languages = ref([
 
 const selectedLang = computed(() => locale.value)
 
+const currentFlag = computed(() => {
+  const selectedLanguage = languages.value.find(
+      (language) => language.lang === selectedLang.value
+  )
+  return selectedLanguage ? selectedLanguage.flag : 'twa-flag-united-states'
+})
+
 const toggleDropdown = () => {
   isDropdownOpen.value = !isDropdownOpen.value
   if (!isDropdownOpen.value) {
@@ -178,13 +185,6 @@ const setLanguage = (lang) => {
   setLocale(lang)
   isDropdownOpen.value = false
   clearTimeout(closeTimeout.value)
-}
-
-const getFlag = (lang) => {
-  const selectedLanguage = languages.value.find(
-      (language) => language.lang === lang
-  )
-  return selectedLanguage ? selectedLanguage.flag : 'twa-flag-united-states'
 }
 
 const handleMouseLeave = () => {
@@ -217,8 +217,13 @@ const handleClickOutside = (event) => {
   }
 }
 
+watch(selectedLang, (newLang) => {
+  console.log('Language changed to:', newLang)
+})
+
 onMounted(() => {
   document.addEventListener('click', handleClickOutside)
+  console.log('Initial language:', selectedLang.value)
 })
 
 onUnmounted(() => {
