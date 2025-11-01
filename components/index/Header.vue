@@ -96,8 +96,8 @@
 </template>
 
 <script setup>
-import { Swiper, SwiperSlide } from 'swiper/vue'
-import { Autoplay } from 'swiper/modules'
+import {Swiper, SwiperSlide} from 'swiper/vue'
+import {Autoplay} from 'swiper/modules'
 import 'swiper/css'
 
 const appConfig = useAppConfig()

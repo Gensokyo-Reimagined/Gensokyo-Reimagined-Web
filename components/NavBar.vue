@@ -193,7 +193,7 @@ const isMenuOpen = ref(false)
 const isMounted = ref(false)
 
 const selectedLang = computed(() => {
-  const { locale } = useI18n()
+  const {locale} = useI18n()
   return locale.value
 })
 

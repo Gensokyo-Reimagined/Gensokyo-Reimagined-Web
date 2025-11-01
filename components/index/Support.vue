@@ -25,7 +25,8 @@
                 </svg>
               </div>
               <h3 class="mt-6 text-xl font-bold text-center text-[var(--md-sys-color-on-surface)]">Buy Me a Coffee</h3>
-              <p class="mt-4 text-base text-center text-[var(--md-sys-color-outline)]">{{ $t('index.support.BMC.description') }}</p>
+              <p class="mt-4 text-base text-center text-[var(--md-sys-color-outline)]">
+                {{ $t('index.support.BMC.description') }}</p>
             </div>
             <div class="mt-8">
               <a class="support-button bg-[#FFDD00] hover:bg-yellow-500 text-black"
@@ -46,7 +47,8 @@
                 <nuxt-img alt="Ko-fi Logo" class="w-9 h-9" src="/img/kofi_logo.svg"/>
               </div>
               <h3 class="mt-6 text-xl font-bold text-center text-[var(--md-sys-color-on-surface)]">Ko-fi</h3>
-              <p class="mt-4 text-base text-center text-[var(--md-sys-color-outline)]">{{ $t('index.support.Kofi.description') }}</p>
+              <p class="mt-4 text-base text-center text-[var(--md-sys-color-outline)]">
+                {{ $t('index.support.Kofi.description') }}</p>
             </div>
             <div class="mt-8">
               <a class="support-button bg-[#13C3FF] hover:bg-[#00A2D9] text-white"
@@ -67,7 +69,8 @@
                 <nuxt-img alt="Afdian Logo" class="w-9 h-9" src="/img/afdian_logo.svg"/>
               </div>
               <h3 class="mt-6 text-xl font-bold text-center text-[var(--md-sys-color-on-surface)]">Afdian (爱发电)</h3>
-              <p class="mt-4 text-base text-center text-[var(--md-sys-color-outline)]">{{ $t('index.support.afdian.description') }}</p>
+              <p class="mt-4 text-base text-center text-[var(--md-sys-color-outline)]">
+                {{ $t('index.support.afdian.description') }}</p>
             </div>
             <div class="mt-8">
               <a class="support-button bg-[#946EFF] hover:bg-[#7D52F1] text-white"
