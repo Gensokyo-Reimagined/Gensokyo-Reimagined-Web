@@ -62,11 +62,12 @@
         <div class="hidden sm:flex sm:items-center sm:ml-6 sm:space-x-4">
           <LangSwitcher/>
           <button
-              :aria-label="$colorMode.preference === 'dark' ? 'Switch to light mode' : 'Switch to dark mode'"
+              v-if="isMounted"
+              :aria-label="`Switch to ${nextColorMode} mode`"
               class="inline-flex items-center justify-center p-2 rounded-md text-[var(--md-sys-color-primary)] hover:text-[var(--md-sys-color-secondary)] hover:bg-[var(--md-sys-color-secondary-container)] focus:outline-none focus:[var(--md-sys-color-secondary-container)] focus:[var(--md-sys-color-secondary)]"
               @click="toggleColorMode"
           >
-            <i :class="ColorButtonClass"></i>
+            <i :class="colorButtonClass"></i>
           </button>
           <a
               :href="appConfig.NavBarLinkGithub"
@@ -163,11 +164,12 @@
         <div class="space-x-2 flex items-center px-5 justify-between">
           <LangSwitcher/>
           <button
-              :aria-label="$colorMode.preference === 'dark' ? 'Switch to light mode' : 'Switch to dark mode'"
+              v-if="isMounted"
+              :aria-label="`Switch to ${nextColorMode} mode`"
               class="inline-flex items-center justify-center p-2 rounded-md text-[var(--md-sys-color-primary)] hover:text-[var(--md-sys-color-secondary)] hover:bg-[var(--md-sys-color-secondary-container)] focus:outline-none focus:[var(--md-sys-color-secondary-container)] focus:[var(--md-sys-color-secondary)]"
               @click="toggleColorMode"
           >
-            <i :class="ColorButtonClass"></i>
+            <i :class="colorButtonClass"></i>
           </button>
           <a
               :href="appConfig.NavBarLinkGithub"
@@ -188,28 +190,45 @@ const appConfig = useAppConfig()
 const colorMode = useColorMode()
 
 const isMenuOpen = ref(false)
-const ColorButtonClass = ref('')
+const isMounted = ref(false)
 
 const selectedLang = computed(() => {
   const { locale } = useI18n()
   return locale.value
 })
 
-const toggleColorMode = () => {
-  if (colorMode.preference === 'dark') {
-    colorMode.preference = 'light'
-    ColorButtonClass.value = 'fa-solid fa-sun'
-  } else {
-    colorMode.preference = 'dark'
-    ColorButtonClass.value = 'fa-solid fa-moon'
+const nextColorMode = computed(() => {
+  const modes = ['system', 'light', 'dark']
+  const currentIndex = modes.indexOf(colorMode.preference)
+  const nextIndex = (currentIndex + 1) % modes.length
+  return modes[nextIndex]
+})
+
+const colorButtonClass = computed(() => {
+  console.log(colorMode.preference)
+  switch (colorMode.preference) {
+    case 'system':
+      return 'fa-solid fa-circle-half-stroke'
+    case 'light':
+      return 'fa-solid fa-sun'
+    case 'dark':
+      return 'fa-solid fa-moon'
+    default:
+      return 'fa-solid fa-circle-half-stroke'
   }
+})
+
+const toggleColorMode = () => {
+  const modes = ['system', 'light', 'dark']
+  const currentIndex = modes.indexOf(colorMode.preference)
+  const nextIndex = (currentIndex + 1) % modes.length
+  colorMode.preference = modes[nextIndex]
 }
 
 onMounted(() => {
-  if (colorMode.preference === 'dark') {
-    ColorButtonClass.value = 'fa-solid fa-moon'
-  } else {
-    ColorButtonClass.value = 'fa-solid fa-sun'
+  isMounted.value = true
+  if (!colorMode.preference || colorMode.preference === 'system') {
+    colorMode.preference = 'system'
   }
 })
 </script>
