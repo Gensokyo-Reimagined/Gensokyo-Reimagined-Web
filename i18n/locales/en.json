@@ -90,7 +90,19 @@
     "support": {
       "title": "Support the project!",
       "description": "This is a Non-Profit project so every donation helps us out!",
-      "button": "BuyMeACoffee"
+      "description2": "Your contributions directly fund server maintenance and development, ensuring the best possible experience for everyone.",
+      "BMC": {
+        "description": "A simple and direct way to support our project with a virtual coffee.",
+        "button": "Support on BMC"
+      },
+      "Kofi":{
+        "description": "Support us with a one-time donation or become a monthly member.",
+        "button": "Support on Ko-fi"
+      },
+      "afdian": {
+        "description": "A popular creator platform for one-time or monthly sponsorships.",
+        "button": "Support on Afdian"
+      }
     }
   },
   "Navbar": {

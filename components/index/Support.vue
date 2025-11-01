@@ -7,8 +7,8 @@
           <span class="block text-[var(--md-sys-color-primary)] mt-2">{{ $t('index.support.description') }}</span>
         </h2>
         <p class="mt-4 max-w-2xl mx-auto text-lg text-[var(--md-sys-color-outline)]">
-          Your contributions directly fund server maintenance and development, ensuring the best possible experience for
-          everyone.
+          {{ $t('index.support.description2') }}
+
         </p>
       </div>
 
@@ -25,14 +25,13 @@
                 </svg>
               </div>
               <h3 class="mt-6 text-xl font-bold text-center text-[var(--md-sys-color-on-surface)]">Buy Me a Coffee</h3>
-              <p class="mt-4 text-base text-center text-[var(--md-sys-color-outline)]">A simple and direct way to
-                support our project with a virtual coffee.</p>
+              <p class="mt-4 text-base text-center text-[var(--md-sys-color-outline)]">{{ $t('index.support.BMC.description') }}</p>
             </div>
             <div class="mt-8">
               <a class="support-button bg-[#FFDD00] hover:bg-yellow-500 text-black"
                  href="https://www.buymeacoffee.com/greimagined"
                  target="_blank">
-                Support on BMC
+                {{ $t('index.support.BMC.button') }}
                 <i class="fa-solid fa-arrow-up-right-from-square ml-2"></i>
               </a>
             </div>
@@ -47,14 +46,13 @@
                 <nuxt-img alt="Ko-fi Logo" class="w-9 h-9" src="/img/kofi_logo.svg"/>
               </div>
               <h3 class="mt-6 text-xl font-bold text-center text-[var(--md-sys-color-on-surface)]">Ko-fi</h3>
-              <p class="mt-4 text-base text-center text-[var(--md-sys-color-outline)]">Support us with a one-time
-                donation or become a monthly member.</p>
+              <p class="mt-4 text-base text-center text-[var(--md-sys-color-outline)]">{{ $t('index.support.Kofi.description') }}</p>
             </div>
             <div class="mt-8">
               <a class="support-button bg-[#13C3FF] hover:bg-[#00A2D9] text-white"
                  href="https://ko-fi.com/gensokyoreimagined"
                  target="_blank">
-                Support on Ko-fi
+                {{ $t('index.support.Kofi.button') }}
                 <i class="fa-solid fa-arrow-up-right-from-square ml-2"></i>
               </a>
             </div>
@@ -69,14 +67,13 @@
                 <nuxt-img alt="Afdian Logo" class="w-9 h-9" src="/img/afdian_logo.svg"/>
               </div>
               <h3 class="mt-6 text-xl font-bold text-center text-[var(--md-sys-color-on-surface)]">Afdian (爱发电)</h3>
-              <p class="mt-4 text-base text-center text-[var(--md-sys-color-outline)]">A popular creator platform for
-                one-time or monthly sponsorships.</p>
+              <p class="mt-4 text-base text-center text-[var(--md-sys-color-outline)]">{{ $t('index.support.afdian.description') }}</p>
             </div>
             <div class="mt-8">
               <a class="support-button bg-[#946EFF] hover:bg-[#7D52F1] text-white"
                  href="https://ifdian.net/a/gensokyoreimagined"
                  target="_blank">
-                Support on Afdian
+                {{ $t('index.support.afdian.button') }}
                 <i class="fa-solid fa-arrow-up-right-from-square ml-2"></i>
               </a>
             </div>
