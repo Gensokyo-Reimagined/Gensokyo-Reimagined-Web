@@ -7,7 +7,7 @@
         >
           {{ $t('index.feature.subtitle') }}
         </p>
-        <div class="flex justify-center mt-4">
+        <div class="flex justify-start lg:justify-center mt-4">
           <div class="h-1 w-20 rounded-full bg-[var(--md-sys-color-primary)]"></div>
         </div>
       </div>
