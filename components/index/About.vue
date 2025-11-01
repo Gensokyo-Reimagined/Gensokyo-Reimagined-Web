@@ -27,17 +27,17 @@
             <div
                 class="text-center p-4 rounded-xl bg-[var(--md-sys-color-surface)] border border-[var(--md-sys-color-outline-variant)] stat-card">
               <div class="text-3xl font-bold text-[var(--md-sys-color-primary)]">0</div>
-              <div class="text-sm text-[var(--md-sys-color-outline)] mt-1">Mods Required</div>
+              <div class="text-sm text-[var(--md-sys-color-outline)] mt-1">{{ $t('index.about.mods') }}</div>
             </div>
             <div
                 class="text-center p-4 rounded-xl bg-[var(--md-sys-color-surface)] border border-[var(--md-sys-color-outline-variant)] stat-card">
               <div class="text-3xl font-bold text-[var(--md-sys-color-primary)]">100%</div>
-              <div class="text-sm text-[var(--md-sys-color-outline)] mt-1">Accessibility</div>
+              <div class="text-sm text-[var(--md-sys-color-outline)] mt-1">{{ $t('index.about.accessibility') }}</div>
             </div>
             <div
                 class="text-center p-4 rounded-xl bg-[var(--md-sys-color-surface)] border border-[var(--md-sys-color-outline-variant)] stat-card">
               <div class="text-3xl font-bold text-[var(--md-sys-color-primary)]">∞</div>
-              <div class="text-sm text-[var(--md-sys-color-outline)] mt-1">Possibilities</div>
+              <div class="text-sm text-[var(--md-sys-color-outline)] mt-1">{{ $t('index.about.possibilities') }}</div>
             </div>
           </div>
         </div>

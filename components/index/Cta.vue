@@ -129,23 +129,24 @@
           {{ $t('index.MPcta.title') }}
         </h2>
         <p class="text-lg text-white/90 mb-6 drop-shadow">
-          Enhanced performance and compatibility for the best experience!
+          {{ $t('index.MPcta.description') }}
+
         </p>
         <ul class="space-y-3 mb-8">
           <li class="flex items-center text-white text-base group hover:translate-x-2 transition-transform duration-300">
             <i aria-hidden="true"
                class="fa-solid fa-circle-check text-xl mr-3 group-hover:scale-125 transition-transform duration-300 drop-shadow"></i>
-            <span class="font-medium drop-shadow">Performance optimizations</span>
+            <span class="font-medium drop-shadow">{{ $t('index.MPcta.list[0]') }}</span>
           </li>
           <li class="flex items-center text-white text-base group hover:translate-x-2 transition-transform duration-300">
             <i aria-hidden="true"
                class="fa-solid fa-circle-check text-xl mr-3 group-hover:scale-125 transition-transform duration-300 drop-shadow"></i>
-            <span class="font-medium drop-shadow">Quality of life improvements</span>
+            <span class="font-medium drop-shadow">{{ $t('index.MPcta.list[1]') }}</span>
           </li>
           <li class="flex items-center text-white text-base group hover:translate-x-2 transition-transform duration-300">
             <i aria-hidden="true"
                class="fa-solid fa-circle-check text-xl mr-3 group-hover:scale-125 transition-transform duration-300 drop-shadow"></i>
-            <span class="font-medium drop-shadow">Easy installation</span>
+            <span class="font-medium drop-shadow">{{ $t('index.MPcta.list[2]') }}</span>
           </li>
         </ul>
         <a :href="appConfig.MPLink"

@@ -13,7 +13,11 @@
     "about": {
       "title": "About Us",
       "subtitle": "Small explanation about the project!",
-      "description": "The Project started quite small initially with few people but as time went on project started to get some attraction and goals went bigger. Now we are creating playable version of Entirety of Touhou Universe with combining MMO and Survival Minecraft elements with requiring 0 mods to play on for maximum accessibility for everyone."
+      "description": "The Project started quite small initially with few people but as time went on project started to get some attraction and goals went bigger. Now we are creating playable version of Entirety of Touhou Universe with combining MMO and Survival Minecraft elements with requiring 0 mods to play on for maximum accessibility for everyone.",
+      "mods": "Mods Required",
+      "accessibility":"Accessibility",
+      "possibilities": "Possibilities"
+
     },
     "feature": {
       "title": "",
@@ -53,11 +57,18 @@
     "MPcta": {
       "title": "Try our Optimized Modpack for the Server!",
       "subtitle": "",
-      "description": "",
-      "button": "Modrinth"
+      "description": "Enhanced performance and compatibility for the best experience!",
+      "button": "Modrinth",
+      "list": [
+        "Performance optimizations",
+        "Quality of life improvements",
+        "Easy installation"
+      ]
     },
     "faq": {
+      "tag": "Support",
       "title": "Frequently Asked Questions",
+      "description": "Find answers to common questions about our server",
       "items": [
         {
           "question": "Is there a map download?",
@@ -79,7 +90,12 @@
           "question": "I'm experiencing some connection issues?",
           "answer": "Yes, that might be case for wifi and server being generally far. If it's something that everyone experiences please report it to staff."
         }
-      ]
+      ],
+      "join": {
+        "title": "Still have questions?",
+        "description":"Join our Discord community for more help and support",
+        "button": "Join Discord"
+      }
     },
     "rules": {
       "title": "",
