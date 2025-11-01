@@ -56,7 +56,7 @@
         <i class="fa-solid fa-users mr-2 text-[var(--md-sys-color-primary)]"></i>
         <i18n-t keypath="index.header.playerCount" tag="span">
           <template #count>
-            <strong class="text-[var(--md-sys-color-on-background)]">{{ playerCount }}</strong>
+            <strong class="text-[var(--md-sys-color-on-background-dark)]">{{ playerCount }}</strong>
           </template>
         </i18n-t>
       </div>
@@ -95,69 +95,62 @@
   </div>
 </template>
 
-<script>
-// Import Swiper Vue.js components
-import {Swiper, SwiperSlide} from 'swiper/vue'
-
-// Import Swiper styles
+<script setup>
+import { Swiper, SwiperSlide } from 'swiper/vue'
+import { Autoplay } from 'swiper/modules'
 import 'swiper/css'
 
-import {Autoplay} from 'swiper/modules'
+const appConfig = useAppConfig()
 
-export default {
-  components: {
-    Swiper,
-    SwiperSlide,
-  },
-  setup() {
-    const appConfig = useAppConfig()
-    const state = reactive({
-      appConfig: appConfig,
-    })
-    return {state, modules: [Autoplay]}
-  },
-  data() {
-    return {
-      logoImg: this.state.appConfig.HeaderLogoImg,
-      imageUrls: this.state.appConfig.IndexHeaderImg,
-      changeTime: parseInt(this.state.appConfig.IndexHeaderImgChangeTime) || 5000,
-      playerCount: null,
-    }
-  },
-  methods: {
-    async fetchPlayerCount() {
-      const cached = localStorage.getItem('playerCount')
-      const cacheTime = localStorage.getItem('playerCountTime')
+const logoImg = ref(appConfig.HeaderLogoImg)
+const imageUrls = ref(appConfig.IndexHeaderImg)
+const changeTime = ref(parseInt(appConfig.IndexHeaderImgChangeTime) || 5000)
+const playerCount = ref(null)
 
-      if (cached && cacheTime && Date.now() - parseInt(cacheTime) < 60000) {
-        this.playerCount = cached
-        return
-      }
+const modules = [Autoplay]
 
-      try {
-        const response = await fetch('https://mcapi.us/server/status?ip=build.gensokyoreimagined.net&port=25565')
-        const data = await response.json()
-        const count = data.online ? data.players.now : 0
+const fetchPlayerCount = async () => {
+  const cached = localStorage.getItem('playerCount')
+  const cacheTime = localStorage.getItem('playerCountTime')
 
-        this.playerCount = count
-        localStorage.setItem('playerCount', count)
-        localStorage.setItem('playerCountTime', Date.now().toString())
-      } catch (error) {
-        console.error("Failed to fetch player count:", error)
-        this.playerCount = 'N/A'
-      }
-    }
-  },
-  mounted() {
-    if (document.readyState === 'complete') {
-      this.fetchPlayerCount();
-    } else {
-      window.addEventListener('load', () => {
-        this.fetchPlayerCount();
-      });
-    }
+  if (cached && cacheTime && Date.now() - parseInt(cacheTime) < 60000) {
+    playerCount.value = cached
+    return
+  }
+
+  try {
+    const response = await fetch('https://mcapi.us/server/status?ip=build.gensokyoreimagined.net&port=25565')
+    const data = await response.json()
+    const count = data.online ? data.players.now : 0
+
+    playerCount.value = count
+    localStorage.setItem('playerCount', count)
+    localStorage.setItem('playerCountTime', Date.now().toString())
+  } catch (error) {
+    console.error("Failed to fetch player count:", error)
+    playerCount.value = 'N/A'
   }
 }
+
+const scrollToFeatures = () => {
+  const featuresElement = document.getElementById('features')
+  if (featuresElement) {
+    featuresElement.scrollIntoView({
+      behavior: 'smooth',
+      block: 'start'
+    })
+  }
+}
+
+onMounted(() => {
+  if (document.readyState === 'complete') {
+    fetchPlayerCount()
+  } else {
+    window.addEventListener('load', () => {
+      fetchPlayerCount()
+    })
+  }
+})
 </script>
 
 <style scoped>

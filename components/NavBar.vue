@@ -183,42 +183,33 @@
   </nav>
 </template>
 
-<script>
-export default {
-  setup() {
-    const appConfig = useAppConfig()
-    return {
-      appConfig,
-    }
-  },
-  computed: {
-    selectedLang() {
-      return this.$i18n.locale
-    },
-  },
-  data() {
-    return {
-      isMenuOpen: false,
-      ColorButtonClass: '',
-    }
-  },
-  methods: {
-    toggleColorMode() {
-      if (this.$colorMode.preference === 'dark') {
-        this.$colorMode.preference = 'light'
-        this.ColorButtonClass = 'fa-solid fa-sun'
-      } else {
-        this.$colorMode.preference = 'dark'
-        this.ColorButtonClass = 'fa-solid fa-moon'
-      }
-    },
-  },
-  mounted() {
-    if (this.$colorMode.preference === 'dark') {
-      this.ColorButtonClass = 'fa-solid fa-moon'
-    } else {
-      this.ColorButtonClass = 'fa-solid fa-sun'
-    }
+<script setup>
+const appConfig = useAppConfig()
+const colorMode = useColorMode()
+
+const isMenuOpen = ref(false)
+const ColorButtonClass = ref('')
+
+const selectedLang = computed(() => {
+  const { locale } = useI18n()
+  return locale.value
+})
+
+const toggleColorMode = () => {
+  if (colorMode.preference === 'dark') {
+    colorMode.preference = 'light'
+    ColorButtonClass.value = 'fa-solid fa-sun'
+  } else {
+    colorMode.preference = 'dark'
+    ColorButtonClass.value = 'fa-solid fa-moon'
   }
 }
+
+onMounted(() => {
+  if (colorMode.preference === 'dark') {
+    ColorButtonClass.value = 'fa-solid fa-moon'
+  } else {
+    ColorButtonClass.value = 'fa-solid fa-sun'
+  }
+})
 </script>

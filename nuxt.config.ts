@@ -205,7 +205,6 @@ export default defineNuxtConfig({
         ],
         langDir: 'locales',
         defaultLocale: 'en',
-        lazy: false,
 
     },
 

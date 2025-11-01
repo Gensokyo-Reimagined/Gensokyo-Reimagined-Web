@@ -73,46 +73,35 @@
   </div>
 </template>
 
-<script>
-export default {
-  setup() {
-    const appConfig = useAppConfig()
-    const state = reactive({
-      appConfig: appConfig,
-    })
-    return {state}
+<script setup>
+const appConfig = useAppConfig()
+
+const features = [
+  {
+    name: 'index.feature.items[0].name',
+    description: 'index.feature.items[0].description',
+    icon: appConfig.IndexFeatureIcon[0],
+    img: appConfig.IndexFeatureImg[0],
   },
-  data() {
-    return {
-      features: [
-        {
-          name: 'index.feature.items[0].name',
-          description: 'index.feature.items[0].description',
-          icon: this.state.appConfig.IndexFeatureIcon[0],
-          img: this.state.appConfig.IndexFeatureImg[0],
-        },
-        {
-          name: 'index.feature.items[1].name',
-          description: 'index.feature.items[1].description',
-          icon: this.state.appConfig.IndexFeatureIcon[1],
-          img: this.state.appConfig.IndexFeatureImg[1],
-        },
-        {
-          name: 'index.feature.items[2].name',
-          description: 'index.feature.items[2].description',
-          icon: this.state.appConfig.IndexFeatureIcon[2],
-          img: this.state.appConfig.IndexFeatureImg[2],
-        },
-        {
-          name: 'index.feature.items[3].name',
-          description: 'index.feature.items[3].description',
-          icon: this.state.appConfig.IndexFeatureIcon[3],
-          img: this.state.appConfig.IndexFeatureImg[3],
-        },
-      ],
-    }
+  {
+    name: 'index.feature.items[1].name',
+    description: 'index.feature.items[1].description',
+    icon: appConfig.IndexFeatureIcon[1],
+    img: appConfig.IndexFeatureImg[1],
   },
-}
+  {
+    name: 'index.feature.items[2].name',
+    description: 'index.feature.items[2].description',
+    icon: appConfig.IndexFeatureIcon[2],
+    img: appConfig.IndexFeatureImg[2],
+  },
+  {
+    name: 'index.feature.items[3].name',
+    description: 'index.feature.items[3].description',
+    icon: appConfig.IndexFeatureIcon[3],
+    img: appConfig.IndexFeatureImg[3],
+  },
+]
 </script>
 
 <style scoped>
