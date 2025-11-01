@@ -6,15 +6,15 @@
             "group": "加入我们的社区！",
             "continue": "了解更多",
             "title": " ",
-            "playerCount": "Join {count} players online!"
+            "playerCount": "{count} 位玩家在线！"
         },
         "about": {
             "title": "关于我们",
             "subtitle": "关于此项目的简要概述！",
             "description": "这最初是一个规模很小，参与人数也很少的项目，但随着时间的推移，项目吸引了越来越多的人，也因而有了更大的目标。现在，我们计划创造一个东方世界观下的将Minecraft与MMO（大型多人在线游戏）要素相结合的服务器，为了尽可能地方便每个人游玩，加入服务器无需安装任何模组。",
-            "mods": "Mods Required",
-            "accessibility": "Accessibility",
-            "possibilities": "Possibilities"
+            "mods": "需要Mod",
+            "accessibility": "可访问性",
+            "possibilities": "发展潜力"
         },
         "feature": {
             "subtitle": "服务器特色",
@@ -68,12 +68,12 @@
                     "answer": "这也许是因为你正在使用无线网络，或是你所处的地理位置与服务器相距较远。如有很多人都遭遇此类问题，请向管理员报告。"
                 }
             ],
-            "tag": "Support",
-            "description": "Find answers to common questions about our server",
+            "tag": "支持",
+            "description": "查找有关我们服务器的常见问题的答案",
             "join": {
-                "title": "Still have questions?",
-                "description": "Join our Discord community for more help and support",
-                "button": "Join Discord"
+                "title": "还有问题吗？",
+                "description": "加入我们的Discord社区以获得更多帮助和支持",
+                "button": "加入Discord"
             }
         },
         "rules": {
@@ -85,18 +85,18 @@
         "support": {
             "title": "支持此项目！",
             "description": "这是一个非盈利项目，每一笔捐赠都能帮助我们！",
-            "description2": "Your contributions directly fund server maintenance and development, ensuring the best possible experience for everyone.",
+            "description2": "您的捐款直接资助服务器维护和开发，确保每个人都能获得最佳体验。",
             "BMC": {
-                "description": "A simple and direct way to support our project with a virtual coffee.",
-                "button": "Support on BMC"
+                "description": "一个简单而直接的方式来支持我们的项目与给杯虚拟咖啡。",
+                "button": "在BMC中支持"
             },
             "Kofi": {
-                "description": "Support us with a one-time donation or become a monthly member.",
-                "button": "Support on Ko-fi"
+                "description": "支持我们的一次性捐款或成为每月会员。",
+                "button": "在Ko-fi中支持"
             },
             "afdian": {
-                "description": "A popular creator platform for one-time or monthly sponsorships.",
-                "button": "Support on Afdian"
+                "description": "一个流行的创作者平台，用于一次性或每月赞助。",
+                "button": "在爱发电中支持"
             }
         },
         "IPcta": {
@@ -110,11 +110,11 @@
             "title": "试试我们专为优化服务器游玩体验而准备的整合包！",
             "button": "Modrinth",
             "subtitle": " ",
-            "description": " ",
+            "description": "增强的性能和兼容性，以获得最佳体验！",
             "list": [
-                "Performance optimizations",
-                "Quality of life improvements",
-                "Easy installation"
+                "性能优化",
+                "游玩质量提高",
+                "易于安装"
             ]
         },
         "title": "在Minecraft中创建一个东方MMO服务器"
