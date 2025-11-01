@@ -69,8 +69,7 @@
         },
         "support": {
             "title": "¡Apoya el proyecto!",
-            "description": "El proyecto es totalmente gratis, ¡pero apreciamos cualquier donación!",
-            "button": "Patreon"
+            "description": "El proyecto es totalmente gratis, ¡pero apreciamos cualquier donación!"
         },
         "IPcta": {
             "description": "Version: 1.21.8",

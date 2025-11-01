@@ -69,8 +69,7 @@
         },
         "support": {
             "title": "Unterstütze das Projekt!",
-            "description": "Dies ist ein Non-Profit Projekt, daher hilft uns jede Spende!",
-            "button": "BuyMeACoffee"
+            "description": "Dies ist ein Non-Profit Projekt, daher hilft uns jede Spende!"
         },
         "IPcta": {
             "title": "Server IPs",

@@ -69,8 +69,7 @@
         },
         "support": {
             "title": "Wspomóż projekt!",
-            "description": "Ten projekt jest non-profit, więc każda dotacja jest dla nas pomocna!",
-            "button": "Patreon"
+            "description": "Ten projekt jest non-profit, więc każda dotacja jest dla nas pomocna!"
         },
         "IPcta": {
             "title": "Server IPs",

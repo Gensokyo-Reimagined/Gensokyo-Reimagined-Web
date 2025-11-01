@@ -79,8 +79,7 @@
         },
         "support": {
             "title": "Support the project!",
-            "description": "This is a Non-Profit project so every donation helps us out!",
-            "button": "BuyMeACoffee"
+            "description": "This is a Non-Profit project so every donation helps us out!"
         },
         "title": "Creating a Touhou MMO Server in Minecraft"
     },

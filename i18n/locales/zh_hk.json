@@ -73,8 +73,7 @@
         },
         "support": {
             "title": "支持此項目！",
-            "description": "這是一個非營利的項目，因此每一筆贊助都能幫助我們！",
-            "button": "BuyMeACoffee"
+            "description": "這是一個非營利的項目，因此每一筆贊助都能幫助我們！"
         },
         "IPcta": {
             "description": "版本: 1.21.8",

@@ -73,8 +73,7 @@
         },
         "support": {
             "title": "Soutenez le projet !",
-            "description": "C'est un projet à but non lucratif, donc chaque don nous aide !",
-            "button": "BuyMeACoffee"
+            "description": "C'est un projet à but non lucratif, donc chaque don nous aide !"
         },
         "IPcta": {
             "title": "Adresses IP des serveurs",

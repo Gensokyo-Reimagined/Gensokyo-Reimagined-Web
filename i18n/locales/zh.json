@@ -73,8 +73,7 @@
         },
         "support": {
             "title": "支持此项目！",
-            "description": "这是一个非盈利项目，每一笔捐赠都能帮助我们！",
-            "button": "BuyMeACoffee"
+            "description": "这是一个非盈利项目，每一笔捐赠都能帮助我们！"
         },
         "IPcta": {
             "description": "版本: 1.21.8",
