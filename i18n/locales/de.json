@@ -4,12 +4,16 @@
         "header": {
             "intro": "Erstellen eines Touhou-MMO-Servers in Minecraft",
             "group": "Werde Teil unserer Community!",
-            "continue": "Mehr erfahren"
+            "continue": "Mehr erfahren",
+            "playerCount": "Join {count} players online!"
         },
         "about": {
             "title": "Über uns",
             "subtitle": "Kurze Erklärung über das Projekt!",
-            "description": "Das Projekt begann recht klein mit nur wenigen Mithelfern, aber mit der Zeit bekam es mehr Aufmerksamkeit und unsere Ziele wurden größer. Jetzt erstellen wir eine spielbare Version des gesamten Touhou-Universums, indem wir MMO- und Survival-Minecraft-Elemente kombinieren ohne dass Mods zum Spielen benötigt werden, um das Spiel für alle zugänglich zu machen."
+            "description": "Das Projekt begann recht klein mit nur wenigen Mithelfern, aber mit der Zeit bekam es mehr Aufmerksamkeit und unsere Ziele wurden größer. Jetzt erstellen wir eine spielbare Version des gesamten Touhou-Universums, indem wir MMO- und Survival-Minecraft-Elemente kombinieren ohne dass Mods zum Spielen benötigt werden, um das Spiel für alle zugänglich zu machen.",
+            "mods": "Mods Required",
+            "accessibility": "Accessibility",
+            "possibilities": "Possibilities"
         },
         "feature": {
             "subtitle": "Server Features",
@@ -60,7 +64,14 @@
                     "question": "Ich habe Verbindungsprobleme",
                     "answer": "Das könnte daran liegen, dass deine WLAN-Verbindung instabil ist oder der Server zu weit entfernt ist. Wenn das Problem bei mehreren Nutzern auftritt, melde es bitte dem Serverteam."
                 }
-            ]
+            ],
+            "tag": "Support",
+            "description": "Find answers to common questions about our server",
+            "join": {
+                "title": "Still have questions?",
+                "description": "Join our Discord community for more help and support",
+                "button": "Join Discord"
+            }
         },
         "rules": {
             "subtitle": "Server Regeln",
@@ -69,7 +80,20 @@
         },
         "support": {
             "title": "Unterstütze das Projekt!",
-            "description": "Dies ist ein Non-Profit Projekt, daher hilft uns jede Spende!"
+            "description": "Dies ist ein Non-Profit Projekt, daher hilft uns jede Spende!",
+            "description2": "Your contributions directly fund server maintenance and development, ensuring the best possible experience for everyone.",
+            "BMC": {
+                "description": "A simple and direct way to support our project with a virtual coffee.",
+                "button": "Support on BMC"
+            },
+            "Kofi": {
+                "description": "Support us with a one-time donation or become a monthly member.",
+                "button": "Support on Ko-fi"
+            },
+            "afdian": {
+                "description": "A popular creator platform for one-time or monthly sponsorships.",
+                "button": "Support on Afdian"
+            }
         },
         "IPcta": {
             "title": "Server IPs",
@@ -79,7 +103,13 @@
         },
         "MPcta": {
             "button": "Modrinth",
-            "title": "Probiere unser optimiertes Modpack für den Server!"
+            "title": "Probiere unser optimiertes Modpack für den Server!",
+            "description": "Enhanced performance and compatibility for the best experience!",
+            "list": [
+                "Performance optimizations",
+                "Quality of life improvements",
+                "Easy installation"
+            ]
         },
         "title": "Creating a Touhou MMO Server in Minecraft"
     },

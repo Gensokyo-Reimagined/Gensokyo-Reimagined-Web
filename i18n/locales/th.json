@@ -5,12 +5,16 @@
             "intro": "สร้างเซิร์ฟมายคราฟธีมโทโฮ (Touhou) ในรูปแบบ MMO",
             "group": "มาเข้าร่วมคอมมูนิตี้ของเราสิ!",
             "continue": "เรียนรู้เพิ่มเเติม",
-            "title": " "
+            "title": " ",
+            "playerCount": "Join {count} players online!"
         },
         "about": {
             "title": "เกียวกับเรา",
             "subtitle": "การอธิบายเล็กน้อยเกี่ยวกับโปรเจกต์ของเรา!",
-            "description": "โปรเจกต์ของเราตอนแรกเริ่มนั้นมีคนทำเพียงไม่กี่คน แต่พอเวลาผ่านไปโปรเจกค์ของเราก็เริ่มเป็นที่สนใจมากขึ้นและจุดมุ่งหมายก็เริ่มที่จะใหญ่ขึ้นตาม ซึ่งตอนนี้เรากำลังสร้างแผนที่ของทั้งจักรวาลโทโฮที่สามารถเล่นได้พร้อมกับผสานระบบ MMO และการเอาตัวรอดแบบมายคราฟเข้าด้วยกันโดยไม่พึ่งม็อดในการเล่นเลย เพื่อความเข้าถึงที่สะดวกและง่ายดายสำหรับทุกคน"
+            "description": "โปรเจกต์ของเราตอนแรกเริ่มนั้นมีคนทำเพียงไม่กี่คน แต่พอเวลาผ่านไปโปรเจกค์ของเราก็เริ่มเป็นที่สนใจมากขึ้นและจุดมุ่งหมายก็เริ่มที่จะใหญ่ขึ้นตาม ซึ่งตอนนี้เรากำลังสร้างแผนที่ของทั้งจักรวาลโทโฮที่สามารถเล่นได้พร้อมกับผสานระบบ MMO และการเอาตัวรอดแบบมายคราฟเข้าด้วยกันโดยไม่พึ่งม็อดในการเล่นเลย เพื่อความเข้าถึงที่สะดวกและง่ายดายสำหรับทุกคน",
+            "mods": "Mods Required",
+            "accessibility": "Accessibility",
+            "possibilities": "Possibilities"
         },
         "faq": {
             "items": [
@@ -35,7 +39,14 @@
                     "answer": "ใช่ ซึ่งอาจจะเกิดจากการที่เน็ตของคุณและเซิร์ฟของเราอยู่ไกล แต่ถ้าหากเป็นปัญหาที่ทุกคนพบเจออยู่กรุณาติดต่อพนักงานด้วย"
                 }
             ],
-            "title": "คำถามที่พบบ่อย"
+            "title": "คำถามที่พบบ่อย",
+            "tag": "Support",
+            "description": "Find answers to common questions about our server",
+            "join": {
+                "title": "Still have questions?",
+                "description": "Join our Discord community for more help and support",
+                "button": "Join Discord"
+            }
         },
         "feature": {
             "subtitle": "ระบบในเซิร์ฟเวอร์",
@@ -73,7 +84,20 @@
         },
         "support": {
             "title": "สนับสนุนโปรเจคของเราสิ!",
-            "description": "นี้เป็นโปรเจคที่ไม่แสวงหากำไร เพราะฉะนั้นการบริจาคทุกบาทจะช่วยเราได้มากเลย!"
+            "description": "นี้เป็นโปรเจคที่ไม่แสวงหากำไร เพราะฉะนั้นการบริจาคทุกบาทจะช่วยเราได้มากเลย!",
+            "description2": "Your contributions directly fund server maintenance and development, ensuring the best possible experience for everyone.",
+            "BMC": {
+                "description": "A simple and direct way to support our project with a virtual coffee.",
+                "button": "Support on BMC"
+            },
+            "Kofi": {
+                "description": "Support us with a one-time donation or become a monthly member.",
+                "button": "Support on Ko-fi"
+            },
+            "afdian": {
+                "button": "Support on Afdian",
+                "description": "A popular creator platform for one-time or monthly sponsorships."
+            }
         },
         "IPcta": {
             "description": "เวอร์ชั่น: 1.21.8",
@@ -86,7 +110,12 @@
             "title": "ลองใช้ Modpack ที่ปรับให้เข้ากับเซิร์ฟของเราดูสิ!",
             "button": "Modrinth",
             "subtitle": " ",
-            "description": " "
+            "description": " ",
+            "list": [
+                "Performance optimizations",
+                "Quality of life improvements",
+                "Easy installation"
+            ]
         },
         "title": "Creating a Touhou MMO Server in Minecraft"
     },

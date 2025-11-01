@@ -5,12 +5,16 @@
             "intro": "Δημιουργία ενός διακομιστή Touhou MMO στο Minecraft",
             "group": "Γίνετε μέλος της Κοινότητάς μας!",
             "continue": "Μάθετε περισσότερα",
-            "title": " "
+            "title": " ",
+            "playerCount": "Join {count} players online!"
         },
         "about": {
             "title": "Σχετικά με εμάς",
             "subtitle": "Μικρή εξήγηση για το έργο!",
-            "description": "Το έργο ξεκίνησε αρχικά αρκετά μικρό με λίγα άτομα, αλλά όσο περνούσε ο καιρός το έργο άρχισε να προσελκύει κόσμο και οι στόχοι έγιναν μεγαλύτεροι. Τώρα δημιουργούμε την playable έκδοση του Entirety of Touhou Universe με συνδυασμό MMO και Survival Minecraft στοιχείων με την απαίτηση 0 mods για να παίξετε για μέγιστη προσβασιμότητα για όλους."
+            "description": "Το έργο ξεκίνησε αρχικά αρκετά μικρό με λίγα άτομα, αλλά όσο περνούσε ο καιρός το έργο άρχισε να προσελκύει κόσμο και οι στόχοι έγιναν μεγαλύτεροι. Τώρα δημιουργούμε την playable έκδοση του Entirety of Touhou Universe με συνδυασμό MMO και Survival Minecraft στοιχείων με την απαίτηση 0 mods για να παίξετε για μέγιστη προσβασιμότητα για όλους.",
+            "mods": "Mods Required",
+            "accessibility": "Accessibility",
+            "possibilities": "Possibilities"
         },
         "feature": {
             "subtitle": "Χαρακτηριστικά διακομιστή",
@@ -63,7 +67,14 @@
                     "question": "Αντιμετωπίζω κάποια προβλήματα σύνδεσης;",
                     "answer": "Ναι, αυτό μπορεί να συμβαίνει επειδή το wifi και ο διακομιστής είναι γενικά μακριά. Αν είναι κάτι που αντιμετωπίζουν όλοι, παρακαλούμε να το αναφέρετε στο προσωπικό."
                 }
-            ]
+            ],
+            "tag": "Support",
+            "description": "Find answers to common questions about our server",
+            "join": {
+                "title": "Still have questions?",
+                "description": "Join our Discord community for more help and support",
+                "button": "Join Discord"
+            }
         },
         "rules": {
             "subtitle": "Κανόνες διακομιστή",
@@ -73,7 +84,20 @@
         },
         "support": {
             "title": "Υποστηρίξτε το έργο!",
-            "description": "Αυτό είναι ένα μη κερδοσκοπικό έργο, οπότε κάθε δωρεά μας βοηθάει!"
+            "description": "Αυτό είναι ένα μη κερδοσκοπικό έργο, οπότε κάθε δωρεά μας βοηθάει!",
+            "BMC": {
+                "description": "A simple and direct way to support our project with a virtual coffee.",
+                "button": "Support on BMC"
+            },
+            "Kofi": {
+                "description": "Support us with a one-time donation or become a monthly member.",
+                "button": "Support on Ko-fi"
+            },
+            "afdian": {
+                "description": "A popular creator platform for one-time or monthly sponsorships.",
+                "button": "Support on Afdian"
+            },
+            "description2": "Your contributions directly fund server maintenance and development, ensuring the best possible experience for everyone."
         },
         "IPcta": {
             "title": "IPs διακομιστών",
@@ -86,7 +110,12 @@
             "title": "Δοκιμάστε το Βελτιστοποιημένο Modpack μας για τον Server!",
             "button": "Modrinth",
             "subtitle": " ",
-            "description": " "
+            "description": " ",
+            "list": [
+                "Performance optimizations",
+                "Quality of life improvements",
+                "Easy installation"
+            ]
         },
         "title": "Creating a Touhou MMO Server in Minecraft"
     },

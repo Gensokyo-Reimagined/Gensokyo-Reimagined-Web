@@ -5,12 +5,16 @@
             "intro": "创造一个东方Project主题的MMO Minecraft服务器",
             "group": "加入我们的社区！",
             "continue": "了解更多",
-            "title": " "
+            "title": " ",
+            "playerCount": "Join {count} players online!"
         },
         "about": {
             "title": "关于我们",
             "subtitle": "关于此项目的简要概述！",
-            "description": "这最初是一个规模很小，参与人数也很少的项目，但随着时间的推移，项目吸引了越来越多的人，也因而有了更大的目标。现在，我们计划创造一个东方世界观下的将Minecraft与MMO（大型多人在线游戏）要素相结合的服务器，为了尽可能地方便每个人游玩，加入服务器无需安装任何模组。"
+            "description": "这最初是一个规模很小，参与人数也很少的项目，但随着时间的推移，项目吸引了越来越多的人，也因而有了更大的目标。现在，我们计划创造一个东方世界观下的将Minecraft与MMO（大型多人在线游戏）要素相结合的服务器，为了尽可能地方便每个人游玩，加入服务器无需安装任何模组。",
+            "mods": "Mods Required",
+            "accessibility": "Accessibility",
+            "possibilities": "Possibilities"
         },
         "feature": {
             "subtitle": "服务器特色",
@@ -63,7 +67,14 @@
                     "question": "我遇到了一些连接问题？",
                     "answer": "这也许是因为你正在使用无线网络，或是你所处的地理位置与服务器相距较远。如有很多人都遭遇此类问题，请向管理员报告。"
                 }
-            ]
+            ],
+            "tag": "Support",
+            "description": "Find answers to common questions about our server",
+            "join": {
+                "title": "Still have questions?",
+                "description": "Join our Discord community for more help and support",
+                "button": "Join Discord"
+            }
         },
         "rules": {
             "subtitle": "服务器规则",
@@ -73,7 +84,20 @@
         },
         "support": {
             "title": "支持此项目！",
-            "description": "这是一个非盈利项目，每一笔捐赠都能帮助我们！"
+            "description": "这是一个非盈利项目，每一笔捐赠都能帮助我们！",
+            "description2": "Your contributions directly fund server maintenance and development, ensuring the best possible experience for everyone.",
+            "BMC": {
+                "description": "A simple and direct way to support our project with a virtual coffee.",
+                "button": "Support on BMC"
+            },
+            "Kofi": {
+                "description": "Support us with a one-time donation or become a monthly member.",
+                "button": "Support on Ko-fi"
+            },
+            "afdian": {
+                "description": "A popular creator platform for one-time or monthly sponsorships.",
+                "button": "Support on Afdian"
+            }
         },
         "IPcta": {
             "description": "版本: 1.21.8",
@@ -86,7 +110,12 @@
             "title": "试试我们专为优化服务器游玩体验而准备的整合包！",
             "button": "Modrinth",
             "subtitle": " ",
-            "description": " "
+            "description": " ",
+            "list": [
+                "Performance optimizations",
+                "Quality of life improvements",
+                "Easy installation"
+            ]
         },
         "title": "在Minecraft中创建一个东方MMO服务器"
     },

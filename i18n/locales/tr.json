@@ -5,12 +5,16 @@
             "intro": "Minecraft'da Touhou MMO Sunucusu yapıyor",
             "group": "Topluluğumuza Katıl!",
             "continue": "Daha fazla bilgi edinin",
-            "title": " "
+            "title": " ",
+            "playerCount": "Join {count} players online!"
         },
         "about": {
             "title": "Hakkımızda",
             "subtitle": "Proje hakkında küçük açıklama!",
-            "description": "Proje başlangıçta birkaç kişiyle oldukça küçük başladı, ancak zaman geçtikçe projeye ilgi artmaya başladı ve hedefler büyüdü. Şimdi, herkes için maksimum erişilebilirlik sağlamak için 0 mod gerektiren MMO ve Survival Minecraft öğelerini birleştirerek Touhou evreninin tamamının oynanabilir halini oluşturuyoruz."
+            "description": "Proje başlangıçta birkaç kişiyle oldukça küçük başladı, ancak zaman geçtikçe projeye ilgi artmaya başladı ve hedefler büyüdü. Şimdi, herkes için maksimum erişilebilirlik sağlamak için 0 mod gerektiren MMO ve Survival Minecraft öğelerini birleştirerek Touhou evreninin tamamının oynanabilir halini oluşturuyoruz.",
+            "mods": "Mods Required",
+            "accessibility": "Accessibility",
+            "possibilities": "Possibilities"
         },
         "feature": {
             "subtitle": "Sunucu Özellikleri",
@@ -63,7 +67,14 @@
                     "question": "Bazı bağlantı sorunları yaşıyorum?",
                     "answer": "Evet, bu durum wifi ve sunucunun genel olarak uzak olmasıyla ilgili olabilir. Herkesin yaşadığı bir şeyse lütfen bunu personele bildirin."
                 }
-            ]
+            ],
+            "tag": "Support",
+            "description": "Find answers to common questions about our server",
+            "join": {
+                "title": "Still have questions?",
+                "description": "Join our Discord community for more help and support",
+                "button": "Join Discord"
+            }
         },
         "rules": {
             "subtitle": "Sunucu Kuralları",
@@ -73,7 +84,20 @@
         },
         "support": {
             "title": "Projeyi destekle!",
-            "description": "Bu Kar Amacı Gütmeyen bir projedir, bu nedenle her bağış bize yardımcı olur!"
+            "description": "Bu Kar Amacı Gütmeyen bir projedir, bu nedenle her bağış bize yardımcı olur!",
+            "Kofi": {
+                "button": "Support on Ko-fi",
+                "description": "Support us with a one-time donation or become a monthly member."
+            },
+            "description2": "Your contributions directly fund server maintenance and development, ensuring the best possible experience for everyone.",
+            "BMC": {
+                "description": "A simple and direct way to support our project with a virtual coffee.",
+                "button": "Support on BMC"
+            },
+            "afdian": {
+                "description": "A popular creator platform for one-time or monthly sponsorships.",
+                "button": "Support on Afdian"
+            }
         },
         "IPcta": {
             "title": "Sunucu IPleri",
@@ -86,7 +110,12 @@
             "button": "Modrinth",
             "title": "Sunucu için Optimize Edilmiş Mod Paketimizi Deneyin!",
             "subtitle": " ",
-            "description": " "
+            "description": " ",
+            "list": [
+                "Performance optimizations",
+                "Quality of life improvements",
+                "Easy installation"
+            ]
         },
         "title": "Creating a Touhou MMO Server in Minecraft"
     },

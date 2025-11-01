@@ -4,12 +4,16 @@
         "header": {
             "intro": "Vytváříme Touhou MMO server v Minecraftu",
             "group": "Přidej se k naší komunitě!",
-            "continue": "Více informací"
+            "continue": "Více informací",
+            "playerCount": "Join {count} players online!"
         },
         "about": {
             "title": "O nás",
             "subtitle": "Menší informace k projektu!",
-            "description": "Projekt byl z počátku celkem malý a pracovalo na něm jenom pár lidí, ale postupem času začal získávat na popularitě a cíle se zvětšovaly. Nyní vytváříme hratelnou verzi celého Touhou vesmíru s kombinací prvků MMO (Hra pro masivní počet hráčů) a Survival Minecraftu (Hry o přežití) která vyžaduje 0 módu ke hraní aby mohla být přístupná všem."
+            "description": "Projekt byl z počátku celkem malý a pracovalo na něm jenom pár lidí, ale postupem času začal získávat na popularitě a cíle se zvětšovaly. Nyní vytváříme hratelnou verzi celého Touhou vesmíru s kombinací prvků MMO (Hra pro masivní počet hráčů) a Survival Minecraftu (Hry o přežití) která vyžaduje 0 módu ke hraní aby mohla být přístupná všem.",
+            "mods": "Mods Required",
+            "accessibility": "Accessibility",
+            "possibilities": "Possibilities"
         },
         "feature": {
             "subtitle": "Funkce Serveru",
@@ -60,7 +64,14 @@
                     "question": "Mám problémy s připojením.",
                     "answer": "Ano, to může být způsobeno tím, že wifi je daleko od serveru. Pokud maj ale s připojením problém všichni, nahlaš to prosím našemu týmu."
                 }
-            ]
+            ],
+            "tag": "Support",
+            "description": "Find answers to common questions about our server",
+            "join": {
+                "title": "Still have questions?",
+                "description": "Join our Discord community for more help and support",
+                "button": "Join Discord"
+            }
         },
         "rules": {
             "subtitle": "Pravidla serveru",
@@ -69,7 +80,20 @@
         },
         "support": {
             "title": "Podpoř projekt!",
-            "description": "Jedná se o neziskový projekt, takže každej dar nám pomůže!"
+            "description": "Jedná se o neziskový projekt, takže každej dar nám pomůže!",
+            "description2": "Your contributions directly fund server maintenance and development, ensuring the best possible experience for everyone.",
+            "BMC": {
+                "description": "A simple and direct way to support our project with a virtual coffee.",
+                "button": "Support on BMC"
+            },
+            "Kofi": {
+                "description": "Support us with a one-time donation or become a monthly member.",
+                "button": "Support on Ko-fi"
+            },
+            "afdian": {
+                "description": "A popular creator platform for one-time or monthly sponsorships.",
+                "button": "Support on Afdian"
+            }
         },
         "IPcta": {
             "title": "IP k serveru",
@@ -79,7 +103,13 @@
         },
         "MPcta": {
             "button": "Modrinth",
-            "title": "Vyzkoušejte náš optimalizovaný modpack pro server!"
+            "title": "Vyzkoušejte náš optimalizovaný modpack pro server!",
+            "list": [
+                "Performance optimizations",
+                "Quality of life improvements",
+                "Easy installation"
+            ],
+            "description": "Enhanced performance and compatibility for the best experience!"
         },
         "title": "Creating a Touhou MMO Server in Minecraft"
     },
