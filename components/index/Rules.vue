@@ -6,11 +6,11 @@
           <!-- Image Section -->
           <div class="h-64 sm:h-80 lg:h-auto">
             <nuxt-img
-              :src="appConfig.IndexRulesImg"
-              alt="Rules image"
-              class="object-cover w-full h-full"
-              loading="lazy"
-              quality="80"
+                :src="appConfig.IndexRulesImg"
+                alt="Rules image"
+                class="object-cover w-full h-full"
+                loading="lazy"
+                quality="80"
             />
           </div>
 
@@ -24,9 +24,9 @@
             </p>
             <div>
               <a
-                class="inline-flex items-center justify-center px-6 py-3 text-base font-medium text-[var(--md-sys-color-on-background)] bg-[var(--md-sys-color-secondary-container)] border border-transparent rounded-xl hover:bg-[var(--md-sys-color-primary-container)] hover:scale-105 transition-all duration-300 shadow-lg"
-                :href="appConfig.RulesUrl"
-                target="_blank"
+                  :href="appConfig.RulesUrl"
+                  class="inline-flex items-center justify-center px-6 py-3 text-base font-medium text-[var(--md-sys-color-on-background)] bg-[var(--md-sys-color-secondary-container)] border border-transparent rounded-xl hover:bg-[var(--md-sys-color-primary-container)] hover:scale-105 transition-all duration-300 shadow-lg"
+                  target="_blank"
               >
                 {{ $t('index.rules.button') }}
                 <i class="fa-solid fa-arrow-up-right-from-square ml-3"></i>

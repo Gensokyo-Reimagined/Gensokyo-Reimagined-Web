@@ -4,25 +4,26 @@
   "scripts": {
     "build": "nuxt generate",
     "realbuild": "nuxt build",
-    "dev": "nuxt dev",
+    "dev": "cross-env NODE_ENV=development nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare"
   },
   "devDependencies": {
     "@nuxt/devtools": "latest",
-    "@nuxt/image": "^1.9.0",
+    "@nuxt/image": "^1.11.0",
     "@nuxtjs/color-mode": "^3.5.2",
-    "@nuxtjs/i18n": "^9.1.1",
-    "@nuxtjs/seo": "^3.0.0-beta.3",
-    "@nuxtjs/tailwindcss": "^6.13.2",
-    "@types/node": "^22.13.10",
-    "nuxt": "^3.16.0",
-    "postcss": "^8.5.3",
-    "swiper": "^11.2.5"
+    "@nuxtjs/i18n": "^10.1.2",
+    "@nuxtjs/seo": "^3.2.2",
+    "@nuxtjs/tailwindcss": "^6.14.0",
+    "@types/node": "^24.9.2",
+    "@types/nprogress": "^0.2.3",
+    "cross-env": "^10.1.0",
+    "nuxt": "^4.2.0",
+    "postcss": "^8.5.6",
+    "swiper": "^12.0.3"
   },
   "dependencies": {
-    "nprogress": "^0.2.0",
-    "sharp": "^0.34.1"
+    "nprogress": "^0.2.0"
   }
 }
