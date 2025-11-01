@@ -47,16 +47,16 @@
         />
       </div>
 
-      <p class="mt-4 text-base text-[var(--md-sys-color-outline-dark)] sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:text-xl text-shadow">
+      <p class="mt-4 text-base text-[var(--md-sys-color-outline)] lg:text-[var(--md-sys-color-outline-dark)] sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:text-xl text-shadow">
         {{ $t('index.header.intro') }}
       </p>
 
       <div v-if="playerCount !== null"
-           class="mt-4 text-base text-[var(--md-sys-color-outline-dark)] sm:text-lg text-shadow">
+           class="mt-4 text-base text-[var(--md-sys-color-outline)] lg:text-[var(--md-sys-color-outline-dark)] sm:text-lg text-shadow">
         <i class="fa-solid fa-users mr-2 text-[var(--md-sys-color-primary)]"></i>
         <i18n-t keypath="index.header.playerCount" tag="span">
           <template #count>
-            <strong class="text-[var(--md-sys-color-on-background-dark)]">{{ playerCount }}</strong>
+            <strong class="text-[var(--md-sys-color-on-background)] lg:text-[var(--md-sys-color-on-background-dark)]">{{ playerCount }}</strong>
           </template>
         </i18n-t>
       </div>
