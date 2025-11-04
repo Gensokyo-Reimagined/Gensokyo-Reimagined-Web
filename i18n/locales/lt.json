@@ -5,12 +5,16 @@
             "intro": "Kuriame Touhou MMO serverį Minecrafte",
             "group": "Prisijunk prie mūsų bendruomenės!",
             "continue": "Sužinok daugiau",
-            "title": " "
+            "title": " ",
+            "playerCount": "Join {count} players online!"
         },
         "about": {
             "title": "Apie mus",
             "subtitle": "Trumpas paaiškinimas apie mūsų projektą!",
-            "description": "Šis projektas buvo mažas ir prasidėjo su penkiomis žmonėmis, bet po kiek laiko pradėjome gauti daugiau dėmesio ir mūsų tikslas padidėjo. Dabar mes kuriame žaidžiama versija Touhou pasaulio ir kombinuojame MMO su Survival Minecraft elementu, taip pat be modų, kad visi galėtu žaisti."
+            "description": "Šis projektas buvo mažas ir prasidėjo su penkiomis žmonėmis, bet po kiek laiko pradėjome gauti daugiau dėmesio ir mūsų tikslas padidėjo. Dabar mes kuriame žaidžiama versija Touhou pasaulio ir kombinuojame MMO su Survival Minecraft elementu, taip pat be modų, kad visi galėtu žaisti.",
+            "mods": "Mods Required",
+            "accessibility": "Accessibility",
+            "possibilities": "Possibilities"
         },
         "feature": {
             "subtitle": "Serverio funkcijos",
@@ -63,7 +67,14 @@
                     "question": "Aš susidūriau su ryšio problemomis?",
                     "answer": "Taip, tai gali būti atvejis, kai \"Wi-Fi\" ir serveris apskritai yra toli. Jei su tuo susiduria visi, prašau praneškite apie tai mūsų komandai."
                 }
-            ]
+            ],
+            "tag": "Support",
+            "description": "Find answers to common questions about our server",
+            "join": {
+                "title": "Still have questions?",
+                "description": "Join our Discord community for more help and support",
+                "button": "Join Discord"
+            }
         },
         "rules": {
             "subtitle": "Serverio taisyklės",
@@ -74,7 +85,19 @@
         "support": {
             "title": "Palaikykite projektą!",
             "description": "Tai ne pelno siekiantis projektas, todėl kiekviena auka mums padeda!",
-            "button": "BuyMeACoffee"
+            "description2": "Your contributions directly fund server maintenance and development, ensuring the best possible experience for everyone.",
+            "BMC": {
+                "description": "A simple and direct way to support our project with a virtual coffee.",
+                "button": "Support on BMC"
+            },
+            "Kofi": {
+                "description": "Support us with a one-time donation or become a monthly member.",
+                "button": "Support on Ko-fi"
+            },
+            "afdian": {
+                "description": "A popular creator platform for one-time or monthly sponsorships.",
+                "button": "Support on Afdian"
+            }
         },
         "IPcta": {
             "title": "Serverio IPs",
@@ -87,7 +110,12 @@
             "button": "Modrinth",
             "title": "Išbandyk mūsu optimizuota Modpack serveriui!",
             "subtitle": " ",
-            "description": " "
+            "description": " ",
+            "list": [
+                "Performance optimizations",
+                "Quality of life improvements",
+                "Easy installation"
+            ]
         },
         "title": "Creating a Touhou MMO Server in Minecraft"
     },

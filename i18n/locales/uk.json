@@ -5,12 +5,16 @@
             "intro": "Створення MMO Touhou в Minecraft",
             "group": "Приєднуйся до спільноти!",
             "continue": "Дізнайся більше",
-            "title": " "
+            "title": " ",
+            "playerCount": "Join {count} players online!"
         },
         "about": {
             "title": "Про нас",
             "subtitle": "Невелике пояснення про проєкт!",
-            "description": "Спочатку проєкт розпочався з невеликої кількості людей, але з часом проєкт почав набувати популярності, а цілі стали набагато масштабнішими. Зараз ми створюємо ігрову версію Всесвіту Touhou, що поєднує в собі елементи MMO та виживання в Minecraft і не потребує жодних модів для гри, щоб зробити її максимально доступною для всіх бажаючих."
+            "description": "Спочатку проєкт розпочався з невеликої кількості людей, але з часом проєкт почав набувати популярності, а цілі стали набагато масштабнішими. Зараз ми створюємо ігрову версію Всесвіту Touhou, що поєднує в собі елементи MMO та виживання в Minecraft і не потребує жодних модів для гри, щоб зробити її максимально доступною для всіх бажаючих.",
+            "mods": "Mods Required",
+            "accessibility": "Accessibility",
+            "possibilities": "Possibilities"
         },
         "feature": {
             "subtitle": "Можливості сервера",
@@ -63,7 +67,14 @@
                     "question": "У мене виникають проблеми з підключенням?",
                     "answer": "Так, це може бути пов'язано з тим, що вай фай та сервер знаходяться дуже далеко. Якщо це трапляється у всіх, будь ласка, повідомте про це співробітникам."
                 }
-            ]
+            ],
+            "tag": "Support",
+            "description": "Find answers to common questions about our server",
+            "join": {
+                "title": "Still have questions?",
+                "description": "Join our Discord community for more help and support",
+                "button": "Join Discord"
+            }
         },
         "rules": {
             "subtitle": "Правила серверу",
@@ -74,7 +85,19 @@
         "support": {
             "title": "Підтримай проєкт!",
             "description": "Це неприбутковий проєкт, тому кожна пожертва допомагає нам!",
-            "button": "Патреон"
+            "description2": "Your contributions directly fund server maintenance and development, ensuring the best possible experience for everyone.",
+            "BMC": {
+                "button": "Support on BMC",
+                "description": "A simple and direct way to support our project with a virtual coffee."
+            },
+            "Kofi": {
+                "description": "Support us with a one-time donation or become a monthly member.",
+                "button": "Support on Ko-fi"
+            },
+            "afdian": {
+                "description": "A popular creator platform for one-time or monthly sponsorships.",
+                "button": "Support on Afdian"
+            }
         },
         "IPcta": {
             "title": "Server IPs",
@@ -87,7 +110,12 @@
             "title": "Try our Optimized Modpack for the Server!",
             "button": "Modrinth",
             "subtitle": " ",
-            "description": " "
+            "description": " ",
+            "list": [
+                "Performance optimizations",
+                "Quality of life improvements",
+                "Easy installation"
+            ]
         },
         "title": "Creating a Touhou MMO Server in Minecraft"
     },

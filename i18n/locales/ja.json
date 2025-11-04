@@ -4,12 +4,16 @@
         "header": {
             "intro": "マインクラフトで東方MMOを体験する",
             "group": "コミュニティに参加しよう！",
-            "continue": "詳細はこちら"
+            "continue": "詳細はこちら",
+            "playerCount": "Join {count} players online!"
         },
         "about": {
             "title": "私達について",
             "subtitle": "プロジェクトの簡単な紹介！",
-            "description": "このプロジェクトは、当初は数人で始めた小さなものでしたが、時間が経つにつれて、魅力的なプロジェクトになり、目標も大きくなりました。現在では、MMOとサバイバルMinecraftの要素を併せ持つ、東方ユニバース全体のプレイアブルバージョンを制作しています。"
+            "description": "このプロジェクトは、当初は数人で始めた小さなものでしたが、時間が経つにつれて、魅力的なプロジェクトになり、目標も大きくなりました。現在では、MMOとサバイバルMinecraftの要素を併せ持つ、東方ユニバース全体のプレイアブルバージョンを制作しています。",
+            "mods": "Mods Required",
+            "accessibility": "Accessibility",
+            "possibilities": "Possibilities"
         },
         "feature": {
             "subtitle": "サーバー特徴",
@@ -60,7 +64,14 @@
                     "question": "I'm experiencing some connection issues?",
                     "answer": "Yes, that might be case for wifi and server being generally far. If it's something that everyone experiences please report it to staff."
                 }
-            ]
+            ],
+            "tag": "Support",
+            "description": "Find answers to common questions about our server",
+            "join": {
+                "title": "Still have questions?",
+                "description": "Join our Discord community for more help and support",
+                "button": "Join Discord"
+            }
         },
         "rules": {
             "subtitle": "サーバールール",
@@ -70,7 +81,19 @@
         "support": {
             "title": "Support the project!",
             "description": "This is a Non-Profit project so every donation helps us out!",
-            "button": "Patreon"
+            "description2": "Your contributions directly fund server maintenance and development, ensuring the best possible experience for everyone.",
+            "BMC": {
+                "description": "A simple and direct way to support our project with a virtual coffee.",
+                "button": "Support on BMC"
+            },
+            "Kofi": {
+                "description": "Support us with a one-time donation or become a monthly member.",
+                "button": "Support on Ko-fi"
+            },
+            "afdian": {
+                "description": "A popular creator platform for one-time or monthly sponsorships.",
+                "button": "Support on Afdian"
+            }
         },
         "IPcta": {
             "title": "Server IPs",
@@ -80,7 +103,13 @@
         },
         "MPcta": {
             "button": "Modrinth",
-            "title": "Try our Optimized Modpack for the Server!"
+            "title": "Try our Optimized Modpack for the Server!",
+            "list": [
+                "Performance optimizations",
+                "Quality of life improvements",
+                "Easy installation"
+            ],
+            "description": "Enhanced performance and compatibility for the best experience!"
         },
         "title": "Creating a Touhou MMO Server in Minecraft"
     },

@@ -5,12 +5,16 @@
             "intro": "創造一個東方Project為主題的MMO Minecraft伺服器",
             "group": "加入我們的社群！",
             "continue": "了解更多",
-            "title": " "
+            "title": " ",
+            "playerCount": "Join {count} players online!"
         },
         "about": {
             "title": "關於我們",
             "subtitle": "關於這項計畫的簡單概要！",
-            "description": "這個項目最初是由一小群人開始的，但隨著時間的推移，這個項目逐漸引起了關注，目標也變得更加宏大。現在我們正在創建一個結合了MMO以及Minecraft生存元素的伺服器，並且為了讓大家都可以遊玩，因此這個伺服器並不需要安裝任何模組。"
+            "description": "這個項目最初是由一小群人開始的，但隨著時間的推移，這個項目逐漸引起了關注，目標也變得更加宏大。現在我們正在創建一個結合了MMO以及Minecraft生存元素的伺服器，並且為了讓大家都可以遊玩，因此這個伺服器並不需要安裝任何模組。",
+            "mods": "Mods Required",
+            "accessibility": "Accessibility",
+            "possibilities": "Possibilities"
         },
         "feature": {
             "subtitle": "伺服器特色",
@@ -63,7 +67,14 @@
                     "question": "我遇到了一些連線問題？",
                     "answer": "這可能是由於你在使用WiFi，或是你所在的位置距離伺服器比較遠。如果很多人都出現了同樣的情形，請向管理員回報。"
                 }
-            ]
+            ],
+            "join": {
+                "title": "Still have questions?",
+                "description": "Join our Discord community for more help and support",
+                "button": "Join Discord"
+            },
+            "tag": "Support",
+            "description": "Find answers to common questions about our server"
         },
         "rules": {
             "subtitle": "伺服器規則",
@@ -74,7 +85,19 @@
         "support": {
             "title": "支持此項目！",
             "description": "這是一個非營利的項目，因此每一筆贊助都能幫助我們！",
-            "button": "BuyMeACoffee"
+            "description2": "Your contributions directly fund server maintenance and development, ensuring the best possible experience for everyone.",
+            "BMC": {
+                "description": "A simple and direct way to support our project with a virtual coffee.",
+                "button": "Support on BMC"
+            },
+            "Kofi": {
+                "description": "Support us with a one-time donation or become a monthly member.",
+                "button": "Support on Ko-fi"
+            },
+            "afdian": {
+                "description": "A popular creator platform for one-time or monthly sponsorships.",
+                "button": "Support on Afdian"
+            }
         },
         "IPcta": {
             "description": "版本: 1.21.8",
@@ -87,7 +110,12 @@
             "title": "試試我們為了伺服器而做的優化模組包！",
             "button": "Modrinth",
             "subtitle": " ",
-            "description": " "
+            "description": " ",
+            "list": [
+                "Performance optimizations",
+                "Quality of life improvements",
+                "Easy installation"
+            ]
         },
         "title": "Creating a Touhou MMO Server in Minecraft"
     },
