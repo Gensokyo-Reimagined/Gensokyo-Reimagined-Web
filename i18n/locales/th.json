@@ -6,14 +6,14 @@
             "group": "มาเข้าร่วมคอมมูนิตี้ของเราสิ!",
             "continue": "เรียนรู้เพิ่มเเติม",
             "title": " ",
-            "playerCount": "Join {count} players online!"
+            "playerCount": "เข้าร่วมเล่นพร้อมกับ {count} ผู้เล่นที่กำลังออนไลน์อยู่ขณะนี้!"
         },
         "about": {
             "title": "เกียวกับเรา",
             "subtitle": "การอธิบายเล็กน้อยเกี่ยวกับโปรเจกต์ของเรา!",
             "description": "โปรเจกต์ของเราตอนแรกเริ่มนั้นมีคนทำเพียงไม่กี่คน แต่พอเวลาผ่านไปโปรเจกค์ของเราก็เริ่มเป็นที่สนใจมากขึ้นและจุดมุ่งหมายก็เริ่มที่จะใหญ่ขึ้นตาม ซึ่งตอนนี้เรากำลังสร้างแผนที่ของทั้งจักรวาลโทโฮที่สามารถเล่นได้พร้อมกับผสานระบบ MMO และการเอาตัวรอดแบบมายคราฟเข้าด้วยกันโดยไม่พึ่งม็อดในการเล่นเลย เพื่อความเข้าถึงที่สะดวกและง่ายดายสำหรับทุกคน",
-            "mods": "Mods Required",
-            "accessibility": "Accessibility",
+            "mods": "ความต้องการมอด",
+            "accessibility": "การเข้าถึง",
             "possibilities": "Possibilities"
         },
         "faq": {
@@ -43,9 +43,9 @@
             "tag": "Support",
             "description": "Find answers to common questions about our server",
             "join": {
-                "title": "Still have questions?",
+                "title": "ยังคงมีคำถามอะไรอยู่ไหม?",
                 "description": "Join our Discord community for more help and support",
-                "button": "Join Discord"
+                "button": "เข้าร่วม Discord"
             }
         },
         "feature": {
@@ -91,7 +91,7 @@
                 "button": "Support on BMC"
             },
             "Kofi": {
-                "description": "Support us with a one-time donation or become a monthly member.",
+                "description": "สนับสนุนเราด้วยการบริจาคครั้งเดียวหรือสมัครสมาชิกรายเดือน",
                 "button": "Support on Ko-fi"
             },
             "afdian": {
@@ -110,14 +110,14 @@
             "title": "ลองใช้ Modpack ที่ปรับให้เข้ากับเซิร์ฟของเราดูสิ!",
             "button": "Modrinth",
             "subtitle": " ",
-            "description": " ",
+            "description": "เพิ่มประสิทธิภาพและความเข้ากันได้เพื่อประสบการณ์ที่ดีที่สุด!",
             "list": [
                 "Performance optimizations",
                 "Quality of life improvements",
                 "Easy installation"
             ]
         },
-        "title": "Creating a Touhou MMO Server in Minecraft"
+        "title": "กำลังสร้างเซิร์ฟเวอร์ Touhou MMO ใน Minecraft"
     },
     "Navbar": {
         "home": "หน้าหลัก",
@@ -126,5 +126,5 @@
         "map": "แผนที่เซิร์ฟ",
         "translation": "แปลภาษา"
     },
-    "description": "Welcome to Gensokyo!"
+    "description": "ยินดีต้อนรับสู่เกนโซเคียว!"
 }
