@@ -67,7 +67,8 @@
                     "name": "ระบบอีเว้นท์สภาพอากาศ",
                     "description": "ด้วยฤดูการที่เปลี่ยนไปตามเวลาในเกมทำให้บางสิ่งบางอย่างในแต่ละวันมีความแตกต่างกันออกไปในทางใดทางหนึ่ง"
                 }
-            ]
+            ],
+            "title": "."
         },
         "cta": {
             "title": "คอมมูนิตี้",
@@ -84,18 +85,18 @@
         "support": {
             "title": "สนับสนุนโปรเจคของเราสิ!",
             "description": "นี้เป็นโปรเจคที่ไม่แสวงหากำไร เพราะฉะนั้นการบริจาคทุกบาทจะช่วยเราได้มากเลย!",
-            "description2": "Your contributions directly fund server maintenance and development, ensuring the best possible experience for everyone.",
+            "description2": "การสนับสนุนของคุณจะเป็นการสมทบทุนในการดูแลและพัฒนาเซิร์ฟเวอร์ของเราโดยตรง เพื่อให้มั่นใจว่าทุกคนจะได้ประสบการณ์ในการเล่นที่ดีที่สุด",
             "BMC": {
-                "description": "A simple and direct way to support our project with a virtual coffee.",
-                "button": "Support on BMC"
+                "description": "สนับสนุนโปรเจคของเราโดยตรงแบบง่ายๆ ด้วยการซื้อกาแฟเสมือนให้กับเรา",
+                "button": "สนับสนุนผ่านทาง BMC"
             },
             "Kofi": {
-                "description": "สนับสนุนเราด้วยการบริจาคครั้งเดียวหรือสมัครสมาชิกรายเดือน",
-                "button": "Support on Ko-fi"
+                "description": "สนับสนุนเราด้วยการบริจาคแบบครั้งเดียวหรือสมัครสมาชิกแบบรายเดือน",
+                "button": "สนับสนุนผ่านทาง Ko-fi"
             },
             "afdian": {
-                "button": "Support on Afdian",
-                "description": "A popular creator platform for one-time or monthly sponsorships."
+                "button": "สนับสนุนผ่านทาง Afdian",
+                "description": "แพลตฟอร์มตรีเอเคอร์ที่มีชื่อเสียงในการจัดสปอนเซอร์แบบครั้งเดียวหรือแบบรายเดือน"
             }
         },
         "IPcta": {
