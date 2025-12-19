@@ -6,15 +6,15 @@
             "group": "Наш Discord сервер!",
             "continue": "Узнать больше",
             "title": " ",
-            "playerCount": "Join {count} players online!"
+            "playerCount": "Игроков онлайн: {count}. Присоединяйтесь!"
         },
         "about": {
             "title": "О проекте",
             "subtitle": "Немного информации о сервере!",
             "description": "Наш проект начинал с малого, изначально всего пара человек занималось им. Но по прошествию времени мы стали получать больше внимания, что сделало наши цели более значительными. Сейчас мы создаём играбельную версию вселенной Touhou, смешивая это с ММО и стандартным выживанием в Minecraft, вместе с тем заботясь о том, чтобы сервер работал без модов, что необходимо для максимальной простоты захода на него.",
-            "mods": "Mods Required",
-            "accessibility": "Accessibility",
-            "possibilities": "Possibilities"
+            "mods": "Необходимых Модов",
+            "accessibility": "Доступности",
+            "possibilities": "Возможностей"
         },
         "feature": {
             "subtitle": "Особенности сервера",
@@ -69,11 +69,11 @@
                 }
             ],
             "tag": "Support",
-            "description": "Find answers to common questions about our server",
+            "description": "Найдите ответы на частые вопросы о нашем сервере",
             "join": {
-                "title": "Still have questions?",
-                "description": "Join our Discord community for more help and support",
-                "button": "Join Discord"
+                "title": "Не нашли ответа?",
+                "description": "Больше информации можете найти в нашем сообществе Discord",
+                "button": "Присоединиться к Discord"
             }
         },
         "rules": {
@@ -110,14 +110,14 @@
             "title": "Попробуйте нашу Оптимизированную Сборку для Сервера!",
             "button": "Modrinth",
             "subtitle": " ",
-            "description": " ",
+            "description": "Повышенная производительность для наилучшего опыта!",
             "list": [
-                "Performance optimizations",
-                "Quality of life improvements",
-                "Easy installation"
+                "Оптимизация производительности",
+                "Улучшения для комфортной игры",
+                "Простая установка"
             ]
         },
-        "title": "Creating a Touhou MMO Server in Minecraft"
+        "title": "Создаём ММО-сервер по Touhou в Minecraft"
     },
     "Navbar": {
         "home": "Домой",
@@ -126,5 +126,5 @@
         "map": "карта",
         "translation": "перевод"
     },
-    "description": "Welcome to Gensokyo!"
+    "description": "Добро пожаловать в Генсокё!"
 }
