@@ -6,15 +6,15 @@
             "group": "Rejoignez notre communauté !",
             "continue": "En savoir plus",
             "title": " ",
-            "playerCount": "Join {count} players online!"
+            "playerCount": "Rejoignez {count} joueurs en ligne!"
         },
         "about": {
             "title": "À propos de nous",
             "subtitle": "Une petite explication sur le projet !",
             "description": "Le project a commencé sur des humbles bases, initialement avec une poignée de bénévoles, mais au fil du temps, le projet a commencé à attirer de l'attention, et les objectifs ont grandi avec. Désormais, notre but est de créer un jeu situé dans l'Univers de Touhou, dans Minecraft, de manière à ce que n'importe qui puisse y jouer, avec aucun mod nécessaire.",
-            "mods": "Mods Required",
-            "accessibility": "Accessibility",
-            "possibilities": "Possibilities"
+            "mods": "Mods Requis",
+            "accessibility": "Accessible",
+            "possibilities": "De Possibilités"
         },
         "feature": {
             "subtitle": "Caractéristiques du serveur",
@@ -69,12 +69,12 @@
                 }
             ],
             "join": {
-                "title": "Still have questions?",
-                "description": "Join our Discord community for more help and support",
-                "button": "Join Discord"
+                "title": "Encore des questions ?",
+                "description": "Rejoignez notre communauté Discord pour plus d'aide et de support",
+                "button": "Rejoindre le Discord"
             },
             "tag": "Support",
-            "description": "Find answers to common questions about our server"
+            "description": "Trouver les réponses au questions les plus posées sur notre serveur"
         },
         "rules": {
             "subtitle": "Règles du serveur",
@@ -86,13 +86,13 @@
             "title": "Soutenez le projet !",
             "description": "C'est un projet à but non lucratif, donc chaque don nous aide !",
             "BMC": {
-                "description": "A simple and direct way to support our project with a virtual coffee.",
-                "button": "Support on BMC"
+                "description": "Un moyen simple et directe de supporter notre projet avec un café virtuel",
+                "button": "Support sur BMC"
             },
-            "description2": "Your contributions directly fund server maintenance and development, ensuring the best possible experience for everyone.",
+            "description2": "Vos contributions financent directement la maintenance et le développement du serveur, garantissant ainsi la meilleure expérience possible pour tous.",
             "Kofi": {
-                "description": "Support us with a one-time donation or become a monthly member.",
-                "button": "Support on Ko-fi"
+                "description": "Supportez nous avec une donation unique ou devenez membre mensuel.",
+                "button": "Support sur Ko-fi"
             },
             "afdian": {
                 "description": "A popular creator platform for one-time or monthly sponsorships.",
@@ -110,14 +110,14 @@
             "title": "Essayez notre pack de mods optimisé pour le serveur !",
             "button": "Modrinth",
             "subtitle": " ",
-            "description": " ",
+            "description": "Performances et compatibilité améliorées pour une expérience optimale !",
             "list": [
-                "Performance optimizations",
-                "Quality of life improvements",
-                "Easy installation"
+                "Optimisation des Performances",
+                "Amélioration de la facilité d'utilisation",
+                "Installation facile"
             ]
         },
-        "title": "Creating a Touhou MMO Server in Minecraft"
+        "title": "Création d'un serveur MMO Touhou dans Minecraft"
     },
     "Navbar": {
         "home": "Accueil",
@@ -126,5 +126,5 @@
         "map": "Carte",
         "translation": "Traduction"
     },
-    "description": "Welcome to Gensokyo!"
+    "description": "Bienvenue à Gensokyo!"
 }
