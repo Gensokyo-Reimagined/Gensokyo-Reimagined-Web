@@ -100,7 +100,7 @@
             }
         },
         "IPcta": {
-            "description": "版本: 1.21.8",
+            "description": "版本: 1.21.11",
             "buildtitle": "建筑服务器",
             "survivaltitle": "MMORPG服务器",
             "title": "服务器IP",

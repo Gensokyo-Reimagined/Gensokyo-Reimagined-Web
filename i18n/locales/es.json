@@ -96,7 +96,7 @@
             }
         },
         "IPcta": {
-            "description": "Version: 1.21.8",
+            "description": "Version: 1.21.11",
             "buildtitle": "Servidor de Construcción",
             "survivaltitle": "Servidor MMORPG",
             "title": "Server IPs"
