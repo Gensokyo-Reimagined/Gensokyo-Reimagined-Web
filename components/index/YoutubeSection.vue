@@ -1,12 +1,14 @@
 <template>
   <Transition name="fade-slide-up">
-    <section v-if="isYoutubeAccessible && videoData" class="relative py-24 bg-[var(--md-sys-color-background)] overflow-hidden">
+    <section v-if="isYoutubeAccessible && videoData"
+             class="relative py-24 bg-[var(--md-sys-color-background)] overflow-hidden">
 
-      <div class="absolute top-10 right-10 md:top-20 md:right-20 opacity-10 pointer-events-none transform rotate-45 text-[#FF4500]">
+      <div
+          class="absolute top-10 right-10 md:top-20 md:right-20 opacity-10 pointer-events-none transform rotate-45 text-[#FF4500]">
         <i class="fa-solid fa-leaf text-9xl blur-sm"></i>
       </div>
       <div class="absolute bottom-10 left-10 opacity-5 pointer-events-none transform -rotate-12 text-[#FF0000]">
-        <i class="fa-brands fa-envira text-8xl blur-md"></i> </div>
+        <i class="fa-brands fa-envira text-8xl blur-md"></i></div>
 
       <div class="container mx-auto max-w-7xl px-6 md:px-24 relative z-10">
 
@@ -14,10 +16,10 @@
           <div>
             <h2 class="text-3xl md:text-4xl font-extrabold text-[var(--md-sys-color-on-background)] flex items-center gap-3">
               <i class="fa-brands fa-youtube text-[#FF0000]"></i>
-              Bunbunmaru Latest
+              {{ $t('index.youtube.title') }}
             </h2>
             <p class="text-[var(--md-sys-color-secondary)] mt-2 text-lg">
-              The fastest news delivery in Gensokyo! Catch up on our latest video.
+              {{ $t('index.youtube.subtitle') }}
             </p>
           </div>
 
@@ -26,12 +28,13 @@
               target="_blank"
               class="hidden group md:inline-flex items-center px-6 py-3 rounded-xl border-2 border-[var(--md-sys-color-outline-variant)] text-[var(--md-sys-color-on-background)] hover:border-[#FF0000] hover:text-[#FF0000] hover:bg-red-500/10 transition-all duration-300 font-semibold"
           >
-            View Channel
+            {{ $t('index.youtube.viewChannel') }}
             <i class="fa-solid fa-arrow-right ml-2 group-hover:translate-x-1 transition-transform duration-300"></i>
           </a>
         </div>
 
-        <div class="group relative bg-[var(--md-sys-color-surface-container-low)] rounded-3xl overflow-hidden shadow-xl hover:shadow-[0_20px_40px_-15px_rgba(255,0,0,0.2)] border border-[var(--md-sys-color-outline-variant)] hover:border-red-500/40 transition-all duration-500 flex flex-col lg:flex-row">
+        <div
+            class="group relative bg-[var(--md-sys-color-surface-container-low)] rounded-3xl overflow-hidden shadow-xl hover:shadow-[0_20px_40px_-15px_rgba(255,0,0,0.2)] border border-[var(--md-sys-color-outline-variant)] hover:border-red-500/40 transition-all duration-500 flex flex-col lg:flex-row">
 
           <button
               @click="openModal"
@@ -46,39 +49,50 @@
                 @error="handleImageError"
             />
 
-            <div class="absolute inset-4 border border-white/0 group-hover:border-white/20 transition-colors duration-500 rounded-xl pointer-events-none"></div>
-            <div class="absolute top-6 left-6 w-6 h-6 border-t-2 border-l-2 border-white/60 rounded-tl-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"></div>
-            <div class="absolute top-6 right-6 w-6 h-6 border-t-2 border-r-2 border-white/60 rounded-tr-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"></div>
-            <div class="absolute bottom-6 left-6 w-6 h-6 border-b-2 border-l-2 border-white/60 rounded-bl-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"></div>
-            <div class="absolute bottom-6 right-6 w-6 h-6 border-b-2 border-r-2 border-white/60 rounded-br-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"></div>
+            <div
+                class="absolute inset-4 border border-white/0 group-hover:border-white/20 transition-colors duration-500 rounded-xl pointer-events-none"></div>
+            <div
+                class="absolute top-6 left-6 w-6 h-6 border-t-2 border-l-2 border-white/60 rounded-tl-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"></div>
+            <div
+                class="absolute top-6 right-6 w-6 h-6 border-t-2 border-r-2 border-white/60 rounded-tr-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"></div>
+            <div
+                class="absolute bottom-6 left-6 w-6 h-6 border-b-2 border-l-2 border-white/60 rounded-bl-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"></div>
+            <div
+                class="absolute bottom-6 right-6 w-6 h-6 border-b-2 border-r-2 border-white/60 rounded-br-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"></div>
 
-            <div class="absolute inset-0 bg-black/30 flex items-center justify-center transition-colors duration-300 group-hover:bg-black/10">
-              <div class="w-20 h-20 bg-[#FF0000] text-white rounded-full flex items-center justify-center shadow-[0_0_30px_rgba(255,0,0,0.6)] transform group-hover:scale-110 transition-all duration-300">
+            <div
+                class="absolute inset-0 bg-black/30 flex items-center justify-center transition-colors duration-300 group-hover:bg-black/10">
+              <div
+                  class="w-20 h-20 bg-[#FF0000] text-white rounded-full flex items-center justify-center shadow-[0_0_30px_rgba(255,0,0,0.6)] transform group-hover:scale-110 transition-all duration-300">
                 <i class="fa-solid fa-play text-3xl ml-2"></i>
               </div>
             </div>
           </button>
 
           <div class="w-full lg:w-2/5 p-8 lg:p-10 flex flex-col justify-center relative overflow-hidden">
-            <div class="absolute -top-24 -right-24 w-64 h-64 bg-red-500/10 rounded-full blur-3xl pointer-events-none"></div>
+            <div
+                class="absolute -top-24 -right-24 w-64 h-64 bg-red-500/10 rounded-full blur-3xl pointer-events-none"></div>
 
             <div class="relative z-10 flex-1 flex flex-col">
 
-              <div class="inline-flex items-center gap-2 px-4 py-1.5 bg-gradient-to-r from-red-600/20 to-red-500/5 border border-red-500/20 text-red-400 text-xs font-bold uppercase tracking-wider rounded-full mb-6 w-max shadow-sm">
-                <i class="fa-solid fa-feather-pointed"></i> Exclusive Scoop
+              <div
+                  class="inline-flex items-center gap-2 px-4 py-1.5 bg-gradient-to-r from-red-600/20 to-red-500/5 border border-red-500/20 text-red-400 text-xs font-bold uppercase tracking-wider rounded-full mb-6 w-max shadow-sm">
+                <i class="fa-solid fa-feather-pointed"></i> {{ $t('index.youtube.exclusiveScoop') }}
               </div>
 
-              <h3 class="text-2xl md:text-3xl font-bold text-[var(--md-sys-color-on-surface)] mb-4 line-clamp-2 leading-tight group-hover:text-red-400 transition-colors cursor-pointer" @click="openModal">
+              <h3 class="text-2xl md:text-3xl font-bold text-[var(--md-sys-color-on-surface)] mb-4 line-clamp-2 leading-tight group-hover:text-red-400 transition-colors cursor-pointer"
+                  @click="openModal">
                 {{ videoData.title }}
               </h3>
 
               <div class="flex-1">
                 <p class="text-[var(--md-sys-color-secondary)] mb-6 line-clamp-4 text-base leading-relaxed whitespace-pre-wrap">
-                  {{ videoData.description || 'Watch the video to uncover the latest secrets!' }}
+                  {{ videoData.description || $t('index.youtube.defaultDescription') }}
                 </p>
               </div>
 
-              <div class="flex items-center justify-between mt-auto pt-6 border-t border-[var(--md-sys-color-outline-variant)]">
+              <div
+                  class="flex items-center justify-between mt-auto pt-6 border-t border-[var(--md-sys-color-outline-variant)]">
                 <span class="text-sm text-[var(--md-sys-color-outline)] font-medium flex items-center">
                   <i class="fa-regular fa-clock mr-2"></i>
                   {{ formatDate(videoData.pubDate) }}
@@ -88,7 +102,7 @@
                     @click="openModal"
                     class="inline-flex items-center font-bold text-[var(--md-sys-color-primary)] hover:text-red-400 transition-colors group/play"
                 >
-                  Watch Now
+                  {{ $t('index.youtube.watchNow') }}
                   <i class="fa-solid fa-play ml-2 text-sm transform group-hover/play:scale-125 transition-transform"></i>
                 </button>
               </div>
@@ -102,14 +116,18 @@
             target="_blank"
             class="mt-8 flex md:hidden items-center justify-center w-full px-6 py-4 rounded-xl border-2 border-[var(--md-sys-color-outline-variant)] text-[var(--md-sys-color-on-background)] font-semibold hover:bg-red-500/10 hover:border-red-500 hover:text-red-500 transition-colors"
         >
-          View Full Channel
+          {{ $t('index.youtube.viewFullChannel') }}
         </a>
       </div>
 
       <Teleport to="body">
         <Transition name="fade">
-          <div v-if="isModalOpen" class="fixed inset-0 z-[100] flex items-center justify-center bg-black/90 backdrop-blur-md p-4 md:p-10" @click="closeModal">
-            <div class="relative w-full max-w-5xl bg-black shadow-[0_0_50px_rgba(255,0,0,0.3)] rounded-2xl overflow-hidden border border-red-900/30" @click.stop>
+          <div v-if="isModalOpen"
+               class="fixed inset-0 z-[100] flex items-center justify-center bg-black/90 backdrop-blur-md p-4 md:p-10"
+               @click="closeModal">
+            <div
+                class="relative w-full max-w-5xl bg-black shadow-[0_0_50px_rgba(255,0,0,0.3)] rounded-2xl overflow-hidden border border-red-900/30"
+                @click.stop>
 
               <button
                   @click="closeModal"
@@ -140,8 +158,7 @@
 </template>
 
 <script setup>
-import { ref, onMounted, computed } from 'vue';
-const { locale } = useI18n()
+const {locale} = useI18n()
 const YOUTUBE_CHANNEL_ID = 'UCpGyoleBq7B0bV0HPmZ6zzw';
 
 const isYoutubeAccessible = ref(false);
@@ -169,8 +186,18 @@ const checkYoutubeAccess = () => {
     const img = new Image();
     let isResolved = false;
 
-    img.onload = () => { if (!isResolved) { isResolved = true; resolve(true); } };
-    img.onerror = () => { if (!isResolved) { isResolved = true; resolve(true); } };
+    img.onload = () => {
+      if (!isResolved) {
+        isResolved = true;
+        resolve(true);
+      }
+    };
+    img.onerror = () => {
+      if (!isResolved) {
+        isResolved = true;
+        resolve(true);
+      }
+    };
 
     img.src = `https://i.ytimg.com/vi/1/default.jpg?_t=${new Date().getTime()}`;
 
@@ -224,8 +251,7 @@ const fetchLatestVideo = async () => {
 const formatDate = (dateString) => {
   if (!dateString) return '';
   const date = new Date(dateString);
-  console.log(locale.value)
-  return date.toLocaleDateString('en', { year: 'numeric', month: 'short', day: 'numeric' });
+  return date.toLocaleDateString(locale.value, {year: 'numeric', month: 'short', day: 'numeric'});
 };
 
 const handleImageError = (e) => {
@@ -260,9 +286,11 @@ onMounted(async () => {
 .fade-slide-up-enter-active {
   transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1);
 }
+
 .fade-slide-up-leave-active {
   transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
 }
+
 .fade-slide-up-enter-from,
 .fade-slide-up-leave-to {
   opacity: 0;
@@ -273,6 +301,7 @@ onMounted(async () => {
 .fade-leave-active {
   transition: opacity 0.3s ease;
 }
+
 .fade-enter-from,
 .fade-leave-to {
   opacity: 0;

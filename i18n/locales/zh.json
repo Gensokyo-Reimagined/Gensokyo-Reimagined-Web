@@ -16,6 +16,15 @@
             "accessibility": "可访问性",
             "possibilities": "发展潜力"
         },
+        "youtube": {
+            "title": "文文。新闻 最新报道",
+            "subtitle": "幻想乡最快的新闻速递！快来看看我们的最新视频。",
+            "viewChannel": "前往频道",
+            "exclusiveScoop": "独家猛料",
+            "defaultDescription": "观看视频，揭开最新的秘密！",
+            "watchNow": "立即观看",
+            "viewFullChannel": "查看完整频道"
+        },
         "feature": {
             "subtitle": "服务器特色",
             "items": [
