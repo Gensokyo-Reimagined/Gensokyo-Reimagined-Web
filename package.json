@@ -2,7 +2,7 @@
   "name": "nuxt-app",
   "private": true,
   "scripts": {
-    "build": "nuxt generate",
+    "build": "nuxt clean && nuxt generate",
     "realbuild": "nuxt build",
     "dev": "cross-env NODE_ENV=development nuxt dev",
     "generate": "nuxt generate",
