@@ -3,7 +3,7 @@ export default defineNuxtConfig({
     devtools: {enabled: true},
 
     app: {
-        buildAssetsDir: 'static',
+        //buildAssetsDir: 'static',
         head: {
             link: [
                 {rel: 'preconnect', href: 'https://gensokyoreimagined.net'},
@@ -213,6 +213,7 @@ export default defineNuxtConfig({
     },
 
     experimental: {
+        appManifest: false,
         writeEarlyHints: false,
         payloadExtraction: false,
     },
