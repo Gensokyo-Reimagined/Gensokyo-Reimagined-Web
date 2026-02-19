@@ -7,6 +7,10 @@
             <span class="sr-only">Discord</span>
             <i class="fa-brands fa-discord"></i>
           </a>
+          <a class="footer-icon" href="https://www.youtube.com/@GensokyoReimagined" target="_blank">
+            <span class="sr-only">youtube</span>
+            <i class="fa-brands fa-youtube"></i>
+          </a>
           <a class="footer-icon" href="https://www.buymeacoffee.com/greimagined/membership" target="_blank">
             <span class="sr-only">BuyMeACoffee</span>
             <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
@@ -33,7 +37,7 @@
         </div>
         <div class="mt-8 md:mt-0 md:order-1">
           <p class="text-base text-center text-gray-400">
-            &copy; 2022-2025 Gensokyo-Reimagined —
+            &copy; 2022-2026 Gensokyo-Reimagined —
             <a class="hover:text-[var(--md-sys-color-primary)] transition-colors"
                href="https://github.com/Gensokyo-Reimagined"
                target="_blank">@Gensokyo-Reimagined</a>
