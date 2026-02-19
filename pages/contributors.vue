@@ -37,10 +37,11 @@
                 class="p-2 rounded-xl bg-[var(--md-sys-color-surface-variant)]"
                 v-if="team.image"
             >
-              <img
+              <nuxt-img
                   :src="team.image"
                   alt=""
                   class="w-8 h-8 object-contain"
+                  placeholder="/img/404_img.webp"
               />
             </div>
 
