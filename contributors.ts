@@ -245,3 +245,42 @@ export const teams: Team[] = [
         ]
     },
 ];
+
+// better use the web config tool like https://api.sakurakoi.top to edit this.
+// just swap out the JSON below with the one you get there.
+// might look into pulling the config directly from an API later on.(include app.config.ts)
+
+export const ContributorsConfig = {
+    "config": [
+        {
+            "role_ids": [
+                "1184284040895926373"
+            ],
+            "include_user_ids": [],
+            "name": "Project Leads",
+            "color": "#aa3b3b,#ff4848",
+            "image": "/icons/staff/admin.webp"
+        },
+        {
+            "role_ids": [
+                "1015923794948411412",
+                "1134330475595432007",
+                "1220961501012033617"
+            ],
+            "include_user_ids": [],
+            "name": "Developer",
+            "color": "#369876,#4fff87",
+            "image": "/icons/staff/developer.webp"
+        },
+        {
+            "role_ids": [
+                "1013227032903172126",
+                "1109244656589471835"
+            ],
+            "include_user_ids": [],
+            "name": "Moderators",
+            "color": "#ff6127"
+        }
+    ],
+    "overrides": {}
+}
