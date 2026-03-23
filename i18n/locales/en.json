@@ -19,6 +19,15 @@
       "possibilities": "Possibilities"
 
     },
+    "youtube": {
+      "title": "Bunbunmaru Latest",
+      "subtitle": "The fastest news delivery in Gensokyo! Catch up on our latest video.",
+      "viewChannel": "View Channel",
+      "exclusiveScoop": "Exclusive Scoop",
+      "defaultDescription": "Watch the video to uncover the latest secrets!",
+      "watchNow": "Watch Now",
+      "viewFullChannel": "View Full Channel"
+    },
     "feature": {
       "title": "",
       "subtitle": "Server Features",

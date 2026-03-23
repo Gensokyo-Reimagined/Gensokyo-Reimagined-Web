@@ -1,37 +1,36 @@
 <template>
   <div class="relative overflow-hidden pt-16 lg:h-screen">
     <div class="lg:pt-16 lg:absolute lg:inset-y-0 lg:right-0 w-full lg:h-screen">
-      <swiper
-          :autoplay="{
-          delay: changeTime,
-          disableOnInteraction: false,
-        }"
-          :loop="true"
-          :modules="modules"
-          :slidesPerView="1"
-          class="w-full h-96 sm:h-[500px] md:h-[600px] lg:w-full lg:h-full"
-      >
-        <swiper-slide
-            v-for="(currentImageUrl, index) in imageUrls"
-            :key="currentImageUrl"
-            class="transition-opacity ease-in-out"
-        >
-          <nuxt-img
-              :fetchpriority="index === 0 ? 'high' : 'low'"
-              :loading="index === 0 ? 'eager' : 'lazy'"
-              :placeholder="index !== 0"
-              :src="currentImageUrl"
-              alt="Gensokyo Reimagined background"
-              class="w-full h-full object-cover carousel-image"
-              preset="carousel"
-          />
-        </swiper-slide>
-      </swiper>
 
       <div
-          class="absolute inset-0 bg-gradient-to-r from-[var(--md-sys-color-background)] via-transparent to-[var(--md-sys-color-background)] opacity-60"></div>
+          ref="emblaRef"
+          class="overflow-hidden w-full h-96 sm:h-[500px] md:h-[600px] lg:w-full lg:h-full"
+      >
+        <div class="flex h-full">
+          <div
+              v-for="(currentImageUrl, index) in imageUrls"
+              :key="currentImageUrl"
+              class="flex-[0_0_100%] min-w-0 relative h-full transition-opacity ease-in-out"
+              :class="{ 'is-active': selectedIndex === index }"
+          >
+            <nuxt-img
+                :fetchpriority="index === 0 ? 'high' : 'low'"
+                :loading="index === 0 ? 'eager' : 'lazy'"
+                :placeholder="index !== 0"
+                :src="currentImageUrl"
+                alt="Gensokyo Reimagined background"
+                class="w-full h-full object-cover carousel-image"
+                preset="carousel"
+            />
+          </div>
+        </div>
+      </div>
+      <!--
       <div
-          class="absolute inset-0 bg-gradient-to-b from-[var(--md-sys-color-background)] via-transparent to-[var(--md-sys-color-background)]"></div>
+          class="absolute inset-0 bg-gradient-to-r from-[var(--md-sys-color-background)] via-transparent to-[var(--md-sys-color-background)] opacity-60 pointer-events-none"></div>
+      <div
+          class="absolute inset-0 bg-gradient-to-b from-[var(--md-sys-color-background)] via-transparent to-[var(--md-sys-color-background)] pointer-events-none"></div>
+      -->
     </div>
 
     <div class="mx-auto max-w-7xl lg:h-screen flex flex-col items-center justify-center relative z-20 px-4 text-center">
@@ -51,12 +50,14 @@
         {{ $t('index.header.intro') }}
       </p>
 
-      <div v-if="playerCount !== null"
-           class="mt-4 text-base text-[var(--md-sys-color-outline)] lg:text-[var(--md-sys-color-outline-dark)] sm:text-lg text-shadow">
+      <div :style="{opacity: playerCount !== null?'1':'0'}"
+           class="mt-4 text-base text-[var(--md-sys-color-outline)] lg:text-[var(--md-sys-color-outline-dark)] sm:text-lg text-shadow transition-opacity duration-150">
         <i class="fa-solid fa-users mr-2 text-[var(--md-sys-color-primary)]"></i>
         <i18n-t keypath="index.header.playerCount" tag="span">
           <template #count>
-            <strong class="text-[var(--md-sys-color-on-background)] lg:text-[var(--md-sys-color-on-background-dark)]">{{ playerCount }}</strong>
+            <strong class="text-[var(--md-sys-color-on-background)] lg:text-[var(--md-sys-color-on-background-dark)]">
+              {{ playerCount }}
+            </strong>
           </template>
         </i18n-t>
       </div>
@@ -96,9 +97,8 @@
 </template>
 
 <script setup>
-import {Swiper, SwiperSlide} from 'swiper/vue'
-import {Autoplay} from 'swiper/modules'
-import 'swiper/css'
+import emblaCarouselVue from 'embla-carousel-vue'
+import Autoplay from 'embla-carousel-autoplay'
 
 const appConfig = useAppConfig()
 
@@ -107,7 +107,31 @@ const imageUrls = ref(appConfig.IndexHeaderImg)
 const changeTime = ref(parseInt(appConfig.IndexHeaderImgChangeTime) || 5000)
 const playerCount = ref(null)
 
-const modules = [Autoplay]
+const [emblaRef, emblaApi] = emblaCarouselVue(
+    {loop: true},
+    [Autoplay({delay: changeTime.value, stopOnInteraction: false})]
+)
+
+const selectedIndex = ref(0)
+
+onMounted(() => {
+  if (emblaApi.value) {
+    emblaApi.value.on('select', () => {
+      selectedIndex.value = emblaApi.value.selectedScrollSnap()
+    })
+    emblaApi.value.on('reInit', () => {
+      selectedIndex.value = emblaApi.value.selectedScrollSnap()
+    })
+  }
+
+  if (document.readyState === 'complete') {
+    fetchPlayerCount()
+  } else {
+    window.addEventListener('load', () => {
+      fetchPlayerCount()
+    })
+  }
+})
 
 const fetchPlayerCount = async () => {
   const cached = localStorage.getItem('playerCount')
@@ -141,16 +165,6 @@ const scrollToFeatures = () => {
     })
   }
 }
-
-onMounted(() => {
-  if (document.readyState === 'complete') {
-    fetchPlayerCount()
-  } else {
-    window.addEventListener('load', () => {
-      fetchPlayerCount()
-    })
-  }
-})
 </script>
 
 <style scoped>
@@ -173,11 +187,10 @@ onMounted(() => {
   transition: filter 1s ease-in-out;
 }
 
-.swiper-slide-active .carousel-image {
+.is-active .carousel-image {
   filter: brightness(0.8);
 }
 
-/* Button shine effect */
 @keyframes shimmer {
   0% {
     transform: translateX(-100%);

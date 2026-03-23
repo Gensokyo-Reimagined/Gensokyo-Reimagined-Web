@@ -44,7 +44,7 @@
           <div class="flex-1 bg-[var(--md-sys-color-surface)] p-8 flex flex-col justify-between">
             <div class="flex-1">
               <div class="flex items-center justify-center h-16 w-16 rounded-full bg-[#13C3FF] text-white mx-auto">
-                <nuxt-img alt="Ko-fi Logo" class="w-9 h-9" src="/img/kofi_logo.svg"/>
+                <nuxt-img alt="Ko-fi Logo" class="w-9 h-9" src="/icons/website/kofi_logo.svg"/>
               </div>
               <h3 class="mt-6 text-xl font-bold text-center text-[var(--md-sys-color-on-surface)]">Ko-fi</h3>
               <p class="mt-4 text-base text-center text-[var(--md-sys-color-outline)]">
@@ -66,7 +66,7 @@
           <div class="flex-1 bg-[var(--md-sys-color-surface)] p-8 flex flex-col justify-between">
             <div class="flex-1">
               <div class="flex items-center justify-center h-16 w-16 rounded-full bg-[#946EFF] text-white mx-auto">
-                <nuxt-img alt="Afdian Logo" class="w-9 h-9" src="/img/afdian_logo.svg"/>
+                <nuxt-img alt="Afdian Logo" class="w-9 h-9" src="/icons/website/afdian_logo.svg"/>
               </div>
               <h3 class="mt-6 text-xl font-bold text-center text-[var(--md-sys-color-on-surface)]">Afdian (爱发电)</h3>
               <p class="mt-4 text-base text-center text-[var(--md-sys-color-outline)]">

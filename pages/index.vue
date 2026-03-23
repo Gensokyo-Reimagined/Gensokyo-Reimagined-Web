@@ -2,6 +2,7 @@
   <div>
     <IndexHeader/>
     <LazyIndexAbout/>
+    <IndexYoutubeSection />
     <LazyIndexFeature/>
     <LazyIndexCta/>
     <LazyIndexFaq/>

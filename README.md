@@ -24,7 +24,7 @@ The repository is using the packages in the list below
 - [@nuxtjs/seo](https://image.nuxt.com/)
 - [Tailwind CSS](https://tailwindcss.nuxtjs.org/)
 - [@nuxtjs/color-mode](https://color-mode.nuxtjs.org/)
-- [swiper](https://www.npmjs.com/package/swiper)
+- [embla-carousel](https://www.embla-carousel.com/get-started/vue/)
 - [nprogress](https://www.npmjs.com/package/nprogress)
 
 ## i18n 🌐
