@@ -25,7 +25,7 @@
           </div>
           <div class="hidden sm:ml-6 sm:flex sm:space-x-8 items-center">
             <nuxt-link
-                :to="'/' + selectedLang"
+                :to="localePath('/')"
                 class="px-3 py-2 text-[var(--md-sys-color-on-background)] hover:text-[var(--md-sys-color-on-secondary-container)] font-medium"
             >
               {{ $t('Navbar.home') }}
@@ -60,7 +60,13 @@
           </div>
         </div>
         <div class="hidden sm:flex sm:items-center sm:ml-6 sm:space-x-4">
-          <LangSwitcher/>
+          <ClientOnly>
+            <LangSwitcher/>
+            <template #fallback>
+              <div class="w-[68px] h-[28px]"></div>
+            </template>
+          </ClientOnly>
+
           <button
               v-if="isMounted"
               :aria-label="`Switch to ${nextColorMode} mode`"
@@ -128,7 +134,7 @@
       <div class="px-2 pt-2 pb-3">
         <nuxt-link
             class="block px-3 py-2 rounded-md text-base font-medium text-[var(--md-sys-color-on-background)] hover:text-[var(--md-sys-color-on-secondary-container)]"
-            to="#"
+            :to="localePath('/')"
         >
           {{ $t('Navbar.home') }}
         </nuxt-link>
@@ -162,7 +168,13 @@
       </div>
       <div class="pt-4 pb-3 border-t border-gray-200">
         <div class="space-x-2 flex items-center px-5 justify-between">
-          <LangSwitcher/>
+          <ClientOnly>
+            <LangSwitcher/>
+            <template #fallback>
+              <div class="w-[68px] h-[28px]"></div>
+            </template>
+          </ClientOnly>
+
           <button
               v-if="isMounted"
               :aria-label="`Switch to ${nextColorMode} mode`"
@@ -188,6 +200,7 @@
 <script setup>
 const appConfig = useAppConfig()
 const colorMode = useColorMode()
+const localePath = useLocalePath() // 修改点：引入 localePath 函数以生成本地化安全路由
 
 const isMenuOpen = ref(false)
 const isMounted = ref(false)
