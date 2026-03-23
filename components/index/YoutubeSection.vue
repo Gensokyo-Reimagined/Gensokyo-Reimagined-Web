@@ -186,20 +186,16 @@ const checkYoutubeAccess = () => {
     const img = new Image();
     let isResolved = false;
 
-    img.onload = () => {
-      if (!isResolved) {
-        isResolved = true;
-        resolve(true);
-      }
-    };
-    img.onerror = () => {
+    const handleResponse = () => {
       if (!isResolved) {
         isResolved = true;
         resolve(true);
       }
     };
 
-    img.src = `https://i.ytimg.com/vi/1/default.jpg?_t=${new Date().getTime()}`;
+    img.onload = handleResponse;
+    img.onerror = handleResponse;
+    img.src = `https://www.youtube.com/favicon.ico?_t=${Date.now()}`;
 
     setTimeout(() => {
       if (!isResolved) {
