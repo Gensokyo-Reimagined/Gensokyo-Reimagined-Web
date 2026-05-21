@@ -12,7 +12,7 @@
             "subtitle": "¡Breve explicación del proyecto!",
             "description": "El proyecto inició siendo algo muy pequeño, con apenas un puñado de personas, pero con el tiempo fue cobrando fuerza y nuestras metas se hicieron más grandes. Ahora estamos creando una versión jugable de todo el universo de Touhou, combinando elementos de supervivencia de Minecraft y MMOs, sin mods y accesible para todos.",
             "mods": "Mods Required",
-            "accessibility": "Accessibility",
+            "accessibility": "Accesibilidad",
             "possibilities": "Possibilities"
         },
         "feature": {
@@ -111,7 +111,16 @@
             ],
             "description": "Enhanced performance and compatibility for the best experience!"
         },
-        "title": "Creando un Servidor MMO de Touhou en Minecraft"
+        "title": "Creando un Servidor MMO de Touhou en Minecraft",
+        "youtube": {
+            "title": "Bunbunmaru Latest",
+            "subtitle": "The fastest news delivery in Gensokyo! Catch up on our latest video.",
+            "viewChannel": "View Channel",
+            "exclusiveScoop": "Exclusive Scoop",
+            "defaultDescription": "Watch the video to uncover the latest secrets!",
+            "watchNow": "Watch Now",
+            "viewFullChannel": "View Full Channel"
+        }
     },
     "Navbar": {
         "home": "inicio",

@@ -111,7 +111,16 @@
                 "button": "Support on Afdian"
             }
         },
-        "title": "Creating a Touhou MMO Server in Minecraft"
+        "title": "Creating a Touhou MMO Server in Minecraft",
+        "youtube": {
+            "title": "Bunbunmaru Latest",
+            "subtitle": "The fastest news delivery in Gensokyo! Catch up on our latest video.",
+            "viewChannel": "View Channel",
+            "exclusiveScoop": "Exclusive Scoop",
+            "watchNow": "Watch Now",
+            "defaultDescription": "Watch the video to uncover the latest secrets!",
+            "viewFullChannel": "View Full Channel"
+        }
     },
     "Navbar": {
         "home": "home",
