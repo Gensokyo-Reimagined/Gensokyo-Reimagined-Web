@@ -42,6 +42,17 @@
                href="https://github.com/Gensokyo-Reimagined"
                target="_blank">@Gensokyo-Reimagined</a>
           </p>
+          <p class="mt-2 text-sm text-center text-gray-500">
+            Payments securely handled by
+            <a class="hover:text-[var(--md-sys-color-primary)] transition-colors"
+               href="https://paynow.gg" target="_blank">PayNow</a>
+            &middot;
+            <a class="hover:text-[var(--md-sys-color-primary)] transition-colors"
+               href="https://paynow.gg/legal/terms-of-use" target="_blank">Terms of Service</a>
+            &middot;
+            <a class="hover:text-[var(--md-sys-color-primary)] transition-colors"
+               href="https://paynow.gg/legal/privacy-policy" target="_blank">Privacy Policy</a>
+          </p>
         </div>
       </div>
     </div>

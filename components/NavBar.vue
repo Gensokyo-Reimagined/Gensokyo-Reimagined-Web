@@ -30,6 +30,13 @@
             >
               {{ $t('Navbar.home') }}
             </nuxt-link>
+            <nuxt-link
+                :to="localePath('/store')"
+                class="ml-1 inline-flex items-center gap-2 px-4 py-1.5 rounded-md font-semibold border border-[var(--md-sys-color-primary)] text-[var(--md-sys-color-primary)] hover:bg-[var(--md-sys-color-primary)] hover:text-[var(--md-sys-color-on-primary)] transition-colors duration-300"
+            >
+              <i class="fa-solid fa-heart"></i>
+              {{ $t('Navbar.store') }}
+            </nuxt-link>
             <a
                 :href="appConfig.NavBarLinkAbout"
                 class="px-3 py-2 text-[var(--md-sys-color-on-background)] hover:text-[var(--md-sys-color-on-secondary-container)] font-medium"
@@ -137,6 +144,13 @@
             :to="localePath('/')"
         >
           {{ $t('Navbar.home') }}
+        </nuxt-link>
+        <nuxt-link
+            :to="localePath('/store')"
+            class="inline-flex items-center gap-2 px-3 py-1.5 my-1 rounded-md text-base font-semibold border border-[var(--md-sys-color-primary)] text-[var(--md-sys-color-primary)] hover:bg-[var(--md-sys-color-primary)] hover:text-[var(--md-sys-color-on-primary)] transition-colors"
+        >
+          <i class="fa-solid fa-heart"></i>
+          {{ $t('Navbar.store') }}
         </nuxt-link>
         <a
             :href="appConfig.NavBarLinkAbout"

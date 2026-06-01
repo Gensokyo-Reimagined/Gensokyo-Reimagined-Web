@@ -209,6 +209,7 @@ export default defineNuxtConfig({
         ],
         langDir: 'locales',
         defaultLocale: 'en',
+        vueI18n: 'i18n.config.ts',
 
     },
 

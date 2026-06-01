@@ -50,4 +50,59 @@ export default defineAppConfig({
     NavBarLinkMap:
         'https://map.gensokyoreimagined.net/?world=minecraft_overworld',
     NavBarLinkTranslation: 'https://weblate.gensokyoreimagined.net/',
+
+    //Store page -> PayNow headless checkout. StoreId is public (sent as x-paynow-store-id header from the browser);
+    //the secret management key is NOT used on the frontend. Checkout flow: authenticate customer by Minecraft
+    //Java username -> create checkout session for the product id -> redirect to the returned PayNow payment URL.
+    StoreApiBase: 'https://api.paynow.gg',
+    StoreId: '557920084392148992',
+    //Store page -> categories shown as sticky tabs + stacked sections.
+    //  - Category names live in i18n under store.categories.<key>.name; icon is FontAwesome.
+    //  - A category with an empty `tiers` array renders a "Coming soon" placeholder.
+    //  - Rank cards: names/perks live in i18n (store.tiers.<key>). Each tier has monthly + yearly
+    //    {id, price}; the store's Monthly/Yearly toggle picks which PayNow product the button buys.
+    //    To add Boosters/Soundtracks/Cosmetics products later, populate that category's `tiers` array.
+    StoreCategories: [
+        {
+            key: 'ranks',
+            icon: 'fa-solid fa-crown',
+            tiers: [
+                {
+                    key: 'supporter',
+                    gradient: 'linear-gradient(135deg, #f28395 0%, #e2354c 100%)',
+                    accent: '#e2354c',
+                    popular: false,
+                    monthly: {id: '564886173625880576', price: '$3'},
+                    yearly: {id: '564974196568887296', price: '$30'},
+                },
+                {
+                    key: 'supporterPlus',
+                    gradient: 'linear-gradient(135deg, #b388ff 0%, #7c4dff 100%)',
+                    accent: '#7c4dff',
+                    popular: true,
+                    monthly: {id: '564893850666008576', price: '$10'},
+                    yearly: {id: '564974202235396096', price: '$100'},
+                },
+                {
+                    key: 'jrFounder',
+                    gradient: 'linear-gradient(135deg, #5ec5ff 0%, #2979ff 100%)',
+                    accent: '#2979ff',
+                    popular: false,
+                    monthly: {id: '564895372619546624', price: '$20'},
+                    yearly: {id: '564974204223488000', price: '$200'},
+                },
+                {
+                    key: 'founder',
+                    gradient: 'linear-gradient(135deg, #ffd86b 0%, #f6a623 100%)',
+                    accent: '#b9770e',
+                    popular: false,
+                    monthly: {id: '564895718221807616', price: '$60'},
+                    yearly: {id: '564974206287085568', price: '$600'},
+                },
+            ],
+        },
+        {key: 'boosters', icon: 'fa-solid fa-bolt', tiers: []},
+        {key: 'soundtracks', icon: 'fa-solid fa-compact-disc', tiers: []},
+        {key: 'cosmetics', icon: 'fa-solid fa-wand-magic-sparkles', tiers: []},
+    ],
 })

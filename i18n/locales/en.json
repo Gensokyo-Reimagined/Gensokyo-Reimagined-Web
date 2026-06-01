@@ -135,6 +135,84 @@
     "about": "About",
     "wiki": "Wiki",
     "map": "Map",
-    "translation": "Translation"
+    "translation": "Translation",
+    "store": "Support us"
+  },
+  "store": {
+    "title": "Support Gensokyo Reimagined",
+    "subtitle": "Pick a supporter tier to help keep the servers running — perks apply across all our servers.",
+    "perMonth": "/mo",
+    "perYear": "/yr",
+    "billing": {
+      "monthly": "Monthly",
+      "yearly": "Yearly",
+      "save": "2 months free"
+    },
+    "popular": "Most Popular",
+    "button": "Get {tier}",
+    "securedBy": "Payments handled securely by PayNow. Cancel anytime.",
+    "comingSoon": "Coming soon",
+    "comingSoonDesc": "We're still putting this section together — check back soon!",
+    "checkout": {
+      "title": "Almost there!",
+      "desc": "Enter your Minecraft Java username so we can deliver your purchase to the right account.",
+      "usernameLabel": "Minecraft Java username",
+      "usernamePlaceholder": "e.g. Reimu",
+      "continue": "Continue to payment",
+      "cancel": "Cancel",
+      "loading": "Preparing…",
+      "error": "We couldn't find that username. Double-check the spelling and try again.",
+      "successTitle": "Thank you for your support!",
+      "successDesc": "Your purchase is being processed — your perks will arrive in-game shortly.",
+      "cancelTitle": "Checkout canceled",
+      "cancelDesc": "No charge was made. You can pick a tier again whenever you're ready.",
+      "errorTitle": "Something went wrong",
+      "errorDesc": "We couldn't start checkout. Please try again in a moment."
+    },
+    "categories": {
+      "ranks": { "name": "Ranks" },
+      "boosters": { "name": "Boosters" },
+      "soundtracks": { "name": "Official Soundtracks" },
+      "cosmetics": { "name": "Cosmetics" }
+    },
+    "tiers": {
+      "supporter": {
+        "name": "Supporter",
+        "perks": [
+          "Supporter channels & role",
+          "/cosmetics",
+          "/disguise — become the Touhou characters",
+          "/chatty nickname — chat name coloring",
+          "Base map art limit",
+          "Custom prefix",
+          "Auction Listing Priority"
+        ]
+      },
+      "supporterPlus": {
+        "name": "Supporter+",
+        "perks": [
+          "Everything in Supporter, plus:",
+          "Increased Mapart limits",
+          "Extra Cosmetics",
+          "Custom Prefix"
+        ]
+      },
+      "jrFounder": {
+        "name": "Jr. Founder",
+        "perks": [
+          "Everything in Supporter+, plus:",
+          "Custom Prefix (W.I.P)",
+          "More stuff will be added"
+        ]
+      },
+      "founder": {
+        "name": "Founder",
+        "perks": [
+          "Everything in Jr. Founder, plus:",
+          "Custom Prefix (W.I.P)",
+          "More stuff will be added"
+        ]
+      }
+    }
   }
 }
