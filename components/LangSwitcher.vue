@@ -72,7 +72,7 @@
 </template>
 
 <script setup>
-const { setLocale, locale } = useI18n()
+const {setLocale, locale} = useI18n()
 
 const isDropdownOpen = ref(false)
 const closeTimeout = ref(null)

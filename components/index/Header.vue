@@ -10,8 +10,8 @@
           <div
               v-for="(currentImageUrl, index) in imageUrls"
               :key="currentImageUrl"
-              class="flex-[0_0_100%] min-w-0 relative h-full transition-opacity ease-in-out"
               :class="{ 'is-active': selectedIndex === index }"
+              class="flex-[0_0_100%] min-w-0 relative h-full transition-opacity ease-in-out"
           >
             <nuxt-img
                 :fetchpriority="index === 0 ? 'high' : 'low'"

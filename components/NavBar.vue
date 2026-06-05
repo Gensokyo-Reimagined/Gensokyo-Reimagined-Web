@@ -25,17 +25,17 @@
           </div>
           <div class="hidden sm:ml-6 sm:flex sm:space-x-8 items-center">
             <nuxt-link
-                :to="localePath('/')"
-                class="px-3 py-2 text-[var(--md-sys-color-on-background)] hover:text-[var(--md-sys-color-on-secondary-container)] font-medium"
-            >
-              {{ $t('Navbar.home') }}
-            </nuxt-link>
-            <nuxt-link
                 :to="localePath('/store')"
                 class="ml-1 inline-flex items-center gap-2 px-4 py-1.5 rounded-md font-semibold border border-[var(--md-sys-color-primary)] text-[var(--md-sys-color-primary)] hover:bg-[var(--md-sys-color-primary)] hover:text-[var(--md-sys-color-on-primary)] transition-colors duration-300"
             >
               <i class="fa-solid fa-heart"></i>
               {{ $t('Navbar.store') }}
+            </nuxt-link>
+            <nuxt-link
+                :to="localePath('/')"
+                class="px-3 py-2 text-[var(--md-sys-color-on-background)] hover:text-[var(--md-sys-color-on-secondary-container)] font-medium"
+            >
+              {{ $t('Navbar.home') }}
             </nuxt-link>
             <a
                 :href="appConfig.NavBarLinkAbout"
@@ -140,17 +140,17 @@
     <div :class="{ block: isMenuOpen, hidden: !isMenuOpen }" class="sm:hidden">
       <div class="px-2 pt-2 pb-3">
         <nuxt-link
-            class="block px-3 py-2 rounded-md text-base font-medium text-[var(--md-sys-color-on-background)] hover:text-[var(--md-sys-color-on-secondary-container)]"
-            :to="localePath('/')"
-        >
-          {{ $t('Navbar.home') }}
-        </nuxt-link>
-        <nuxt-link
             :to="localePath('/store')"
             class="inline-flex items-center gap-2 px-3 py-1.5 my-1 rounded-md text-base font-semibold border border-[var(--md-sys-color-primary)] text-[var(--md-sys-color-primary)] hover:bg-[var(--md-sys-color-primary)] hover:text-[var(--md-sys-color-on-primary)] transition-colors"
         >
           <i class="fa-solid fa-heart"></i>
           {{ $t('Navbar.store') }}
+        </nuxt-link>
+        <nuxt-link
+            :to="localePath('/')"
+            class="block px-3 py-2 rounded-md text-base font-medium text-[var(--md-sys-color-on-background)] hover:text-[var(--md-sys-color-on-secondary-container)]"
+        >
+          {{ $t('Navbar.home') }}
         </nuxt-link>
         <a
             :href="appConfig.NavBarLinkAbout"

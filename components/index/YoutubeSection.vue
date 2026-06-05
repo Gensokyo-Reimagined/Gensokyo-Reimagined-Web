@@ -25,8 +25,8 @@
 
           <a
               :href="`https://www.youtube.com/channel/${YOUTUBE_CHANNEL_ID}`"
-              target="_blank"
               class="hidden group md:inline-flex items-center px-6 py-3 rounded-xl border-2 border-[var(--md-sys-color-outline-variant)] text-[var(--md-sys-color-on-background)] hover:border-[#FF0000] hover:text-[#FF0000] hover:bg-red-500/10 transition-all duration-300 font-semibold"
+              target="_blank"
           >
             {{ $t('index.youtube.viewChannel') }}
             <i class="fa-solid fa-arrow-right ml-2 group-hover:translate-x-1 transition-transform duration-300"></i>
@@ -37,13 +37,13 @@
             class="group relative bg-[var(--md-sys-color-surface-container-low)] rounded-3xl overflow-hidden shadow-xl hover:shadow-[0_20px_40px_-15px_rgba(255,0,0,0.2)] border border-[var(--md-sys-color-outline-variant)] hover:border-red-500/40 transition-all duration-500 flex flex-col lg:flex-row">
 
           <button
-              @click="openModal"
-              class="relative w-full lg:w-3/5 overflow-hidden aspect-video block bg-black cursor-pointer"
               aria-label="Play Video"
+              class="relative w-full lg:w-3/5 overflow-hidden aspect-video block bg-black cursor-pointer"
+              @click="openModal"
           >
             <img
-                :src="videoData.thumbnail"
                 :alt="videoData.title"
+                :src="videoData.thumbnail"
                 class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 opacity-90 group-hover:opacity-100"
                 loading="lazy"
                 @error="handleImageError"
@@ -99,8 +99,8 @@
                 </span>
 
                 <button
-                    @click="openModal"
                     class="inline-flex items-center font-bold text-[var(--md-sys-color-primary)] hover:text-red-400 transition-colors group/play"
+                    @click="openModal"
                 >
                   {{ $t('index.youtube.watchNow') }}
                   <i class="fa-solid fa-play ml-2 text-sm transform group-hover/play:scale-125 transition-transform"></i>
@@ -113,8 +113,8 @@
 
         <a
             :href="`https://www.youtube.com/channel/${YOUTUBE_CHANNEL_ID}`"
-            target="_blank"
             class="mt-8 flex md:hidden items-center justify-center w-full px-6 py-4 rounded-xl border-2 border-[var(--md-sys-color-outline-variant)] text-[var(--md-sys-color-on-background)] font-semibold hover:bg-red-500/10 hover:border-red-500 hover:text-red-500 transition-colors"
+            target="_blank"
         >
           {{ $t('index.youtube.viewFullChannel') }}
         </a>
@@ -130,9 +130,9 @@
                 @click.stop>
 
               <button
-                  @click="closeModal"
-                  class="absolute -top-12 right-0 md:top-4 md:right-4 z-10 w-10 h-10 flex items-center justify-center bg-black/50 hover:bg-red-600 text-white transition-colors rounded-full"
                   aria-label="Close video"
+                  class="absolute -top-12 right-0 md:top-4 md:right-4 z-10 w-10 h-10 flex items-center justify-center bg-black/50 hover:bg-red-600 text-white transition-colors rounded-full"
+                  @click="closeModal"
               >
                 <i class="fa-solid fa-xmark text-xl"></i>
               </button>
@@ -140,12 +140,12 @@
               <div class="relative pt-[56.25%] w-full">
                 <iframe
                     v-if="videoId"
-                    class="absolute inset-0 w-full h-full"
                     :src="`https://www.youtube.com/embed/${videoId}?autoplay=1&rel=0`"
-                    title="YouTube video player"
-                    frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     allowfullscreen
+                    class="absolute inset-0 w-full h-full"
+                    frameborder="0"
+                    title="YouTube video player"
                 ></iframe>
               </div>
 

@@ -15,9 +15,8 @@
       "subtitle": "Small explanation about the project!",
       "description": "The Project started quite small initially with few people but as time went on project started to get some attraction and goals went bigger. Now we are creating playable version of Entirety of Touhou Universe with combining MMO and Survival Minecraft elements with requiring 0 mods to play on for maximum accessibility for everyone.",
       "mods": "Mods Required",
-      "accessibility":"Accessibility",
+      "accessibility": "Accessibility",
       "possibilities": "Possibilities"
-
     },
     "youtube": {
       "title": "Bunbunmaru Latest",
@@ -102,7 +101,7 @@
       ],
       "join": {
         "title": "Still have questions?",
-        "description":"Join our Discord community for more help and support",
+        "description": "Join our Discord community for more help and support",
         "button": "Join Discord"
       }
     },
@@ -120,7 +119,7 @@
         "description": "A simple and direct way to support our project with a virtual coffee.",
         "button": "Support on BMC"
       },
-      "Kofi":{
+      "Kofi": {
         "description": "Support us with a one-time donation or become a monthly member.",
         "button": "Support on Ko-fi"
       },
@@ -141,6 +140,8 @@
   "store": {
     "title": "Support Gensokyo Reimagined",
     "subtitle": "Pick a supporter tier to help keep the servers running — perks apply across all our servers.",
+    "loggedInAs": "Minecraft Account: {name}",
+    "changeName": "Change",
     "perMonth": "/mo",
     "perYear": "/yr",
     "billing": {
@@ -150,7 +151,7 @@
     },
     "popular": "Most Popular",
     "button": "Get {tier}",
-    "securedBy": "Payments handled securely by PayNow. Cancel anytime.",
+    "securedBy": "Payments handled securely by {paynow}. Cancel anytime.",
     "comingSoon": "Coming soon",
     "comingSoonDesc": "We're still putting this section together — check back soon!",
     "checkout": {
@@ -159,6 +160,7 @@
       "usernameLabel": "Minecraft Java username",
       "usernamePlaceholder": "e.g. Reimu",
       "continue": "Continue to payment",
+      "save": "Save",
       "cancel": "Cancel",
       "loading": "Preparing…",
       "error": "We couldn't find that username. Double-check the spelling and try again.",
@@ -170,10 +172,18 @@
       "errorDesc": "We couldn't start checkout. Please try again in a moment."
     },
     "categories": {
-      "ranks": { "name": "Ranks" },
-      "boosters": { "name": "Boosters" },
-      "soundtracks": { "name": "Official Soundtracks" },
-      "cosmetics": { "name": "Cosmetics" }
+      "ranks": {
+        "name": "Ranks"
+      },
+      "boosters": {
+        "name": "Boosters"
+      },
+      "soundtracks": {
+        "name": "Official Soundtracks"
+      },
+      "cosmetics": {
+        "name": "Cosmetics"
+      }
     },
     "tiers": {
       "supporter": {

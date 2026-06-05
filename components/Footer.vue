@@ -68,5 +68,5 @@
   @apply w-6 h-6;
 }
 </style>
-<script setup lang="ts">
+<script lang="ts" setup>
 </script>

@@ -29,12 +29,12 @@
         </p>
       </div>
 
-      <div v-else v-for="(team, teamIndex) in displayTeams" :key="teamIndex" class="mb-20 animate-fade-in">
+      <div v-for="(team, teamIndex) in displayTeams" v-else :key="teamIndex" class="mb-20 animate-fade-in">
 
         <div class="flex items-center gap-4 mb-10 pb-4 border-b border-[var(--md-sys-color-outline-variant)]">
           <div
-              class="p-2 rounded-xl bg-[var(--md-sys-color-surface-variant)]"
               v-if="team.image"
+              class="p-2 rounded-xl bg-[var(--md-sys-color-surface-variant)]"
           >
             <nuxt-img
                 :src="team.image"
@@ -45,8 +45,8 @@
           </div>
 
           <h2
-              class="text-3xl font-bold"
               :style="getTeamTitleStyle(team.color)"
+              class="text-3xl font-bold"
           >
             {{ team.name }}
           </h2>
@@ -61,9 +61,9 @@
                 <div
                     class="w-28 h-28 rounded-full p-1 bg-gradient-to-br from-[var(--md-sys-color-surface-variant)] to-[var(--md-sys-color-surface)] shadow-inner">
                   <img
-                      class="w-full h-full rounded-full object-cover bg-[var(--md-sys-color-surface)]"
-                      :src="getAvatarUrl(member)"
                       :alt="member.name"
+                      :src="getAvatarUrl(member)"
+                      class="w-full h-full rounded-full object-cover bg-[var(--md-sys-color-surface)]"
                       loading="lazy"
                       @error="handleImageError"
                   />
@@ -85,8 +85,8 @@
                   <button v-if="member.contact?.discord"
                           class="w-10 h-10 flex items-center justify-center rounded-full hover:bg-[#5865F2] hover:text-white text-[var(--md-sys-color-secondary)] transition-all relative group/btn"
                           @click.prevent="copyToClipboard(member.contact.discord, teamIndex, memberIndex)">
-                    <i class="text-lg"
-                       :class="copiedState[teamIndex]?.[memberIndex] ? 'fa-solid fa-check' : 'fa-brands fa-discord'"></i>
+                    <i :class="copiedState[teamIndex]?.[memberIndex] ? 'fa-solid fa-check' : 'fa-brands fa-discord'"
+                       class="text-lg"></i>
                     <span
                         class="absolute bottom-full mb-2 left-1/2 -translate-x-1/2 px-2 py-1 bg-gray-800 text-white text-xs rounded opacity-0 group-hover/btn:opacity-100 transition-opacity whitespace-nowrap pointer-events-none">
                         {{ copiedState[teamIndex]?.[memberIndex] ? 'Copied!' : member.contact.discord }}
@@ -95,23 +95,23 @@
 
                   <a v-if="member.contact?.github"
                      :href="member.contact.github.startsWith('http') ? member.contact.github : 'https://github.com/' + member.contact.github"
-                     target="_blank"
-                     class="w-10 h-10 flex items-center justify-center rounded-full hover:bg-black hover:text-white text-[var(--md-sys-color-secondary)] transition-all">
+                     class="w-10 h-10 flex items-center justify-center rounded-full hover:bg-black hover:text-white text-[var(--md-sys-color-secondary)] transition-all"
+                     target="_blank">
                     <i class="fa-brands fa-github text-lg"></i>
                   </a>
 
-                  <a v-if="member.contact?.twitter" :href="member.contact.twitter" target="_blank"
-                     class="w-10 h-10 flex items-center justify-center rounded-full hover:bg-blue-600 hover:text-white text-[var(--md-sys-color-secondary)] transition-all">
+                  <a v-if="member.contact?.twitter" :href="member.contact.twitter" class="w-10 h-10 flex items-center justify-center rounded-full hover:bg-blue-600 hover:text-white text-[var(--md-sys-color-secondary)] transition-all"
+                     target="_blank">
                     <i class="fa-brands fa-x-twitter text-lg"></i>
                   </a>
 
-                  <a v-if="member.contact?.youtube" :href="member.contact.youtube" target="_blank"
-                     class="w-10 h-10 flex items-center justify-center rounded-full hover:bg-red-600 hover:text-white text-[var(--md-sys-color-secondary)] transition-all">
+                  <a v-if="member.contact?.youtube" :href="member.contact.youtube" class="w-10 h-10 flex items-center justify-center rounded-full hover:bg-red-600 hover:text-white text-[var(--md-sys-color-secondary)] transition-all"
+                     target="_blank">
                     <i class="fa-brands fa-youtube text-lg"></i>
                   </a>
 
-                  <a v-if="member.contact?.other" :href="member.contact.other" target="_blank"
-                     class="w-10 h-10 flex items-center justify-center rounded-full hover:bg-blue-600 hover:text-white text-[var(--md-sys-color-secondary)] transition-all">
+                  <a v-if="member.contact?.other" :href="member.contact.other" class="w-10 h-10 flex items-center justify-center rounded-full hover:bg-blue-600 hover:text-white text-[var(--md-sys-color-secondary)] transition-all"
+                     target="_blank">
                     <i class="fa-brands fa-globe text-lg"></i>
                   </a>
                 </div>
@@ -124,9 +124,9 @@
   </div>
 </template>
 
-<script setup lang="ts">
-import {ref, computed, type CSSProperties} from 'vue';
-import {teams as localTeams, ContributorsConfig as teamsConfig, type TeamMember, type Team} from '~/contributors';
+<script lang="ts" setup>
+import {computed, type CSSProperties, ref} from 'vue';
+import {ContributorsConfig as teamsConfig, type Team, type TeamMember, teams as localTeams} from '~/contributors';
 
 const apiUrl = 'https://api.sakurakoi.top/api/gensokyo/contributors';
 

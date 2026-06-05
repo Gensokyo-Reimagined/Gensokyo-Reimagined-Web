@@ -135,5 +135,85 @@
         "map": "地图",
         "translation": "帮助翻译"
     },
-    "description": "欢迎来到幻想乡!"
+    "description": "欢迎来到幻想乡!",
+    "store": {
+        "title": "支持幻想乡：再造",
+        "subtitle": "选择一个支持者等级来帮助我们维持服务器运行——福利适用于我们的所有服务器。",
+        "loggedInAs": "Minecraft 账号：{name}",
+        "changeName": "更改",
+        "perMonth": "/月",
+        "perYear": "/年",
+        "billing": {
+            "monthly": "月付",
+            "yearly": "年付",
+            "save": "省两个月"
+        },
+        "popular": "最受欢迎",
+        "button": "获取 {tier}",
+        "securedBy": "支付由 {paynow} 安全处理。可随时取消。",
+        "comingSoon": "敬请期待",
+        "comingSoonDesc": "我们仍在筹备这一板块——请稍后再来看看！",
+        "checkout": {
+            "title": "即将完成！",
+            "desc": "请输入您的 Minecraft Java 版用户名，以便我们将您的购买发放给正确的账号。",
+            "usernameLabel": "Minecraft Java版用户名",
+            "usernamePlaceholder": "例如：Reimu",
+            "continue": "前往支付",
+            "save": "保存并继续",
+            "cancel": "取消",
+            "loading": "准备中…",
+            "error": "我们找不到该用户名。请仔细检查拼写并重试。",
+            "successTitle": "感谢您的支持！",
+            "successDesc": "您的购买正在处理中——您的福利将很快在游戏内生效。",
+            "cancelTitle": "结账已取消",
+            "cancelDesc": "未产生任何费用。您可以随时再次选择等级。",
+            "errorTitle": "出了点问题",
+            "errorDesc": "我们无法发起结账。请稍后重试。"
+        },
+        "categories": {
+            "ranks": { "name": "赞助等级" },
+            "boosters": { "name": "加成卡" },
+            "soundtracks": { "name": "官方原声带" },
+            "cosmetics": { "name": "装饰品" }
+        },
+        "tiers": {
+            "supporter": {
+                "name": "支持者 (Supporter)",
+                "perks": [
+                    "专属频道和身份组",
+                    "/cosmetics 装饰物权限",
+                    "/disguise — 化身东方角色",
+                    "/chatty nickname — 聊天昵称变色",
+                    "基础地图画数量限制",
+                    "自定义前缀",
+                    "拍卖行商品优先排序"
+                ]
+            },
+            "supporterPlus": {
+                "name": "支持者+ (Supporter+)",
+                "perks": [
+                    "包含“支持者”的所有福利，外加：",
+                    "提升地图画数量限制",
+                    "额外的装饰物",
+                    "自定义前缀"
+                ]
+            },
+            "jrFounder": {
+                "name": "初级赞助者 (Jr. Founder)",
+                "perks": [
+                    "包含“支持者+”的所有福利，外加：",
+                    "自定义前缀（开发中）",
+                    "更多内容即将推出"
+                ]
+            },
+            "founder": {
+                "name": "创始赞助者 (Founder)",
+                "perks": [
+                    "包含“初级赞助者”的所有福利，外加：",
+                    "自定义前缀（开发中）",
+                    "更多内容即将推出"
+                ]
+            }
+        }
+    }
 }

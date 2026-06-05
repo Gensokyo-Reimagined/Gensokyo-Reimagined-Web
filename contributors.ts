@@ -26,7 +26,7 @@ export const teams: Team[] = [
     {
         name: "Project Leads",
         image: "/icons/staff/admin.webp",
-        color: ["#aa3b3b","#ff4848"],
+        color: ["#aa3b3b", "#ff4848"],
         list: [
             {
                 name: "Taiyou",
@@ -140,7 +140,7 @@ export const teams: Team[] = [
     }, {
         name: "Builders",
         image: "/icons/staff/build-lead.webp",
-        color: ["#401eff","#528fff"],
+        color: ["#401eff", "#528fff"],
         list: [
             {
                 name: "GDK",
