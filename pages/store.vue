@@ -19,8 +19,10 @@
       <div v-if="savedName"
            class="mt-8 inline-flex items-center gap-3 px-5 py-3 bg-[var(--md-sys-color-surface)] border border-[var(--md-sys-color-outline-variant)] text-[var(--md-sys-color-on-surface)] rounded-full text-sm sm:text-base font-medium shadow-sm hover:shadow-md transition-shadow">
         <div
-            class="w-8 h-8 rounded-full bg-[var(--md-sys-color-primary-container)] text-[var(--md-sys-color-primary)] flex items-center justify-center">
-          <i class="fa-solid fa-user"></i>
+            class="w-8 h-8 rounded-full overflow-hidden bg-[var(--md-sys-color-primary-container)] text-[var(--md-sys-color-primary)] flex items-center justify-center">
+          <img v-if="avatarSrc" :src="avatarSrc" :alt="savedName || 'Minecraft head'"
+               class="w-full h-full object-cover" style="image-rendering: pixelated" @error="avatarSrc = ''">
+          <i v-else class="fa-solid fa-user"></i>
         </div>
         <span v-if="$te('store.loggedInAs')">{{ $t('store.loggedInAs', {name: savedName}) }}</span>
         <span v-else>Purchasing for: <strong class="font-bold">{{ savedName }}</strong></span>
@@ -127,6 +129,7 @@
                 v-for="tier in cat.tiers"
                 :key="tier.key"
                 :gradientStyle="`background: linear-gradient(rgba(0,0,0,0.58), rgba(0,0,0,0.72)), ${tier.gradient}`"
+                :bgImage="tier.bgImage"
                 class="!p-8"
             >
               <div class="h-7 mb-3">
@@ -151,17 +154,29 @@
 
               <ul class="space-y-3 mb-8">
                 <li
-                    v-for="(perk, i) in perks(tier.key)"
+                    v-for="(perk, i) in tier.perks"
                     :key="i"
                     class="flex items-start text-white text-base group"
                 >
-                  <template v-if="isHeading(rt(perk))">
-                    <span class="font-semibold italic text-white/90 drop-shadow">{{ rt(perk) }}</span>
+                  <template v-if="perk.heading">
+                    <span class="font-semibold italic text-white/90 drop-shadow">{{ $t(`store.tiers.${tier.key}.${perk.key}.name`) }}</span>
                   </template>
                   <template v-else>
                     <i aria-hidden="true"
                        class="fa-solid fa-circle-check text-lg mr-3 mt-1 flex-shrink-0 group-hover:scale-125 transition-transform duration-300 drop-shadow"></i>
-                    <span class="font-medium drop-shadow">{{ rt(perk) }}</span>
+                    <span class="font-medium drop-shadow">{{ $t(`store.tiers.${tier.key}.${perk.key}.name`) }}</span>
+                    <button
+                        v-if="perk.info || perk.tags"
+                        type="button"
+                        :aria-label="$t(`store.tiers.${tier.key}.${perk.key}.name`)"
+                        class="ml-2 mt-0.5 text-white/70 hover:text-white focus:text-white focus:outline-none"
+                        @mouseenter="showFmt($event, perkTip(tier.key, perk))"
+                        @mouseleave="hideFmt"
+                        @focus="showFmt($event, perkTip(tier.key, perk))"
+                        @blur="hideFmt"
+                    >
+                      <i class="fa-solid fa-circle-info text-sm"></i>
+                    </button>
                   </template>
                 </li>
               </ul>
@@ -220,20 +235,72 @@
         @close="modalOpen = false"
         @submit="onModalSubmit"
     />
+
+    <!-- Formatting-tags tooltip (teleported so the card's overflow can't clip it) -->
+    <Teleport to="body">
+      <div
+          v-if="fmt.open"
+          :style="{ left: fmt.x + 'px', top: fmt.y + 'px' }"
+          class="fixed z-[300] -translate-x-1/2 -translate-y-full rounded-xl p-3 shadow-2xl pointer-events-none bg-[var(--md-sys-color-inverse-surface)] text-[var(--md-sys-color-inverse-on-surface)]"
+          :class="fmt.tags ? 'w-56' : 'w-max max-w-[16rem]'"
+      >
+        <p class="text-xs font-bold uppercase tracking-wide opacity-80" :class="(fmt.detail || fmt.tags) ? 'mb-2' : ''">
+          {{ fmt.title }}
+        </p>
+        <p v-if="fmt.detail" class="text-sm opacity-90" :class="fmt.tags ? 'mb-2' : ''">{{ fmt.detail }}</p>
+        <div v-if="fmt.tags" class="grid grid-cols-2 gap-x-3 gap-y-1">
+          <span class="flex items-center text-sm">
+            <i class="fa-solid fa-check text-green-400 text-xs mr-1.5"></i>{{ $t('store.formatSolidTag') }}
+          </span>
+          <span
+              v-for="(tag, ti) in formatTags"
+              :key="ti"
+              class="flex items-center text-sm"
+              :class="fmt.tags === 'full' ? '' : 'opacity-70'"
+          >
+            <i
+                class="text-xs mr-1.5"
+                :class="fmt.tags === 'full' ? 'fa-solid fa-check text-green-400' : 'fa-solid fa-xmark text-red-400'"
+            ></i>{{ tag }}
+          </span>
+        </div>
+      </div>
+    </Teleport>
   </div>
 </template>
 
 <script setup>
 const appConfig = useAppConfig()
-const {t, tm, rt} = useI18n()
+const {t} = useI18n()
 const route = useRoute()
 const localePath = useLocalePath()
 const {authenticate, createCheckout, getToken, getName, clearAuth} = usePaynowCheckout()
 
 const categories = appConfig.StoreCategories
+const formatTags = appConfig.StoreFormatTags
 
-const perks = (key) => tm(`store.tiers.${key}.perks`)
-const isHeading = (text) => typeof text === 'string' && text.trim().endsWith(':')
+// --- perk detail tooltip (teleported so the card's overflow can't clip it) ---
+const fmt = reactive({open: false, x: 0, y: 0, title: '', detail: '', tags: null})
+const perkTip = (tierKey, perk) => {
+  const tags = perk.tags || null
+  let title
+  if (tags === 'full') title = t('store.formatPerk')
+  else if (tags === 'solid') title = t('store.formatLockedHeader')
+  else title = t(`store.tiers.${tierKey}.${perk.key}.name`)
+  return {title, detail: perk.info ? t(`store.tiers.${tierKey}.${perk.key}.detail`) : '', tags}
+}
+const showFmt = (e, tip) => {
+  const r = e.currentTarget.getBoundingClientRect()
+  fmt.x = Math.min(Math.max(r.left + r.width / 2, 130), window.innerWidth - 130)
+  fmt.y = r.top - 8
+  fmt.title = tip.title
+  fmt.detail = tip.detail
+  fmt.tags = tip.tags
+  fmt.open = true
+}
+const hideFmt = () => {
+  fmt.open = false
+}
 
 // --- category scrollspy ---
 const activeCat = ref(categories[0]?.key)
@@ -255,6 +322,38 @@ const savedName = ref(null)
 const pending = ref(null) // { key, productId }
 const busyKey = ref(null)
 const banner = ref(null) // 'success' | 'cancel' | 'error'
+
+// --- player head avatar (cached in localStorage, 7-day TTL, so it doesn't re-hit the API) ---
+const avatarSrc = ref('')
+const AVATAR_TTL = 7 * 24 * 60 * 60 * 1000
+const avatarApi = (name) => `https://mc-heads.net/avatar/${encodeURIComponent(name)}/64`
+async function loadAvatar(name) {
+  if (typeof window === 'undefined') return
+  if (!name) {
+    avatarSrc.value = ''
+    return
+  }
+  const key = `pn_avatar_${name.toLowerCase()}`
+  try {
+    const cached = JSON.parse(localStorage.getItem(key) || 'null')
+    if (cached?.data && Date.now() - cached.ts < AVATAR_TTL) {
+      avatarSrc.value = cached.data
+      return
+    }
+  } catch (e) { /* ignore */ }
+  avatarSrc.value = avatarApi(name) // show immediately via the API URL
+  try { // then cache as a data URL so future loads don't hit the API again
+    const blob = await (await fetch(avatarApi(name))).blob()
+    const data = await new Promise((res) => {
+      const r = new FileReader()
+      r.onloadend = () => res(r.result)
+      r.readAsDataURL(blob)
+    })
+    localStorage.setItem(key, JSON.stringify({data, ts: Date.now()}))
+    avatarSrc.value = data
+  } catch (e) { /* keep the direct URL if caching fails (e.g. CORS) */ }
+}
+watch(savedName, (n) => loadAvatar(n))
 
 const bannerClass = computed(() => ({
   success: 'bg-[var(--md-sys-color-primary-container)] text-[var(--md-sys-color-on-primary-container)] border-[var(--md-sys-color-primary)]',

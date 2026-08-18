@@ -37,7 +37,7 @@
         </div>
         <div class="mt-8 md:mt-0 md:order-1">
           <p class="text-base text-center text-gray-400">
-            &copy; 2022-2026 Gensokyo-Reimagined —
+            &copy; 2022-2026 Gensokyo-Reimagined &middot;
             <a class="hover:text-[var(--md-sys-color-primary)] transition-colors"
                href="https://github.com/Gensokyo-Reimagined"
                target="_blank">@Gensokyo-Reimagined</a>

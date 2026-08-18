@@ -12,7 +12,29 @@
         </p>
       </div>
 
-      <div class="mt-16 max-w-lg mx-auto grid gap-8 lg:grid-cols-3 lg:max-w-none">
+      <!-- Recommended: our own supporter system -->
+      <div class="mt-12 max-w-3xl mx-auto">
+        <div
+            class="rounded-2xl border border-[var(--md-sys-color-primary)] bg-[var(--md-sys-color-primary-container)] text-[var(--md-sys-color-on-primary-container)] p-6 sm:p-8 flex flex-col sm:flex-row items-center gap-5 text-center sm:text-left">
+          <i class="fa-solid fa-heart text-3xl flex-shrink-0"></i>
+          <div class="flex-1">
+            <h3 class="text-xl font-bold">{{ $t('index.support.recommend.title') }}</h3>
+            <p class="mt-1 opacity-90">{{ $t('index.support.recommend.description') }}</p>
+          </div>
+          <nuxt-link
+              :to="localePath('/store')"
+              class="flex-shrink-0 inline-flex items-center gap-2 px-6 py-3 rounded-xl font-bold bg-[var(--md-sys-color-primary)] text-[var(--md-sys-color-on-primary)] shadow-md hover:scale-105 transition-transform duration-300">
+            {{ $t('index.support.recommend.button') }}
+            <i class="fa-solid fa-arrow-right"></i>
+          </nuxt-link>
+        </div>
+      </div>
+
+      <p class="mt-12 text-center text-sm text-[var(--md-sys-color-outline)]">
+        {{ $t('index.support.otherWays') }}
+      </p>
+
+      <div class="mt-6 max-w-lg mx-auto grid gap-8 lg:grid-cols-3 lg:max-w-none">
 
         <div
             class="flex flex-col rounded-2xl shadow-xl overflow-hidden support-card border border-[var(--md-sys-color-outline-variant)]">
@@ -88,6 +110,7 @@
 </template>
 
 <script setup>
+const localePath = useLocalePath()
 </script>
 
 <style scoped>

@@ -72,8 +72,20 @@ export default defineAppConfig({
                     gradient: 'linear-gradient(135deg, #f28395 0%, #e2354c 100%)',
                     accent: '#e2354c',
                     popular: false,
+                    bgImage: '/img/store/supporter-reimu.png',
                     monthly: {id: '564886173625880576', price: '$3'},
                     yearly: {id: '564974196568887296', price: '$30'},
+                    // perks: structure only; text comes from i18n store.tiers.<tier>.<key>.{name,detail}
+                    //   info: has a hover detail tooltip | tags: shows the formatting grid (solid/full) | heading: section label
+                    perks: [
+                        {key: 'role'},
+                        {key: 'cosmetics', info: true},
+                        {key: 'disguise', info: true},
+                        {key: 'chat', info: true, tags: 'solid'},
+                        {key: 'maps', info: true},
+                        {key: 'prefix'},
+                        {key: 'auction', info: true},
+                    ],
                 },
                 {
                     key: 'supporterPlus',
@@ -82,6 +94,13 @@ export default defineAppConfig({
                     popular: true,
                     monthly: {id: '564893850666008576', price: '$10'},
                     yearly: {id: '564974202235396096', price: '$100'},
+                    perks: [
+                        {key: 'heading', heading: true},
+                        {key: 'maps', info: true},
+                        {key: 'cosmetics', info: true},
+                        {key: 'chat', info: true, tags: 'full'},
+                        {key: 'prefix'},
+                    ],
                 },
                 {
                     key: 'jrFounder',
@@ -90,6 +109,11 @@ export default defineAppConfig({
                     popular: false,
                     monthly: {id: '564895372619546624', price: '$20'},
                     yearly: {id: '564974204223488000', price: '$200'},
+                    perks: [
+                        {key: 'heading', heading: true},
+                        {key: 'prefix'},
+                        {key: 'more'},
+                    ],
                 },
                 {
                     key: 'founder',
@@ -98,6 +122,11 @@ export default defineAppConfig({
                     popular: false,
                     monthly: {id: '564895718221807616', price: '$60'},
                     yearly: {id: '564974206287085568', price: '$600'},
+                    perks: [
+                        {key: 'heading', heading: true},
+                        {key: 'prefix'},
+                        {key: 'more'},
+                    ],
                 },
             ],
         },
@@ -105,4 +134,6 @@ export default defineAppConfig({
         {key: 'soundtracks', icon: 'fa-solid fa-compact-disc', tiers: []},
         {key: 'cosmetics', icon: 'fa-solid fa-wand-magic-sparkles', tiers: []},
     ],
+    // Chat formatting labels shown in the Supporter/Supporter+ tooltip (plain strings, rendered as-is).
+    StoreFormatTags: ['Rainbow', 'Gradient', 'Bold', 'Italic', 'Underline', 'Strikethrough', 'Obfuscated', 'Custom font', 'Reset'],
 })

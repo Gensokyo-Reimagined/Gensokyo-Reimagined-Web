@@ -115,6 +115,12 @@
       "title": "Support the project!",
       "description": "This is a Non-Profit project so every donation helps us out!",
       "description2": "Your contributions directly fund server maintenance and development, ensuring the best possible experience for everyone.",
+      "recommend": {
+        "title": "We now have our own supporter system!",
+        "description": "Support us through our store for instant in-game perks and ranks across all our servers. This is the option we recommend.",
+        "button": "Support us"
+      },
+      "otherWays": "Other ways to support. These still work for a while, but we now recommend the option above.",
       "BMC": {
         "description": "A simple and direct way to support our project with a virtual coffee.",
         "button": "Support on BMC"
@@ -139,7 +145,7 @@
   },
   "store": {
     "title": "Support Gensokyo Reimagined",
-    "subtitle": "Pick a supporter tier to help keep the servers running — perks apply across all our servers.",
+    "subtitle": "Pick a supporter tier to help keep the servers running. Perks apply across all our servers.",
     "loggedInAs": "Minecraft Account: {name}",
     "changeName": "Change",
     "perMonth": "/mo",
@@ -150,10 +156,13 @@
       "save": "2 months free"
     },
     "popular": "Most Popular",
+    "formatPerk": "Gradient & styled names",
+    "formatLockedHeader": "Unlocked with Supporter+",
+    "formatSolidTag": "Solid colors",
     "button": "Get {tier}",
     "securedBy": "Payments handled securely by {paynow}. Cancel anytime.",
     "comingSoon": "Coming soon",
-    "comingSoonDesc": "We're still putting this section together — check back soon!",
+    "comingSoonDesc": "We're still putting this section together, check back soon!",
     "checkout": {
       "title": "Almost there!",
       "desc": "Enter your Minecraft Java username so we can deliver your purchase to the right account.",
@@ -165,7 +174,7 @@
       "loading": "Preparing…",
       "error": "We couldn't find that username. Double-check the spelling and try again.",
       "successTitle": "Thank you for your support!",
-      "successDesc": "Your purchase is being processed — your perks will arrive in-game shortly.",
+      "successDesc": "Your purchase is being processed. Your perks will arrive in-game shortly.",
       "cancelTitle": "Checkout canceled",
       "cancelDesc": "No charge was made. You can pick a tier again whenever you're ready.",
       "errorTitle": "Something went wrong",
@@ -188,40 +197,33 @@
     "tiers": {
       "supporter": {
         "name": "Supporter",
-        "perks": [
-          "Supporter channels & role",
-          "/cosmetics",
-          "/disguise — become the Touhou characters",
-          "/chatty nickname — chat name coloring",
-          "Base map art limit",
-          "Custom prefix",
-          "Auction Listing Priority"
-        ]
+        "role": { "name": "Supporter role & channels" },
+        "cosmetics": { "name": "Cosmetics", "detail": "Open the in-game cosmetics menu with /cosmetics" },
+        "disguise": { "name": "Character disguises", "detail": "/disguise to become the Touhou characters" },
+        "chat": { "name": "Colored chat name", "detail": "/chatty nickname, solid colors only" },
+        "maps": { "name": "Map art", "detail": "Place map-art images, up to the base limit" },
+        "prefix": { "name": "Custom prefix" },
+        "auction": { "name": "Auction priority", "detail": "Your auction-house listings appear higher" }
       },
       "supporterPlus": {
         "name": "Supporter+",
-        "perks": [
-          "Everything in Supporter, plus:",
-          "Increased Mapart limits",
-          "Extra Cosmetics",
-          "Custom Prefix"
-        ]
+        "heading": { "name": "Everything in Supporter, plus:" },
+        "maps": { "name": "More map art", "detail": "A higher map-art placement limit" },
+        "cosmetics": { "name": "Extra cosmetics", "detail": "Additional cosmetic packs and effects" },
+        "chat": { "name": "Styled chat names", "detail": "Go beyond solid colors" },
+        "prefix": { "name": "Custom prefix" }
       },
       "jrFounder": {
         "name": "Jr. Founder",
-        "perks": [
-          "Everything in Supporter+, plus:",
-          "Custom Prefix (W.I.P)",
-          "More stuff will be added"
-        ]
+        "heading": { "name": "Everything in Supporter+, plus:" },
+        "prefix": { "name": "Custom Prefix (W.I.P)" },
+        "more": { "name": "More stuff will be added" }
       },
       "founder": {
         "name": "Founder",
-        "perks": [
-          "Everything in Jr. Founder, plus:",
-          "Custom Prefix (W.I.P)",
-          "More stuff will be added"
-        ]
+        "heading": { "name": "Everything in Jr. Founder, plus:" },
+        "prefix": { "name": "Custom Prefix (W.I.P)" },
+        "more": { "name": "More stuff will be added" }
       }
     }
   }
