@@ -146,7 +146,7 @@
                 {{ $t(`store.tiers.${tier.key}.name`) }}
               </h3>
               <p class="mt-2 mb-6 text-white drop-shadow">
-                <span class="text-4xl font-extrabold">{{ tier[billing].price }}</span>
+                <span class="text-4xl font-extrabold">{{ livePrices[tier[billing].id] || tier[billing].price }}</span>
                 <span class="text-lg font-medium text-white/90">{{
                     billing === 'yearly' ? $t('store.perYear') : $t('store.perMonth')
                   }}</span>
@@ -274,7 +274,7 @@ const appConfig = useAppConfig()
 const {t} = useI18n()
 const route = useRoute()
 const localePath = useLocalePath()
-const {authenticate, createCheckout, getToken, getName, clearAuth} = usePaynowCheckout()
+const {authenticate, createCheckout, getProducts, getToken, getName, clearAuth} = usePaynowCheckout()
 
 const categories = appConfig.StoreCategories
 const formatTags = appConfig.StoreFormatTags
@@ -313,6 +313,23 @@ const goTo = (key) => {
 
 // --- billing toggle ---
 const billing = ref('monthly') // 'monthly' | 'yearly'
+
+// --- live prices (the app.config strings are only the prerendered placeholder; PayNow returns the
+// VAT-inclusive amount for the visitor, which is what actually gets charged) ---
+const livePrices = ref({})
+const money = (cents, currency) => new Intl.NumberFormat('en-US', {
+  style: 'currency',
+  currency,
+  minimumFractionDigits: cents % 100 === 0 ? 0 : 2,
+}).format(cents / 100)
+async function loadPrices() {
+  try {
+    const products = await getProducts()
+    livePrices.value = Object.fromEntries(products.map((p) => [p.id, money(p.pricing.price_final, p.currency)]))
+  } catch (e) {
+    console.error('Failed to fetch PayNow prices:', e)
+  }
+}
 
 // --- checkout ---
 const modalOpen = ref(false)
@@ -431,6 +448,7 @@ async function onModalSubmit(username) {
 
 onMounted(() => {
   savedName.value = getName()
+  loadPrices()
 
   const p = route.query.purchase
   if (p === 'success' || p === 'cancel') banner.value = p

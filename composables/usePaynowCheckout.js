@@ -21,6 +21,11 @@ export function usePaynowCheckout() {
         localStorage.removeItem(NAME_KEY)
     }
 
+    // VAT is folded into the storefront price and PayNow derives the rate from the caller's IP, so this
+    // has to run in the browser: at build time it would bake in the build machine's rate for everyone.
+    const getProducts = () =>
+        $fetch(`${base}/v1/store/products`, {headers: {'x-paynow-store-id': storeId}})
+
     // Resolve a Minecraft Java username to a Customer token.
     async function authenticate(username) {
         const res = await $fetch(`${base}/v1/store/customer/auth`, {
@@ -55,5 +60,5 @@ export function usePaynowCheckout() {
         return res.url
     }
 
-    return {authenticate, createCheckout, getToken, getName, clearAuth}
+    return {authenticate, createCheckout, getProducts, getToken, getName, clearAuth}
 }

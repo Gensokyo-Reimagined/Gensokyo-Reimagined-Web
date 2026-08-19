@@ -17,19 +17,7 @@
 
     <div class="container mx-auto px-6 md:px-24">
 
-      <div v-if="pending"
-           class="flex flex-col items-center justify-center py-32 space-y-6 transition-opacity duration-500">
-        <div class="relative w-16 h-16">
-          <div class="absolute inset-0 rounded-full border-4 border-[var(--md-sys-color-surface-variant)]"></div>
-          <div
-              class="absolute inset-0 rounded-full border-4 border-[var(--md-sys-color-primary)] border-t-transparent animate-spin"></div>
-        </div>
-        <p class="text-lg text-[var(--md-sys-color-secondary)] font-medium animate-pulse tracking-wide">
-          Fetching live contributor data...
-        </p>
-      </div>
-
-      <div v-for="(team, teamIndex) in displayTeams" v-else :key="teamIndex" class="mb-20 animate-fade-in">
+      <div v-for="(team, teamIndex) in displayTeams" :key="teamIndex" class="mb-20 animate-fade-in">
 
         <div class="flex items-center gap-4 mb-10 pb-4 border-b border-[var(--md-sys-color-outline-variant)]">
           <div
@@ -130,7 +118,7 @@ import {ContributorsConfig as teamsConfig, type Team, type TeamMember, teams as 
 
 const apiUrl = 'https://api.sakurakoi.top/api/gensokyo/contributors';
 
-const {data: apiTeams, pending, error} = await useFetch<Team[]>(apiUrl, {
+const {data: apiTeams, error} = await useFetch<Team[]>(apiUrl, {
   method: 'POST',
   body: teamsConfig,
   server: false,
