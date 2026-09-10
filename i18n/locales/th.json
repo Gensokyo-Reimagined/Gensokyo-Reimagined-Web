@@ -119,13 +119,13 @@
         },
         "title": "สร้างเซิร์ฟมายคราฟในธีมโทโฮแนว MMO",
         "youtube": {
-            "title": "Bunbunmaru Latest",
-            "subtitle": "The fastest news delivery in Gensokyo! Catch up on our latest video.",
-            "viewChannel": "View Channel",
-            "exclusiveScoop": "Exclusive Scoop",
-            "defaultDescription": "Watch the video to uncover the latest secrets!",
-            "watchNow": "Watch Now",
-            "viewFullChannel": "View Full Channel"
+            "title": "Bunbunmaru ฉบับล่าสุด",
+            "subtitle": "บริการข่าวสารที่เร็วที่สุดในเกนโซเคียว! ติดตามวิดิโอล่าสุดของเราได้ที่นี้",
+            "viewChannel": "เข้าชมช่องยูทูป",
+            "exclusiveScoop": "ข่าววงใน",
+            "defaultDescription": "ดูวิดิโอนี้เพื่อค้นหาความลับล่าสุดสิ!",
+            "watchNow": "ดูเลย",
+            "viewFullChannel": "ดูช่องเต็ม"
         }
     },
     "Navbar": {
