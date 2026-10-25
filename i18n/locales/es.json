@@ -5,15 +5,15 @@
             "intro": "Creando un MMO de Touhou en Minecraft",
             "group": "¡Únete a nuestra comunidad!",
             "continue": "Aprender más",
-            "playerCount": "Join {count} players online!"
+            "playerCount": "Únete a {count} jugadores en línea!"
         },
         "about": {
             "title": "Quiénes somos",
             "subtitle": "¡Breve explicación del proyecto!",
             "description": "El proyecto inició siendo algo muy pequeño, con apenas un puñado de personas, pero con el tiempo fue cobrando fuerza y nuestras metas se hicieron más grandes. Ahora estamos creando una versión jugable de todo el universo de Touhou, combinando elementos de supervivencia de Minecraft y MMOs, sin mods y accesible para todos.",
-            "mods": "Mods Required",
+            "mods": "Mods requeridos",
             "accessibility": "Accesibilidad",
-            "possibilities": "Possibilities"
+            "possibilities": "Posibilidades"
         },
         "feature": {
             "subtitle": "Características del servidor",
@@ -28,7 +28,7 @@
                 },
                 {
                     "name": "Misiones de historia",
-                    "description": "Aventuras simples pero extensas, y con grandes recompensas"
+                    "description": "Aventuras simples pero extensas, y con grandes recompensas para los jugadores"
                 },
                 {
                     "name": "Cambios de clima",
@@ -65,8 +65,8 @@
                     "answer": "Puede ser por tu wifi, o porque estés geográficamente lejos del servidor. Si es algo que le está pasando a todos, avísanos."
                 }
             ],
-            "tag": "Support",
-            "description": "Find answers to common questions about our server",
+            "tag": "Soporte",
+            "description": "Encuentra respuestas a preguntas comunes sobre nuestro servidor",
             "join": {
                 "title": "Still have questions?",
                 "button": "Join Discord",
@@ -105,11 +105,11 @@
             "button": "Modrinth",
             "title": "Prueba nuestro Modpack Optimizado para el Server!",
             "list": [
-                "Performance optimizations",
-                "Quality of life improvements",
-                "Easy installation"
+                "Optimizaciones de Rendimiento",
+                "Mejoras de calidad de vida",
+                "Instalación sencilla"
             ],
-            "description": "Enhanced performance and compatibility for the best experience!"
+            "description": "¡Rendimiento mejorado y compatibilidad para la mejor experiencia!"
         },
         "title": "Creando un Servidor MMO de Touhou en Minecraft",
         "youtube": {
@@ -123,11 +123,11 @@
         }
     },
     "Navbar": {
-        "home": "inicio",
-        "about": "acerca de",
-        "wiki": "wiki",
-        "map": "mapa",
-        "translation": "traducción"
+        "home": "Inicio",
+        "about": "Acerca de",
+        "wiki": "Wiki",
+        "map": "Mapa",
+        "translation": "Traducción"
     },
     "description": "Bienvenidos a Gensokyo!"
 }
